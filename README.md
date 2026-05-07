@@ -13,7 +13,6 @@ It is intentionally structured like the evaluation template repository used for 
 
 - HIPE-2026 website: <https://hipe-eval.github.io/HIPE-2026/>
 - Data submodule: `HIPE-2026-data/`
-- Guidelines summary: `GUIDELINES.md`
 - Submission loading instructions: `SUBMISSIONS.md`
 - Template reference: `eval-template-repo/`
 
@@ -49,30 +48,26 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-On macOS, use `remake` instead of the system `make` when invoking targets:
-
 ```bash
-remake help
-remake validate-submissions
-remake eval-full
+make help
+make validate-submissions
+make eval-full
 ```
-
-The Makefile and documentation still refer to `make` as the command name where that is the conventional target runner.
 
 ## Evaluation Pipeline
 
 The real pipeline will provide these targets:
 
 ```bash
-remake validate-reference
-remake validate-submissions
-remake validate-info
-remake score
-remake rankings
-remake diagnostics
-remake results-md
-remake eval-full
-remake eval-full-refresh
+make validate-reference
+make validate-submissions
+make validate-info
+make score
+make rankings
+make diagnostics
+make results-md
+make eval-full
+make eval-full-refresh
 ```
 
 `eval-full` validates submissions and info files, scores all submitted runs,
