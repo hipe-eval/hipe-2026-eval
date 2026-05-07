@@ -26,6 +26,7 @@ teamN_<reference-stem>_runX.jsonl
 where:
 
 - `teamN` is the assigned numerical team identifier, for example `team1`.
+  The reserved organizer baseline identifier is `dummy`.
 - `<reference-stem>` is the reference/input filename without `.jsonl`.
 - `runX` is `run1`, `run2`, or `run3`.
 
@@ -36,6 +37,7 @@ team1_HIPE-2026-v1.0-impresso-test-de_run1.jsonl
 team1_HIPE-2026-v1.0-impresso-test-en_run1.jsonl
 team1_HIPE-2026-v1.0-impresso-test-fr_run1.jsonl
 team1_HIPE-2026-v1.0-surprise-test-fr_run1.jsonl
+dummy_HIPE-2026-v1.0-impresso-test-de_run1.jsonl
 ```
 
 The corresponding reference files are expected in `data/reference/`:
@@ -101,7 +103,8 @@ parameter count and model size in the efficiency evaluation.
 Before running evaluation, check:
 
 - Every `.jsonl` file is directly under `data/systems/`.
-- Every `.jsonl` filename starts with `team1_`, `team2_`, etc.
+- Every participant `.jsonl` filename starts with `team1_`, `team2_`, etc.;
+  the organizer baseline may start with `dummy_`.
 - Every `.jsonl` filename ends with `_run1.jsonl`, `_run2.jsonl`, or
   `_run3.jsonl`.
 - No team has more than three runs for the same reference file.
