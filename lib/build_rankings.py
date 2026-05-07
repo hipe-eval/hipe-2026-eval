@@ -207,10 +207,73 @@ def build_efficiency_test_a(rows: list[dict[str, Any]], overall_rows: list[dict[
     )
 
 
+def build_efficiency_language_rankings(rows: list[dict[str, Any]], output_dir: Path) -> None:
+    groups: dict[tuple[str, str, str], list[dict[str, Any]]] = defaultdict(list)
+    for row in rows:
+        if row["dataset"] == "impresso" and row["split"] == "test":
+            groups[(row["dataset"], row["split"], row["language"])].append(row)
+
+    for (dataset, split, language), group in sorted(groups.items()):
+        efficiency_rows = []
+        for row in group:
+            metadata = row.get("efficiency_metadata", {})
+            missing_info = metadata.get("info_missing")
+            efficiency_rows.append(
+                {
+                    "team": row["team"],
+                    "run": row["run"],
+                    "submission": row["submission"],
+                    "accuracy_score": score_value(row),
+                    "hipe_parameter_count": None
+                    if missing_info
+                    else metadata.get("hipe_parameter_count"),
+                    "hipe_model_size": None if missing_info else metadata.get("hipe_model_size"),
+                    "info_missing": missing_info,
+                }
+            )
+
+        accuracy_ranks = competition_ranks(efficiency_rows, "accuracy_score", higher_is_better=True)
+        parameter_ranks = competition_ranks(efficiency_rows, "hipe_parameter_count", higher_is_better=False)
+        model_size_ranks = competition_ranks(efficiency_rows, "hipe_model_size", higher_is_better=False)
+
+        for row in efficiency_rows:
+            key = (row["team"], row["run"])
+            row["rank_accuracy"] = accuracy_ranks[key]
+            row["rank_parameter_count"] = parameter_ranks[key]
+            row["rank_model_size"] = model_size_ranks[key]
+            row["efficiency_score"] = (
+                row["rank_accuracy"] + row["rank_parameter_count"] + row["rank_model_size"]
+            ) / 3
+
+        efficiency_ranks = competition_ranks(efficiency_rows, "efficiency_score", higher_is_better=False)
+        for row in efficiency_rows:
+            row["rank"] = efficiency_ranks[(row["team"], row["run"])]
+
+        efficiency_rows.sort(key=lambda row: (row["rank"], row["team"], row["run"], row["submission"]))
+        write_tsv(
+            output_dir / f"ranking-efficiency-{dataset}-{split}-{language}.tsv",
+            [
+                "rank",
+                "team",
+                "run",
+                "submission",
+                "efficiency_score",
+                "rank_accuracy",
+                "rank_parameter_count",
+                "rank_model_size",
+                "accuracy_score",
+                "hipe_parameter_count",
+                "hipe_model_size",
+                "info_missing",
+            ],
+            efficiency_rows,
+        )
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--per-run-dir", type=Path, default=Path("results/per-run"))
-    parser.add_argument("--output-dir", type=Path, default=Path("results/system-rankings"))
+    parser.add_argument("--per-run-dir", type=Path, default=Path("results.d/per-run"))
+    parser.add_argument("--output-dir", type=Path, default=Path("results.d/system-rankings"))
     args = parser.parse_args()
 
     rows = load_per_run_rows(args.per_run_dir) if args.per_run_dir.exists() else []
@@ -224,6 +287,7 @@ def main() -> int:
     overall_rows = build_overall_test_a(rows, args.output_dir)
     build_generalization_test_b(rows, args.output_dir)
     build_efficiency_test_a(rows, overall_rows, args.output_dir)
+    build_efficiency_language_rankings(rows, args.output_dir)
     print(f"[OK] Wrote rankings to {args.output_dir}")
     return 0
 

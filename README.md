@@ -30,9 +30,10 @@ lib/
   build_results_md.py     # Render ranking TSVs into a Markdown results page
   competition_config.json # Official evaluation cells and weights
   teams.json              # Team ID to affiliation metadata
-results/                  # Generated evaluation output, not hand-edited
+results.d/                # Generated evaluation output, not hand-edited
   per-run/                # Per-submission JSON scores and logs
   system-rankings/        # Ranking TSV files
+  diagnostics/            # Per-submission diagnostics JSON files
 HIPE_2026_evaluation_results.md # Generated final results page
 ```
 
@@ -68,12 +69,48 @@ remake validate-submissions
 remake validate-info
 remake score
 remake rankings
+remake diagnostics
 remake results-md
 remake eval-full
 remake eval-full-refresh
 ```
 
-`eval-full` validates submissions and info files, scores all submitted runs, builds TSV rankings, and renders the results Markdown document.
+`eval-full` validates submissions and info files, scores all submitted runs,
+builds TSV rankings, writes diagnostics, and renders the results Markdown
+document.
+
+## Diagnostics
+
+The `diagnostics` target writes two JSON files per submitted run under
+`results.d/diagnostics/` by default. Override `RESULTS_DIR` to place all
+generated outputs under another directory.
+
+Document-level diagnostics:
+
+```text
+results.d/diagnostics/<submission-stem>.diagnostics.json
+```
+
+This file merges the reference labels and system predictions for every sampled
+pair. It includes `SYS_at`, `SYS_isAt`, correctness flags, and any system
+explanations from `at_explanation` and `isAt_explanation`.
+
+Diagnostic metrics:
+
+```text
+results.d/diagnostics/<submission-stem>.diagnostic_metrics.json
+```
+
+This file contains micro-aggregated confusion matrices over all sampled pairs in
+the corresponding reference file. Test A files include matrices for `at` and
+`isAt`; surprise Test B files include `at` only. Each matrix uses fixed label
+order, reports rows as gold labels and columns as predictions, and includes:
+
+- a dense numeric `matrix`;
+- a human-readable `table` with one row per gold label and `pred_*` columns;
+- micro-aggregated accuracy;
+- per-label precision, recall, and F1;
+- per-label support, true positives, false positives, and false negatives.
 
 ## Data Status
 

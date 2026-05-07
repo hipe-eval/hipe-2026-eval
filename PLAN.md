@@ -28,7 +28,7 @@ lib/
   build_results_md.py     # Render final results Markdown from ranking TSVs
   competition_config.json # Evaluation cells and weights
   teams.json              # Optional team ID -> affiliation metadata
-results/
+results.d/
   per-run/                # Generated per-run JSON scores and logs
   system-rankings/        # Generated ranking TSV files
 HIPE_2026_evaluation_results.md # Generated final results page
@@ -107,7 +107,7 @@ Use the existing `HIPE-2026-data/scripts` code as the core scoring basis:
 - `check_jsonlschema.py` for schema loading and validation behavior.
 - `evaluation_utils.py` for JSONL loading, reshaping sampled pairs, imputing missing submission data, flattening predictions, and metric calculation where applicable.
 
-The parent repo wrapper should produce template-style JSON outputs under `results/per-run/`, for example:
+The parent repo wrapper should produce template-style JSON outputs under `results.d/per-run/`, for example:
 
 ```json
 {
@@ -151,7 +151,7 @@ Missing documents, missing sampled pairs, and remaining `null` labels should be 
 
 ## Ranking Design
 
-`build_rankings.py` should read `results/per-run/*.json` and write TSV files under `results/system-rankings/`. Ranking should be descending because higher macro recall/global score is better.
+`build_rankings.py` should read `results.d/per-run/*.json` and write TSV files under `results.d/system-rankings/`. Ranking should be descending because higher macro recall/global score is better.
 
 Recommended outputs:
 
@@ -208,8 +208,10 @@ DATA_REPO ?= HIPE-2026-data
 SCHEMA_PATH ?= $(DATA_REPO)/schemas/hipe-2026-data.schema.json
 REFERENCE_DIR ?= data/reference
 SUBMISSIONS_DIR ?= data/systems
-PER_RUN_DIR := results/per-run
-RANKINGS_DIR := results/system-rankings
+RESULTS_DIR ?= results.d
+PER_RUN_DIR := $(RESULTS_DIR)/per-run
+RANKINGS_DIR := $(RESULTS_DIR)/system-rankings
+DIAGNOSTICS_DIR := $(RESULTS_DIR)/diagnostics
 RESULTS_MD := HIPE_2026_evaluation_results.md
 ```
 

@@ -13,7 +13,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--systems-dir", type=Path, default=Path("data/systems"))
     parser.add_argument("--reference-dir", type=Path, default=Path("data/reference"))
-    parser.add_argument("--output-dir", type=Path, default=Path("results/per-run"))
+    parser.add_argument("--output-dir", type=Path, default=Path("results.d/per-run"))
     parser.add_argument("--schema-path", type=Path, default=Path("HIPE-2026-data/schemas/hipe-2026-data.schema.json"))
     parser.add_argument("--data-repo", type=Path, default=Path("HIPE-2026-data"))
     parser.add_argument("--config", type=Path, default=Path("lib/competition_config.json"))

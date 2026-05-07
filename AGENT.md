@@ -10,7 +10,7 @@ The parent repository is responsible for campaign orchestration:
 - storing participant system submissions in `data/systems/`;
 - validating JSONL files against `HIPE-2026-data/schemas/hipe-2026-data.schema.json`;
 - scoring submitted runs against matching reference files;
-- writing derived outputs under `results/`;
+- writing derived outputs under `results.d/`;
 - building ranking TSVs and the generated results Markdown page.
 
 The `HIPE-2026-data/` submodule remains the source of truth for:
@@ -30,8 +30,8 @@ Keep the layout analogous to the template repository:
 data/reference/
 data/systems/
 lib/
-results/per-run/
-results/system-rankings/
+results.d/per-run/
+results.d/system-rankings/
 HIPE_2026_evaluation_results.md
 ```
 
@@ -91,7 +91,7 @@ Missing documents, missing pairs, and remaining `null` labels are treated as `FA
 
 ## Editing Notes
 
-- Preserve generated results as derived artifacts. Do not hand-edit files under `results/`.
+- Preserve generated results as derived artifacts. Do not hand-edit files under `results.d/`.
 - Keep generated reference/test gold data out of ad hoc transformations unless explicitly asked.
 - Prefer direct imports from `HIPE-2026-data/scripts` for validation/scoring helpers.
 - Use `rg` for searching.

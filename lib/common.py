@@ -9,8 +9,8 @@ from pathlib import Path
 from typing import Any
 
 
-SUBMISSION_RE = re.compile(r"^((?:team\d+)|dummy)_(.+)_run([1-3])\.jsonl$")
-INFO_RE = re.compile(r"^((?:team\d+)|dummy)_(.+)_run([1-3])-info\.json$")
+SUBMISSION_RE = re.compile(r"^((?:team\d+)|random|baseline)_(.+)_run([1-3])\.jsonl$")
+INFO_RE = re.compile(r"^((?:team\d+)|random|baseline)_(.+)_run([1-3])-info\.json$")
 REFERENCE_RE = re.compile(r"^HIPE-2026-.+-(?P<dataset>[^-]+)-(?P<split>[^-]+)-(?P<language>[^-]+)\.jsonl$")
 
 
@@ -55,7 +55,7 @@ def parse_submission_filename(path_or_name: Path | str) -> SubmissionName:
     match = SUBMISSION_RE.match(name)
     if not match:
         raise ValueError(
-            f"Invalid submission filename '{name}'. Expected teamN_<reference-stem>_runX.jsonl or dummy_<reference-stem>_runX.jsonl with X in 1..3."
+            f"Invalid submission filename '{name}'. Expected teamN_<reference-stem>_runX.jsonl, random_<reference-stem>_runX.jsonl, or baseline_<reference-stem>_runX.jsonl with X in 1..3."
         )
     team, reference_stem, run_number = match.groups()
     return SubmissionName(

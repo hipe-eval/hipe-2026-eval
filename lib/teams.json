@@ -1,5 +1,9 @@
 {
-  "dummy": {
+  "baseline": {
+    "name": "Ministral-3-3B-Instruct GGUF baseline 0.2.2 random seed 42",
+    "affiliation": "HIPE-2026 organizers"
+  },
+  "random": {
     "name": "BASEv0.2.0",
     "affiliation": "HIPE-2026 organizers"
   }

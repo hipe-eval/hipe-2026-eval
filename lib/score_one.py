@@ -95,7 +95,7 @@ def main() -> int:
     parser.add_argument(
         "--output-dir",
         type=Path,
-        default=Path("results/per-run"),
+        default=Path("results.d/per-run"),
         help="Directory for per-run score JSON files.",
     )
     parser.add_argument(
