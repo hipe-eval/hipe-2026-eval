@@ -40,7 +40,20 @@ The `HIPE-2026-data/` submodule remains the source of truth for the task schema 
 
 ## Local Workflow
 
-Create a local environment from the parent repository:
+Clone the repository with its submodule:
+
+```bash
+git clone --recursive git@github.com:hipe-eval/hipe-2026-eval.git
+cd hipe-2026-eval
+```
+
+If you already cloned without `--recursive`, initialise the submodule manually:
+
+```bash
+git submodule update --init --recursive
+```
+
+Create a local Python environment:
 
 ```bash
 python3 -m venv venv
