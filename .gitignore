@@ -208,6 +208,6 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
-results/
+results.d/
 
 eval-template-repo/
