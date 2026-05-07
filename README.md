@@ -122,4 +122,8 @@ order, reports rows as gold labels and columns as predictions, and includes:
 
 ## Data Status
 
-The official test data is not yet open in this working copy. Until gold files are available, `data/reference/` is expected to be empty or organizer-populated only. The pipeline should remain runnable against whatever reference and system files are present.
+> **This repository must remain private until the evaluation results are officially published.**
+
+The impresso test sets (de, en, fr) are present under `data/reference/`. The surprise test set (`surprise-test-fr`) is present but **still requires adjudication** — its reference labels are not yet final and must not be treated as authoritative.
+
+Until adjudication of the surprise set is complete, evaluation results derived from it are organizer-internal only.
