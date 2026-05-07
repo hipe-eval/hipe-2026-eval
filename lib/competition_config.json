@@ -1,0 +1,38 @@
+{
+  "cells": [
+    {
+      "dataset": "impresso",
+      "split": "test",
+      "language": "de",
+      "profile": "accuracy",
+      "reference_pattern": "HIPE-2026-*-impresso-test-de.jsonl",
+      "targets": ["at", "isAt"]
+    },
+    {
+      "dataset": "impresso",
+      "split": "test",
+      "language": "en",
+      "profile": "accuracy",
+      "reference_pattern": "HIPE-2026-*-impresso-test-en.jsonl",
+      "targets": ["at", "isAt"]
+    },
+    {
+      "dataset": "impresso",
+      "split": "test",
+      "language": "fr",
+      "profile": "accuracy",
+      "reference_pattern": "HIPE-2026-*-impresso-test-fr.jsonl",
+      "targets": ["at", "isAt"]
+    },
+    {
+      "dataset": "surprise",
+      "split": "test",
+      "language": "fr",
+      "profile": "generalization",
+      "reference_pattern": "HIPE-2026-*-surprise-test-fr.jsonl",
+      "targets": ["at"]
+    }
+  ],
+  "test_a_dataset": "impresso",
+  "test_b_dataset": "surprise"
+}

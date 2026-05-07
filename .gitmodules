@@ -1,0 +1,4 @@
+[submodule "HIPE-2026-data"]
+	path = HIPE-2026-data
+	url = git@github.com:hipe-eval/HIPE-2026-data.git
+	branch = main

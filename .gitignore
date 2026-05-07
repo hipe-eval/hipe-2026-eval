@@ -14,7 +14,9 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
+# This repository uses top-level lib/ for campaign source files.
+# Keep Python package build lib/ directories ignored in nested paths.
+*/lib/
 lib64/
 parts/
 sdist/
@@ -205,3 +207,7 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+
+eval-template-repo/
