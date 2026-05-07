@@ -209,5 +209,5 @@ marimo/_lsp/
 __marimo__/
 
 results.d/
-
-eval-template-repo/
+hipe_2026-llm-baseline
+eval-template-repo
