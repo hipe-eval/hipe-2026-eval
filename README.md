@@ -16,7 +16,7 @@ It is intentionally structured like the evaluation template repository used for 
 - Submission loading instructions: `SUBMISSIONS.md`
 - Template reference: `eval-template-repo/`
 
-## Planned Repository Layout
+## Repository Layout
 
 ```text
 data/
@@ -26,6 +26,8 @@ lib/
   score_one.py            # Score one submitted run against the matching reference file
   validate_jsonl.py       # Validate reference/submission files against the HIPE-2026 schema
   build_rankings.py       # Aggregate per-run JSON scores into TSV rankings
+  build_diagnostics.py    # Build comparison and diagnostic metrics JSON files
+  build_gt_validation.py  # Build GT validation workbooks from top-three majority votes
   build_results_md.py     # Render ranking TSVs into a Markdown results page
   competition_config.json # Official evaluation cells and weights
   teams.json              # Team ID to affiliation metadata
@@ -70,7 +72,7 @@ make eval-full
 
 ## Evaluation Pipeline
 
-The real pipeline will provide these targets:
+The main pipeline provides these targets:
 
 ```bash
 make validate-reference
@@ -87,7 +89,62 @@ make eval-full-refresh
 
 `eval-full` validates submissions and info files, scores all submitted runs,
 builds TSV rankings, writes diagnostics, and renders the results Markdown
-document.
+document. `gt-validation` is separate because it is an organizer-facing review
+artifact built from the current per-dataset rankings.
+
+Generated paths can be redirected through Make variables:
+
+| Variable            | Default                    | Purpose                                      |
+| ------------------- | -------------------------- | -------------------------------------------- |
+| `RESULTS_DIR`       | `results.d`                | Root directory for generated outputs         |
+| `PER_RUN_DIR`       | `$(RESULTS_DIR)/per-run`   | Per-submission score JSON files              |
+| `RANKINGS_DIR`      | `$(RESULTS_DIR)/system-rankings` | Ranking TSV files                       |
+| `DIAGNOSTICS_DIR`   | `$(RESULTS_DIR)/diagnostics` | Comparison and diagnostic metrics JSON files |
+| `GT_VALIDATION_DIR` | `$(RESULTS_DIR)/gt-validation` | GT validation Excel workbooks             |
+
+## Profile Rankings and Scores
+
+The results report uses profile names that match the dataset families:
+
+- **Accuracy Profile Ranking** uses the `impresso` reference files.
+- **Generalization Profile Ranking** uses the `surprise` reference files.
+- **Efficiency Profile Ranking** combines the Accuracy Profile rank with model
+  parameter-count and model-size ranks.
+
+For a label `l`:
+
+```text
+recall_l = true_positives_l / gold_instances_l
+```
+
+The `at` task has three labels:
+
+```text
+at_macro_recall = mean(recall_TRUE, recall_PROBABLE, recall_FALSE)
+```
+
+The `isAt` task has two labels:
+
+```text
+isAt_macro_recall = mean(recall_TRUE, recall_FALSE)
+```
+
+Per-file profile scores:
+
+```text
+impresso_profile_score = mean(at_macro_recall, isAt_macro_recall)
+surprise_profile_score = at_macro_recall
+```
+
+Overall and efficiency scores:
+
+```text
+mean_impresso_profile_score = mean(impresso_profile_score over submitted impresso language files)
+mean_efficiency_profile_rank = mean(rank_impresso_profile_score, rank_hipe_parameter_count, rank_hipe_model_size)
+```
+
+Higher is better for profile scores. Lower is better for
+`mean_efficiency_profile_rank`. Ties receive the same competition rank.
 
 ## Per-Run Metadata (`*-info.json`)
 
@@ -106,9 +163,16 @@ The file must be a JSON object with exactly the following keys:
 | `hipe_model_size`      | number | Organizer-decided model size in MiB used for ranking (derived from the team's report) |
 | `team_model_size`      | number | Model size in MiB as reported by the team                                             |
 
-The `team_*` fields record the values as submitted by the team. The `hipe_*` fields are the organizer's authoritative values used in the Efficiency Ranking — they may differ if the organizers adjusted or verified the team-reported numbers.
+The `team_*` fields record the values as submitted by the team. The `hipe_*`
+fields are the organizer's authoritative values used in the Efficiency Profile
+Ranking; they may differ if the organizers adjusted or verified the team-reported
+numbers.
 
-`hipe_parameter_count` and `hipe_model_size` are required to be numeric. All four fields are required; `team_parameter_count` and `team_model_size` may be `null` if not applicable. A missing info file is allowed and generates a validation warning, but the run will be excluded from the Efficiency Ranking.
+`hipe_parameter_count` and `hipe_model_size` are required to be numeric. All four
+fields are required; `team_parameter_count` and `team_model_size` may be `null`
+if not applicable. A missing info file is allowed and generates a validation
+warning. The run remains in the Efficiency Profile Ranking, but its missing
+parameter-count and model-size values are ranked last.
 
 Example:
 
@@ -144,9 +208,9 @@ results.d/diagnostics/<submission-stem>.diagnostic_metrics.json
 ```
 
 This file contains micro-aggregated confusion matrices over all sampled pairs in
-the corresponding reference file. Test A files include matrices for `at` and
-`isAt`; surprise Test B files include `at` only. Each matrix uses fixed label
-order, reports rows as gold labels and columns as predictions, and includes:
+the corresponding reference file. `impresso` files include matrices for `at` and
+`isAt`; `surprise` files include `at` only. Each matrix uses fixed label order,
+reports rows as gold labels and columns as predictions, and includes:
 
 - a dense numeric `matrix`;
 - a human-readable `table` with one row per gold label and `pred_*` columns;
