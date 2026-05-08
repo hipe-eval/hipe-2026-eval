@@ -154,7 +154,7 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.4047, score_at_PROBABLE=0.6726, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
@@ -280,15 +280,15 @@
         "loc_mentions_list": [
           "Constantinople"
         ],
-        "at": "PROBABLE",
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.0768, score_at_PROBABLE=0.2975, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.0469, threshold_isAt_TRUE=0.1500.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk132.tsv-NIL_eugene",
@@ -399,11 +399,11 @@
         "loc_mentions_list": [
           "Ispahan"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.4899, score_at_PROBABLE=0.6057, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.3486, threshold_isAt_TRUE=0.1500.",
@@ -462,11 +462,11 @@
         "loc_mentions_list": [
           "Ispahan"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.3843, score_at_PROBABLE=0.5868, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.2321, threshold_isAt_TRUE=0.1500.",
@@ -525,11 +525,11 @@
         "loc_mentions_list": [
           "Perse"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.4958, score_at_PROBABLE=0.6651, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.2881, threshold_isAt_TRUE=0.1500.",
@@ -835,11 +835,11 @@
         "loc_mentions_list": [
           "ville d' édesse"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.4778, score_at_PROBABLE=0.6183, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.3242, threshold_isAt_TRUE=0.1500.",
@@ -877,11 +877,11 @@
         "loc_mentions_list": [
           "Mésopotamie"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.4922, score_at_PROBABLE=0.6400, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.3236, threshold_isAt_TRUE=0.1500.",
@@ -983,11 +983,11 @@
         "loc_mentions_list": [
           "Antioche"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.3571, score_at_PROBABLE=0.5422, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.2100, threshold_isAt_TRUE=0.1500.",
@@ -1891,15 +1891,15 @@
         "loc_mentions_list": [
           "Europe"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.2273, score_at_PROBABLE=0.4455, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.1091, threshold_isAt_TRUE=0.1500.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_frederic",
@@ -1933,15 +1933,15 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.0790, score_at_PROBABLE=0.2537, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.0375, threshold_isAt_TRUE=0.1500.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_pascal",
@@ -2040,15 +2040,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.0192, score_at_PROBABLE=0.1550, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.0035, threshold_isAt_TRUE=0.1500.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv_Q3044_charlemagne",
@@ -2061,15 +2061,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.0139, score_at_PROBABLE=0.1195, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.0026, threshold_isAt_TRUE=0.1500.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_henri",
@@ -2228,13 +2228,13 @@
         "loc_mentions_list": [
           "Normandie"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.0092, score_at_PROBABLE=0.0327, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.0041, threshold_isAt_TRUE=0.1500.",
         "CORRECT": false
       },
@@ -2313,13 +2313,13 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.0483, score_at_PROBABLE=0.1533, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.0238, threshold_isAt_TRUE=0.1500.",
         "CORRECT": false
       },
@@ -2398,13 +2398,13 @@
         "loc_mentions_list": [
           "Rouen"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.1759, score_at_PROBABLE=0.3337, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.1065, threshold_isAt_TRUE=0.1500.",
         "CORRECT": false
       },
@@ -2518,11 +2518,11 @@
         "loc_mentions_list": [
           "Marseille"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.2541, score_at_PROBABLE=0.4972, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.1600, threshold_isAt_TRUE=0.1500.",
@@ -3040,15 +3040,15 @@
         "loc_mentions_list": [
           "Europe"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.0020, score_at_PROBABLE=0.0294, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.0014, threshold_isAt_TRUE=0.1500.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk238.tsv-NIL_frederic",
@@ -3083,15 +3083,15 @@
         "loc_mentions_list": [
           "Allemagne"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.0328, score_at_PROBABLE=0.1836, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.0129, threshold_isAt_TRUE=0.1500.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk238.tsv-NIL_cesar",
@@ -4015,9 +4015,9 @@
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.0351, score_at_PROBABLE=0.1546, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.0195, threshold_isAt_TRUE=0.1500.",
         "CORRECT": false
       },
@@ -4053,15 +4053,15 @@
         "loc_mentions_list": [
           "Paris"
         ],
-        "at": null,
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.0287, score_at_PROBABLE=0.1663, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.0226, threshold_isAt_TRUE=0.1500.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1542_Rabelais_Gargantua_chunk35.tsv-NIL_babin",
@@ -4116,15 +4116,15 @@
         "loc_mentions_list": [
           "Paris"
         ],
-        "at": null,
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.0388, score_at_PROBABLE=0.2109, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.0281, threshold_isAt_TRUE=0.1500.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1542_Rabelais_Gargantua_chunk35.tsv-NIL_pile_sainct_mars",
@@ -4162,9 +4162,9 @@
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.1185, score_at_PROBABLE=0.3336, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.0622, threshold_isAt_TRUE=0.1500.",
         "CORRECT": false
       },
@@ -4179,15 +4179,15 @@
         "loc_mentions_list": [
           "Paris"
         ],
-        "at": null,
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.0340, score_at_PROBABLE=0.1899, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.0266, threshold_isAt_TRUE=0.1500.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1542_Rabelais_Gargantua_chunk35.tsv-NIL_tenaud",
@@ -4225,9 +4225,9 @@
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.0876, score_at_PROBABLE=0.2895, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.0449, threshold_isAt_TRUE=0.1500.",
         "CORRECT": false
       }
@@ -5333,15 +5333,15 @@
         "loc_mentions_list": [
           "île de l' Ascençaon"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.0175, score_at_PROBABLE=0.1444, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.0121, threshold_isAt_TRUE=0.1500.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1797_Perouse_Voyage_chunk227.tsv-NIL_anson",
@@ -5418,7 +5418,7 @@
         "loc_mentions_list": [
           "mer du sud"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.0059, score_at_PROBABLE=0.0585, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
@@ -5525,13 +5525,13 @@
         "loc_mentions_list": [
           "sud de l' île de la Trinité"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.2365, score_at_PROBABLE=0.6172, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.0976, threshold_isAt_TRUE=0.1500.",
         "CORRECT": false
       },
@@ -6186,7 +6186,7 @@
         "loc_mentions_list": [
           "Asie"
         ],
-        "at": "PROBABLE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.0488, score_at_PROBABLE=0.1883, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
@@ -6431,11 +6431,11 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": null,
+        "at": "FALSE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.3261, score_at_PROBABLE=0.5975, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.1556, threshold_isAt_TRUE=0.1500.",
@@ -7720,11 +7720,11 @@
         "loc_mentions_list": [
           "Pays - Bas"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.3259, score_at_PROBABLE=0.6464, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.1605, threshold_isAt_TRUE=0.1500.",
@@ -9506,13 +9506,13 @@
         "loc_mentions_list": [
           "porto sancto"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.0009, score_at_PROBABLE=0.0124, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.0007, threshold_isAt_TRUE=0.1500.",
         "CORRECT": false
       },
@@ -9527,13 +9527,13 @@
         "loc_mentions_list": [
           "isles de Canarre"
         ],
-        "at": null,
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.0097, score_at_PROBABLE=0.0690, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.0068, threshold_isAt_TRUE=0.1500.",
         "CORRECT": false
       }
@@ -9587,11 +9587,11 @@
         "SYS_at": "TRUE",
         "CORRECT_at": true,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.3852, score_at_PROBABLE=0.6704, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
-        "CORRECT_isAt": true,
+        "CORRECT_isAt": false,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.2760, threshold_isAt_TRUE=0.1500.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1637_Peiresc_lettres_chunk52.tsv_Q1150_mercure",
@@ -9625,11 +9625,11 @@
         "loc_mentions_list": [
           "Boisgency"
         ],
-        "at": null,
+        "at": "FALSE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.4093, score_at_PROBABLE=0.6255, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.3009, threshold_isAt_TRUE=0.1500.",
@@ -9912,15 +9912,15 @@
         "loc_mentions_list": [
           "Chaseu"
         ],
-        "at": null,
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.0900, score_at_PROBABLE=0.2260, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.0509, threshold_isAt_TRUE=0.1500.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1666_Bussy_Lettres_chunk38.tsv-NIL_turenne",
@@ -9996,11 +9996,11 @@
         "loc_mentions_list": [
           "Chaseu"
         ],
-        "at": null,
+        "at": "FALSE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.3325, score_at_PROBABLE=0.6302, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.1735, threshold_isAt_TRUE=0.1500.",

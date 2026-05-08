@@ -6,6 +6,7 @@
   "split": "test",
   "language": "de",
   "run": "run1",
+  "at_label_mode": "TERNARY",
   "confusion_matrices": {
     "at": {
       "labels": [

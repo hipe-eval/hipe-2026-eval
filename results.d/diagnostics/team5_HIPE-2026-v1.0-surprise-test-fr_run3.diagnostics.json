@@ -154,7 +154,7 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text mentions that Eugène IV met with Pope Jean VIII and that the Greek church seemed to leave its opinion in a meeting with Eugène IV. This suggests Eugène IV was present at a meeting with Pope Jean VIII and possibly at a meeting with Patriarch Photius.",
@@ -280,7 +280,7 @@
         "loc_mentions_list": [
           "Constantinople"
         ],
-        "at": "PROBABLE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text states that Michel Paléologue, the emperor of the Greeks, sent his patriarch and chancellor to the second council of Lyon in 1274. They chanted with the council in Latin.",
@@ -399,11 +399,11 @@
         "loc_mentions_list": [
           "Ispahan"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states \"Maghmud assiégea Ispahan en 1722.\" This indicates that Maghmud besieged Ispahan in 1722.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "The text states \"Maghmud assiégea Ispahan en 1722.\" This indicates that Maghmud was at Ispahan in 1722.",
@@ -462,11 +462,11 @@
         "loc_mentions_list": [
           "Ispahan"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states \"Enfin Maghmud assiégea Ispahan en 1722.\"",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "The text states \"Enfin Maghmud assiégea Ispahan en 1722.\", which is before the publication date of 1756. Therefore, it is reasonable to assume that Maghmud was at Ispahan around that time.",
@@ -525,11 +525,11 @@
         "loc_mentions_list": [
           "Perse"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states that Asraf succeeded Maghmud as the leader of the Aquans and that the desolation of Persia redoubled under his rule. This indicates Asraf was present in Persia during this period.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "The article states that Asraf succeeded Maghmud in Persia in 1725. Since the publication date is 1756, this is within a reasonable timeframe for 'isAt'.",
@@ -835,15 +835,15 @@
         "loc_mentions_list": [
           "ville d' édesse"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states \"Baudouin alla jusqu' en Mésopotamie s' emparer de la ville d' édesse\". This indicates that Baudouin went to Edessa to take it. This implies his presence there.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text states that Baudouin went to Edessa to take it. This happened before the publication date, but it is a historical fact that Baudouin was in Edessa.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_bohemond",
@@ -877,11 +877,11 @@
         "loc_mentions_list": [
           "Mésopotamie"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states \"Baudouin alla jusqu' en Mésopotamie s' emparer de la ville d' édesse, et s' y forma un petit état.\"",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "The text states that Baudouin went to Mesopotamia to seize the city of Edessa, indicating his presence there.",
@@ -983,11 +983,11 @@
         "loc_mentions_list": [
           "Antioche"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states \"Bohémond eut l' adresse de se faire céder par les croisés le fertile pays d' Antioche.\"",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "The text states that Bohémond obtained the fertile land of Antioch from the crusaders. This indicates a presence in or control over Antioch around the time of publication.",
@@ -1891,7 +1891,7 @@
         "loc_mentions_list": [
           "Europe"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text states that Grégoire VII died in Liége after escaping prison. This indicates he was physically present in Liége at the time of his death.",
@@ -1933,7 +1933,7 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text states \"Aussi Pascal II vint en France, et implora le secours du roi Philippe : ses successeurs en usèrent souvent de même.\"",
@@ -2040,7 +2040,7 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text mentions that Pepin deposited two legates in France and that Pepin died in Liége. This indicates Pepin was in France and Liége.",
@@ -2061,7 +2061,7 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text mentions that Charlemagne died in Liége. This indicates his presence in Liége before his death.",
@@ -2228,15 +2228,15 @@
         "loc_mentions_list": [
           "Normandie"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states \"Rolon fut Maître de Rouen sans peine\". This indicates that Rolon was in Rouen and held power there.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text states that Rolon was the master of Rouen, which is a location. The article is from 1756, which is well before the events described, so \"isAt\" is false.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk110.tsv-NIL_raoul",
@@ -2313,11 +2313,11 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states that Rolon turned towards France after his ventures in England and established himself in Rouen, making it his base of operations. He was based in Rouen and raided both England and France.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "The text indicates that Rolon established himself in Rouen and used it as a base of operations, raiding France. This suggests a presence in France around the time of the publication.",
@@ -2398,11 +2398,11 @@
         "loc_mentions_list": [
           "Rouen"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states \"Maître de Rouen sans peine... Rouen devint sa place d' armes...\", indicating Rolon was the master of Rouen and used it as a base. This suggests he was present in Rouen.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "The text states \"Maître de Rouen sans peine... Rouen devint sa place d' armes...\", indicating Rolon was the master of Rouen and used it as a base. This suggests he was present in Rouen at the time of writing.",
@@ -2518,11 +2518,11 @@
         "loc_mentions_list": [
           "Marseille"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text mentions \"Monsieur l' evesque d' Orleans\" in Marseille as the recipient of a letter. This suggests he was located in Marseille at the time the letter was written.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "The text indicates that the letter was addressed to \"monsieur l' evesque d' Orleans\" in Marseille, implying his presence there around February 1627, which is very recent relative to the publication date of 1637.",
@@ -3040,9 +3040,9 @@
         "loc_mentions_list": [
           "Europe"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "PROBABLE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states that Pierre Des Vignes wrote letters to princes of Germany and Europe on behalf of the emperor. This indicates that he was communicating with people in Europe.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -3083,15 +3083,15 @@
         "loc_mentions_list": [
           "Allemagne"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text mentions that the emperor was in Turin, but this is not about César. The text mentions that César wrote to princes in Germany.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text mentions that César wrote to princes in Germany, but this is not about César being physically present in Germany. The text does not indicate that César was in Germany at the time of publication.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk238.tsv-NIL_cesar",
@@ -4015,11 +4015,11 @@
         "SYS_at": "TRUE",
         "CORRECT_at": true,
         "SYS_at_explanation": "The text states that Gargantua and his companions traveled to Orleans and passed through the forest near Orleans. This indicates that Gargantua was at Orleans.",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
-        "CORRECT_isAt": true,
+        "CORRECT_isAt": false,
         "SYS_isAt_explanation": "The text states that Gargantua and his companions traveled to Orleans, which is a location in the immediate temporal horizon of the publication date. This indicates that Gargantua was at Orleans.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1542_Rabelais_Gargantua_chunk35.tsv-NIL_tenaud",
@@ -4053,11 +4053,11 @@
         "loc_mentions_list": [
           "Paris"
         ],
-        "at": null,
+        "at": "FALSE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text states that Grandgousier intended to bring Gargantua to Paris. The text also mentions that Gargantua, his tutor Ponocrates, and his companions traveled to Paris.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "The text indicates that Gargantua was being transported to Paris, suggesting an imminent arrival or presence in Paris around the publication date.",
@@ -4116,11 +4116,11 @@
         "loc_mentions_list": [
           "Paris"
         ],
-        "at": null,
+        "at": "FALSE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text states that Grandgousier decided to take Ponocrates to Paris. The text also mentions that Gargantua, Ponocrates, and his companions traveled to Paris.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "The text indicates that Ponocrates was going to Paris with Gargantua and others, suggesting a plan or intention to be in Paris soon after the text was written.",
@@ -4162,11 +4162,11 @@
         "SYS_at": "TRUE",
         "CORRECT_at": true,
         "SYS_at_explanation": "The text states that Eudemon, Gargantua's young page, traveled with Gargantua, his tutor Ponocrates, and their retinue to Orleans. The text mentions they arrived 'jusques au dessus de Orleans', indicating they reached the area around Orleans.",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
-        "CORRECT_isAt": true,
+        "CORRECT_isAt": false,
         "SYS_isAt_explanation": "The text indicates that Eudemon was traveling to Orleans with Gargantua and others, suggesting his presence in the area around Orleans around the publication date.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1542_Rabelais_Gargantua_chunk35.tsv-NIL_eudemon",
@@ -4179,11 +4179,11 @@
         "loc_mentions_list": [
           "Paris"
         ],
-        "at": null,
+        "at": "FALSE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text states that Eudemon went to Paris with Gargantua, Ponocrates, and others. The text says \"Voicy ( dist il ) bien le cas pour porter mon filz a Paris.\"",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "The text indicates that Eudemon was traveling to Paris with Gargantua and others, suggesting a recent or ongoing presence in Paris relative to the publication date.",
@@ -4225,11 +4225,11 @@
         "SYS_at": "TRUE",
         "CORRECT_at": true,
         "SYS_at_explanation": "The text states that Gargantua, Ponocrates, and their companions traveled to Orleans. The text also mentions that they passed 'au dessus de Orleans', indicating their arrival or presence in the area.",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
-        "CORRECT_isAt": true,
+        "CORRECT_isAt": false,
         "SYS_isAt_explanation": "The text indicates that Ponocrates was traveling to Orleans with Gargantua and others, and they arrived at or passed above Orleans. This suggests a recent presence.",
-        "CORRECT": true
+        "CORRECT": false
       }
     ]
   },
@@ -5333,15 +5333,15 @@
         "loc_mentions_list": [
           "île de l' Ascençaon"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "PROBABLE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states that the author wanted to ensure the existence of île de l' Ascençaon, which M Daprès placed west of Trinité. The author was directing his route towards île Sainte-Catherine while intending to check the location of île de l' Ascençaon.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text indicates the author was directing his route towards île Sainte-Catherine to check the location of île de l' Ascençaon. This suggests a near-term intention to be at or near the location.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1797_Perouse_Voyage_chunk227.tsv-NIL_anson",
@@ -5418,9 +5418,9 @@
         "loc_mentions_list": [
           "mer du sud"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text states \"Frézier et l' amiral Anson y trouvèrent abondamment à se pourvoir de tous leurs besoins.\"",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -5525,11 +5525,11 @@
         "loc_mentions_list": [
           "sud de l' île de la Trinité"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states that M Bernizet traced the plan of the south part of the island of Trinity during two days spent there. This indicates his physical presence at the location.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "The text indicates that M Bernizet was at the island of Trinity for two days, where he traced the plan of the south part of the island. This is recent relative to the publication date.",
@@ -6186,9 +6186,9 @@
         "loc_mentions_list": [
           "Asie"
         ],
-        "at": "PROBABLE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text mentions Soliman as the grand Sultan who marched to Vienna and was crowned king of Persia in Baghdad. This indicates his presence in these locations.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -6431,11 +6431,11 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": null,
+        "at": "FALSE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text states \"La Renaudie fut tué en combattant; plusieurs moururent comme lui les armes à la main.\" This indicates Renaudie was present in Amboise where the fighting occurred.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "The text states that Renaudie was killed fighting in Amboise. This indicates a recent presence at the location.",
@@ -7720,11 +7720,11 @@
         "loc_mentions_list": [
           "Pays - Bas"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states that after the death of the commander of Requesens, Philip sent Don Juan d'Autriche to the Pays-Bas. This implies Don Juan was in the Pays-Bas at the time.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "The text states that Philip sent Don Juan to the Pays-Bas after the death of the commander of Requesens. This indicates Don Juan was in the Pays-Bas around the publication date.",
@@ -9506,11 +9506,11 @@
         "loc_mentions_list": [
           "porto sancto"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states \"passans par porto sancto\". This indicates that Pantagruel passed through Porto Sancto.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "The text states that Pantagruel passed through Porto Sancto in brief days. This indicates that Pantagruel was at Porto Sancto around the time of publication.",
@@ -9527,11 +9527,11 @@
         "loc_mentions_list": [
           "isles de Canarre"
         ],
-        "at": null,
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text states that the group 'fire pleine voiles & prindrent la haulte mer, & en briefz jours passans par porto sancto, & par Medere, fire scalle es isles de Canarre.' This indicates that Epistemon was present at the isles de Canarre.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "The text states that the group 'fire pleine voiles & prindrent la haulte mer, & en briefz jours passans par porto sancto, & par Medere, fire scalle es isles de Canarre.' This indicates that Epistemon was present at the isles de Canarre.",
@@ -9587,11 +9587,11 @@
         "SYS_at": "TRUE",
         "CORRECT_at": true,
         "SYS_at_explanation": "The text states \"mon libraire à Aix pour me les venir relier et pour avoir moyen de vous en faire participant.\" This indicates that the person's books were sent to Aix.",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
-        "CORRECT_isAt": true,
+        "CORRECT_isAt": false,
         "SYS_isAt_explanation": "The text mentions that Mr le prieur De La Valette has books from Keplerus in Aix. This suggests a recent presence or connection to Aix.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1637_Peiresc_lettres_chunk52.tsv_Q1150_mercure",
@@ -9625,11 +9625,11 @@
         "loc_mentions_list": [
           "Boisgency"
         ],
-        "at": null,
+        "at": "FALSE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text states \"demeurant, monsieur, vostre, etc. à Boisgency, ce 13 Aoust 1631.\"",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "The text indicates the author's location as Boisgency on August 13, 1631, which is very close to the publication date of 1637.",
@@ -9912,11 +9912,11 @@
         "loc_mentions_list": [
           "Chaseu"
         ],
-        "at": null,
+        "at": "FALSE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text states \"Réponse du Comte De Bussy à Madame De S. à Chaseu, ce 1 septembre 1675.\" This indicates that the person (Comte De Bussy) was at Chaseu when the letter was written.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "The text states \"Réponse du Comte De Bussy à Madame De S. à Chaseu, ce 1 septembre 1675.\" This indicates that the person (Comte De Bussy) was at Chaseu around the publication date (1666).",
@@ -9996,11 +9996,11 @@
         "loc_mentions_list": [
           "Chaseu"
         ],
-        "at": null,
+        "at": "FALSE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text states \"Réponse du Comte De Bussy à Madame De S. à Chaseu, ce 1 septembre 1675.\" This indicates that the person (Comte De Bussy) was in Chaseu when the letter was written.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "The text states \"Réponse du Comte De Bussy à Madame De S. à Chaseu, ce 1 septembre 1675.\" This indicates that the person (Comte De Bussy) was in Chaseu around the publication date.",

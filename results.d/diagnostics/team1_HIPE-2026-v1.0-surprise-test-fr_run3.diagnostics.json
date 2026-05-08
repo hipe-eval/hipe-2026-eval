@@ -154,15 +154,15 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "PROBABLE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Eugène IV mentioned with reunion but no Roman scene",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Eugène IV mentioned with reunion but no Roman scene",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk132.tsv-NIL_judas",
@@ -280,15 +280,15 @@
         "loc_mentions_list": [
           "Constantinople"
         ],
-        "at": "PROBABLE",
+        "at": "FALSE",
         "SYS_at": "PROBABLE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Greek emperor implies Constantinople connection but no scene",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Greek emperor implies Constantinople connection but no scene",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk132.tsv-NIL_eugene",
@@ -399,15 +399,15 @@
         "loc_mentions_list": [
           "Ispahan"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Scha-Hussein remit cette capitale (Ispahan) - was there but abdicated",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Scha-Hussein remit cette capitale (Ispahan) - was there but abdicated",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk1069.tsv-NIL_maghmud",
@@ -462,15 +462,15 @@
         "loc_mentions_list": [
           "Ispahan"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Maghmud assiégea Ispahan - was there but historical past",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Maghmud assiégea Ispahan - was there but historical past",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk1069.tsv-NIL_charles",
@@ -525,15 +525,15 @@
         "loc_mentions_list": [
           "Perse"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Asraf succeeded as usurpateur, désolation de la Perse",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Asraf succeeded as usurpateur, désolation de la Perse",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk1069.tsv-NIL_hussein",
@@ -835,15 +835,15 @@
         "loc_mentions_list": [
           "ville d' édesse"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Baudouin went to Mesopotamia and seized Edessa",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Baudouin went to Mesopotamia and seized Edessa",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_bohemond",
@@ -877,15 +877,15 @@
         "loc_mentions_list": [
           "Mésopotamie"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Baudouin went to Mesopotamia to seize Edessa",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Baudouin went to Mesopotamia to seize Edessa",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_calife_d_egypte",
@@ -983,15 +983,15 @@
         "loc_mentions_list": [
           "Antioche"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Bohémond got crusaders to cede him Antioche territory",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Bohémond got crusaders to cede him Antioche territory",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_clovis",
@@ -1891,7 +1891,7 @@
         "loc_mentions_list": [
           "Europe"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Henri IV held Europe's eyes open on his fortunes",
@@ -1933,15 +1933,15 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "PROBABLE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Pascal II is pope, implies Roman connection but no scene",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Pascal II is pope, implies Roman connection but no scene",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_pascal",
@@ -2040,15 +2040,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "PROBABLE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Pepin made donations but no scene in France described",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Pepin made donations but no scene in France described",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv_Q3044_charlemagne",
@@ -2061,15 +2061,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "PROBABLE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Charlemagne made donations but no scene in France described",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Charlemagne made donations but no scene in France described",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_henri",
@@ -2228,15 +2228,15 @@
         "loc_mentions_list": [
           "Normandie"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Rolon received Normandie, became its ruler",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Rolon received Normandie, became its ruler",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk110.tsv-NIL_raoul",
@@ -2313,15 +2313,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Rolon turned toward France, made war there",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Rolon turned toward France, made war there",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk110.tsv-NIL_rolon",
@@ -2398,15 +2398,15 @@
         "loc_mentions_list": [
           "Rouen"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Rolon mastered Rouen, rebuilt its walls and towers",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Rolon mastered Rouen, rebuilt its walls and towers",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk110.tsv-NIL_raoul",
@@ -2518,11 +2518,11 @@
         "loc_mentions_list": [
           "Marseille"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Letter addressed to bishop at Marseille",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "Letter addressed to bishop at Marseille",
@@ -3040,7 +3040,7 @@
         "loc_mentions_list": [
           "Europe"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Pierre wrote to European princes",
@@ -3083,15 +3083,15 @@
         "loc_mentions_list": [
           "Allemagne"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "landgrave chosen as emperor in Germany",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "landgrave chosen as emperor in Germany",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk238.tsv-NIL_cesar",
@@ -4015,11 +4015,11 @@
         "SYS_at": "TRUE",
         "CORRECT_at": true,
         "SYS_at_explanation": "Traveling and reaches above Orleans in narrative present",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
-        "CORRECT_isAt": true,
+        "CORRECT_isAt": false,
         "SYS_isAt_explanation": "Traveling and reaches above Orleans in narrative present",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1542_Rabelais_Gargantua_chunk35.tsv-NIL_tenaud",
@@ -4053,13 +4053,13 @@
         "loc_mentions_list": [
           "Paris"
         ],
-        "at": null,
+        "at": "FALSE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Traveling toward Paris but not there yet",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Traveling toward Paris but not there yet",
         "CORRECT": false
       },
@@ -4116,13 +4116,13 @@
         "loc_mentions_list": [
           "Paris"
         ],
-        "at": null,
+        "at": "FALSE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Traveling toward Paris with Gargantua but not there yet",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Traveling toward Paris with Gargantua but not there yet",
         "CORRECT": false
       },
@@ -4162,11 +4162,11 @@
         "SYS_at": "TRUE",
         "CORRECT_at": true,
         "SYS_at_explanation": "Traveling with group and reaches above Orleans",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
-        "CORRECT_isAt": true,
+        "CORRECT_isAt": false,
         "SYS_isAt_explanation": "Traveling with group and reaches above Orleans",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1542_Rabelais_Gargantua_chunk35.tsv-NIL_eudemon",
@@ -4179,13 +4179,13 @@
         "loc_mentions_list": [
           "Paris"
         ],
-        "at": null,
+        "at": "FALSE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Traveling toward Paris with group but not there yet",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Traveling toward Paris with group but not there yet",
         "CORRECT": false
       },
@@ -4225,11 +4225,11 @@
         "SYS_at": "TRUE",
         "CORRECT_at": true,
         "SYS_at_explanation": "Traveling with Gargantua and reaches above Orleans",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
-        "CORRECT_isAt": true,
+        "CORRECT_isAt": false,
         "SYS_isAt_explanation": "Traveling with Gargantua and reaches above Orleans",
-        "CORRECT": true
+        "CORRECT": false
       }
     ]
   },
@@ -5333,15 +5333,15 @@
         "loc_mentions_list": [
           "île de l' Ascençaon"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "PROBABLE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "M Daprès places the island, no presence described",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "M Daprès places the island, no presence described",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1797_Perouse_Voyage_chunk227.tsv-NIL_anson",
@@ -5418,15 +5418,15 @@
         "loc_mentions_list": [
           "mer du sud"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Anson went to mer du sud, past event",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Anson went to mer du sud, past event",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1797_Perouse_Voyage_chunk227.tsv-NIL_frezier",
@@ -5525,15 +5525,15 @@
         "loc_mentions_list": [
           "sud de l' île de la Trinité"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Bernizet traced plan of south part, past work",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Bernizet traced plan of south part, past work",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1797_Perouse_Voyage_chunk227.tsv-NIL_ascencaon",
@@ -6186,15 +6186,15 @@
         "loc_mentions_list": [
           "Asie"
         ],
-        "at": "PROBABLE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Soliman made Asia tremble, active in continent",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Soliman made Asia tremble, active in continent",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk557.tsv-NIL_soliman",
@@ -6431,13 +6431,13 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": null,
+        "at": "FALSE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "La Renaudie was killed fighting, but events are historical past",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "La Renaudie was killed fighting, but events are historical past",
         "CORRECT": false
       },
@@ -7720,15 +7720,15 @@
         "loc_mentions_list": [
           "Pays - Bas"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Don Juan was sent to Pays-Bas by Philippe",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Don Juan was sent to Pays-Bas by Philippe",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk783.tsv-NIL_philippe",
@@ -9506,11 +9506,11 @@
         "loc_mentions_list": [
           "porto sancto"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Pantagruel travels through porto sancto with group",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "Pantagruel travels through porto sancto with group",
@@ -9527,11 +9527,11 @@
         "loc_mentions_list": [
           "isles de Canarre"
         ],
-        "at": null,
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Epistemon travels through Canary Islands with group",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "Epistemon travels through Canary Islands with group",
@@ -9587,11 +9587,11 @@
         "SYS_at": "TRUE",
         "CORRECT_at": true,
         "SYS_at_explanation": "Prior has Kepler's works in his hands at Aix",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
-        "CORRECT_isAt": true,
+        "CORRECT_isAt": false,
         "SYS_isAt_explanation": "Prior has Kepler's works in his hands at Aix",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1637_Peiresc_lettres_chunk52.tsv_Q1150_mercure",
@@ -9625,15 +9625,15 @@
         "loc_mentions_list": [
           "Boisgency"
         ],
-        "at": null,
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Letter dated from Boisgency but addressee not there",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Letter dated from Boisgency but addressee not there",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1637_Peiresc_lettres_chunk52.tsv-NIL_keplerus",
@@ -9912,13 +9912,13 @@
         "loc_mentions_list": [
           "Chaseu"
         ],
-        "at": null,
+        "at": "FALSE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Letter addressed to Madame De S. at Chaseu",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Letter addressed to Madame De S. at Chaseu",
         "CORRECT": false
       },
@@ -9996,13 +9996,13 @@
         "loc_mentions_list": [
           "Chaseu"
         ],
-        "at": null,
+        "at": "FALSE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Letter addressed to Madame De at Chaseu",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Letter addressed to Madame De at Chaseu",
         "CORRECT": false
       },

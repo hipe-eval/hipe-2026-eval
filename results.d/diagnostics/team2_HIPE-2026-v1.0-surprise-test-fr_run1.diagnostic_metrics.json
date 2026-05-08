@@ -6,6 +6,7 @@
   "split": "test",
   "language": "fr",
   "run": "run1",
+  "at_label_mode": "TERNARY",
   "confusion_matrices": {
     "at": {
       "labels": [
@@ -15,19 +16,19 @@
       ],
       "matrix": [
         [
-          90,
-          8,
-          27
+          101,
+          9,
+          29
         ],
         [
-          25,
-          3,
-          13
+          27,
+          7,
+          14
         ],
         [
-          190,
-          42,
-          82
+          177,
+          37,
+          79
         ]
       ],
       "rows": "gold",
@@ -36,51 +37,51 @@
       "table": [
         {
           "gold": "TRUE",
-          "pred_TRUE": 90,
-          "pred_PROBABLE": 8,
-          "pred_FALSE": 27
+          "pred_TRUE": 101,
+          "pred_PROBABLE": 9,
+          "pred_FALSE": 29
         },
         {
           "gold": "PROBABLE",
-          "pred_TRUE": 25,
-          "pred_PROBABLE": 3,
-          "pred_FALSE": 13
+          "pred_TRUE": 27,
+          "pred_PROBABLE": 7,
+          "pred_FALSE": 14
         },
         {
           "gold": "FALSE",
-          "pred_TRUE": 190,
-          "pred_PROBABLE": 42,
-          "pred_FALSE": 82
+          "pred_TRUE": 177,
+          "pred_PROBABLE": 37,
+          "pred_FALSE": 79
         }
       ],
-      "accuracy": 0.3646,
+      "accuracy": 0.3896,
       "per_label": {
         "TRUE": {
-          "precision": 0.2951,
-          "recall": 0.72,
-          "f1": 0.4186,
-          "support": 125,
-          "true_positive": 90,
-          "false_positive": 215,
-          "false_negative": 35
-        },
-        "PROBABLE": {
-          "precision": 0.0566,
-          "recall": 0.0732,
-          "f1": 0.0638,
-          "support": 41,
-          "true_positive": 3,
-          "false_positive": 50,
+          "precision": 0.3311,
+          "recall": 0.7266,
+          "f1": 0.4549,
+          "support": 139,
+          "true_positive": 101,
+          "false_positive": 204,
           "false_negative": 38
         },
+        "PROBABLE": {
+          "precision": 0.1321,
+          "recall": 0.1458,
+          "f1": 0.1386,
+          "support": 48,
+          "true_positive": 7,
+          "false_positive": 46,
+          "false_negative": 41
+        },
         "FALSE": {
-          "precision": 0.6721,
-          "recall": 0.2611,
-          "f1": 0.3761,
-          "support": 314,
-          "true_positive": 82,
-          "false_positive": 40,
-          "false_negative": 232
+          "precision": 0.6475,
+          "recall": 0.2696,
+          "f1": 0.3807,
+          "support": 293,
+          "true_positive": 79,
+          "false_positive": 43,
+          "false_negative": 214
         }
       }
     }

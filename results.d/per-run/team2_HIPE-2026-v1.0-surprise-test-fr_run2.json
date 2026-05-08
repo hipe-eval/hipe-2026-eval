@@ -1,6 +1,7 @@
 {
+  "at_label_mode": "TERNARY",
   "counts": {
-    "at_correct": 246,
+    "at_correct": 243,
     "at_total": 480
   },
   "dataset": "surprise",
@@ -17,9 +18,9 @@
   "reference": "HIPE-2026-v1.0-surprise-test-fr.jsonl",
   "run": "run2",
   "scores": {
-    "at_accuracy": 0.5125,
-    "at_macro_recall": 0.3638726114649682,
-    "global_score": 0.3638726114649682
+    "at_accuracy": 0.50625,
+    "at_macro_recall": 0.36594069454334144,
+    "global_score": 0.36594069454334144
   },
   "split": "test",
   "submission": "team2_HIPE-2026-v1.0-surprise-test-fr_run2.jsonl",

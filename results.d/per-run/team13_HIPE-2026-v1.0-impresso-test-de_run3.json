@@ -1,4 +1,5 @@
 {
+  "at_label_mode": "TERNARY",
   "counts": {
     "at_correct": 197,
     "at_total": 238,

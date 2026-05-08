@@ -154,15 +154,15 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The passage notes “la réunion passagère qui se fit avec Eugène IV,” indicating a meeting that involved Eugene IV, but it does not specify the location of that meeting as Rome. No other part of the text mentions Eugene IV being in Rome or traveling there before 1756. Therefore there is no explicit evidence that he was physically present at Rome prior to the document’s publication date.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The document contains the phrase “la réunion passagère qui se fit avec Eugène IV.” This indicates a meeting involving Eugene IV, but it does not specify that the meeting took place in Rome or provide any date within the 30‑day window preceding the publication date of 1756. No other part of the text mentions Eugene IV being physically present in Rome during that period. Therefore there is no explicit evidence that he was in Rome within the required timeframe.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk132.tsv-NIL_judas",
@@ -280,7 +280,7 @@
         "loc_mentions_list": [
           "Constantinople"
         ],
-        "at": "PROBABLE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The passage states: “il arriva même qu’en 1274 l’empereur des grecs, Michel Paléologue, implorant contre les turcs une nouvelle croisade, envoya au second concile de Lyon, son patriarche et son chancelier.” This indicates that Michel Paléologue was the emperor of the Greeks (i.e., in Constantinople) at the time he sent a delegation to the council. Since 1274 is well before the document’s publication date of 1756, this provides direct evidence that he was physically present in Constantinople prior to 1756.",
@@ -399,15 +399,15 @@
         "loc_mentions_list": [
           "Ispahan"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The passage states that “Scha - Hussein lui remit cette capitale” (Scha‑Hussein sent this capital) and that Maghmud had besieged Ispahan in 1722. This implies that Scha‑Hussein was physically present at Ispahan to hand over the city, which occurred well before the document’s publication date of 1756. Therefore there is explicit evidence of his presence.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage states that “Maghmud assiégea Ispahan en 1722. Scha‑Hussein lui remit cette capitale…” This indicates that Scha‑Hussein was present in Ispahan during the siege of 1722, but it provides no date or evidence linking him to any event near the document’s publication date (1756). The only temporal reference in the text is “en 1722,” which lies far outside the required 30‑day window preceding 1756. Consequently there is no explicit mention of Scha‑Hussein being at Ispahan within that timeframe, so we cannot confirm his presence.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk1069.tsv-NIL_maghmud",
@@ -462,15 +462,15 @@
         "loc_mentions_list": [
           "Ispahan"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The passage explicitly states that “Maghmud assiégea Ispahan en 1722.” The verb *assiégea* means he personally led an assault on the city, which requires his physical presence there. Since 1722 is well before the document’s publication date of 1756, this evidence confirms that Maghmud was indeed present in Ispahan at some point prior to 1756.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The document states that “Maghmud assiégea Ispahan en 1722,” indicating a military action that occurred thirty‑four years before the document’s publication date (1756). The required window for presence is the 30‑day period ending on the publication date, i.e., roughly September 1955 to September 1756. No part of the text mentions Maghmud being in Ispahan during that timeframe; it only references his earlier siege and later events unrelated to the specified window. Therefore there is no evidence that Maghmud was physically present at Ispahan within the required period.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk1069.tsv-NIL_charles",
@@ -525,13 +525,13 @@
         "loc_mentions_list": [
           "Perse"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The passage mentions “Un nouvel usurpateur de la nation des aguans lui succéda ; il s’ appellait Asraf.” It identifies Asraf as a successor to Maghmud, but it provides no indication that he was physically present in Perse at any time before the document’s publication date (1756). The text only records his succession and name; there is no mention of him traveling to or residing in Perse. Therefore, based on the available evidence, we cannot confirm that Asraf was in Perse prior to 1756.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The document states that “Il mourut en démence en 1725 après avoir désolé la Perse.” This refers to Maghmud’s death and does not mention Asraf at all. The only reference to Asraf is the sentence “Un nouvel usurpateur de la nation des aguans lui succéda ; il s’ appellait Asraf,” which merely identifies him as a successor without providing any date, location, or evidence of his presence in Perse. There is no explicit statement that Asraf was physically present in Perse within the 30‑day window preceding the publication date (1756). Consequently, the text does not provide sufficient evidence to confirm his presence at that time and place.",
         "CORRECT": false
       },
@@ -835,15 +835,15 @@
         "loc_mentions_list": [
           "ville d' édesse"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The passage states explicitly that “Baudouin alla jusqu’ en Mésopotamie s' emparer de la ville d' édesse, et s' y forma un petit état.” This indicates that Baudouin physically traveled to and took control of the city of édesse before the document’s publication date (1756). The wording confirms his presence at the location in question. No contradictory evidence is present.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage states that “Baudouin alla jusqu’ en Mésopotamie s' emparer de la ville d' édesse,” indicating Baudouin’s presence in the city, but it provides no date or temporal marker linking this event to the publication year 1756. The required window is the 30 days preceding the document’s publication (approximately August 24–September 24, 1756). Since there is no explicit evidence that Baudouin was in the city within that timeframe, we cannot confirm his presence. Therefore the correct classification is FALSE.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_bohemond",
@@ -877,15 +877,15 @@
         "loc_mentions_list": [
           "Mésopotamie"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The passage states: “Baudouin alla jusqu’ en Mésopotamie s’ emparer de la ville d’ Édesse, et s’ y forma un petit état.” This sentence explicitly records Baudouin’s presence in Mesopotamia (the region) and his control of the city of Edessa. Since no date is provided within the text but the document itself was published in 1756, this event must have occurred before that publication date. Therefore there is direct textual evidence that Baudouin was physically present at Mésopotamie prior to 1756.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage states that “Baudouin alla jusqu’en Mésopotamie s’emparer de la ville d’ Édesse…” but it provides no explicit temporal marker (e.g., a month or year) indicating when this action occurred. The document’s publication date is 1756, so the required window for presence would be roughly September 16 – October 16, 1755 to September 16, 1756. Since the text contains no date or time reference that places Baudouin in Mesopotamia within this 30‑day interval, we cannot confirm his physical presence during that period. Therefore the evidence is insufficient.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_calife_d_egypte",
@@ -983,15 +983,15 @@
         "loc_mentions_list": [
           "Antioche"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The passage states that “Bohémond eut l’ adresse de se faire céder par les croisés le fertile pays d' Antioche.” This indicates that Bohémond was physically present in the region of Antioche at some time before the document’s publication date (1756). The wording implies he had an intention to be given over by the crusaders there, which requires his presence. Therefore there is direct evidence supporting his presence.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage states that “Bohémond eut l’ adresse de se faire céder par les croisés le fertile pays d' Antioche.” This indicates Bohémond had an address or claim to the fertile country of Antioche, but it does not provide a specific date or explicit statement that he was physically present there. The text contains no temporal markers (e.g., dates, months) nor any mention of Bohémond’s presence in Antioche within the 30‑day window preceding the publication date of 1756. Without such evidence, we cannot confirm his physical presence at Antioche during that period.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_clovis",
@@ -1891,7 +1891,7 @@
         "loc_mentions_list": [
           "Europe"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The passage states that the deceased “mourut à Liége plus misérable encor que Grégoire VII”. This indicates that Grégoire VII was alive in Europe at some point before his death, i.e., he had been physically present on the continent. Since the document’s publication date is 1756 and Grégoire VII died in 1084, there is clear evidence of his presence in Europe well before 1756. Therefore we can conclude that the person was indeed at the specified location prior to the document’s publication.",
@@ -1933,7 +1933,7 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text discusses Pascal II’s political activities in France (“Pascal II vint en France…”) and does not explicitly state that he was physically present in Rome at any particular time. However, the passage refers to him as a papal figure (e.g., “le même Henri V qui avait détrôné et exhumé son pére, une bulle du pape à la main”), implying his role as Pope. Historically, Pascal II was Pope from 923 to 945, and during that papacy he resided in Rome. Since the document’s publication date is 1756, this period lies well before it. Therefore there is evidence—historical fact derived from the text’s reference to his papal role—that Pascal II was physically present in Rome at some point prior to 1756.",
@@ -2040,7 +2040,7 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The passage refers to “les prétendues donations de Pepin et de Charlemagne,” indicating that Pepin possessed lands and rights within the Frankish realm, which corresponds to modern France. As a Frankish king, Pepin’s authority was exercised in France centuries before 1756; his presence there is historically documented. The text does not explicitly state a physical visit, but it confirms his control over French territories, implying he had been physically present at the location (France) at some point prior to the document’s publication date.",
@@ -2061,15 +2061,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The passage discusses the political and ecclesiastical relations between the French monarchy and the papacy, referencing Emperor Henri V and his father’s actions concerning Charlemagne’s alleged donations. It mentions “les donations de Pepin et de Charlemagne” as a source of rights, but it does not state that Charlemagne himself was physically present in France at any time before 1756. No sentence or clause indicates Charlemagne’s presence in the country; the text only references his legacy and legal claims. Therefore there is no direct evidence in the document that Charlemagne visited or resided in France prior to its publication date.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The document discusses contemporary events and figures (e.g., Henri V, the papacy) but contains no explicit statement that Charlemagne was in France or that he performed any action there within a month preceding the publication date of 1756. Moreover, Charlemagne lived from 768 to 814 AD—centuries before 1756—so his physical presence in France during the relevant time window is historically impossible. Therefore there is no evidence that he was present at the specified location within the required period.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_henri",
@@ -2228,15 +2228,15 @@
         "loc_mentions_list": [
           "Normandie"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The passage explicitly states that Rolon was “Maître de Rouen” and that “Rouen devint sa place d’armes.” This indicates he held a position in Rouen, which is located within the region of Normandy. The text does not provide any dates, but the presence of him as a local lord implies physical presence there at some point before the document’s publication date (1756). Therefore we can conclude that Rolon was indeed present in Normandy prior to 1756.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage describes Rolon’s activities and titles (e.g., “Maître de Rouen”) but provides no explicit temporal reference that places him in Normandy within the 30‑day window preceding the document’s publication date of 1756. The text is medieval in style, lacking any dates or events close to 1756, so there is no evidence that Rolon was physically present at Rouen (Normandie) during that specific period. Therefore we cannot confirm his presence within the required timeframe.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk110.tsv-NIL_raoul",
@@ -2313,15 +2313,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The passage explicitly states that Rolon “aborda l’ Angleterre, où ses compatriotes étaient déjà établis ; mais après deux victoires inutiles, il tourna du côté de la France.” This indicates he moved from England to France. Moreover, it later refers to him as “Maître de Rouen,” a title denoting authority over the city of Rouen in France. Both references confirm Rolon’s physical presence in France before the document’s publication date (1756). Therefore there is direct evidence that Rolon was indeed present in France prior to 1756.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage is a medieval narrative about Rolon’s activities in the early Middle Ages and contains no explicit date or temporal marker that would place him in France within 30 days before the document’s publication (i.e., between July 24 and August 24, 1756). It merely states that Rolon “aborda la Normandie” and later “volait tantôt en Angleterre, tantôt en France,” but these are actions without dates. Since there is no evidence of Rolon’s presence in France during the required window, we cannot confirm his physical presence at the specified location within the timeframe.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk110.tsv-NIL_rolon",
@@ -2398,15 +2398,15 @@
         "loc_mentions_list": [
           "Rouen"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The passage states that Rolon was “Maître de Rouen” and that he rebuilt its walls and towers, indicating his physical presence in the city to perform those tasks. The text also notes that Rouen became his “place of arms,” further confirming his residence there. Since these actions occurred before the document’s publication date (1756), Rolon was indeed present in Rouen prior to 1756.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage describes Rolon as “Maître de Rouen sans peine,” indicating he held the title of master (or lord) in Rouen at some point. However, the text contains no explicit date or temporal marker that places this presence within 30 days before the document’s publication date of 1756. Without a specific date or a clear time reference tied to Rolon’s activity in Rouen during that window, we cannot confirm his physical presence there within the required period. Therefore the evidence does not satisfy the strict criteria for presence.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk110.tsv-NIL_raoul",
@@ -2518,15 +2518,15 @@
         "loc_mentions_list": [
           "Marseille"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The document is a letter dated “X Febvrier 1627” from Aix, addressed to “monsieur l’ evesque d’ Orleans, conseiller du roy en ses conseils d’ état, à Marseille.” The phrase “à Marseille” indicates that the recipient was physically present in Marseille at the time of writing. Since 1627 is earlier than the document’s publication date (1637), this provides direct evidence that Monsieur l’ evesque d’ Orleans was indeed in Marseille before 1637.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The document’s date line reads “D’ Aix, ce X Febvrier 1627,” indicating a publication date in February 1627. The text addresses “monsieur l’ evesque d’Orleans” and notes that the letter is sent from Marseille (“à Monsieur … à Marseille”). However, it does not contain any explicit statement that the person was physically present in Marseille within the 30‑day window preceding February 1627 (i.e., between January 17 and February 16). The mention of his residence or address is merely a mailing reference and does not confirm his presence at the location during the required period. Therefore, there is no direct evidence that he was in Marseille within the specified timeframe.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1637_Peiresc_lettres_chunk230.tsv-NIL_grutterus",
@@ -3040,7 +3040,7 @@
         "loc_mentions_list": [
           "Europe"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The passage states that “par la plume de son fameux chancelier, Pierre Des Vignes” – i.e., Pierre Des Vignes was the papal chancellor who wrote letters to princes across Europe. The papacy’s chancellery was based in Rome (the Papal States), which lies within modern‑day Europe. Thus the text implies that Des Vignes was physically present in Europe at some point before 1756, when he could write from his office. No contrary evidence is given; the only mention of him is as a writer from his position, confirming his presence in Europe.",
@@ -3083,15 +3083,15 @@
         "loc_mentions_list": [
           "Allemagne"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The passage discusses the election of an “empereur” and refers to a newly chosen “César,” but it only notes that this person was not selected by the dukes or princes of Germany; it does not state that César himself was physically present in Germany. No mention of César traveling, residing, or being in any German city appears before the document’s publication date (1756). Therefore there is no evidence supporting his presence at the location.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage discusses the election of a new emperor (César) among various princes and bishops, but it does not state that César himself was physically present in Germany or any specific location within the 30‑day window preceding the document’s publication date. The only reference to “Allemagne” is as a region where princes were consulted; there is no mention of César being there at all. Since the text lacks explicit evidence of César’s presence in Allemagne during the required timeframe, we cannot confirm his physical presence.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk238.tsv-NIL_cesar",
@@ -4015,9 +4015,9 @@
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The passage describes a landscape and mentions “jusqu’au dessus de Orléans,” indicating the forest reaches up to that point, but it does not state that Gargantua himself was physically present there. The only reference to Gargantua in the text is his presence at the port of Olone (“…un brigantin jusques au port de Olone en Thalmondoys Lors que Grandgousier la veit”). There is no explicit mention of him visiting or being in Orléans, nor any indication that he was physically present there. Therefore, based on the text alone, there is no evidence that Gargantua was at Orléans before 1542.",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage contains a reference to “Orleans” (“jusques au dessus de Orleans”), but it does not state that Gargantua himself was present there, nor does it provide any date or time frame linking his presence to the location. The only mention of Gargantua is in the context of his preceptor Ponocrates and a group traveling together; no explicit statement ties him to Orleans within the 30‑day window preceding the document’s publication date (1542). Therefore there is no direct evidence that Gargantua was physically present at Orleans during that period.",
         "CORRECT": false
       },
@@ -4053,15 +4053,15 @@
         "loc_mentions_list": [
           "Paris"
         ],
-        "at": null,
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The passage describes Gargantua traveling with his teacher Ponocrates and companions, but it contains no mention of him being in or visiting Paris. The only reference to Paris is “porter mon filz a Paris,” which refers to another person (Voicy) and does not indicate Gargantua’s presence there. Since the text provides no evidence that Gargantua was physically present at Paris before its publication date, we conclude that he was not in Paris.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage contains the name “Gargantua” but only in the context of his relationship to Ponocrates and a group of followers; it does not state that he himself was physically present in Paris, nor does it provide any date or time reference linking him to Paris within the 30‑day window preceding the document’s publication (1542). The only mention of Paris is “porter mon filz à Paris,” which refers to a different individual (“Voicy”) and does not implicate Gargantua. Since there is no explicit evidence that Gargantua was in Paris during the required timeframe, the correct classification is FALSE.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1542_Rabelais_Gargantua_chunk35.tsv-NIL_babin",
@@ -4116,15 +4116,15 @@
         "loc_mentions_list": [
           "Paris"
         ],
-        "at": null,
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The passage identifies Ponocrates as “Gargantua’s precepteur” and mentions his company traveling with Gargantua, but it does not state that Ponocrates himself was in Paris or any other location. The only reference to Paris is a separate clause (“Voicy … pour porter mon filz à Paris”), which concerns a different individual (likely “Voicy”) and does not involve Ponocrates. Since there is no explicit mention of Ponocrates being present in Paris before the document’s publication date, we cannot infer his presence at that location.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage contains the sentence “Gargantua son precepteur Ponocrates & ses gens, ensemble eulx Eudemon le jeune paige.” This indicates that Ponocrates was a teacher or attendant of Gargantua, but it does not mention any location. The only reference to Paris in the text is “Voicy ( dist il ) bien le cas pour porter mon filz a Paris,” which refers to another person and concerns transporting something to Paris; it does not state that Ponocrates was present there. No date or temporal marker within the 30‑day window (1541‑09‑16 to 1542‑09‑16) is attached to Ponocrates at Paris. Therefore, the text provides no explicit evidence of Ponocrates being in Paris during that period.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1542_Rabelais_Gargantua_chunk35.tsv-NIL_pile_sainct_mars",
@@ -4162,9 +4162,9 @@
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The passage describes Gargantua’s teacher Ponocrates and his followers, including the young page named Eudemon, but it does not state that Eudemon was in Orleans or any other location there. The only mention of Orleans appears later as a reference to a forest near that city, unrelated to Eudemon’s presence. Since no textual evidence places Eudemon at Orleans before the document’s publication date (1542), we conclude that his physical presence at that place is unsupported.",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text contains a reference to “Eudemon le jeune paige” in the context of Gargantua’s entourage, but it does not state that he was at Orleans. The only mention of Orleans is the phrase “jusques au dessus de Orleans,” which describes a location relative to a forest and has no connection to Eudemon or any date within 30 days before the publication year (1542). Therefore there is no explicit evidence in the document that Eudemon was physically present at Orleans during the required time window.",
         "CORRECT": false
       },
@@ -4179,15 +4179,15 @@
         "loc_mentions_list": [
           "Paris"
         ],
-        "at": null,
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The passage mentions “Gargantua son precepteur Ponocrates & ses gens, ensemble eulx Eudemon le jeune paige.” This indicates that Eudemon was a page belonging to Gargantua’s teacher and his entourage. The text does not state or imply that Eudemon traveled to Paris; the only reference to Paris is “Voicy (dist il) bien le cas pour porter mon filz a Paris,” which appears unrelated to Eudemon. Since there is no explicit mention of Eudemon being in Paris before 1542, we cannot confirm his presence at that location.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage contains the name “Eudemon” only in the clause “ensemble eulx Eudemon le jeune paige,” which describes him as part of Gargantua’s entourage traveling with Ponocrates. No location is attached to this statement, and there is no separate mention that Eudemon was present at Paris within the 30‑day window preceding the document’s publication date (1542). The only reference to Paris in the text concerns a different person (“Voicy”) carrying something to Paris, not Eudemon. Therefore there is no explicit evidence that Eudemon was physically present in Paris during the required timeframe.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1542_Rabelais_Gargantua_chunk35.tsv-NIL_tenaud",
@@ -4225,9 +4225,9 @@
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The passage identifies Ponocrates as Gargantua’s preceptor (“Gargantua son precepteur Ponocrates & ses gens”), but it does not state or imply that he ever visited Orleans. The only mention of Orleans in the text is a description of a forest near that place, unrelated to Ponocrates’ activities. There are no references to him traveling there, attending events, or being present at the location before the document’s publication date (1542). Therefore, the text provides no evidence of his presence at Orleans.",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage discusses Gargantua’s teacher Ponocrates and his followers, but it does not mention any visit to or presence in Orleans during the relevant timeframe. The only reference to Orleans is a separate description of a forest near that city, unrelated to Ponocrates. Since there is no explicit statement that Ponocrates was at Orleans within roughly 30 days before the document’s publication date (1542), we cannot confirm his presence.",
         "CORRECT": false
       }
@@ -5333,15 +5333,15 @@
         "loc_mentions_list": [
           "île de l' Ascençaon"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The passage notes that “M Daprès place à cent lieues dans l’ouest de la Trinité,” indicating his location relative to the Trinité but not on the island itself. It also mentions that other navigators, including Frézier, thought they had reached Ascençaon but were actually at the Trinité. No sentence in the text indicates that M Daprès himself was physically present on or visited the island of Ascençaon before 1797. Therefore there is no evidence supporting his presence at that location.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage refers to “M Daprès” only in the context of his position “à cent lieues dans l’ouest de la Trinité,” which is a location near the island of Trinité, not at the island of Ascençaon.  The text does not state that M Daprès was physically present on or near the island of Ascençaon during any time period.  There are no explicit temporal references (e.g., dates, “dans le mois de …”) linking his presence to the island within the 30‑day window preceding the publication date of 1797.  Consequently, there is no evidence in the document that M Daprès was at the specified location during the required timeframe.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1797_Perouse_Voyage_chunk227.tsv-NIL_anson",
@@ -5418,15 +5418,15 @@
         "loc_mentions_list": [
           "mer du sud"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The passage states that “Frézier et l’ amiral Anson y trouvèrent abondamment à se pourvoir de tous leurs besoins.” The word *y* indicates the location of this encounter, which is the island Sainte‑Catherine on the coast of Brazil. This island lies in the South Sea (mer du sud). Therefore the text explicitly reports that the amiral was physically present at the mer du sud before the document’s publication date of 1797.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage states that “Frézier et l’ amiral Anson y trouvèrent abondamment à se pourvoir de tous leurs besoins” while they were on the island Sainte‑Catherine, which lies on the coast of Brazil.  The text does not provide a specific date for this event nor explicitly mention the person being in the South Sea (“mer du sud”).  Because there is no explicit evidence that l’ amiral Anson was physically present at the location “mer du sud” within the 30‑day window preceding the publication date of 1797, we cannot confirm his presence.  Therefore the correct classification is FALSE.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1797_Perouse_Voyage_chunk227.tsv-NIL_frezier",
@@ -5525,11 +5525,11 @@
         "loc_mentions_list": [
           "sud de l' île de la Trinité"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The passage states: “Les deux jours que nous passâmes vers la partie sud de l’ île de la Trinité, nous mirent à portée de faire les relèvemens d' après lesquels M Bernizet traça le plan de la partie sud de l' île.” This indicates that the narrator and his crew were physically present in the southern part of the island while M Bernizet was there to draw a plan. Since this event occurred before the document’s publication date (1797), it provides direct evidence that M Bernizet was at “sud de l’ île de la Trinité” prior to 1797.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
         "CORRECT_isAt": false,
         "SYS_isAt_explanation": "The passage states: “Les deux jours que nous passâmes vers la partie sud de l’ île de la Trinité, nous mirent à portée de faire les relèvemens d' après lesquels M Bernizet traça le plan…” This indicates that the narrator and his crew were physically present at the southern part of the island for two days. The subsequent clause “après lesquels M Bernizet traça le plan” implies that M Bernizet was also there to trace a plan, i.e., he was present at the same location during those days. Since the text is dated 1797 and refers to events occurring within the preceding two days, it falls well within the 30‑day window before the publication date. Therefore, M Bernizet’s presence at “sud de l’ île de la Trinité” is explicitly supported by the document.",
@@ -6186,15 +6186,15 @@
         "loc_mentions_list": [
           "Asie"
         ],
-        "at": "PROBABLE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The passage states that “son fils, le grand Soliman, … marche jusqu’ à Vienne, et se fait couronner roi de Perse dans Bagdat prise par ses armes, faisant trembler à la fois l’ Europe et l’ Asie.” This indicates that Soliman physically traveled to Vienna and was crowned in Baghdad (Bagdat), a city located in Asia. The act of being crowned there implies his presence in the region at that time, which is well before the document’s publication date of 1756. Therefore, there is explicit textual evidence that Soliman was present in Asia prior to 1756.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage describes Soliman’s actions in the 16th‑century, noting that he marched to Vienna and was crowned king of Perse in Bagdad (Baghdad). While this indicates his presence in Asia at some point, it provides no specific date or temporal marker that places him within a month before the document’s publication date of 1756. The text is historical narrative without contemporary references, so there is no explicit evidence that Soliman was physically present in Asia during the required window. Therefore we cannot confirm his presence as required.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk557.tsv-NIL_soliman",
@@ -6431,15 +6431,15 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": null,
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The passage reports that “La Renaudie fut tué en combattant” and later notes a month in which Amboise was filled with corps, but it does not explicitly state that Renaudie himself was present at Amboise. The text only indicates his death by combat without specifying the location of that battle, and the mention of bodies in Amboise appears to refer to the aftermath of an event there, not to Renaudie’s presence. Therefore there is no direct evidence from the document that Renaudie was physically in Amboise before 1756.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage reports that “La Renaudie fut tué en combattant” and later notes that during a month in Amboise only corps were present, but it does not explicitly state that Renaudie himself was physically present at Amboise. Moreover, the text contains no date or temporal marker linking this event to the 30‑day window preceding the document’s publication date (1756). Without an explicit mention of Renaudie being in Amboise within that timeframe, we cannot confirm his presence there.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk820.tsv-NIL_henri",
@@ -7720,15 +7720,15 @@
         "loc_mentions_list": [
           "Pays - Bas"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The passage states that Philippe “envoya Don Juan D' Autriche son frère” to the Netherlands (“y envoye …”). This indicates that Don Juan was physically present in the Dutch lands at the time of the event, which is before the document’s publication date (1756). The act of sending him there implies his presence and activity within the region. Therefore we have direct textual evidence supporting his presence.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage notes that Philippe sent “Don Juan D’ Autriche” to the Netherlands (“y envoye Don Juan … son frére”). This indicates that Don Juan was physically present in Pays‑Bas at some point, but it provides no explicit date or temporal marker. The document’s publication date is 1756, so the required window for presence would be from 1755‑12‑16 to 1756‑01‑16. Because the text does not contain a specific date that falls within this 30‑day interval (e.g., “in early January 1756” or similar), we cannot confirm that Don Juan was in Pays‑Bas during that period. The only reference is a general statement of his presence, which could have occurred earlier than the window. Therefore there is no explicit evidence meeting the criteria.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk783.tsv-NIL_philippe",
@@ -9506,13 +9506,13 @@
         "loc_mentions_list": [
           "porto sancto"
         ],
-        "at": null,
+        "at": "TRUE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Prediction(\n    reasoning=None,\n    classification=None\n)",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage contains the name “Pantagruel” only in a sentence describing his return to Paris (“et s’ en contristoit : & voluntiers fust retourné a paris pour faire sa paix avecques elle”). No mention of him being at “porto sancto” appears, nor is there any date or time reference linking Pantagruel’s presence to that location. The text discusses events in the broader context (e.g., winds, ports) but does not state that Pantagruel was physically present at porto sancto within the 30‑day window preceding the publication date of 1542. Therefore there is no explicit evidence supporting his presence at that place during the required timeframe.",
         "CORRECT": false
       },
@@ -9527,13 +9527,13 @@
         "loc_mentions_list": [
           "isles de Canarre"
         ],
-        "at": null,
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The passage describes a voyage to the “isles de Canarre” and notes that the group sailed past the port of Medere before reaching those islands. However, it does not explicitly state that Epistemon himself was present at or on those islands; it merely mentions his name in relation to a letter received from Lamah Hazabthani. The text only indicates that someone (or a group) performed the sailing, but there is no direct evidence linking Epistemon’s physical presence to the location before the document’s publication date of 1542. Therefore, based on the available information, we cannot confirm that Epistemon was at the islands of Canarre prior to 1542.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage describes a voyage in which the narrator sails from port to “port sancto, & par Medere, firent scalle es isles de Canarre.” The text does not mention Epistemon being at that location; it only notes that Epistemon’s memory was reduced. No date or time reference ties this event to a period within 30 days before the document’s publication (1542). Therefore there is no explicit evidence of Epistemon’s presence at “isles de Canarre” in the required window.",
         "CORRECT": false
       }
@@ -9587,9 +9587,9 @@
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The passage mentions that the writer sent his bookseller to Aix, but it does not state that Mr le prieur De La Valette himself was physically present in Aix. There is no explicit reference to him being there or any indication of his presence before 1637. Therefore we cannot confirm his presence at the location.",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Prediction(\n    reasoning=None,\n    classification=None\n)",
         "CORRECT": false
       },
@@ -9625,15 +9625,15 @@
         "loc_mentions_list": [
           "Boisgency"
         ],
-        "at": null,
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The letter dated 13 August 1631 mentions “à Boisgency” in the context of the writer’s address, but it does not state that M. Pierre D’Antelemi was physically present there. The text only indicates that the writer is writing to Monsieur at Boisgency; there is no explicit mention of D’Antelemi being in Boisgery or any other location before 1637. Therefore there is no evidence supporting his presence at Boisgery prior to the document’s publication date.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The document contains a reference to “M. PIERRE D’ ANTELMI” only as a salutation (“Monsieur, c’est trop demeurer en silence…”) and does not associate him with any location or date. The only mention of Boisgency is in the sentence “demeurant, monsieur, vostre, etc. à Boisgency, ce 13 Aoust 1631,” which records the writer’s presence at Boisgery on 13 August 1631—well outside the required window (the publication date is 1637, so the relevant period is roughly 15 August 1637 to 16 September 1637). Since there is no explicit statement that M. PIERRE D’ ANTELMI was at Boisgery during that month, the criteria for presence are not met.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1637_Peiresc_lettres_chunk52.tsv-NIL_keplerus",
@@ -9912,15 +9912,15 @@
         "loc_mentions_list": [
           "Chaseu"
         ],
-        "at": null,
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The letter is dated 29 October 1675 and is addressed to “Madame De S.” at the place of residence “Chaseu”. The text merely records that the writer received a letter from her; it does not state that she was physically present in Chaseu, nor does it provide any earlier reference (before 1666) indicating her presence there. No other part of the document mentions S. being in or visiting Chaseu prior to the publication date. Therefore there is no evidence supporting the claim that S. was at Chaseu before 1666.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The document contains two dated letters (1 September 1675 and 29 October 1675) addressed to “Madame De S.” at the location of Chaseu, but it does not state that Madame De S. herself was physically present in Chaseu during those dates. The only mention of a person named “S.” is as part of the salutation (“Madame De S.”), which indicates an address rather than physical presence. Moreover, the publication date provided (1666) falls far outside the 30‑day window preceding the letter’s date (29 October 1675). Since there is no explicit evidence that “S.” was in Chaseu within the required timeframe, we conclude that the claim cannot be verified.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1666_Bussy_Lettres_chunk38.tsv-NIL_turenne",
@@ -9996,15 +9996,15 @@
         "loc_mentions_list": [
           "Chaseu"
         ],
-        "at": null,
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text contains the phrase “Réponse du Comte De Bussy à Madame De S. à Chaseu,” which indicates that the reply was sent to her while she was in Chaseu. However, this reference occurs in a letter dated 29 October 1675, well after the document’s publication date of 1666. The text provides no earlier mention or evidence that Madame De had been physically present at Chaseu before 1666. Therefore there is no supporting evidence for her presence at that location prior to the publication date.",
-        "isAt": null,
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The document contains the phrase “Réponse du Comte De Bussy à Madame De S. à Chaseu, ce 29 octobre 1675.” This indicates that the letter was addressed to Madame De at a place called Chaseu on 29 October 1675. However, it does not state that she herself was physically present in Chaseu; it merely records the address of the correspondence. Moreover, the date of this event (29 Oct 1675) is far outside the required window: the document’s publication date is given as 1666, so the relevant period would be roughly from early January to early March 1666. No sentence in the text mentions Madame De being in Chaseu during that timeframe. Therefore there is no explicit evidence of her presence at Chaseu within the required 30‑day window before the publication date.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1666_Bussy_Lettres_chunk38.tsv-NIL_monsieur_le_prince",
