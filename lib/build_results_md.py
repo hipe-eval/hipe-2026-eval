@@ -13,6 +13,7 @@ from common import load_json
 RANKING_TITLES = {
     "ranking-overall-test-a.tsv": "Accuracy Profile Ranking Overall",
     "ranking-efficiency-test-a.tsv": "Efficiency Profile Ranking Overall",
+    "ranking-efficiency-balanced-test-a.tsv": "Balanced Efficiency Profile Ranking Overall",
     "ranking-efficiency-impresso-test-de.tsv": "Efficiency Profile Ranking German",
     "ranking-efficiency-impresso-test-en.tsv": "Efficiency Profile Ranking English",
     "ranking-efficiency-impresso-test-fr.tsv": "Efficiency Profile Ranking French",
@@ -31,6 +32,7 @@ RANKING_ORDER = [
     "ranking-generalization-test-b.tsv",
     "ranking-surprise-test-fr.tsv",
     "ranking-efficiency-test-a.tsv",
+    "ranking-efficiency-balanced-test-a.tsv",
     "ranking-efficiency-impresso-test-de.tsv",
     "ranking-efficiency-impresso-test-en.tsv",
     "ranking-efficiency-impresso-test-fr.tsv",
@@ -64,6 +66,10 @@ RANKING_HEADER_LABELS = {
     },
     "ranking-efficiency-test-a.tsv": {
         "efficiency_score": "mean_efficiency_profile_rank",
+        "accuracy_score": "mean_impresso_profile_score",
+    },
+    "ranking-efficiency-balanced-test-a.tsv": {
+        "balanced_efficiency_score": "balanced_efficiency_profile_rank",
         "accuracy_score": "mean_impresso_profile_score",
     },
     "ranking-efficiency-impresso-test-de.tsv": {
@@ -136,7 +142,7 @@ def markdown_table_with_labels(
     if not headers:
         return ["No columns found.", ""]
     lines = [
-        "| " + " | ".join(header_labels.get(header, header) for header in headers) + " |",
+        "| " + " | ".join(display_header(header, header_labels) for header in headers) + " |",
         "| " + " | ".join("---" for _ in headers) + " |",
     ]
     for row in rows:
@@ -170,6 +176,10 @@ def header_labels_for(path: Path) -> dict[str, str]:
     return labels
 
 
+def display_header(header: str, header_labels: dict[str, str]) -> str:
+    return header_labels.get(header, header).replace("_", " ")
+
+
 def score_definition_lines() -> list[str]:
     return [
         "## Profile Score Definitions",
@@ -183,6 +193,7 @@ def score_definition_lines() -> list[str]:
         "- `mean_impresso_profile_score`: mean of `impresso_profile_score` over the submitted `impresso` language files.",
         "- `surprise_profile_score`: score on a `surprise` file, computed as `at_macro_recall`; `isAt` is not evaluated for `surprise`.",
         "- `mean_efficiency_profile_rank`: mean of `rank_impresso_profile_score`, `rank_hipe_parameter_count`, and `rank_hipe_model_size`; lower is better.",
+        "- `balanced_efficiency_profile_rank`: `0.5 * rank_impresso_profile_score + 0.25 * rank_hipe_parameter_count + 0.25 * rank_hipe_model_size`; lower is better.",
         "",
     ]
 
@@ -191,6 +202,11 @@ def ranking_note_lines(path: Path) -> list[str]:
     if path.name == "ranking-overall-test-a.tsv":
         return [
             "Only team runs that submitted all `impresso` language files are included in this overall ranking. Team runs with partial submissions are shown only in the dataset-specific ranking tables.",
+            "",
+        ]
+    if path.name == "ranking-efficiency-balanced-test-a.tsv":
+        return [
+            "This is an additional analysis ranking. It is not the guideline-defined Efficiency Profile Ranking; it gives equal total weight to accuracy and to the combined resource ranks.",
             "",
         ]
     return []

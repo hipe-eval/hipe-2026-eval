@@ -195,6 +195,9 @@ def build_efficiency_test_a(rows: list[dict[str, Any]], overall_rows: list[dict[
         row["efficiency_score"] = (
             row["rank_accuracy"] + row["rank_parameter_count"] + row["rank_model_size"]
         ) / 3
+        row["balanced_efficiency_score"] = (
+            row["rank_accuracy"] + ((row["rank_parameter_count"] + row["rank_model_size"]) / 2)
+        ) / 2
 
     efficiency_ranks = competition_ranks(efficiency_rows, "efficiency_score", higher_is_better=False)
     for row in efficiency_rows:
@@ -208,6 +211,31 @@ def build_efficiency_test_a(rows: list[dict[str, Any]], overall_rows: list[dict[
             "team",
             "run",
             "efficiency_score",
+            "rank_accuracy",
+            "rank_parameter_count",
+            "rank_model_size",
+            "accuracy_score",
+            "hipe_parameter_count",
+            "hipe_model_size",
+            "info_missing",
+        ],
+        efficiency_rows,
+    )
+
+    balanced_efficiency_ranks = competition_ranks(
+        efficiency_rows, "balanced_efficiency_score", higher_is_better=False
+    )
+    for row in efficiency_rows:
+        row["rank"] = balanced_efficiency_ranks[(row["team"], row["run"])]
+
+    efficiency_rows.sort(key=lambda row: (row["rank"], row["team"], row["run"]))
+    write_tsv(
+        output_dir / "ranking-efficiency-balanced-test-a.tsv",
+        [
+            "rank",
+            "team",
+            "run",
+            "balanced_efficiency_score",
             "rank_accuracy",
             "rank_parameter_count",
             "rank_model_size",

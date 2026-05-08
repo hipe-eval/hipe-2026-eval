@@ -110,6 +110,9 @@ The results report uses profile names that match the dataset families:
 - **Generalization Profile Ranking** uses the `surprise` reference files.
 - **Efficiency Profile Ranking** combines the Accuracy Profile rank with model
   parameter-count and model-size ranks.
+- **Balanced Efficiency Profile Ranking** is an additional analysis ranking that
+  gives equal weight to the Accuracy Profile rank and the combined resource
+  ranks.
 
 The overall Accuracy Profile Ranking includes only team runs that submitted all
 `impresso` language files. Team runs with partial submissions are shown only in
@@ -145,10 +148,12 @@ Overall and efficiency scores:
 ```text
 mean_impresso_profile_score = mean(impresso_profile_score over submitted impresso language files)
 mean_efficiency_profile_rank = mean(rank_impresso_profile_score, rank_hipe_parameter_count, rank_hipe_model_size)
+balanced_efficiency_profile_rank = 0.5 * rank_impresso_profile_score + 0.25 * rank_hipe_parameter_count + 0.25 * rank_hipe_model_size
 ```
 
 Higher is better for profile scores. Lower is better for
-`mean_efficiency_profile_rank`. Ties receive the same competition rank.
+`mean_efficiency_profile_rank` and `balanced_efficiency_profile_rank`. Ties
+receive the same competition rank.
 
 ## Per-Run Metadata (`*-info.json`)
 
