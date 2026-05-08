@@ -154,15 +154,15 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "It is plausible that Eugène IV, as pope, was in Rome, but the text only mentions a “meeting with Eugène IV” without specifying the location.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Derived from \"at\" prediction (False/Probable)",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk132.tsv-NIL_judas",
@@ -280,15 +280,15 @@
         "loc_mentions_list": [
           "Constantinople"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Michel Paléologue was likely in Constantinople as the Greek emperor, though the text does not explicitly state his presence there.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Derived from \"at\" prediction (False/Probable)",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk132.tsv-NIL_eugene",
@@ -399,15 +399,15 @@
         "loc_mentions_list": [
           "Ispahan"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Scha - Hussein is explicitly mentioned as handing over the capital Ispahan, indicating his presence there.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Scha - Hussein is only mentioned historically as having handed over Ispahan in 1722; there is no indication he is presently at Ispahan or remained there within the month before publication.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk1069.tsv-NIL_maghmud",
@@ -462,15 +462,15 @@
         "loc_mentions_list": [
           "Ispahan"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Maghmud is explicitly described as having besieged and taken the capital Ispahan.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text only recounts Maghmud’s historical actions in Ispahan in 1722 and his death in 1725, with no indication he is presently at Ispahan near the publication date.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk1069.tsv-NIL_charles",
@@ -525,15 +525,15 @@
         "loc_mentions_list": [
           "Perse"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Asraf is described as the successor to Maghmud, who ruled over Persia, implying Asraf was present in the Perse region.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Derived from \"at\" prediction (False/Probable)",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk1069.tsv-NIL_hussein",
@@ -835,15 +835,15 @@
         "loc_mentions_list": [
           "ville d' édesse"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Baudouin is described as having gone to the city of Édesse in Mesopotamia and forming a small state there, which explicitly indicates his presence.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "There is only a historical reference that Baudouin seized the city of Édesse, with no indication he is presently there.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_bohemond",
@@ -877,15 +877,15 @@
         "loc_mentions_list": [
           "Mésopotamie"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Baudouin is said to have gone to Mesopotamia to capture the town of Édesse, indicating his presence there.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "No indication that Baudouin is currently in Mesopotamia; the text only recounts a past action of him going there and forming a state.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_calife_d_egypte",
@@ -983,15 +983,15 @@
         "loc_mentions_list": [
           "Antioche"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Bohémond likely was present in Antioche, as the text implies he arranged to have the fertile country of Antioche ceded to him by the crusaders.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Derived from \"at\" prediction (False/Probable)",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_clovis",
@@ -1891,15 +1891,15 @@
         "loc_mentions_list": [
           "Europe"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "It is likely that Grégoire VII was in Europe, as he was a pope of the Catholic Church based in Rome, which is within Europe, inferred from historical context.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Derived from \"at\" prediction (False/Probable)",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_frederic",
@@ -1933,15 +1933,15 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "No indication in the text that Pascal II was ever in Rome; the passage only says he came to France.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Derived from \"at\" prediction (False/Probable)",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_pascal",
@@ -2040,15 +2040,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Pepin is linked to the “donations de Pepin” concerning French territories, implying his involvement in France even though the text does not state his physical presence explicitly.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Derived from \"at\" prediction (False/Probable)",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv_Q3044_charlemagne",
@@ -2061,15 +2061,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Charlemagne is associated with the donations concerning France, implying he had ties to the region, suggesting he likely was present there.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Derived from \"at\" prediction (False/Probable)",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_henri",
@@ -2228,15 +2228,15 @@
         "loc_mentions_list": [
           "Normandie"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Rolon is explicitly described as Master of Rouen and having made Rouen his base, indicating his presence in Normandy.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "There is no indication that Rolon is presently in Normandie; the text recounts his historical conquests and actions without suggesting a recent or current presence.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk110.tsv-NIL_raoul",
@@ -2313,15 +2313,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Rolon is explicitly described as turning to France, becoming master of Rouen, and using France as a base for his wars.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "There is no indication that Rolon is presently in France; the text recounts past actions and does not state he is currently there.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk110.tsv-NIL_rolon",
@@ -2398,15 +2398,15 @@
         "loc_mentions_list": [
           "Rouen"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Rolon is explicitly described as master of Rouen and establishing his base there.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "No indication that Rolon is presently in Rouen near the article’s publication; the text describes past actions and his role there without stating a current presence.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk110.tsv-NIL_raoul",
@@ -2518,9 +2518,9 @@
         "loc_mentions_list": [
           "Marseille"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The letter is addressed to \"monsieur l' evesque d' Orleans ... à Marseille,\" indicating he was in Marseille when the correspondence was sent.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -3040,15 +3040,15 @@
         "loc_mentions_list": [
           "Europe"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Pierre Des Vignes is described as writing letters to princes of Germany and Europe, indicating his presence in Europe.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Pierre Des Vignes is mentioned only as a historical chancellor writing letters during medieval events; the text gives no indication that he is physically in Europe within the month before the article’s publication.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk238.tsv-NIL_frederic",
@@ -3083,15 +3083,15 @@
         "loc_mentions_list": [
           "Allemagne"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "There is no indication in the text that the César was ever present in Germany.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Derived from \"at\" prediction (False/Probable)",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk238.tsv-NIL_cesar",
@@ -4015,11 +4015,11 @@
         "SYS_at": "TRUE",
         "CORRECT_at": true,
         "SYS_at_explanation": "Gargantua and his companions travelled \"jusques au dessus de Orleans\", indicating they were present in the vicinity of Orléans.",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "There is no indication that Gargantua is presently in Orléans or has been there within a month before the article’s writing; the text only mentions traveling past or toward Orléans.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1542_Rabelais_Gargantua_chunk35.tsv-NIL_tenaud",
@@ -4162,11 +4162,11 @@
         "SYS_at": "TRUE",
         "CORRECT_at": true,
         "SYS_at_explanation": "Eudemon is mentioned as part of the group that traveled “jusques au dessus de Orleans,” implying he was present in the vicinity of Orleans.",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Derived from \"at\" prediction (False/Probable)",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1542_Rabelais_Gargantua_chunk35.tsv-NIL_eudemon",
@@ -4225,11 +4225,11 @@
         "SYS_at": "TRUE",
         "CORRECT_at": true,
         "SYS_at_explanation": "Ponocrates and his party are said to travel “jusques au dessus de Orleans,” indicating they reached the area of Orleans.",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "No indication that Ponocrates is currently in or near Orleans; the text merely recounts a past journey past Orleans, not a present‑time presence.",
-        "CORRECT": false
+        "CORRECT": true
       }
     ]
   },
@@ -5333,15 +5333,15 @@
         "loc_mentions_list": [
           "île de l' Ascençaon"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "There is no indication in the text that M Daprès was ever present on the île de l' Ascençaon; he only locates it on a map.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Derived from \"at\" prediction (False/Probable)",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1797_Perouse_Voyage_chunk227.tsv-NIL_anson",
@@ -5525,9 +5525,9 @@
         "loc_mentions_list": [
           "sud de l' île de la Trinité"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "M Bernizet traced the plan of the southern part of the île de la Trinité after the two days spent there, indicating he was present at that location.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -7720,15 +7720,15 @@
         "loc_mentions_list": [
           "Pays - Bas"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Don Juan was sent by Philippe to the Pays‑Bas, indicating he was present there.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Don Juan’s presence in the Pays‑Bas is mentioned as a past, historical event (he was sent there after Requesens’ death), with no indication that he is currently there at the time of writing.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk783.tsv-NIL_philippe",
@@ -9506,15 +9506,15 @@
         "loc_mentions_list": [
           "porto sancto"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Pantagruel is part of the narrative describing the voyage that passes Porto Sancto, suggesting he was likely present there.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Derived from \"at\" prediction (False/Probable)",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1542_Rabelais_Pantagruel_chunk86.tsv-NIL_epistemon",
@@ -9527,15 +9527,15 @@
         "loc_mentions_list": [
           "isles de Canarre"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "No explicit or implicit evidence in the text that Epistemon was present at the isles de Canarre.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Derived from \"at\" prediction (False/Probable)",
-        "CORRECT": true
+        "CORRECT": false
       }
     ]
   },
@@ -9587,11 +9587,11 @@
         "SYS_at": "TRUE",
         "CORRECT_at": true,
         "SYS_at_explanation": "The text states that the opuscules are now in the hands of Mr le prieur De La Valette at Aix, indicating his presence there.",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
-        "CORRECT_isAt": true,
+        "CORRECT_isAt": false,
         "SYS_isAt_explanation": "Mr le prieur De La Valette is said to have the Keplerus opuscules “now in his hands at Aix,” indicating he is present there at the time of the August 13 1631 letter, i.e., within the month‑long window.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1637_Peiresc_lettres_chunk52.tsv_Q1150_mercure",

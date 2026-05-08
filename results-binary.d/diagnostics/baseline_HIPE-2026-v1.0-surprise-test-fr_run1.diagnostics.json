@@ -154,15 +154,15 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Le texte mentionne que Rome adopta la procession du Père et du Fils en lien avec Eugène IV (via le concile de Lyon en 1274), mais ne précise pas explicitement qu’il y était présent à ce moment. Aucune mention directe de sa présence à Rome avant 1274 n’apparaît dans les phrases antérieures. Le contexte historique suggère une action *à Rome* (adoption d’une décision), mais pas une présence physique attestée.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Aucune phrase ne place Eugène IV à Rome dans un cadre *actuel* ou *très récent* (1756). Le texte se concentre sur des événements historiques antérieurs (1274) ou des débats théologiques, sans lien temporel avec la publication de 1756. La mention de Rome est contextuelle (concile de Lyon), pas contemporaine.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk132.tsv-NIL_judas",
@@ -280,9 +280,9 @@
         "loc_mentions_list": [
           "Constantinople"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Le texte mentionne explicitement que Michel Paléologue, en tant qu’empereur grec, envoya son patriarche et son chancelier à Constantinople pour participer au second concile de Lyon (1274), ce qui implique une présence active et temporaire à la ville lors de cet événement. La phrase « envoya [...] son patriarche et son chancelier, qui chantèrent avec le concile en latin » confirme une action directe liée à Constantinople.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -399,15 +399,15 @@
         "loc_mentions_list": [
           "Ispahan"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Le texte mentionne explicitement que Scha - Hussein a 'remis cette capitale [Ispahan], abdiqua le royaume à ses pieds' après l'assaut de Maghmud, indiquant clairement qu'il y était présent lors de cet événement historique (1722).",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Bien que le contexte évoque un événement passé (1722) et non une présence actuelle ou récente, le texte souligne que Scha - Hussein a 'abdiqué le royaume à ses pieds' en étant physiquement présent à Ispahan, ce qui pourrait être interprété comme une action immédiate relative à la publication (1756). Cependant, l'absence de mention d'une situation actuelle ou très récente (comme une occupation ou une présence continue) rend cette classification marginale.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk1069.tsv-NIL_maghmud",
@@ -462,15 +462,15 @@
         "loc_mentions_list": [
           "Ispahan"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Le texte mentionne explicitement que Maghmud assiégea Ispahan en 1722, indiquant clairement sa présence active lors de cet événement historique. Aucune autre mention indirecte ou temporelle n’est nécessaire pour confirmer cette relation.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Bien que le contexte évoque une action passée (l’assaut en 1722), le texte ne décrit pas de présence actuelle ou récente de Maghmud à Ispahan au moment de la publication (1756). Aucune indication temporelle immédiate ou en cours n’est présente.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk1069.tsv-NIL_charles",
@@ -525,15 +525,15 @@
         "loc_mentions_list": [
           "Perse"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Le texte mentionne que Asraf succéda à Maghmud après sa mort en 1725, mais ne décrit pas explicitement son séjour en Perse avant cette succession. Aucune trace directe de sa présence en Perse avant 1725 n'est évoquée dans les phrases précédentes (les troubles de Candahar, l'assiégé d'Ispahan, etc.).",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Le texte indique que Asraf fut l'usurpateur qui succéda à Maghmud en 1725, mais ne précise pas qu'il était en Perse à ce moment précis. Bien que la désolation de la Perse soit évoquée comme redoublant *de tous côtés* après sa succession, cela ne constitue pas une preuve claire d'une présence immédiate ou actuelle d'Asraf en Perse.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk1069.tsv-NIL_hussein",
@@ -835,9 +835,9 @@
         "loc_mentions_list": [
           "ville d' édesse"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Le texte mentionne explicitement que Baudouin 'alla jusqu'en Mésopotamie s'emparer de la ville d'Édesse', indiquant une présence active et temporaire dans cette localité lors de l'événement décrit (guerre des croisades).",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -877,15 +877,15 @@
         "loc_mentions_list": [
           "Mésopotamie"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Le texte mentionne explicitement que Baudouin 'alla jusqu'en Mésopotamie' pour s'en emparer de la ville d'Édesse, indiquant une présence active et directe sur le territoire. Cette phrase est claire et directe, confirmant une action passée de déplacement vers la place.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Aucune mention dans le texte ne place Baudouin en Mésopotamie dans un cadre temporel immédiat, actuel ou récent par rapport à 1756. Le passage décrit des événements historiques lointains (guerres croisées) sans lien avec une présence contemporaine.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_calife_d_egypte",
@@ -983,15 +983,15 @@
         "loc_mentions_list": [
           "Antioche"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Le texte mentionne explicitement que Bohémond 'eut l'adresse de se faire céder par les croisés le fertile pays d'Antioche', indiquant qu'il y fut présent lors de la prise de ce territoire. Cette phrase directe et contextuelle confirme une présence passée à Antioche.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Bien que le passage évoque une action passée ('se faire céder'), il ne décrit pas une présence actuelle ou très récente de Bohémond à Antioche dans le cadre de l'article. Aucune mention temporelle immédiate ou contemporaine n'est apportée.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_clovis",
@@ -1891,15 +1891,15 @@
         "loc_mentions_list": [
           "Europe"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Le texte mentionne Grégoire VII comme ayant 'tenu les yeux de l'Europe ouverts' sur ses victoires, grandeurs, infortunes et vertus, suggérant une présence active et durable en Europe au cours de son règne (avant 1085). Bien que l'article ne précise pas explicitement un lieu précis en France ou ailleurs, la référence à son influence européenne comme 'ses victoires' et 'ses grandeurs' implique une présence effective en Europe (au moins symbolique ou politique) pendant son mandat.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Aucune mention dans le texte ne place Grégoire VII en Europe dans un cadre temporel immédiat, contemporain ou très récent à la publication (1756). Le texte se concentre sur son passé historique et ses actions passées, sans référence à une présence actuelle ou récente.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_frederic",
@@ -1933,15 +1933,15 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Le texte mentionne explicitement que Pascal II est venu en France et a imploré le roi Philippe d’y obtenir le secours pour Rome, sans preuve directe de sa présence physique dans la ville. Aucune mention de voyage ou d’action concrète à Rome n’est attestée dans ce passage, mais son rôle diplomatique et son lien avec le pape suggèrent une relation indirecte (alliance, soutien politique).",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Aucune indication dans le texte ne place Pascal II à Rome dans un cadre temporel immédiat (présent, récent ou en cours). Son rôle est évoqué comme une demande de soutien politique, sans mention d’une présence actuelle ou récente à Rome.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_pascal",
@@ -2040,15 +2040,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Aucune mention explicite de Pepin en France dans ce passage. Le texte évoque des événements liés à Henri IV et ses descendants, mais ne mentionne pas Pepin (Pépin le Bref) ni son lien avec la France. Les références à la papauté et aux conflits entre rois de France et empereurs ne concernent pas directement Pepin.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Le texte ne soutient aucune présence actuelle ou récente de Pepin en France. Les événements décrits (conflits dynastiques, actions des successeurs de Henri IV) ne s’appliquent pas à Pepin, qui est mentionné dans un contexte historique lointain (VIIIᵉ siècle).",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv_Q3044_charlemagne",
@@ -2061,15 +2061,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Aucune mention explicite de Charlemagne en France dans ce passage. Le texte évoque des événements liés à la papauté et aux successeurs d'Henri IV, sans référence directe à Charlemagne en tant que personne physique en France. Les références à la France concernent plutôt des institutions ou des dynamiques politiques entre les royaumes et Rome.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Le texte ne soutient aucune présence actuelle ou récente de Charlemagne en France. Les événements décrits (exhumation d'Henri IV, conflits entre papes et rois) ne mentionnent pas Charlemagne en lien avec la France.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_henri",
@@ -2228,15 +2228,15 @@
         "loc_mentions_list": [
           "Normandie"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Le texte mentionne explicitement que Rolon 'demanda d'abord la Normandie' et que 'on fut trop heureux de la lui céder', indiquant clairement qu'il occupa ce territoire. Il y a aussi des références à son 'établissement fixe' à Rouen (partie de la Normandie) et à son 'fief de la Neustrie' (ancien nom de la Normandie).",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Bien que Rolon ait été établi en Normandie, le texte ne décrit pas de présence actuelle ou récente de lui-même dans ce contexte immédiat (1756). Les événements rapportés concernent surtout ses conquêtes passées et son rôle politique historique, sans mention d'une situation contemporaine.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk110.tsv-NIL_raoul",
@@ -2313,15 +2313,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Le texte mentionne explicitement que Rolon a opéré en France après avoir été chassé du Danemark, y a établi des liens avec des Normands, et y a mené des raids politiques (Angleterre/France). Il a aussi été maître de Rouen, une ville française, et a reçu des concessions territoriales françaises (Normandie, Bretagne). Ces actions indiquent clairement une présence active et durable en France.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Bien que Rolon ait des activités en France, le texte ne décrit pas de présence *actuelle* ou *immédiate* (pas de mention de raids récents, de séjour en cours, ou d'événements contemporains à la publication de 1756). Son rôle semble historique et politique, sans contexte temporel présent.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk110.tsv-NIL_rolon",
@@ -2398,15 +2398,15 @@
         "loc_mentions_list": [
           "Rouen"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Le texte mentionne explicitement que Rolon 'maîtrise Rouen sans peine' et y établit une 'place d'armes', indiquant clairement qu'il y réside ou y a un siège permanent. Il y renforce les fortifications et y maintient une présence durable, confirmant sa présence à Rouen avant publication.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Bien que Rolon soit décrit comme 'paisible' et 'se faisant chrétien' à Rouen, le texte ne précise pas s'il y est présent *au moment de la publication* (1756). Aucune mention d'une activité récente ou actuelle n'est donnée, et son rôle y est plutôt historique (conquête, législation).",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk110.tsv-NIL_raoul",
@@ -2518,15 +2518,15 @@
         "loc_mentions_list": [
           "Marseille"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The letter explicitly states the sender’s location at the bottom: 'D’ Aix, ce X Febvrier 1627. à monsieur, monsieur l’ evesque d’Orleans, à Marseille.' This clearly indicates the epistle was written from Marseille, implying the recipient was there during correspondence (though not necessarily the recipient’s current presence).",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text does not describe the recipient’s *current* or *ongoing* presence in Marseille. The letter’s closing is from Aix (the sender’s location) to Marseille (the recipient’s address), not a direct statement of the recipient’s being there at the time of writing. No evidence supports immediate or recent presence.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1637_Peiresc_lettres_chunk230.tsv-NIL_grutterus",
@@ -3040,15 +3040,15 @@
         "loc_mentions_list": [
           "Europe"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Le texte mentionne que Pierre Des Vignes écrit aux princes d’Allemagne et d’Europe pour les informer de sa position politique, mais ne précise pas explicitement un lieu précis en Europe où il se trouve physiquement. Aucune indication directe de présence actuelle ou passée à un endroit spécifique sur le continent n’est donnée. La mention de ses lettres aux princes est contextuelle et générale.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Aucune preuve ne soutient que Pierre Des Vignes soit présent en Europe dans le cadre temporel immédiat de l’article (courant, en cours ou très récent). Son action politique (écriture aux princes) est évoquée sans lien spatial précis avec le continent. Le texte se concentre sur des dynamiques impériales et papales, sans localisation de son activité.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk238.tsv-NIL_frederic",
@@ -3083,15 +3083,15 @@
         "loc_mentions_list": [
           "Allemagne"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Le texte mentionne que l'empereur (César) a écrit à tous les princes d'Allemagne et d'Europe via son chancelier, ce qui implique une présence active et directe dans ce contexte politique et diplomatique. Bien que les détails sur un déplacement physique immédiat ne soient pas explicitement décrits, la référence à des échanges épistolaires avec les princes allemands suggère une implication locale et une relation avec la situation impériale en Allemagne.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Aucune mention dans le texte ne place César en Allemagne dans un cadre temporel immédiat (actuel, en cours ou très récent). Les références aux lettres envoyées et aux débats politiques concernent plutôt des actions passées ou des dynamiques historiques, sans indication d'une présence contemporaine à l'article (1756).",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk238.tsv-NIL_cesar",
@@ -4015,11 +4015,11 @@
         "SYS_at": "TRUE",
         "CORRECT_at": true,
         "SYS_at_explanation": "Le texte mentionne explicitement que Gargantua et ses compagnons partent *au-dessus d’Orléans* (littéralement « jusques au dessus de Orleans ») après avoir voyagé par mer jusqu’à Olonne, sans préciser une présence immédiate, mais une progression vers cette ville. Bien que le récit ne donne pas de détails temporels postérieurs à leur arrivée, la mention d’un passage *en direction* d’Orléans (sans mention d’un retour ou d’une absence) suggère une relation temporelle indirecte avec la ville, mais pas une présence *actuelle* ou *en cours* dans l’horizon immédiat de la publication (1542).",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Le texte ne mentionne pas Gargantua *à Orléans* dans un cadre temporel proche (actuel, en cours ou très récent). Il décrit seulement son voyage *vers* la ville, sans aucun détail sur une présence actuelle ou une action en cours à Orléans au moment de la publication (1542).",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1542_Rabelais_Gargantua_chunk35.tsv-NIL_tenaud",
@@ -4162,9 +4162,9 @@
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Le texte mentionne que Gargantua, son précepteur et ses gens, y compris Eudémon, ont voyagé depuis Paris jusqu’à Orléans le lendemain après avoir bu, sans jamais préciser un moment précis avant la publication (1542). Bien que la mention de leur cheminement vers Orléans soit directe, aucune indication temporelle claire ne confirme une présence passée à Orléans avant leur départ. Le contexte suggère une action récente (le lendemain), mais pas une présence antérieure.",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Le texte décrit explicitement que Gargantua, Ponocrates, ses gens et Eudémon ont pris le chemin d’Orléans le lendemain après avoir bu, en partant de Paris. Cette information, située dans la temporalité immédiate de la publication (1542), place Eudémon en train de se déplacer vers Orléans, sans qu’il soit encore arrivé. Aucune preuve ne confirme qu’il soit déjà présent à Orléans au moment de la rédaction.",
         "CORRECT": false
       },
@@ -4225,11 +4225,11 @@
         "SYS_at": "TRUE",
         "CORRECT_at": true,
         "SYS_at_explanation": "Le texte mentionne que Ponocrates et Gargantua, accompagnés de leurs hommes, 'passèrent leur grand chemin' jusqu'au-dessus d'Orléans, sans préciser une date exacte mais en évoquant un déplacement en cours vers cette région. Bien que le récit ne donne pas de détails temporels précis, la mention explicite de leur avancée vers Orléans (avec une forêt à proximité) suggère une présence effective dans cette zone au moins jusqu’à ce moment-là.",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Le passage ne décrit pas Ponocrates comme étant présent à Orléans dans un cadre immédiat, actuel ou récent par rapport à la publication (1542). Le texte se concentre sur leur progression vers Orléans et non sur une situation locale actuelle ou en cours. Aucune indication temporelle récente n’est apportée.",
-        "CORRECT": false
+        "CORRECT": true
       }
     ]
   },
@@ -5333,15 +5333,15 @@
         "loc_mentions_list": [
           "île de l' Ascençaon"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Le texte mentionne explicitement que M Daprès a cru aborder à l'île de l'Ascençaon en se basant sur des récits de navigateurs (comme Frézier) et sur des observations géographiques, bien que ces derniers aient été confondus avec la Trinité. Bien que l'article souligne une incertitude (il « crus » que les navigateurs avaient abordé là), il ne contredit pas directement cette présence. La mention de « différens navigateurs » et de leur « aborder » à l'Ascençaon (bien que contestée) suggère une relation probable.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "L'article ne mentionne pas M Daprès en train d'être présent à l'île de l'Ascençaon dans un cadre temporel immédiat (actuel ou très récent). Les informations concernent surtout des observations passées ou des doutes sur des récits antérieurs, sans lien avec une visite récente ou actuelle. Aucune preuve de présence contemporaine n'est apportée.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1797_Perouse_Voyage_chunk227.tsv-NIL_anson",
@@ -5525,9 +5525,9 @@
         "loc_mentions_list": [
           "sud de l' île de la Trinité"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Le texte mentionne explicitement que les deux jours passés par l'expédition vers le sud de l'île de la Trinité ont permis de réaliser des relevés géographiques, dont ceux tracés par M Bernizet, en s'appuyant sur des observations directes et des mesures cartographiques. Cela confirme une présence active et tangible sur cette partie de l'île.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -7720,15 +7720,15 @@
         "loc_mentions_list": [
           "Pays - Bas"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Le texte mentionne que Philippe II envoie **Don Juan d'Autriche** comme frère pour rétablir le calme dans les Pays-Bas après la révolte, sans préciser une présence immédiate ou ponctuelle à un lieu précis. La mention se limite à une mission politique envoyée depuis l’Europe (via la présence de Philippe), mais ne décrit pas de séjour actif dans les Pays-Bas. Aucune preuve de présence physique n’est explicitement donnée.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Aucune indication dans le texte ne place **Don Juan** dans les Pays-Bas à un moment récent ou actuel (proche de 1756). Le passage évoque son envoi comme représentant de Philippe II, mais sans contexte temporel ni lieu de résidence. La relation « isAt » ne peut donc pas être confirmée.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk783.tsv-NIL_philippe",
@@ -9506,15 +9506,15 @@
         "loc_mentions_list": [
           "porto sancto"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Le texte mentionne brièvement le voyage de Eneas et Heraclides Tarentin, dont les récits incluent des étapes par 'porto sancto' et 'Medere' comme étapes de leur navigation. Bien que le passage ne soit pas directement lié à Pantagruel, la mention explicite de ces lieux dans un contexte de déplacement maritime suggère une **présence indirecte** (via les récits historiques) et justifie une classification PROBABLE pour 'at'.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Aucun détail dans le texte ne place Pantagruel à Porto Sancto dans un cadre temporel immédiat (actuel, en cours ou très récent). Le récit se concentre sur des événements historiques ou mythologiques, sans lien direct avec Pantagruel. Aucune indication ne confirme qu'il soit présent là-bas à la date de publication (1542).",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1542_Rabelais_Pantagruel_chunk86.tsv-NIL_epistemon",
@@ -9527,15 +9527,15 @@
         "loc_mentions_list": [
           "isles de Canarre"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Le texte mentionne que les personnages ont navigué depuis la ville de Tarente (Heraclides Tarentin) jusqu’aux îles de Canarre après avoir quitté Dido, sans préciser si Epistemon était présent sur ces îles. Aucune indication directe ne confirme qu’il y soit arrivé, mais le contexte narratif suggère une relation temporelle indirecte (départ de Tarente → arrivée aux Canarres).",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Aucun passage ne place explicitement Epistemon aux îles de Canarre dans un cadre temporel immédiat (présent, en cours ou très récent). Le récit se concentre sur les actions des autres personnages (Pantagruel, Eneas) et ne mentionne pas Epistemon sur ces îles.",
-        "CORRECT": false
+        "CORRECT": true
       }
     ]
   },
@@ -9587,11 +9587,11 @@
         "SYS_at": "TRUE",
         "CORRECT_at": true,
         "SYS_at_explanation": "Le texte mentionne explicitement que les opuscules de Keplerus sont 'maintenant ès mains de Mr le prieur De La Valette à Aix', indiquant clairement qu'il les détient en ce moment à cette adresse. La phrase 'concernant les petits eclipses... qui sont maintenant ès mains de Mr le prieur De La Valette à Aix' confirme une présence actuelle à Aix.",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
-        "CORRECT_isAt": true,
+        "CORRECT_isAt": false,
         "SYS_isAt_explanation": "La mention 'maintenant ès mains' et la localisation 'à Aix' dans le même contexte suggèrent une présence en cours ou très récente à cette date (1631). Le texte ne précise pas un événement ponctuel, mais une situation continue.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1637_Peiresc_lettres_chunk52.tsv_Q1150_mercure",

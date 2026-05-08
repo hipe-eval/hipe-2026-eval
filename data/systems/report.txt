@@ -62,6 +62,18 @@
   Hansel&Gretel/run3/HIPE-2026-v1.0-impresso-test-en.jsonl  ->  team9_HIPE-2026-v1.0-impresso-test-en_run3.jsonl
   Hansel&Gretel/run3/HIPE-2026-v1.0-impresso-test-fr.jsonl  ->  team9_HIPE-2026-v1.0-impresso-test-fr_run3.jsonl
   Hansel&Gretel/run3/HIPE-2026-v1.0-surprise-test-fr.jsonl  ->  team9_HIPE-2026-v1.0-surprise-test-fr_run3.jsonl
+  INSALyon_HIPE-2026/run1/HIPE-2026-v1.0-impresso-test-de.jsonl  ->  team17_HIPE-2026-v1.0-impresso-test-de_run1.jsonl
+  INSALyon_HIPE-2026/run1/HIPE-2026-v1.0-impresso-test-en.jsonl  ->  team17_HIPE-2026-v1.0-impresso-test-en_run1.jsonl
+  INSALyon_HIPE-2026/run1/HIPE-2026-v1.0-impresso-test-fr.jsonl  ->  team17_HIPE-2026-v1.0-impresso-test-fr_run1.jsonl
+  INSALyon_HIPE-2026/run1/HIPE-2026-v1.0-surprise-test-fr.jsonl  ->  team17_HIPE-2026-v1.0-surprise-test-fr_run1.jsonl
+  INSALyon_HIPE-2026/run2/HIPE-2026-v1.0-impresso-test-de.jsonl  ->  team17_HIPE-2026-v1.0-impresso-test-de_run2.jsonl
+  INSALyon_HIPE-2026/run2/HIPE-2026-v1.0-impresso-test-en.jsonl  ->  team17_HIPE-2026-v1.0-impresso-test-en_run2.jsonl
+  INSALyon_HIPE-2026/run2/HIPE-2026-v1.0-impresso-test-fr.jsonl  ->  team17_HIPE-2026-v1.0-impresso-test-fr_run2.jsonl
+  INSALyon_HIPE-2026/run2/HIPE-2026-v1.0-surprise-test-fr.jsonl  ->  team17_HIPE-2026-v1.0-surprise-test-fr_run2.jsonl
+  INSALyon_HIPE-2026/run3/HIPE-2026-v1.0-impresso-test-de.jsonl  ->  team17_HIPE-2026-v1.0-impresso-test-de_run3.jsonl
+  INSALyon_HIPE-2026/run3/HIPE-2026-v1.0-impresso-test-en.jsonl  ->  team17_HIPE-2026-v1.0-impresso-test-en_run3.jsonl
+  INSALyon_HIPE-2026/run3/HIPE-2026-v1.0-impresso-test-fr.jsonl  ->  team17_HIPE-2026-v1.0-impresso-test-fr_run3.jsonl
+  INSALyon_HIPE-2026/run3/HIPE-2026-v1.0-surprise-test-fr.jsonl  ->  team17_HIPE-2026-v1.0-surprise-test-fr_run3.jsonl
   MILRIT/MILRIT_HIPE-2026-v1.0-test-de_en_fr_surprisefr_run1/HIPE-2026-v1.0-impresso-test-de.jsonl  ->  team14_HIPE-2026-v1.0-impresso-test-de_run1.jsonl
   MILRIT/MILRIT_HIPE-2026-v1.0-test-de_en_fr_surprisefr_run1/HIPE-2026-v1.0-impresso-test-en.jsonl  ->  team14_HIPE-2026-v1.0-impresso-test-en_run1.jsonl
   MILRIT/MILRIT_HIPE-2026-v1.0-test-de_en_fr_surprisefr_run1/HIPE-2026-v1.0-impresso-test-fr.jsonl  ->  team14_HIPE-2026-v1.0-impresso-test-fr_run1.jsonl
@@ -164,4 +176,4 @@
   whereami/run2/HIPE-2026-v1.0-impresso-test-fr.jsonl  ->  team12_HIPE-2026-v1.0-impresso-test-fr_run2.jsonl
   whereami/run2/HIPE-2026-v1.0-surprise-test-fr.jsonl  ->  team12_HIPE-2026-v1.0-surprise-test-fr_run2.jsonl
 
-Done. 165 file(s) copied to /Users/siclemat/pj/2026/impresso/hipe-2026-data-preparation/data/team_submissions/anonymized_runs/  (0 team(s) skipped)
+Done. 177 file(s) copied to /Users/siclemat/pj/2026/impresso/hipe-2026-data-preparation/data/team_submissions/anonymized_runs/  (0 team(s) skipped)

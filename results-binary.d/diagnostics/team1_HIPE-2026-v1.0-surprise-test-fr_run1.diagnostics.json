@@ -154,15 +154,15 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Eugène IV mentioned as pope, implies Roman connection",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Eugène IV mentioned as pope, implies Roman connection",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk132.tsv-NIL_judas",
@@ -280,15 +280,15 @@
         "loc_mentions_list": [
           "Constantinople"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Michel is Greek emperor, implies Constantinople connection",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Michel is Greek emperor, implies Constantinople connection",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk132.tsv-NIL_eugene",
@@ -399,15 +399,15 @@
         "loc_mentions_list": [
           "Ispahan"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Scha-Hussein surrendered Ispahan capital to Maghmud in 1722",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Scha-Hussein surrendered Ispahan capital to Maghmud in 1722",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk1069.tsv-NIL_maghmud",
@@ -462,15 +462,15 @@
         "loc_mentions_list": [
           "Ispahan"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Maghmud besieged Ispahan in 1722, died 1725",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Maghmud besieged Ispahan in 1722, died 1725",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk1069.tsv-NIL_charles",
@@ -525,15 +525,15 @@
         "loc_mentions_list": [
           "Perse"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Asraf succeeded as usurpator, desolating Persia",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Asraf succeeded as usurpator, desolating Persia",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk1069.tsv-NIL_hussein",
@@ -835,15 +835,15 @@
         "loc_mentions_list": [
           "ville d' édesse"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Baudouin went to seize Edessa, historical past",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Baudouin went to seize Edessa, historical past",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_bohemond",
@@ -877,15 +877,15 @@
         "loc_mentions_list": [
           "Mésopotamie"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Baudouin went to Mesopotamia to seize Edessa",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Baudouin went to Mesopotamia to seize Edessa",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_calife_d_egypte",
@@ -983,15 +983,15 @@
         "loc_mentions_list": [
           "Antioche"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Bohémond got crusaders to cede him Antioche territory",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Bohémond got crusaders to cede him Antioche territory",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_clovis",
@@ -1891,15 +1891,15 @@
         "loc_mentions_list": [
           "Europe"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Henri IV held Europe's eyes open on his fortunes",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Henri IV held Europe's eyes open on his fortunes",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_frederic",
@@ -1933,15 +1933,15 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Pascal II is pope but no Rome scene described",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Pascal II is pope but no Rome scene described",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_pascal",
@@ -2040,15 +2040,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Pepin made donations but no France presence described",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Pepin made donations but no France presence described",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv_Q3044_charlemagne",
@@ -2061,15 +2061,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Charlemagne made donations but no France presence described",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Charlemagne made donations but no France presence described",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_henri",
@@ -2228,15 +2228,15 @@
         "loc_mentions_list": [
           "Normandie"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Rolon demanded and received Normandie, became its ruler",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Rolon demanded and received Normandie, became its ruler",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk110.tsv-NIL_raoul",
@@ -2313,15 +2313,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Rolon turned toward France, made war there",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Rolon turned toward France, made war there",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk110.tsv-NIL_rolon",
@@ -2398,15 +2398,15 @@
         "loc_mentions_list": [
           "Rouen"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Rolon mastered Rouen, rebuilt its walls and towers",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Rolon mastered Rouen, rebuilt its walls and towers",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk110.tsv-NIL_raoul",
@@ -2518,9 +2518,9 @@
         "loc_mentions_list": [
           "Marseille"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Letter addressed to bishop at Marseille",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -3040,15 +3040,15 @@
         "loc_mentions_list": [
           "Europe"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Pierre wrote to princes of Europe",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Pierre wrote to princes of Europe",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk238.tsv-NIL_frederic",
@@ -3083,15 +3083,15 @@
         "loc_mentions_list": [
           "Allemagne"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Landgrave of Thuringia chosen as emperor in Germany",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Landgrave of Thuringia chosen as emperor in Germany",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk238.tsv-NIL_cesar",
@@ -4015,11 +4015,11 @@
         "SYS_at": "TRUE",
         "CORRECT_at": true,
         "SYS_at_explanation": "Gargantua travels and passes above Orleans on journey",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
-        "CORRECT_isAt": true,
+        "CORRECT_isAt": false,
         "SYS_isAt_explanation": "Gargantua travels and passes above Orleans on journey",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1542_Rabelais_Gargantua_chunk35.tsv-NIL_tenaud",
@@ -4162,11 +4162,11 @@
         "SYS_at": "TRUE",
         "CORRECT_at": true,
         "SYS_at_explanation": "Eudemon travels with group passing above Orleans",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
-        "CORRECT_isAt": true,
+        "CORRECT_isAt": false,
         "SYS_isAt_explanation": "Eudemon travels with group passing above Orleans",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1542_Rabelais_Gargantua_chunk35.tsv-NIL_eudemon",
@@ -4225,11 +4225,11 @@
         "SYS_at": "TRUE",
         "CORRECT_at": true,
         "SYS_at_explanation": "Ponocrates travels with group passing above Orleans",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
-        "CORRECT_isAt": true,
+        "CORRECT_isAt": false,
         "SYS_isAt_explanation": "Ponocrates travels with group passing above Orleans",
-        "CORRECT": true
+        "CORRECT": false
       }
     ]
   },
@@ -5333,15 +5333,15 @@
         "loc_mentions_list": [
           "île de l' Ascençaon"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "M Daprès places the island, geographic knowledge only",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "M Daprès places the island, geographic knowledge only",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1797_Perouse_Voyage_chunk227.tsv-NIL_anson",
@@ -5525,15 +5525,15 @@
         "loc_mentions_list": [
           "sud de l' île de la Trinité"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Bernizet traced plan of south part, was there",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Bernizet traced plan of south part, was there",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1797_Perouse_Voyage_chunk227.tsv-NIL_ascencaon",
@@ -7720,15 +7720,15 @@
         "loc_mentions_list": [
           "Pays - Bas"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Philippe sent Don Juan to Pays-Bas, historical mission",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Philippe sent Don Juan to Pays-Bas, historical mission",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk783.tsv-NIL_philippe",
@@ -9506,9 +9506,9 @@
         "loc_mentions_list": [
           "porto sancto"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Pantagruel travels with group passing by Porto Santo",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -9527,9 +9527,9 @@
         "loc_mentions_list": [
           "isles de Canarre"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Epistemon travels with group passing by Canary Islands",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -9587,11 +9587,11 @@
         "SYS_at": "TRUE",
         "CORRECT_at": true,
         "SYS_at_explanation": "Prieur De La Valette currently has Kepler's works at Aix",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
-        "CORRECT_isAt": true,
+        "CORRECT_isAt": false,
         "SYS_isAt_explanation": "Prieur De La Valette currently has Kepler's works at Aix",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1637_Peiresc_lettres_chunk52.tsv_Q1150_mercure",

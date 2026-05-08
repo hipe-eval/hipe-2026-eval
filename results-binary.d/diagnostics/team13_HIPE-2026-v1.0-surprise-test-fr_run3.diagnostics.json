@@ -154,15 +154,15 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Aucun passage n'indique qu'Eugène IV était à Rome ; il n'est mentionné que dans le cadre d'une réunion, dont le lieu n'est pas précisé.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Aucun passage du texte ne situe Eugène IV à Rome au moment décrit.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk132.tsv-NIL_judas",
@@ -280,15 +280,15 @@
         "loc_mentions_list": [
           "Constantinople"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Rien n'indique que Michel Paléologue se soit trouvé à Constantinople.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Michel Paléologue n'est pas indiqué comme étant à Constantinople dans le texte.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk132.tsv-NIL_eugene",
@@ -399,9 +399,9 @@
         "loc_mentions_list": [
           "Ispahan"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Scha‑Hussein est mentionné comme ayant remis la capitale d’Ispahan à Maghmud, ce qui indique qu’il s’est trouvé à Ispahan.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -462,9 +462,9 @@
         "loc_mentions_list": [
           "Ispahan"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Il est indiqué que Maghmud a assiégé Ispahan en 1722 et en a pris le contrôle, ce qui prouve qu’il s’est trouvé à cet endroit.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -525,15 +525,15 @@
         "loc_mentions_list": [
           "Perse"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Il est probable qu'Asraf ait été présent en Perse, étant présenté comme le successeur usurpateur de Maghmud dans le contexte de la désolation de la Perse.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Aucun indice que Asraf se trouvait en Perse.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk1069.tsv-NIL_hussein",
@@ -835,9 +835,9 @@
         "loc_mentions_list": [
           "ville d' édesse"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Il est indiqué que Baudouin alla jusqu'en Mésopotamie s'emparer de la ville d'Édesse, montrant qu'il s'y trouvait.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -877,9 +877,9 @@
         "loc_mentions_list": [
           "Mésopotamie"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Il y a une indication que Baudouin s'est rendu en Mésopotamie, comme le texte indique : « Baudouin alla jusqu'en Mésopotamie s'emparer de la ville d'Édesse… ».",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -983,9 +983,9 @@
         "loc_mentions_list": [
           "Antioche"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Il y a une indication que Bohémond s’est fait céder le fertile pays d’Antioche par les croisés, ce qui montre qu’il s’est trouvé à Antioche.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -1891,15 +1891,15 @@
         "loc_mentions_list": [
           "Europe"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Aucun passage du texte n’indique que Grégoire VII se soit trouvé physiquement en Europe ; la mention d’« les yeux de l’Europe » est métaphorique.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Rien n'indique que Grégoire VII se trouvait en Europe au moment décrit.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_frederic",
@@ -1933,15 +1933,15 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Aucun texte n'indique que Pascal II se soit rendu à Rome.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Pascal II est mentionné comme étant venu en France, aucune indication dans le texte qu’il se trouvait à Rome.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_pascal",
@@ -2040,15 +2040,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Aucun passage du texte n'indique que Pepin se trouvait en France.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Aucun indice que Pepin se trouvait en France dans le texte.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv_Q3044_charlemagne",
@@ -2061,15 +2061,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Charlemagne est cité en lien avec les « donations » de Pepin et de Charlemagne concernant des terres qui font partie de la France, ce qui laisse supposer qu’il a pu s’y trouver, mais le texte ne le mentionne pas explicitement.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Aucun indice que Charlemagne se trouvait en France à ce moment‑ci.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_henri",
@@ -2228,9 +2228,9 @@
         "loc_mentions_list": [
           "Normandie"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Il est indiqué que Rolon était « Maître de Rouen », ville située en Normandie, et qu’il a demandé puis obtenu la Normandie, ce qui prouve qu’il s’est trouvé à cet endroit.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -2313,9 +2313,9 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Il y a une indication que Rolon s’est trouvé en France, puisqu’il a tourné du côté de la France, devient maître de Rouen et y mène des campagnes, volant tantôt en France.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -2398,9 +2398,9 @@
         "loc_mentions_list": [
           "Rouen"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Rolon est décrit comme « Maître de Rouen », y fait relever les murailles et en fait sa place d’armes, ce qui indique clairement sa présence à Rouen.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -2518,9 +2518,9 @@
         "loc_mentions_list": [
           "Marseille"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Il y a une indication explicite que le monsieur l'évêque d'Orléans se trouve à Marseille, mentionnée dans la formule d'adresse “à monsieur … l'évêque d’Orléans … à Marseille”.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -3040,15 +3040,15 @@
         "loc_mentions_list": [
           "Europe"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Il est probable que Pierre Des Vignes se soit trouvé en Europe, puisqu’il écrivait à tous les princes d’Allemagne et d’Europe, ce qui implique une présence ou une activité dans le continent.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Le texte indique que Pierre Des Vignes écrivait à des princes d’Allemagne et d’Europe, mais il n’y a aucune indication explicite qu’il se trouvait lui‑même en Europe au moment de la rédaction.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk238.tsv-NIL_frederic",
@@ -3083,15 +3083,15 @@
         "loc_mentions_list": [
           "Allemagne"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Il est probable que le César se trouvait en Allemagne, étant donné qu’il est choisi par des ducs et évêques allemands, mais le texte ne le situe pas explicitement là‑bas.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Aucun passage n'indique que le César se trouvait en Allemagne au moment de la rédaction.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk238.tsv-NIL_cesar",
@@ -4015,11 +4015,11 @@
         "SYS_at": "TRUE",
         "CORRECT_at": true,
         "SYS_at_explanation": "\"Le texte indique que Gargantua et son groupe ont parcouru le chemin « jusques au dessus de Orleans », ce qui montre qu’ils se sont trouvés à l’endroit indiqué.",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
-        "CORRECT_isAt": true,
+        "CORRECT_isAt": false,
         "SYS_isAt_explanation": "Gargantua est décrit comme ayant parcouru le chemin « jusques au dessus de Orleans », ce qui indique qu’il se trouvait à Orleans (ou à proximité) dans le récit.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1542_Rabelais_Gargantua_chunk35.tsv-NIL_tenaud",
@@ -4162,11 +4162,11 @@
         "SYS_at": "TRUE",
         "CORRECT_at": true,
         "SYS_at_explanation": "Il est indiqué que Eudemon le jeune païen fait partie du groupe qui passe « jusques au dessus de Orleans », ce qui montre qu’il se trouvait à cet endroit.",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
-        "CORRECT_isAt": true,
+        "CORRECT_isAt": false,
         "SYS_isAt_explanation": "Eudemon fait partie du groupe qui \"passèrent leur grand chemin ... jusques au dessus de Orléans\", indiquant qu’il se trouvait à cet endroit.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1542_Rabelais_Gargantua_chunk35.tsv-NIL_eudemon",
@@ -4225,11 +4225,11 @@
         "SYS_at": "TRUE",
         "CORRECT_at": true,
         "SYS_at_explanation": "Il est indiqué que Ponocrates, avec ses gens, a parcouru le chemin « jusques au dessus de Orléans », ce qui montre sa présence à cet endroit.",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
-        "CORRECT_isAt": true,
+        "CORRECT_isAt": false,
         "SYS_isAt_explanation": "Ponocrates et son groupe sont décrits comme ayant voyagé « jusques au dessus de Orleans », ce qui montre qu’ils se trouvaient à cet endroit.",
-        "CORRECT": true
+        "CORRECT": false
       }
     ]
   },
@@ -5333,15 +5333,15 @@
         "loc_mentions_list": [
           "île de l' Ascençaon"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Aucun passage n'indique que M Daprès se soit trouvé à l’île de l’Ascençaon ; il n’est mentionné que qu’il y place l’île sur la carte.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "M Daprès est mentionné comme plaçant l'île de l'Ascençaon sur la carte, mais il n’y a aucune indication qu’il se trouvait physiquement à cette île.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1797_Perouse_Voyage_chunk227.tsv-NIL_anson",
@@ -5525,9 +5525,9 @@
         "loc_mentions_list": [
           "sud de l' île de la Trinité"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "M Bernizet a tracé le plan de la partie sud de l’île de la Trinité, ce qui indique qu’il s’y était.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -7720,9 +7720,9 @@
         "loc_mentions_list": [
           "Pays - Bas"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Il y a une indication que Don Juan a été dans les Pays - Bas, le texte précise que Philippe l’y envoya.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -9506,15 +9506,15 @@
         "loc_mentions_list": [
           "porto sancto"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Il est probable que Pantagruel se trouvait à Porto Sancto, le texte décrit le groupe (« ils ») traversant ce lieu après les passages où Pantagruel est mentionné, mais aucune indication explicite ne le lie directement à Porto Sancto.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Aucun passage n'indique explicitement que Pantagruel se trouvait à Porto Sancto ; le texte ne fait que mentionner que « ils » ont traversé ce lieu, sans préciser la présence de Pantagruel.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1542_Rabelais_Pantagruel_chunk86.tsv-NIL_epistemon",
@@ -9527,9 +9527,9 @@
         "loc_mentions_list": [
           "isles de Canarre"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Il est fort probable qu’Épistemon se trouvait aux îles de Canarre, puisque le texte décrit « ils » passant par Porto Sancto, Medere et faisant escale aux îles de Canarre, et Épistemon participe aux discussions précédentes, mais il n’est pas explicitement indiqué qu’il faisait partie de ce groupe.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -9587,11 +9587,11 @@
         "SYS_at": "TRUE",
         "CORRECT_at": true,
         "SYS_at_explanation": "Mr le prieur De La Valette est mentionné comme possédant des opuscules « à Aix », indiquant qu’il se trouvait à cet endroit.",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
-        "CORRECT_isAt": true,
+        "CORRECT_isAt": false,
         "SYS_isAt_explanation": "Les opuscules de Kepler sont « maintenant ès mains de Mr le prieur De La Valette à Aix », ce qui indique que le prieur se trouve à Aix au moment de la rédaction.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1637_Peiresc_lettres_chunk52.tsv_Q1150_mercure",

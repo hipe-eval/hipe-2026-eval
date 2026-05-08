@@ -154,15 +154,15 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text mentions a reunion involving Eugène IV and the Greek church, implying his presence in Rome where the papacy was located during this historical event.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The article discusses a historical event from the past (1439) involving Eugène IV, which is far removed from the publication date of 1756, indicating no current or recent presence.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk132.tsv-NIL_judas",
@@ -280,15 +280,15 @@
         "loc_mentions_list": [
           "Constantinople"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text mentions Michel Paléologue in the context of the year 1274, stating he sent his patriarch and chancellor to the Council of Lyon. This indicates a historical association with the Council of Lyon, not Constantinople, during that specific event described.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text describes events from 1274, which is centuries before the publication date of 1756. There is no evidence of Michel Paléologue being in Constantinople at the time of publication.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk132.tsv-NIL_eugene",
@@ -399,15 +399,15 @@
         "loc_mentions_list": [
           "Ispahan"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states that Scha - Hussein surrendered the capital of Ispahan to Maghmud in 1722, implying his physical presence there during the event.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The event occurred in 1722, which is approximately 34 years before the publication date of 1756. This is too distant to be considered current or very recent.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk1069.tsv-NIL_maghmud",
@@ -462,15 +462,15 @@
         "loc_mentions_list": [
           "Ispahan"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text explicitly states that Maghmud besieged Ispahan in 1722 and that Scha-Hussein handed over the capital to him, indicating his physical presence there.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The event occurred in 1722, which is approximately 34 years before the publication date of 1756. This is too distant to be considered current, ongoing, or very recent.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk1069.tsv-NIL_charles",
@@ -525,15 +525,15 @@
         "loc_mentions_list": [
           "Perse"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states that Asraf succeeded Maghmud as an usurper of the nation of the aguans and that the desolation of Persia redoubled from all sides under his rule, implying his presence in the region.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The article describes historical events occurring in 1725, which is approximately 31 years prior to the publication date of 1756. This timeframe exceeds the one-month window for 'isAt'.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk1069.tsv-NIL_hussein",
@@ -835,15 +835,15 @@
         "loc_mentions_list": [
           "ville d' édesse"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states that Baudouin went as far as Mesopotamia to seize the city of Edessa and formed a small state there, explicitly indicating his physical presence.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The article describes historical events from the Crusades (11th-12th centuries) involving Baudouin, which occurred centuries before the publication date of 1756. The event is not current or recent relative to the publication.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_bohemond",
@@ -877,15 +877,15 @@
         "loc_mentions_list": [
           "Mésopotamie"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states 'Baudouin alla jusqu' en Mésopotamie s' emparer de la ville d' édesse', explicitly indicating he went to and took control of a city in Mesopotamia.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text describes Baudouin's actions during the Crusades (1090s), which occurred centuries before the 1756 publication date. The event is historical, not current or recent.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_calife_d_egypte",
@@ -983,15 +983,15 @@
         "loc_mentions_list": [
           "Antioche"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states that Bohémond had the skill to obtain the fertile land of Antioche from the crusaders, indicating his presence and acquisition of the territory.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text describes the acquisition of Antioche as a past event during the crusades, which occurred long before the publication date of 1756. It does not indicate current or recent presence.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_clovis",
@@ -1891,15 +1891,15 @@
         "loc_mentions_list": [
           "Europe"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states that Grégoire VII held the eyes of Europe open to his victories and misfortunes, implying his influence was felt across the continent, but does not explicitly state he was physically present in Europe at a specific time relative to the publication.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The article discusses historical events involving Grégoire VII and his death in Liège, which occurred centuries before the publication date of 1756. There is no evidence of his presence in Europe in the immediate temporal horizon of the article.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_frederic",
@@ -1933,15 +1933,15 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text states that Pascal II 'vint en France' (came to France) and implies his movement between locations, but does not explicitly state he was physically present in Rome during the events described or at the time of publication. The mention of Rome is in the context of a chapter title regarding Emperor Henry V and Rome, not a direct statement of Pascal II's presence there.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The article discusses historical events involving Pascal II and mentions his movement to France, but provides no evidence of his presence in Rome at the time of publication (1756). The text is historical in nature, describing past events.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_pascal",
@@ -2040,15 +2040,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text mentions Pepin only in the context of alleged donations by the Pope ('prétendues donations de Pepin et de Charlemagne'). It does not state that Pepin was physically present in France.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text discusses Pepin's historical donations and mentions France only as a location of French kings. There is no evidence of Pepin's presence in France, let alone recent presence relative to 1756.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv_Q3044_charlemagne",
@@ -2061,15 +2061,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text mentions Charlemagne only in the context of alleged donations by Pepin and Charlemagne that the papacy claimed. It does not state that Charlemagne was physically present in France.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text discusses historical claims regarding Charlemagne's donations centuries before the 1756 publication date. There is no evidence of his presence in France at the time of publication.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_henri",
@@ -2228,15 +2228,15 @@
         "loc_mentions_list": [
           "Normandie"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states Rolon conquered Rouen, rebuilt its walls, and made it his 'place of arms' (place d'armes), establishing a fixed settlement there before moving between England and France.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The article describes historical events from the 9th century regarding Rolon's conquest of Normandy, which occurred centuries before the 1756 publication date. The events are not current or recent.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk110.tsv-NIL_raoul",
@@ -2313,15 +2313,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states Rolon turned towards France, became master of Rouen, and flew back and forth between England and France, making war there. It mentions he received provinces from Charles Le Simple and that the dukes of Normandy (his successors) paid homage to the French crown.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text describes historical events from the 9th century (Charles the Simple, Charles the Fat) regarding Rolon's conquests. The publication date is 1756, making these events over a millennium old, far outside the 'very recent' window required for 'isAt'.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk110.tsv-NIL_rolon",
@@ -2398,15 +2398,15 @@
         "loc_mentions_list": [
           "Rouen"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text explicitly states that Rolon became master of Rouen ('Maître de Rouen'), rebuilt its walls, and made it his military base ('place d'armes').",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The article describes historical events from the 9th century regarding Rolon's conquest of Rouen, which occurred centuries before the 1756 publication date.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk110.tsv-NIL_raoul",
@@ -2518,15 +2518,15 @@
         "loc_mentions_list": [
           "Marseille"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text explicitly states the letter is addressed 'à monsieur l' evesque d' Orleans... à Marseille', indicating his residence or official location at Marseille.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The letter is dated February 1627, published in 1637. This is over a decade prior to publication, placing the event far outside the 'very recent' (approx. one month) window required for 'isAt'.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1637_Peiresc_lettres_chunk230.tsv-NIL_grutterus",
@@ -3040,15 +3040,15 @@
         "loc_mentions_list": [
           "Europe"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text mentions Pierre Des Vignes as the chancellor who wrote letters to princes of Germany and Europe, but does not state he was physically present in Europe.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text describes historical events and letters sent to Europe, but provides no evidence of Pierre Des Vignes being in Europe at the time of publication in 1756.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk238.tsv-NIL_frederic",
@@ -3083,15 +3083,15 @@
         "loc_mentions_list": [
           "Allemagne"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text mentions 'Ce nouveau César' (This new Caesar) in the context of being chosen by bishops in Germany, but does not explicitly state that the person named César was physically present in Germany. The mention is part of a historical narrative about the election of an emperor.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text discusses a historical event regarding the election of an emperor ('Ce nouveau César') in Germany. Given the publication date of 1756 and the historical context described (Frederick II, Conrad), this refers to a past event, not a current or recent presence of a person named César in Germany.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk238.tsv-NIL_cesar",
@@ -4015,11 +4015,11 @@
         "SYS_at": "TRUE",
         "CORRECT_at": true,
         "SYS_at_explanation": "The text states that Gargantua and his companions traveled 'jusques au dessus de Orleans' (up to above Orleans) before entering a forest located at that place. This indicates physical presence in the vicinity of Orleans.",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
-        "CORRECT_isAt": true,
+        "CORRECT_isAt": false,
         "SYS_isAt_explanation": "The narrative describes a journey that has already taken place ('passerent leur grand chemin') leading to the location of Orleans. While the event is recent within the story's timeline, the phrasing suggests the arrival and subsequent entry into the forest are part of a completed sequence of travel, making the presence at Orleans a specific point in the past relative to the narrative flow, though likely very recent. However, given the explicit mention of arriving 'up to' the location and the immediate description of the forest there, it supports a recent presence.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1542_Rabelais_Gargantua_chunk35.tsv-NIL_tenaud",
@@ -4162,11 +4162,11 @@
         "SYS_at": "TRUE",
         "CORRECT_at": true,
         "SYS_at_explanation": "The text states that Eudemon traveled with Gargantua and his party 'jusques au dessus de Orleans' (up to above Orleans), indicating physical presence in the vicinity of the location.",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
-        "CORRECT_isAt": true,
+        "CORRECT_isAt": false,
         "SYS_isAt_explanation": "The narrative describes a journey that reached the area above Orleans. While the tense is past, the context of the travelogue implies the event occurred in the immediate timeframe of the publication's narrative horizon.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1542_Rabelais_Gargantua_chunk35.tsv-NIL_eudemon",
@@ -4225,11 +4225,11 @@
         "SYS_at": "TRUE",
         "CORRECT_at": true,
         "SYS_at_explanation": "The text states that Gargantua, his preceptor Ponocrates, and their men traveled together 'jusques au dessus de Orleans' (up to above Orleans), indicating physical presence in the vicinity of the location.",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "FALSE",
-        "CORRECT_isAt": false,
+        "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The narrative describes a journey that has already occurred ('passerent leur grand chemin') leading up to the location. While the event is recent within the story's timeline, the phrasing suggests the arrival or passage was completed before the narrative focus shifted to the forest beyond Orleans, making the immediate presence less certain than a simple visit report.",
-        "CORRECT": false
+        "CORRECT": true
       }
     ]
   },
@@ -5333,15 +5333,15 @@
         "loc_mentions_list": [
           "île de l' Ascençaon"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states that M Daprès places the island of Ascençaon at a specific location relative to Trinidad, implying his knowledge of its position, but does not explicitly state he was physically present there.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text describes M Daprès's placement of the island as a geographical fact used for navigation clarification, not a recent visit or event occurring within a month of publication.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1797_Perouse_Voyage_chunk227.tsv-NIL_anson",
@@ -5525,15 +5525,15 @@
         "loc_mentions_list": [
           "sud de l' île de la Trinité"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Le texte indique que M Bernizet a tracé le plan de la partie sud de l'île de la Trinité lors des deux jours passés par le navire dans cette région.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "L'article relate des événements passés (navigation, relevements) survenus lors d'un voyage historique, sans indiquer une présence actuelle ou très récente par rapport à la date de publication en 1797.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1797_Perouse_Voyage_chunk227.tsv-NIL_ascencaon",
@@ -7720,15 +7720,15 @@
         "loc_mentions_list": [
           "Pays - Bas"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states that Philippe sent Don Juan to the Pays-Bas after the death of Requesens to try to restore calm, explicitly linking his presence there to this mission.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text describes a historical event involving the sending of Don Juan to the Pays-Bas. Given the publication date of 1756 and the historical context of the late 16th century, this event is not within the immediate temporal horizon of the article.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk783.tsv-NIL_philippe",
@@ -9506,15 +9506,15 @@
         "loc_mentions_list": [
           "porto sancto"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states that the ship 'passing by porto sancto' (en briefz jours passans par porto sancto), implying Pantagruel was on board during this transit.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The mention of passing porto sancto is part of a narrative sequence describing a voyage that occurred in the past relative to the publication, not a current or very recent event.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1542_Rabelais_Pantagruel_chunk86.tsv-NIL_epistemon",
@@ -9527,9 +9527,9 @@
         "loc_mentions_list": [
           "isles de Canarre"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states that after sailing through Porto Santo and Madeira, the ship 'firent scalle es isles de Canarre' (made scale at the Canary Islands), implying the presence of the characters, including Epistemon, at this location.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -9587,11 +9587,11 @@
         "SYS_at": "TRUE",
         "CORRECT_at": true,
         "SYS_at_explanation": "The text states that certain opuscules by Keplerus are now in the hands of Mr le prieur De La Valette at Aix, indicating his presence or possession of items located there.",
-        "isAt": "TRUE",
+        "isAt": "FALSE",
         "SYS_isAt": "TRUE",
-        "CORRECT_isAt": true,
+        "CORRECT_isAt": false,
         "SYS_isAt_explanation": "The text mentions the location in the context of current possession of books ('maintenant ès mains') and a recent action of sending a bookseller to Aix. Given the publication date of 1637 and the lack of a specific past date for this possession, the presence is considered current relative to the article.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1637_Peiresc_lettres_chunk52.tsv_Q1150_mercure",
