@@ -7,12 +7,12 @@
   },
   "dataset": "impresso",
   "efficiency_metadata": {
-    "hipe_model_size": 1,
-    "hipe_parameter_count": 1,
+    "hipe_model_size": 0,
+    "hipe_parameter_count": 0,
     "info_file": "random_HIPE-2026-v1.0-impresso-test-en_run1-info.json",
     "info_missing": false,
-    "team_model_size": 1,
-    "team_parameter_count": 1
+    "team_model_size": 0,
+    "team_parameter_count": 0
   },
   "language": "en",
   "profile": "accuracy",

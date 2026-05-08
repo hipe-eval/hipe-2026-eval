@@ -18,6 +18,7 @@ This file is generated from `results.d/system-rankings/*.tsv`.
 - [Generalization Profile Ranking](#generalization-profile-ranking)
 - [Generalization Profile Ranking French](#generalization-profile-ranking-french)
 - [Efficiency Profile Ranking Overall](#efficiency-profile-ranking-overall)
+- [Balanced Efficiency Profile Ranking Overall](#balanced-efficiency-profile-ranking-overall)
 - [Efficiency Profile Ranking German](#efficiency-profile-ranking-german)
 - [Efficiency Profile Ranking English](#efficiency-profile-ranking-english)
 - [Efficiency Profile Ranking French](#efficiency-profile-ranking-french)
@@ -33,10 +34,11 @@ This file is generated from `results.d/system-rankings/*.tsv`.
 - `mean_impresso_profile_score`: mean of `impresso_profile_score` over the submitted `impresso` language files.
 - `surprise_profile_score`: score on a `surprise` file, computed as `at_macro_recall`; `isAt` is not evaluated for `surprise`.
 - `mean_efficiency_profile_rank`: mean of `rank_impresso_profile_score`, `rank_hipe_parameter_count`, and `rank_hipe_model_size`; lower is better.
+- `balanced_efficiency_profile_rank`: `0.5 * rank_impresso_profile_score + 0.25 * rank_hipe_parameter_count + 0.25 * rank_hipe_model_size`; lower is better.
 
 ## Accuracy Profile Ranking Overall
 
-| rank | team | run | mean_impresso_profile_score | languages | num_language_files |
+| rank | team | run | mean impresso profile score | languages | num language files |
 | --- | --- | --- | --- | --- | --- |
 | 1 | team13 | run1 | 0.7479 | de,en,fr | 3 |
 | 2 | team13 | run3 | 0.7289 | de,en,fr | 3 |
@@ -86,7 +88,7 @@ Only team runs that submitted all `impresso` language files are included in this
 
 ## Accuracy Profile Ranking German
 
-| rank | team | run | submission | impresso_profile_score | at_macro_recall | isAt_macro_recall | diagnostics |
+| rank | team | run | submission | impresso profile score | at macro recall | isAt macro recall | diagnostics |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | team13 | run3 | team13_HIPE-2026-v1.0-impresso-test-de_run3.jsonl | 0.771 | 0.7027 | 0.8394 | [Comparison](results.d/diagnostics/team13_HIPE-2026-v1.0-impresso-test-de_run3.diagnostics.json) / [Metrics](results.d/diagnostics/team13_HIPE-2026-v1.0-impresso-test-de_run3.diagnostic_metrics.json) |
 | 2 | team13 | run1 | team13_HIPE-2026-v1.0-impresso-test-de_run1.jsonl | 0.7608 | 0.7017 | 0.8199 | [Comparison](results.d/diagnostics/team13_HIPE-2026-v1.0-impresso-test-de_run1.diagnostics.json) / [Metrics](results.d/diagnostics/team13_HIPE-2026-v1.0-impresso-test-de_run1.diagnostic_metrics.json) |
@@ -134,7 +136,7 @@ Only team runs that submitted all `impresso` language files are included in this
 
 ## Accuracy Profile Ranking English
 
-| rank | team | run | submission | impresso_profile_score | at_macro_recall | isAt_macro_recall | diagnostics |
+| rank | team | run | submission | impresso profile score | at macro recall | isAt macro recall | diagnostics |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | team8 | run1 | team8_HIPE-2026-v1.0-impresso-test-en_run1.jsonl | 0.7493 | 0.7424 | 0.7562 | [Comparison](results.d/diagnostics/team8_HIPE-2026-v1.0-impresso-test-en_run1.diagnostics.json) / [Metrics](results.d/diagnostics/team8_HIPE-2026-v1.0-impresso-test-en_run1.diagnostic_metrics.json) |
 | 2 | team13 | run1 | team13_HIPE-2026-v1.0-impresso-test-en_run1.jsonl | 0.7279 | 0.656 | 0.7998 | [Comparison](results.d/diagnostics/team13_HIPE-2026-v1.0-impresso-test-en_run1.diagnostics.json) / [Metrics](results.d/diagnostics/team13_HIPE-2026-v1.0-impresso-test-en_run1.diagnostic_metrics.json) |
@@ -183,7 +185,7 @@ Only team runs that submitted all `impresso` language files are included in this
 
 ## Accuracy Profile Ranking French
 
-| rank | team | run | submission | impresso_profile_score | at_macro_recall | isAt_macro_recall | diagnostics |
+| rank | team | run | submission | impresso profile score | at macro recall | isAt macro recall | diagnostics |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | team13 | run1 | team13_HIPE-2026-v1.0-impresso-test-fr_run1.jsonl | 0.7551 | 0.6785 | 0.8318 | [Comparison](results.d/diagnostics/team13_HIPE-2026-v1.0-impresso-test-fr_run1.diagnostics.json) / [Metrics](results.d/diagnostics/team13_HIPE-2026-v1.0-impresso-test-fr_run1.diagnostic_metrics.json) |
 | 2 | team13 | run2 | team13_HIPE-2026-v1.0-impresso-test-fr_run2.jsonl | 0.7383 | 0.6774 | 0.7991 | [Comparison](results.d/diagnostics/team13_HIPE-2026-v1.0-impresso-test-fr_run2.diagnostics.json) / [Metrics](results.d/diagnostics/team13_HIPE-2026-v1.0-impresso-test-fr_run2.diagnostic_metrics.json) |
@@ -231,7 +233,7 @@ Only team runs that submitted all `impresso` language files are included in this
 
 ## Generalization Profile Ranking
 
-| rank | team | run | submission | surprise_profile_score | diagnostics |
+| rank | team | run | submission | surprise profile score | diagnostics |
 | --- | --- | --- | --- | --- | --- |
 | 1 | team8 | run1 | team8_HIPE-2026-v1.0-surprise-test-fr_run1.jsonl | 0.7503 | [Comparison](results.d/diagnostics/team8_HIPE-2026-v1.0-surprise-test-fr_run1.diagnostics.json) / [Metrics](results.d/diagnostics/team8_HIPE-2026-v1.0-surprise-test-fr_run1.diagnostic_metrics.json) |
 | 2 | team8 | run3 | team8_HIPE-2026-v1.0-surprise-test-fr_run3.jsonl | 0.748 | [Comparison](results.d/diagnostics/team8_HIPE-2026-v1.0-surprise-test-fr_run3.diagnostics.json) / [Metrics](results.d/diagnostics/team8_HIPE-2026-v1.0-surprise-test-fr_run3.diagnostic_metrics.json) |
@@ -279,7 +281,7 @@ Only team runs that submitted all `impresso` language files are included in this
 
 ## Generalization Profile Ranking French
 
-| rank | team | run | submission | surprise_profile_score | at_macro_recall | isAt_macro_recall | diagnostics |
+| rank | team | run | submission | surprise profile score | at macro recall | isAt macro recall | diagnostics |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | team8 | run1 | team8_HIPE-2026-v1.0-surprise-test-fr_run1.jsonl | 0.7503 | 0.7503 |  | [Comparison](results.d/diagnostics/team8_HIPE-2026-v1.0-surprise-test-fr_run1.diagnostics.json) / [Metrics](results.d/diagnostics/team8_HIPE-2026-v1.0-surprise-test-fr_run1.diagnostic_metrics.json) |
 | 2 | team8 | run3 | team8_HIPE-2026-v1.0-surprise-test-fr_run3.jsonl | 0.748 | 0.748 |  | [Comparison](results.d/diagnostics/team8_HIPE-2026-v1.0-surprise-test-fr_run3.diagnostics.json) / [Metrics](results.d/diagnostics/team8_HIPE-2026-v1.0-surprise-test-fr_run3.diagnostic_metrics.json) |
@@ -327,18 +329,18 @@ Only team runs that submitted all `impresso` language files are included in this
 
 ## Efficiency Profile Ranking Overall
 
-| rank | team | run | mean_efficiency_profile_rank | rank_impresso_profile_score | rank_hipe_parameter_count | rank_hipe_model_size | mean_impresso_profile_score | hipe_parameter_count | hipe_model_size_mb |
+| rank | team | run | mean efficiency profile rank | rank impresso profile score | rank hipe parameter count | rank hipe model size | mean impresso profile score | hipe parameter count | hipe model size mb |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | team15 | run2 | 11 | 31 | 1 | 1 | 0.4734 | 0 | 0 |
 | 2 | team14 | run3 | 12.3333 | 14 | 11 | 12 | 0.5951 | 277730309 | 1111 |
 | 2 | team2 | run1 | 12.3333 | 25 | 6 | 6 | 0.5142 | 2087375 | 87 |
 | 4 | team2 | run2 | 13.6667 | 29 | 6 | 6 | 0.4836 | 2087375 | 87 |
 | 5 | team2 | run3 | 14 | 30 | 6 | 6 | 0.4771 | 2087375 | 87 |
-| 5 | team7 | run1 | 14 | 37 | 3 | 2 | 0.446 | 12279 | 0.8 |
-| 5 | team7 | run2 | 14 | 35 | 4 | 3 | 0.4507 | 12365 | 0.81 |
-| 5 | team7 | run3 | 14 | 34 | 5 | 3 | 0.4564 | 12399 | 0.81 |
-| 9 | random | run1 | 16.6667 | 43 | 2 | 5 | 0.4049 | 1 | 1 |
-| 9 | team14 | run1 | 16.6667 | 20 | 15 | 15 | 0.5623 | 466577920 | 1780 |
+| 6 | team7 | run1 | 14.3333 | 37 | 3 | 3 | 0.446 | 12279 | 0.8 |
+| 6 | team7 | run2 | 14.3333 | 35 | 4 | 4 | 0.4507 | 12365 | 0.81 |
+| 6 | team7 | run3 | 14.3333 | 34 | 5 | 4 | 0.4564 | 12399 | 0.81 |
+| 9 | random | run1 | 15 | 43 | 1 | 1 | 0.4049 | 0 | 0 |
+| 10 | team14 | run1 | 16.6667 | 20 | 15 | 15 | 0.5623 | 466577920 | 1780 |
 | 11 | team6 | run2 | 18 | 28 | 13 | 13 | 0.4842 | 355000000 | 1424 |
 | 12 | baseline | run1 | 18.3333 | 16 | 21 | 18 | 0.5818 | 3000000000 | 2147.023 |
 | 12 | team1 | run2 | 18.3333 | 21 | 17 | 17 | 0.5494 | 560965127 | 2140 |
@@ -373,20 +375,70 @@ Only team runs that submitted all `impresso` language files are included in this
 | 41 | team9 | run3 | 29.3333 | 12 | 38 | 38 | 0.6221 | 120000000000 | 240000 |
 | 43 | team10 | run1 | 34.6667 | 38 | 33 | 33 | 0.4429 | 26000000000 | 52000 |
 
+## Balanced Efficiency Profile Ranking Overall
+
+| rank | team | run | balanced efficiency profile rank | rank impresso profile score | rank hipe parameter count | rank hipe model size | mean impresso profile score | hipe parameter count | hipe model size mb |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | team14 | run3 | 12.75 | 14 | 11 | 12 | 0.5951 | 277730309 | 1111 |
+| 2 | team2 | run1 | 15.5 | 25 | 6 | 6 | 0.5142 | 2087375 | 87 |
+| 3 | team15 | run2 | 16 | 31 | 1 | 1 | 0.4734 | 0 | 0 |
+| 4 | team12 | run1 | 16.25 | 5 | 27 | 28 | 0.688 | 5123178979 | 9600 |
+| 5 | team12 | run2 | 16.75 | 6 | 27 | 28 | 0.6833 | 5123178979 | 9600 |
+| 6 | team14 | run1 | 17.5 | 20 | 15 | 15 | 0.5623 | 466577920 | 1780 |
+| 6 | team2 | run2 | 17.5 | 29 | 6 | 6 | 0.4836 | 2087375 | 87 |
+| 8 | baseline | run1 | 17.75 | 16 | 21 | 18 | 0.5818 | 3000000000 | 2147.023 |
+| 9 | team13 | run1 | 18 | 1 | 35 | 35 | 0.7479 | 116830000000 | 65238 |
+| 9 | team2 | run3 | 18 | 30 | 6 | 6 | 0.4771 | 2087375 | 87 |
+| 11 | team13 | run3 | 18.5 | 2 | 35 | 35 | 0.7289 | 116830000000 | 65238 |
+| 12 | team11 | run2 | 18.75 | 11 | 26 | 27 | 0.6271 | 4465470464 | 9012 |
+| 13 | team1 | run2 | 19 | 21 | 17 | 17 | 0.5494 | 560965127 | 2140 |
+| 14 | team3 | run3 | 19.25 | 17 | 23 | 20 | 0.5795 | 4000000000 | 2840 |
+| 14 | team7 | run3 | 19.25 | 34 | 5 | 4 | 0.4564 | 12399 | 0.81 |
+| 16 | team13 | run2 | 19.5 | 4 | 35 | 35 | 0.689 | 116830000000 | 65238 |
+| 16 | team5 | run2 | 19.5 | 15 | 23 | 25 | 0.5856 | 4000000000 | 7600 |
+| 16 | team7 | run2 | 19.5 | 35 | 4 | 4 | 0.4507 | 12365 | 0.81 |
+| 19 | team7 | run1 | 20 | 37 | 3 | 3 | 0.446 | 12279 | 0.8 |
+| 20 | team6 | run2 | 20.5 | 28 | 13 | 13 | 0.4842 | 355000000 | 1424 |
+| 21 | team8 | run1 | 21 | 3 | 39 | 39 | 0.7001 | 999999999999 | 999999 |
+| 22 | random | run1 | 22 | 43 | 1 | 1 | 0.4049 | 0 | 0 |
+| 22 | team11 | run1 | 22 | 13 | 31 | 31 | 0.6141 | 9300029952 | 18398 |
+| 24 | team9 | run1 | 22.25 | 22 | 21 | 24 | 0.5458 | 3000000000 | 6248 |
+| 25 | team3 | run1 | 22.75 | 27 | 18 | 19 | 0.5004 | 1500000000 | 2340 |
+| 26 | team11 | run3 | 23 | 26 | 19 | 21 | 0.5069 | 1949101888 | 3845 |
+| 26 | team6 | run1 | 23 | 33 | 13 | 13 | 0.4628 | 355000000 | 1424 |
+| 26 | team8 | run2 | 23 | 7 | 39 | 39 | 0.669 | 999999999999 | 999999 |
+| 29 | team1 | run3 | 23.5 | 8 | 39 | 39 | 0.6671 | 999999999999 | 999999 |
+| 30 | team1 | run1 | 24 | 9 | 39 | 39 | 0.6584 | 999999999999 | 999999 |
+| 30 | team9 | run2 | 24 | 18 | 30 | 30 | 0.5788 | 7000000000 | 15300 |
+| 32 | team15 | run1 | 24.5 | 40 | 9 | 9 | 0.427 | 208935168 | 816 |
+| 32 | team5 | run1 | 24.5 | 39 | 10 | 10 | 0.4408 | 270000000 | 1030 |
+| 32 | team8 | run3 | 24.5 | 10 | 39 | 39 | 0.6544 | 999999999999 | 999999 |
+| 35 | team3 | run2 | 25 | 24 | 29 | 23 | 0.5187 | 5900000000 | 5980 |
+| 35 | team9 | run3 | 25 | 12 | 38 | 38 | 0.6221 | 120000000000 | 240000 |
+| 37 | team10 | run2 | 26.5 | 19 | 34 | 34 | 0.5781 | 27000000000 | 54000 |
+| 37 | team15 | run3 | 26.5 | 32 | 20 | 22 | 0.4645 | 2274069824 | 4442 |
+| 39 | team4 | run1 | 26.75 | 42 | 12 | 11 | 0.4061 | 278054405 | 1060 |
+| 40 | team10 | run3 | 27.5 | 23 | 32 | 32 | 0.539 | 24000000000 | 48000 |
+| 41 | team14 | run2 | 28.5 | 41 | 16 | 16 | 0.4264 | 466585989 | 1866 |
+| 42 | team5 | run3 | 30 | 36 | 23 | 25 | 0.4495 | 4000000000 | 7600 |
+| 43 | team10 | run1 | 35.5 | 38 | 33 | 33 | 0.4429 | 26000000000 | 52000 |
+
+This is an additional analysis ranking. It is not the guideline-defined Efficiency Profile Ranking; it gives equal total weight to accuracy and to the combined resource ranks.
+
 ## Efficiency Profile Ranking German
 
-| rank | team | run | submission | mean_efficiency_profile_rank | rank_impresso_profile_score | rank_hipe_parameter_count | rank_hipe_model_size | impresso_profile_score | hipe_parameter_count | hipe_model_size_mb | diagnostics |
+| rank | team | run | submission | mean efficiency profile rank | rank impresso profile score | rank hipe parameter count | rank hipe model size | impresso profile score | hipe parameter count | hipe model size mb | diagnostics |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | team7 | run1 | team7_HIPE-2026-v1.0-impresso-test-de_run1.jsonl | 9.6667 | 24 | 3 | 2 | 0.5196 | 12279 | 0.8 | [Comparison](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-de_run1.diagnostics.json) / [Metrics](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-de_run1.diagnostic_metrics.json) |
-| 2 | team7 | run3 | team7_HIPE-2026-v1.0-impresso-test-de_run3.jsonl | 10 | 22 | 5 | 3 | 0.5222 | 12399 | 0.81 | [Comparison](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-de_run3.diagnostics.json) / [Metrics](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-de_run3.diagnostic_metrics.json) |
-| 3 | team7 | run2 | team7_HIPE-2026-v1.0-impresso-test-de_run2.jsonl | 10.6667 | 25 | 4 | 3 | 0.5192 | 12365 | 0.81 | [Comparison](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-de_run2.diagnostics.json) / [Metrics](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-de_run2.diagnostic_metrics.json) |
+| 1 | team7 | run1 | team7_HIPE-2026-v1.0-impresso-test-de_run1.jsonl | 10 | 24 | 3 | 3 | 0.5196 | 12279 | 0.8 | [Comparison](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-de_run1.diagnostics.json) / [Metrics](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-de_run1.diagnostic_metrics.json) |
+| 2 | team7 | run3 | team7_HIPE-2026-v1.0-impresso-test-de_run3.jsonl | 10.3333 | 22 | 5 | 4 | 0.5222 | 12399 | 0.81 | [Comparison](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-de_run3.diagnostics.json) / [Metrics](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-de_run3.diagnostic_metrics.json) |
+| 3 | team7 | run2 | team7_HIPE-2026-v1.0-impresso-test-de_run2.jsonl | 11 | 25 | 4 | 4 | 0.5192 | 12365 | 0.81 | [Comparison](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-de_run2.diagnostics.json) / [Metrics](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-de_run2.diagnostic_metrics.json) |
 | 4 | team15 | run2 | team15_HIPE-2026-v1.0-impresso-test-de_run2.jsonl | 12 | 34 | 1 | 1 | 0.4678 | 0 | 0 | [Comparison](results.d/diagnostics/team15_HIPE-2026-v1.0-impresso-test-de_run2.diagnostics.json) / [Metrics](results.d/diagnostics/team15_HIPE-2026-v1.0-impresso-test-de_run2.diagnostic_metrics.json) |
 | 5 | team14 | run3 | team14_HIPE-2026-v1.0-impresso-test-de_run3.jsonl | 12.6667 | 15 | 11 | 12 | 0.5886 | 277730309 | 1111 | [Comparison](results.d/diagnostics/team14_HIPE-2026-v1.0-impresso-test-de_run3.diagnostics.json) / [Metrics](results.d/diagnostics/team14_HIPE-2026-v1.0-impresso-test-de_run3.diagnostic_metrics.json) |
 | 6 | team2 | run1 | team2_HIPE-2026-v1.0-impresso-test-de_run1.jsonl | 13 | 27 | 6 | 6 | 0.516 | 2087375 | 87 | [Comparison](results.d/diagnostics/team2_HIPE-2026-v1.0-impresso-test-de_run1.diagnostics.json) / [Metrics](results.d/diagnostics/team2_HIPE-2026-v1.0-impresso-test-de_run1.diagnostic_metrics.json) |
 | 7 | team2 | run3 | team2_HIPE-2026-v1.0-impresso-test-de_run3.jsonl | 13.6667 | 29 | 6 | 6 | 0.5054 | 2087375 | 87 | [Comparison](results.d/diagnostics/team2_HIPE-2026-v1.0-impresso-test-de_run3.diagnostics.json) / [Metrics](results.d/diagnostics/team2_HIPE-2026-v1.0-impresso-test-de_run3.diagnostic_metrics.json) |
+| 8 | random | run1 | random_HIPE-2026-v1.0-impresso-test-de_run1.jsonl | 14.6667 | 42 | 1 | 1 | 0.4058 | 0 | 0 | [Comparison](results.d/diagnostics/random_HIPE-2026-v1.0-impresso-test-de_run1.diagnostics.json) / [Metrics](results.d/diagnostics/random_HIPE-2026-v1.0-impresso-test-de_run1.diagnostic_metrics.json) |
 | 8 | team2 | run2 | team2_HIPE-2026-v1.0-impresso-test-de_run2.jsonl | 14.6667 | 32 | 6 | 6 | 0.4937 | 2087375 | 87 | [Comparison](results.d/diagnostics/team2_HIPE-2026-v1.0-impresso-test-de_run2.diagnostics.json) / [Metrics](results.d/diagnostics/team2_HIPE-2026-v1.0-impresso-test-de_run2.diagnostic_metrics.json) |
-| 9 | team14 | run1 | team14_HIPE-2026-v1.0-impresso-test-de_run1.jsonl | 15.3333 | 16 | 15 | 15 | 0.5802 | 466577920 | 1780 | [Comparison](results.d/diagnostics/team14_HIPE-2026-v1.0-impresso-test-de_run1.diagnostics.json) / [Metrics](results.d/diagnostics/team14_HIPE-2026-v1.0-impresso-test-de_run1.diagnostic_metrics.json) |
-| 10 | random | run1 | random_HIPE-2026-v1.0-impresso-test-de_run1.jsonl | 16.3333 | 42 | 2 | 5 | 0.4058 | 1 | 1 | [Comparison](results.d/diagnostics/random_HIPE-2026-v1.0-impresso-test-de_run1.diagnostics.json) / [Metrics](results.d/diagnostics/random_HIPE-2026-v1.0-impresso-test-de_run1.diagnostic_metrics.json) |
+| 10 | team14 | run1 | team14_HIPE-2026-v1.0-impresso-test-de_run1.jsonl | 15.3333 | 16 | 15 | 15 | 0.5802 | 466577920 | 1780 | [Comparison](results.d/diagnostics/team14_HIPE-2026-v1.0-impresso-test-de_run1.diagnostics.json) / [Metrics](results.d/diagnostics/team14_HIPE-2026-v1.0-impresso-test-de_run1.diagnostic_metrics.json) |
 | 11 | team1 | run2 | team1_HIPE-2026-v1.0-impresso-test-de_run2.jsonl | 18 | 20 | 17 | 17 | 0.5417 | 560965127 | 2140 | [Comparison](results.d/diagnostics/team1_HIPE-2026-v1.0-impresso-test-de_run2.diagnostics.json) / [Metrics](results.d/diagnostics/team1_HIPE-2026-v1.0-impresso-test-de_run2.diagnostic_metrics.json) |
 | 11 | team6 | run2 | team6_HIPE-2026-v1.0-impresso-test-de_run2.jsonl | 18 | 28 | 13 | 13 | 0.5071 | 355000000 | 1424 | [Comparison](results.d/diagnostics/team6_HIPE-2026-v1.0-impresso-test-de_run2.diagnostics.json) / [Metrics](results.d/diagnostics/team6_HIPE-2026-v1.0-impresso-test-de_run2.diagnostic_metrics.json) |
 | 13 | baseline | run1 | baseline_HIPE-2026-v1.0-impresso-test-de_run1.jsonl | 19 | 18 | 21 | 18 | 0.5553 | 3000000000 | 2147.023 | [Comparison](results.d/diagnostics/baseline_HIPE-2026-v1.0-impresso-test-de_run1.diagnostics.json) / [Metrics](results.d/diagnostics/baseline_HIPE-2026-v1.0-impresso-test-de_run1.diagnostic_metrics.json) |
@@ -423,17 +475,17 @@ Only team runs that submitted all `impresso` language files are included in this
 
 ## Efficiency Profile Ranking English
 
-| rank | team | run | submission | mean_efficiency_profile_rank | rank_impresso_profile_score | rank_hipe_parameter_count | rank_hipe_model_size | impresso_profile_score | hipe_parameter_count | hipe_model_size_mb | diagnostics |
+| rank | team | run | submission | mean efficiency profile rank | rank impresso profile score | rank hipe parameter count | rank hipe model size | impresso profile score | hipe parameter count | hipe model size mb | diagnostics |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | team15 | run2 | team15_HIPE-2026-v1.0-impresso-test-en_run2.jsonl | 11.3333 | 32 | 1 | 1 | 0.4624 | 0 | 0 | [Comparison](results.d/diagnostics/team15_HIPE-2026-v1.0-impresso-test-en_run2.diagnostics.json) / [Metrics](results.d/diagnostics/team15_HIPE-2026-v1.0-impresso-test-en_run2.diagnostic_metrics.json) |
 | 2 | team2 | run1 | team2_HIPE-2026-v1.0-impresso-test-en_run1.jsonl | 12.3333 | 24 | 7 | 6 | 0.5103 | 2087375 | 87 | [Comparison](results.d/diagnostics/team2_HIPE-2026-v1.0-impresso-test-en_run1.diagnostics.json) / [Metrics](results.d/diagnostics/team2_HIPE-2026-v1.0-impresso-test-en_run1.diagnostic_metrics.json) |
 | 3 | team14 | run3 | team14_HIPE-2026-v1.0-impresso-test-en_run3.jsonl | 13 | 14 | 12 | 13 | 0.5881 | 277730309 | 1111 | [Comparison](results.d/diagnostics/team14_HIPE-2026-v1.0-impresso-test-en_run3.diagnostics.json) / [Metrics](results.d/diagnostics/team14_HIPE-2026-v1.0-impresso-test-en_run3.diagnostic_metrics.json) |
 | 4 | team2 | run3 | team2_HIPE-2026-v1.0-impresso-test-en_run3.jsonl | 13.3333 | 27 | 7 | 6 | 0.4834 | 2087375 | 87 | [Comparison](results.d/diagnostics/team2_HIPE-2026-v1.0-impresso-test-en_run3.diagnostics.json) / [Metrics](results.d/diagnostics/team2_HIPE-2026-v1.0-impresso-test-en_run3.diagnostic_metrics.json) |
-| 5 | team7 | run3 | team7_HIPE-2026-v1.0-impresso-test-en_run3.jsonl | 14.3333 | 34 | 6 | 3 | 0.4541 | 12399 | 0.81 | [Comparison](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-en_run3.diagnostics.json) / [Metrics](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-en_run3.diagnostic_metrics.json) |
-| 6 | team7 | run2 | team7_HIPE-2026-v1.0-impresso-test-en_run2.jsonl | 14.6667 | 36 | 5 | 3 | 0.4431 | 12365 | 0.81 | [Comparison](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-en_run2.diagnostics.json) / [Metrics](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-en_run2.diagnostic_metrics.json) |
-| 7 | team7 | run1 | team7_HIPE-2026-v1.0-impresso-test-en_run1.jsonl | 15 | 39 | 4 | 2 | 0.4335 | 12279 | 0.8 | [Comparison](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-en_run1.diagnostics.json) / [Metrics](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-en_run1.diagnostic_metrics.json) |
-| 8 | team2 | run2 | team2_HIPE-2026-v1.0-impresso-test-en_run2.jsonl | 16.6667 | 37 | 7 | 6 | 0.4401 | 2087375 | 87 | [Comparison](results.d/diagnostics/team2_HIPE-2026-v1.0-impresso-test-en_run2.diagnostics.json) / [Metrics](results.d/diagnostics/team2_HIPE-2026-v1.0-impresso-test-en_run2.diagnostic_metrics.json) |
-| 9 | random | run1 | random_HIPE-2026-v1.0-impresso-test-en_run1.jsonl | 17 | 44 | 2 | 5 | 0.3733 | 1 | 1 | [Comparison](results.d/diagnostics/random_HIPE-2026-v1.0-impresso-test-en_run1.diagnostics.json) / [Metrics](results.d/diagnostics/random_HIPE-2026-v1.0-impresso-test-en_run1.diagnostic_metrics.json) |
+| 5 | team7 | run3 | team7_HIPE-2026-v1.0-impresso-test-en_run3.jsonl | 14.6667 | 34 | 6 | 4 | 0.4541 | 12399 | 0.81 | [Comparison](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-en_run3.diagnostics.json) / [Metrics](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-en_run3.diagnostic_metrics.json) |
+| 6 | team7 | run2 | team7_HIPE-2026-v1.0-impresso-test-en_run2.jsonl | 15 | 36 | 5 | 4 | 0.4431 | 12365 | 0.81 | [Comparison](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-en_run2.diagnostics.json) / [Metrics](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-en_run2.diagnostic_metrics.json) |
+| 7 | random | run1 | random_HIPE-2026-v1.0-impresso-test-en_run1.jsonl | 15.3333 | 44 | 1 | 1 | 0.3733 | 0 | 0 | [Comparison](results.d/diagnostics/random_HIPE-2026-v1.0-impresso-test-en_run1.diagnostics.json) / [Metrics](results.d/diagnostics/random_HIPE-2026-v1.0-impresso-test-en_run1.diagnostic_metrics.json) |
+| 7 | team7 | run1 | team7_HIPE-2026-v1.0-impresso-test-en_run1.jsonl | 15.3333 | 39 | 4 | 3 | 0.4335 | 12279 | 0.8 | [Comparison](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-en_run1.diagnostics.json) / [Metrics](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-en_run1.diagnostic_metrics.json) |
+| 9 | team2 | run2 | team2_HIPE-2026-v1.0-impresso-test-en_run2.jsonl | 16.6667 | 37 | 7 | 6 | 0.4401 | 2087375 | 87 | [Comparison](results.d/diagnostics/team2_HIPE-2026-v1.0-impresso-test-en_run2.diagnostics.json) / [Metrics](results.d/diagnostics/team2_HIPE-2026-v1.0-impresso-test-en_run2.diagnostic_metrics.json) |
 | 10 | team5 | run1 | team5_HIPE-2026-v1.0-impresso-test-en_run1.jsonl | 17.6667 | 31 | 11 | 11 | 0.4702 | 270000000 | 1030 | [Comparison](results.d/diagnostics/team5_HIPE-2026-v1.0-impresso-test-en_run1.diagnostics.json) / [Metrics](results.d/diagnostics/team5_HIPE-2026-v1.0-impresso-test-en_run1.diagnostic_metrics.json) |
 | 11 | team16 | run1 | team16_HIPE-2026-v1.0-impresso-test-en_run1.jsonl | 18 | 42 | 3 | 9 | 0.4254 | 110 | 433 | [Comparison](results.d/diagnostics/team16_HIPE-2026-v1.0-impresso-test-en_run1.diagnostics.json) / [Metrics](results.d/diagnostics/team16_HIPE-2026-v1.0-impresso-test-en_run1.diagnostic_metrics.json) |
 | 12 | team6 | run2 | team6_HIPE-2026-v1.0-impresso-test-en_run2.jsonl | 18.6667 | 28 | 14 | 14 | 0.4808 | 355000000 | 1424 | [Comparison](results.d/diagnostics/team6_HIPE-2026-v1.0-impresso-test-en_run2.diagnostics.json) / [Metrics](results.d/diagnostics/team6_HIPE-2026-v1.0-impresso-test-en_run2.diagnostic_metrics.json) |
@@ -472,18 +524,18 @@ Only team runs that submitted all `impresso` language files are included in this
 
 ## Efficiency Profile Ranking French
 
-| rank | team | run | submission | mean_efficiency_profile_rank | rank_impresso_profile_score | rank_hipe_parameter_count | rank_hipe_model_size | impresso_profile_score | hipe_parameter_count | hipe_model_size_mb | diagnostics |
+| rank | team | run | submission | mean efficiency profile rank | rank impresso profile score | rank hipe parameter count | rank hipe model size | impresso profile score | hipe parameter count | hipe model size mb | diagnostics |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | team15 | run2 | team15_HIPE-2026-v1.0-impresso-test-fr_run2.jsonl | 9.6667 | 27 | 1 | 1 | 0.4902 | 0 | 0 | [Comparison](results.d/diagnostics/team15_HIPE-2026-v1.0-impresso-test-fr_run2.diagnostics.json) / [Metrics](results.d/diagnostics/team15_HIPE-2026-v1.0-impresso-test-fr_run2.diagnostic_metrics.json) |
 | 2 | team2 | run2 | team2_HIPE-2026-v1.0-impresso-test-fr_run2.jsonl | 12 | 24 | 6 | 6 | 0.5171 | 2087375 | 87 | [Comparison](results.d/diagnostics/team2_HIPE-2026-v1.0-impresso-test-fr_run2.diagnostics.json) / [Metrics](results.d/diagnostics/team2_HIPE-2026-v1.0-impresso-test-fr_run2.diagnostic_metrics.json) |
 | 3 | team2 | run1 | team2_HIPE-2026-v1.0-impresso-test-fr_run1.jsonl | 12.3333 | 25 | 6 | 6 | 0.5162 | 2087375 | 87 | [Comparison](results.d/diagnostics/team2_HIPE-2026-v1.0-impresso-test-fr_run1.diagnostics.json) / [Metrics](results.d/diagnostics/team2_HIPE-2026-v1.0-impresso-test-fr_run1.diagnostic_metrics.json) |
-| 4 | team14 | run3 | team14_HIPE-2026-v1.0-impresso-test-fr_run3.jsonl | 13.6667 | 18 | 11 | 12 | 0.6087 | 277730309 | 1111 | [Comparison](results.d/diagnostics/team14_HIPE-2026-v1.0-impresso-test-fr_run3.diagnostics.json) / [Metrics](results.d/diagnostics/team14_HIPE-2026-v1.0-impresso-test-fr_run3.diagnostic_metrics.json) |
-| 5 | random | run1 | random_HIPE-2026-v1.0-impresso-test-fr_run1.jsonl | 14.3333 | 36 | 2 | 5 | 0.4355 | 1 | 1 | [Comparison](results.d/diagnostics/random_HIPE-2026-v1.0-impresso-test-fr_run1.diagnostics.json) / [Metrics](results.d/diagnostics/random_HIPE-2026-v1.0-impresso-test-fr_run1.diagnostic_metrics.json) |
+| 4 | random | run1 | random_HIPE-2026-v1.0-impresso-test-fr_run1.jsonl | 12.6667 | 36 | 1 | 1 | 0.4355 | 0 | 0 | [Comparison](results.d/diagnostics/random_HIPE-2026-v1.0-impresso-test-fr_run1.diagnostics.json) / [Metrics](results.d/diagnostics/random_HIPE-2026-v1.0-impresso-test-fr_run1.diagnostic_metrics.json) |
+| 5 | team14 | run3 | team14_HIPE-2026-v1.0-impresso-test-fr_run3.jsonl | 13.6667 | 18 | 11 | 12 | 0.6087 | 277730309 | 1111 | [Comparison](results.d/diagnostics/team14_HIPE-2026-v1.0-impresso-test-fr_run3.diagnostics.json) / [Metrics](results.d/diagnostics/team14_HIPE-2026-v1.0-impresso-test-fr_run3.diagnostic_metrics.json) |
 | 6 | team14 | run1 | team14_HIPE-2026-v1.0-impresso-test-fr_run1.jsonl | 15.3333 | 16 | 15 | 15 | 0.6261 | 466577920 | 1780 | [Comparison](results.d/diagnostics/team14_HIPE-2026-v1.0-impresso-test-fr_run1.diagnostics.json) / [Metrics](results.d/diagnostics/team14_HIPE-2026-v1.0-impresso-test-fr_run1.diagnostic_metrics.json) |
 | 6 | team2 | run3 | team2_HIPE-2026-v1.0-impresso-test-fr_run3.jsonl | 15.3333 | 34 | 6 | 6 | 0.4424 | 2087375 | 87 | [Comparison](results.d/diagnostics/team2_HIPE-2026-v1.0-impresso-test-fr_run3.diagnostics.json) / [Metrics](results.d/diagnostics/team2_HIPE-2026-v1.0-impresso-test-fr_run3.diagnostic_metrics.json) |
-| 8 | team7 | run1 | team7_HIPE-2026-v1.0-impresso-test-fr_run1.jsonl | 16 | 43 | 3 | 2 | 0.3849 | 12279 | 0.8 | [Comparison](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-fr_run1.diagnostics.json) / [Metrics](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-fr_run1.diagnostic_metrics.json) |
-| 9 | team7 | run2 | team7_HIPE-2026-v1.0-impresso-test-fr_run2.jsonl | 16.3333 | 42 | 4 | 3 | 0.3896 | 12365 | 0.81 | [Comparison](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-fr_run2.diagnostics.json) / [Metrics](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-fr_run2.diagnostic_metrics.json) |
-| 9 | team7 | run3 | team7_HIPE-2026-v1.0-impresso-test-fr_run3.jsonl | 16.3333 | 41 | 5 | 3 | 0.393 | 12399 | 0.81 | [Comparison](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-fr_run3.diagnostics.json) / [Metrics](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-fr_run3.diagnostic_metrics.json) |
+| 8 | team7 | run1 | team7_HIPE-2026-v1.0-impresso-test-fr_run1.jsonl | 16.3333 | 43 | 3 | 3 | 0.3849 | 12279 | 0.8 | [Comparison](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-fr_run1.diagnostics.json) / [Metrics](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-fr_run1.diagnostic_metrics.json) |
+| 9 | team7 | run2 | team7_HIPE-2026-v1.0-impresso-test-fr_run2.jsonl | 16.6667 | 42 | 4 | 4 | 0.3896 | 12365 | 0.81 | [Comparison](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-fr_run2.diagnostics.json) / [Metrics](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-fr_run2.diagnostic_metrics.json) |
+| 9 | team7 | run3 | team7_HIPE-2026-v1.0-impresso-test-fr_run3.jsonl | 16.6667 | 41 | 5 | 4 | 0.393 | 12399 | 0.81 | [Comparison](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-fr_run3.diagnostics.json) / [Metrics](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-fr_run3.diagnostic_metrics.json) |
 | 11 | baseline | run1 | baseline_HIPE-2026-v1.0-impresso-test-fr_run1.jsonl | 17 | 12 | 21 | 18 | 0.6349 | 3000000000 | 2147.023 | [Comparison](results.d/diagnostics/baseline_HIPE-2026-v1.0-impresso-test-fr_run1.diagnostics.json) / [Metrics](results.d/diagnostics/baseline_HIPE-2026-v1.0-impresso-test-fr_run1.diagnostic_metrics.json) |
 | 12 | team1 | run2 | team1_HIPE-2026-v1.0-impresso-test-fr_run2.jsonl | 17.6667 | 19 | 17 | 17 | 0.6076 | 560965127 | 2140 | [Comparison](results.d/diagnostics/team1_HIPE-2026-v1.0-impresso-test-fr_run2.diagnostics.json) / [Metrics](results.d/diagnostics/team1_HIPE-2026-v1.0-impresso-test-fr_run2.diagnostic_metrics.json) |
 | 13 | team15 | run1 | team15_HIPE-2026-v1.0-impresso-test-fr_run1.jsonl | 18.3333 | 37 | 9 | 9 | 0.4333 | 208935168 | 816 | [Comparison](results.d/diagnostics/team15_HIPE-2026-v1.0-impresso-test-fr_run1.diagnostics.json) / [Metrics](results.d/diagnostics/team15_HIPE-2026-v1.0-impresso-test-fr_run1.diagnostic_metrics.json) |
