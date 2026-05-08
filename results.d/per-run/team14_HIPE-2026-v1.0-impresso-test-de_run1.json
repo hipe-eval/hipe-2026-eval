@@ -1,0 +1,36 @@
+{
+  "counts": {
+    "at_correct": 157,
+    "at_total": 238,
+    "isAt_correct": 180,
+    "isAt_total": 238
+  },
+  "dataset": "impresso",
+  "efficiency_metadata": {
+    "hipe_model_size": 1780,
+    "hipe_parameter_count": 466577920,
+    "info_file": "team14_HIPE-2026-v1.0-impresso-test-de_run1-info.json",
+    "info_missing": false,
+    "team_model_size": 1780,
+    "team_parameter_count": 466577920
+  },
+  "language": "de",
+  "profile": "accuracy",
+  "reference": "HIPE-2026-v1.0-impresso-test-de.jsonl",
+  "run": "run1",
+  "scores": {
+    "at_accuracy": 0.6596638655462185,
+    "at_macro_recall": 0.4751573250732107,
+    "global_score": 0.5801639815555457,
+    "isAt_accuracy": 0.7563025210084033,
+    "isAt_macro_recall": 0.6851706380378808
+  },
+  "split": "test",
+  "submission": "team14_HIPE-2026-v1.0-impresso-test-de_run1.jsonl",
+  "targets": [
+    "at",
+    "isAt"
+  ],
+  "team": "team14",
+  "warnings": []
+}
