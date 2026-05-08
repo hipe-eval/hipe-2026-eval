@@ -187,6 +187,15 @@ def score_definition_lines() -> list[str]:
     ]
 
 
+def ranking_note_lines(path: Path) -> list[str]:
+    if path.name == "ranking-overall-test-a.tsv":
+        return [
+            "Only team runs that submitted all `impresso` language files are included in this overall ranking. Team runs with partial submissions are shown only in the dataset-specific ranking tables.",
+            "",
+        ]
+    return []
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--rankings-dir", type=Path, default=Path("results.d/system-rankings"))
@@ -243,6 +252,7 @@ def main() -> int:
             headers, rows = with_diagnostic_links(headers, rows, args.diagnostics_dir)
             lines.extend([f"## {title}", ""])
             lines.extend(markdown_table_with_labels(headers, rows, header_labels_for(path)))
+            lines.extend(ranking_note_lines(path))
 
     args.output.write_text("\n".join(lines), encoding="utf-8")
     print(f"[OK] Wrote {args.output}")

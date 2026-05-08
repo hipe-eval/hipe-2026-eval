@@ -111,6 +111,10 @@ The results report uses profile names that match the dataset families:
 - **Efficiency Profile Ranking** combines the Accuracy Profile rank with model
   parameter-count and model-size ranks.
 
+The overall Accuracy Profile Ranking includes only team runs that submitted all
+`impresso` language files. Team runs with partial submissions are shown only in
+the dataset-specific ranking tables.
+
 For a label `l`:
 
 ```text

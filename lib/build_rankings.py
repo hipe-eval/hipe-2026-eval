@@ -37,6 +37,14 @@ def score_value(row: dict[str, Any]) -> float | None:
     return float(value) if value is not None else None
 
 
+def impresso_test_rows(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    return [row for row in rows if row["dataset"] == "impresso" and row["split"] == "test"]
+
+
+def expected_impresso_languages(rows: list[dict[str, Any]]) -> set[str]:
+    return {row["language"] for row in impresso_test_rows(rows)}
+
+
 def build_cell_rankings(rows: list[dict[str, Any]], output_dir: Path) -> None:
     groups: dict[tuple[str, str, str], list[dict[str, Any]]] = defaultdict(list)
     for row in rows:
@@ -80,13 +88,16 @@ def build_cell_rankings(rows: list[dict[str, Any]], output_dir: Path) -> None:
 
 
 def build_overall_test_a(rows: list[dict[str, Any]], output_dir: Path) -> list[dict[str, Any]]:
+    expected_languages = expected_impresso_languages(rows)
     grouped: dict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
-    for row in rows:
-        if row["dataset"] == "impresso" and row["split"] == "test":
-            grouped[(row["team"], row["run"])].append(row)
+    for row in impresso_test_rows(rows):
+        grouped[(row["team"], row["run"])].append(row)
 
     overall_rows = []
     for (team, run), group in sorted(grouped.items()):
+        languages = {row["language"] for row in group}
+        if languages != expected_languages:
+            continue
         values = [score_value(row) for row in group]
         score = mean([value for value in values if value is not None])
         overall_rows.append(
@@ -94,8 +105,8 @@ def build_overall_test_a(rows: list[dict[str, Any]], output_dir: Path) -> list[d
                 "team": team,
                 "run": run,
                 "score": score,
-                "languages": ",".join(sorted(row["language"] for row in group)),
-                "num_language_files": len(group),
+                "languages": ",".join(sorted(languages)),
+                "num_language_files": len(languages),
             }
         )
 
@@ -139,10 +150,12 @@ def build_generalization_test_b(rows: list[dict[str, Any]], output_dir: Path) ->
 
 
 def build_efficiency_test_a(rows: list[dict[str, Any]], overall_rows: list[dict[str, Any]], output_dir: Path) -> None:
+    complete_systems = {(row["team"], row["run"]) for row in overall_rows}
     by_system: dict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
-    for row in rows:
-        if row["dataset"] == "impresso" and row["split"] == "test":
-            by_system[(row["team"], row["run"])].append(row)
+    for row in impresso_test_rows(rows):
+        key = (row["team"], row["run"])
+        if key in complete_systems:
+            by_system[key].append(row)
 
     accuracy_by_system = {(row["team"], row["run"]): row["score"] for row in overall_rows}
     efficiency_rows = []

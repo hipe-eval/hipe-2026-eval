@@ -40,6 +40,5 @@ rank	team	run	score	languages	num_language_files
 39	team5	run1	0.4408409968120961	de,en,fr	3
 40	team15	run1	0.42695434055044484	de,en,fr	3
 41	team14	run2	0.42638857925109797	de,en,fr	3
-42	team16	run1	0.4253506244856935	en	1
-43	team4	run1	0.4060729749216849	de,en,fr	3
-44	random	run1	0.4049076677802324	de,en,fr	3
+42	team4	run1	0.4060729749216849	de,en,fr	3
+43	random	run1	0.4049076677802324	de,en,fr	3
