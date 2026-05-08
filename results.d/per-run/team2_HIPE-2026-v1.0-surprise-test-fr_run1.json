@@ -1,0 +1,31 @@
+{
+  "counts": {
+    "at_correct": 175,
+    "at_total": 480
+  },
+  "dataset": "surprise",
+  "efficiency_metadata": {
+    "hipe_model_size": 87,
+    "hipe_parameter_count": 2087375,
+    "info_file": "team2_HIPE-2026-v1.0-surprise-test-fr_run1-info.json",
+    "info_missing": false,
+    "team_model_size": 87,
+    "team_parameter_count": 2087375
+  },
+  "language": "fr",
+  "profile": "generalization",
+  "reference": "HIPE-2026-v1.0-surprise-test-fr.jsonl",
+  "run": "run1",
+  "scores": {
+    "at_accuracy": 0.3645833333333333,
+    "at_macro_recall": 0.3514390761742012,
+    "global_score": 0.3514390761742012
+  },
+  "split": "test",
+  "submission": "team2_HIPE-2026-v1.0-surprise-test-fr_run1.jsonl",
+  "targets": [
+    "at"
+  ],
+  "team": "team2",
+  "warnings": []
+}
