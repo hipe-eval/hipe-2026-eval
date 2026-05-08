@@ -87,6 +87,38 @@ make eval-full-refresh
 builds TSV rankings, writes diagnostics, and renders the results Markdown
 document.
 
+## Per-Run Metadata (`*-info.json`)
+
+Each submitted run JSONL file must be accompanied by a metadata file with the same stem and an `-info.json` suffix:
+
+```text
+data/systems/<team>_<reference-stem>_<run>-info.json
+```
+
+The file must be a JSON object with exactly the following keys:
+
+| Key                    | Type   | Description                                                                           |
+| ---------------------- | ------ | ------------------------------------------------------------------------------------- |
+| `hipe_parameter_count` | number | Organizer-decided parameter count used for ranking (derived from the team's report)   |
+| `team_parameter_count` | number | Parameter count as reported by the team                                               |
+| `hipe_model_size`      | number | Organizer-decided model size in MiB used for ranking (derived from the team's report) |
+| `team_model_size`      | number | Model size in MiB as reported by the team                                             |
+
+The `team_*` fields record the values as submitted by the team. The `hipe_*` fields are the organizer's authoritative values used in the Efficiency Ranking — they may differ if the organizers adjusted or verified the team-reported numbers.
+
+`hipe_parameter_count` and `hipe_model_size` are required to be numeric. All four fields are required; `team_parameter_count` and `team_model_size` may be `null` if not applicable. A missing info file is allowed and generates a validation warning, but the run will be excluded from the Efficiency Ranking.
+
+Example:
+
+```json
+{
+  "hipe_parameter_count": 7000000000,
+  "team_parameter_count": 7000000000,
+  "hipe_model_size": 4096.5,
+  "team_model_size": 4096.5
+}
+```
+
 ## Diagnostics
 
 The `diagnostics` target writes two JSON files per submitted run under

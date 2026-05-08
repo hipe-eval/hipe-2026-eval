@@ -58,23 +58,23 @@ def with_diagnostic_links(
     rows: list[dict[str, str]],
     diagnostics_dir: Path,
 ) -> tuple[list[str], list[dict[str, str]]]:
+    filtered_headers = [header for header in headers if header != "info_missing"]
     if "submission" not in headers:
-        return headers, rows
+        return filtered_headers, [{key: value for key, value in row.items() if key != "info_missing"} for row in rows]
 
-    linked_headers = list(headers)
+    linked_headers = list(filtered_headers)
     if "diagnostics" not in linked_headers:
         linked_headers.append("diagnostics")
-    if "diagnostic_metrics" not in linked_headers:
-        linked_headers.append("diagnostic_metrics")
 
     linked_rows = []
     for row in rows:
-        linked_row = dict(row)
+        linked_row = {key: value for key, value in row.items() if key != "info_missing"}
         submission = row.get("submission", "")
         if submission.endswith(".jsonl"):
             stem = submission.removesuffix(".jsonl")
-            linked_row["diagnostics"] = f"[json]({diagnostics_dir / f'{stem}.diagnostics.json'})"
-            linked_row["diagnostic_metrics"] = f"[json]({diagnostics_dir / f'{stem}.diagnostic_metrics.json'})"
+            comparison_link = f"[Comparison]({diagnostics_dir / f'{stem}.diagnostics.json'})"
+            metrics_link = f"[Metrics]({diagnostics_dir / f'{stem}.diagnostic_metrics.json'})"
+            linked_row["diagnostics"] = f"{comparison_link} / {metrics_link}"
         linked_rows.append(linked_row)
 
     return linked_headers, linked_rows
