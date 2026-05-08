@@ -85,12 +85,17 @@ make gt-validation
 make results-md
 make eval-full
 make eval-full-refresh
+make eval-binary
 ```
 
 `eval-full` validates submissions and info files, scores all submitted runs,
 builds TSV rankings, writes diagnostics, and renders the results Markdown
 document. `gt-validation` is separate because it is an organizer-facing review
 artifact built from the current per-dataset rankings.
+
+`eval-binary` runs the same pipeline as a secondary analysis, but maps
+`PROBABLE` to `TRUE` for the `at` label. It writes to `results-binary.d/` and
+`HIPE_2026_evaluation_results-binary.md`.
 
 Generated paths can be redirected through Make variables:
 
@@ -101,6 +106,7 @@ Generated paths can be redirected through Make variables:
 | `RANKINGS_DIR`      | `$(RESULTS_DIR)/system-rankings` | Ranking TSV files                       |
 | `DIAGNOSTICS_DIR`   | `$(RESULTS_DIR)/diagnostics` | Comparison and diagnostic metrics JSON files |
 | `GT_VALIDATION_DIR` | `$(RESULTS_DIR)/gt-validation` | GT validation Excel workbooks             |
+| `AT_LABEL_MODE`     | `TERNARY`                  | `TERNARY` keeps `PROBABLE`; `BINARY` maps `PROBABLE` to `TRUE` for `at` |
 
 ## Profile Rankings and Scores
 
@@ -128,6 +134,13 @@ The `at` task has three labels:
 
 ```text
 at_macro_recall = mean(recall_TRUE, recall_PROBABLE, recall_FALSE)
+```
+
+In the separate binary analysis (`make eval-binary`), `PROBABLE` is mapped to
+`TRUE` for `at`, so the formula becomes:
+
+```text
+at_macro_recall = mean(recall_TRUE, recall_FALSE)
 ```
 
 The `isAt` task has two labels:

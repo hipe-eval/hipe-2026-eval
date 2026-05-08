@@ -180,22 +180,42 @@ def display_header(header: str, header_labels: dict[str, str]) -> str:
     return header_labels.get(header, header).replace("_", " ")
 
 
-def score_definition_lines() -> list[str]:
-    return [
+def parse_at_label_mode(value: str) -> str:
+    mode = value.upper()
+    if mode not in {"TERNARY", "BINARY"}:
+        raise ValueError(f"Invalid AT label mode '{value}'. Expected TERNARY or BINARY.")
+    return mode
+
+
+def score_definition_lines(at_label_mode: str) -> list[str]:
+    lines = [
         "## Profile Score Definitions",
         "",
         "- Accuracy Profile Ranking uses the `impresso` test files.",
         "- Generalization Profile Ranking uses the `surprise` test files.",
         "- For a label `l`, `recall_l = true_positives_l / gold_instances_l`.",
-        "- `at_macro_recall = mean(recall_TRUE, recall_PROBABLE, recall_FALSE)` for the `at` labels.",
-        "- `isAt_macro_recall = mean(recall_TRUE, recall_FALSE)` for the `isAt` labels.",
-        "- `impresso_profile_score`: score for one `impresso` language file, computed as the mean of `at_macro_recall` and `isAt_macro_recall`.",
-        "- `mean_impresso_profile_score`: mean of `impresso_profile_score` over the submitted `impresso` language files.",
-        "- `surprise_profile_score`: score on a `surprise` file, computed as `at_macro_recall`; `isAt` is not evaluated for `surprise`.",
-        "- `mean_efficiency_profile_rank`: mean of `rank_impresso_profile_score`, `rank_hipe_parameter_count`, and `rank_hipe_model_size`; lower is better.",
-        "- `balanced_efficiency_profile_rank`: `0.5 * rank_impresso_profile_score + 0.25 * rank_hipe_parameter_count + 0.25 * rank_hipe_model_size`; lower is better.",
-        "",
     ]
+    if at_label_mode == "BINARY":
+        lines.extend(
+            [
+                "- This binary report maps `PROBABLE` to `TRUE` for `at` in both reference and system labels.",
+                "- `at_macro_recall = mean(recall_TRUE, recall_FALSE)` for the binarized `at` labels.",
+            ]
+        )
+    else:
+        lines.append("- `at_macro_recall = mean(recall_TRUE, recall_PROBABLE, recall_FALSE)` for the `at` labels.")
+    lines.extend(
+        [
+            "- `isAt_macro_recall = mean(recall_TRUE, recall_FALSE)` for the `isAt` labels.",
+            "- `impresso_profile_score`: score for one `impresso` language file, computed as the mean of `at_macro_recall` and `isAt_macro_recall`.",
+            "- `mean_impresso_profile_score`: mean of `impresso_profile_score` over the submitted `impresso` language files.",
+            "- `surprise_profile_score`: score on a `surprise` file, computed as `at_macro_recall`; `isAt` is not evaluated for `surprise`.",
+            "- `mean_efficiency_profile_rank`: mean of `rank_impresso_profile_score`, `rank_hipe_parameter_count`, and `rank_hipe_model_size`; lower is better.",
+            "- `balanced_efficiency_profile_rank`: `0.5 * rank_impresso_profile_score + 0.25 * rank_hipe_parameter_count + 0.25 * rank_hipe_model_size`; lower is better.",
+            "",
+        ]
+    )
+    return lines
 
 
 def ranking_note_lines(path: Path) -> list[str]:
@@ -218,7 +238,9 @@ def main() -> int:
     parser.add_argument("--diagnostics-dir", type=Path, default=Path("results.d/diagnostics"))
     parser.add_argument("--teams", type=Path, default=Path("lib/teams.json"))
     parser.add_argument("--output", type=Path, default=Path("HIPE_2026_evaluation_results.md"))
+    parser.add_argument("--at-label-mode", default="TERNARY", choices=["TERNARY", "BINARY"])
     args = parser.parse_args()
+    at_label_mode = parse_at_label_mode(args.at_label_mode)
 
     teams = load_json(args.teams) if args.teams.is_file() else {}
     ranking_paths = (
@@ -228,7 +250,7 @@ def main() -> int:
     )
 
     lines = [
-        "# HIPE-2026 Evaluation Results",
+        "# HIPE-2026 Evaluation Results" + (" (Binary at)" if at_label_mode == "BINARY" else ""),
         "",
         f"This file is generated from `{args.rankings_dir}/*.tsv`.",
         "",
@@ -260,7 +282,7 @@ def main() -> int:
         for title in toc_titles:
             lines.append(f"- [{title}](#{anchor(title)})")
         lines.append("")
-        lines.extend(score_definition_lines())
+        lines.extend(score_definition_lines(at_label_mode))
 
         for path in ranking_paths:
             title = RANKING_TITLES.get(path.name, path.stem.replace("-", " ").title())

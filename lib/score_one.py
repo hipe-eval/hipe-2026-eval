@@ -30,7 +30,26 @@ def normalize_label(value: Any) -> str:
     return str(value)
 
 
-def collect_labels(gold_data: dict[str, Any], submission_data: dict[str, Any], targets: list[str]) -> dict[str, dict[str, list[str]]]:
+def parse_at_label_mode(value: str) -> str:
+    mode = value.upper()
+    if mode not in {"TERNARY", "BINARY"}:
+        raise ValueError(f"Invalid AT label mode '{value}'. Expected TERNARY or BINARY.")
+    return mode
+
+
+def normalize_target_label(value: Any, target: str, at_label_mode: str) -> str:
+    label = normalize_label(value)
+    if target == "at" and at_label_mode == "BINARY" and label == "PROBABLE":
+        return "TRUE"
+    return label
+
+
+def collect_labels(
+    gold_data: dict[str, Any],
+    submission_data: dict[str, Any],
+    targets: list[str],
+    at_label_mode: str,
+) -> dict[str, dict[str, list[str]]]:
     labels = {target: {"gold": [], "pred": []} for target in targets}
 
     for doc_id, gold_doc in gold_data.items():
@@ -40,8 +59,8 @@ def collect_labels(gold_data: dict[str, Any], submission_data: dict[str, Any], t
         for pair_key, gold_pair in gold_pairs.items():
             submission_pair = submission_pairs[pair_key]
             for target in targets:
-                labels[target]["gold"].append(normalize_label(gold_pair.get(target)))
-                labels[target]["pred"].append(normalize_label(submission_pair.get(target)))
+                labels[target]["gold"].append(normalize_target_label(gold_pair.get(target), target, at_label_mode))
+                labels[target]["pred"].append(normalize_target_label(submission_pair.get(target), target, at_label_mode))
 
     return labels
 
@@ -116,7 +135,14 @@ def main() -> int:
         default=Path("lib/competition_config.json"),
         help="Competition configuration JSON.",
     )
+    parser.add_argument(
+        "--at-label-mode",
+        default="TERNARY",
+        choices=["TERNARY", "BINARY"],
+        help="TERNARY keeps PROBABLE as a separate at label; BINARY maps PROBABLE to TRUE for at.",
+    )
     args = parser.parse_args()
+    at_label_mode = parse_at_label_mode(args.at_label_mode)
 
     add_data_scripts_path(args.data_repo)
     from check_jsonlschema import load_schema, validate_jsonl_file
@@ -165,7 +191,7 @@ def main() -> int:
     # Keep the submodule helper in the import path and call surface, but collect
     # target-specific labels here so Test B can ignore isAt and nulls become FALSE.
     flatten_predictions(gold_data, submission_data)
-    labels = collect_labels(gold_data, submission_data, targets)
+    labels = collect_labels(gold_data, submission_data, targets, at_label_mode)
     scores, counts = score_labels(labels, targets)
 
     parsed_reference = parse_reference_filename(reference_path.name)
@@ -185,6 +211,7 @@ def main() -> int:
         "language": parsed_reference.language,
         "run": submission_name.run,
         "profile": profile,
+        "at_label_mode": at_label_mode,
         "targets": targets,
         "scores": scores,
         "counts": counts,

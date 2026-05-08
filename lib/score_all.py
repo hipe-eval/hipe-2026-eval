@@ -17,6 +17,7 @@ def main() -> int:
     parser.add_argument("--schema-path", type=Path, default=Path("HIPE-2026-data/schemas/hipe-2026-data.schema.json"))
     parser.add_argument("--data-repo", type=Path, default=Path("HIPE-2026-data"))
     parser.add_argument("--config", type=Path, default=Path("lib/competition_config.json"))
+    parser.add_argument("--at-label-mode", default="TERNARY", choices=["TERNARY", "BINARY"])
     args = parser.parse_args()
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
@@ -41,6 +42,8 @@ def main() -> int:
             str(args.data_repo),
             "--config",
             str(args.config),
+            "--at-label-mode",
+            args.at_label_mode,
         ]
         result = subprocess.run(command, check=False)
         if result.returncode:

@@ -11,8 +11,9 @@ GT_VALIDATION_DIR ?= $(RESULTS_DIR)/gt-validation
 RESULTS_MD ?= HIPE_2026_evaluation_results.md
 CONFIG ?= lib/competition_config.json
 TEAMS ?= lib/teams.json
+AT_LABEL_MODE ?= TERNARY
 
-.PHONY: help install validate-reference validate-submissions validate-info score rankings diagnostics gt-validation results-md eval-full eval-full-refresh clean
+.PHONY: help install validate-reference validate-submissions validate-info score rankings diagnostics gt-validation results-md eval-full eval-full-refresh eval-binary clean
 
 help:
 	@printf '%s\n' \
@@ -28,6 +29,7 @@ help:
 		'  results-md            Render final Markdown results page' \
 		'  eval-full             Run validation, scoring, rankings, diagnostics, and Markdown rendering' \
 		'  eval-full-refresh     Remove generated outputs before eval-full' \
+		'  eval-binary           Run eval-full with PROBABLE mapped to TRUE for at labels' \
 		'  clean                 Remove generated outputs'
 
 install:
@@ -43,23 +45,26 @@ validate-info:
 	$(PYTHON) lib/validate_info.py --systems-dir $(SUBMISSIONS_DIR) --reference-dir $(REFERENCE_DIR)
 
 score: validate-submissions validate-info
-	$(PYTHON) lib/score_all.py --systems-dir $(SUBMISSIONS_DIR) --reference-dir $(REFERENCE_DIR) --output-dir $(PER_RUN_DIR) --schema-path $(SCHEMA_PATH) --data-repo $(DATA_REPO) --config $(CONFIG)
+	$(PYTHON) lib/score_all.py --systems-dir $(SUBMISSIONS_DIR) --reference-dir $(REFERENCE_DIR) --output-dir $(PER_RUN_DIR) --schema-path $(SCHEMA_PATH) --data-repo $(DATA_REPO) --config $(CONFIG) --at-label-mode $(AT_LABEL_MODE)
 
 rankings: score
 	$(PYTHON) lib/build_rankings.py --per-run-dir $(PER_RUN_DIR) --output-dir $(RANKINGS_DIR)
 
 diagnostics: validate-submissions validate-info
-	$(PYTHON) lib/build_diagnostics.py --systems-dir $(SUBMISSIONS_DIR) --reference-dir $(REFERENCE_DIR) --output-dir $(DIAGNOSTICS_DIR)
+	$(PYTHON) lib/build_diagnostics.py --systems-dir $(SUBMISSIONS_DIR) --reference-dir $(REFERENCE_DIR) --output-dir $(DIAGNOSTICS_DIR) --at-label-mode $(AT_LABEL_MODE)
 
 gt-validation: rankings
 	$(PYTHON) lib/build_gt_validation.py --systems-dir $(SUBMISSIONS_DIR) --reference-dir $(REFERENCE_DIR) --rankings-dir $(RANKINGS_DIR) --output-dir $(GT_VALIDATION_DIR)
 
 results-md: rankings diagnostics
-	$(PYTHON) lib/build_results_md.py --rankings-dir $(RANKINGS_DIR) --diagnostics-dir $(DIAGNOSTICS_DIR) --teams $(TEAMS) --output $(RESULTS_MD)
+	$(PYTHON) lib/build_results_md.py --rankings-dir $(RANKINGS_DIR) --diagnostics-dir $(DIAGNOSTICS_DIR) --teams $(TEAMS) --output $(RESULTS_MD) --at-label-mode $(AT_LABEL_MODE)
 
 eval-full: results-md
 
 eval-full-refresh: clean eval-full
+
+eval-binary:
+	$(MAKE) eval-full RESULTS_DIR=results-binary.d RESULTS_MD=HIPE_2026_evaluation_results-binary.md AT_LABEL_MODE=BINARY
 
 clean:
 	rm -rf $(RESULTS_DIR) $(RESULTS_MD)
