@@ -11,16 +11,16 @@ from common import load_json
 
 
 RANKING_TITLES = {
-    "ranking-overall-test-a.tsv": "Accuracy Ranking Overall",
-    "ranking-efficiency-test-a.tsv": "Efficiency Ranking Overall",
-    "ranking-efficiency-impresso-test-de.tsv": "Efficiency Ranking German",
-    "ranking-efficiency-impresso-test-en.tsv": "Efficiency Ranking English",
-    "ranking-efficiency-impresso-test-fr.tsv": "Efficiency Ranking French",
-    "ranking-generalization-test-b.tsv": "Generalization Ranking",
-    "ranking-impresso-test-de.tsv": "Accuracy Ranking German",
-    "ranking-impresso-test-en.tsv": "Accuracy Ranking English",
-    "ranking-impresso-test-fr.tsv": "Accuracy Ranking French",
-    "ranking-surprise-test-fr.tsv": "Surprise Test French",
+    "ranking-overall-test-a.tsv": "Accuracy Profile Ranking Overall",
+    "ranking-efficiency-test-a.tsv": "Efficiency Profile Ranking Overall",
+    "ranking-efficiency-impresso-test-de.tsv": "Efficiency Profile Ranking German",
+    "ranking-efficiency-impresso-test-en.tsv": "Efficiency Profile Ranking English",
+    "ranking-efficiency-impresso-test-fr.tsv": "Efficiency Profile Ranking French",
+    "ranking-generalization-test-b.tsv": "Generalization Profile Ranking",
+    "ranking-impresso-test-de.tsv": "Accuracy Profile Ranking German",
+    "ranking-impresso-test-en.tsv": "Accuracy Profile Ranking English",
+    "ranking-impresso-test-fr.tsv": "Accuracy Profile Ranking French",
+    "ranking-surprise-test-fr.tsv": "Generalization Profile Ranking French",
 }
 
 RANKING_ORDER = [
@@ -35,6 +35,50 @@ RANKING_ORDER = [
     "ranking-efficiency-impresso-test-en.tsv",
     "ranking-efficiency-impresso-test-fr.tsv",
 ]
+
+DEFAULT_HEADER_LABELS = {
+    "hipe_model_size": "hipe_model_size_mb",
+    "rank_accuracy": "rank_impresso_profile_score",
+    "rank_parameter_count": "rank_hipe_parameter_count",
+    "rank_model_size": "rank_hipe_model_size",
+}
+
+RANKING_HEADER_LABELS = {
+    "ranking-overall-test-a.tsv": {
+        "score": "mean_impresso_profile_score",
+    },
+    "ranking-impresso-test-de.tsv": {
+        "score": "impresso_profile_score",
+    },
+    "ranking-impresso-test-en.tsv": {
+        "score": "impresso_profile_score",
+    },
+    "ranking-impresso-test-fr.tsv": {
+        "score": "impresso_profile_score",
+    },
+    "ranking-generalization-test-b.tsv": {
+        "score": "surprise_profile_score",
+    },
+    "ranking-surprise-test-fr.tsv": {
+        "score": "surprise_profile_score",
+    },
+    "ranking-efficiency-test-a.tsv": {
+        "efficiency_score": "mean_efficiency_profile_rank",
+        "accuracy_score": "mean_impresso_profile_score",
+    },
+    "ranking-efficiency-impresso-test-de.tsv": {
+        "efficiency_score": "mean_efficiency_profile_rank",
+        "accuracy_score": "impresso_profile_score",
+    },
+    "ranking-efficiency-impresso-test-en.tsv": {
+        "efficiency_score": "mean_efficiency_profile_rank",
+        "accuracy_score": "impresso_profile_score",
+    },
+    "ranking-efficiency-impresso-test-fr.tsv": {
+        "efficiency_score": "mean_efficiency_profile_rank",
+        "accuracy_score": "impresso_profile_score",
+    },
+}
 
 
 def format_cell(value: str) -> str:
@@ -81,10 +125,18 @@ def with_diagnostic_links(
 
 
 def markdown_table(headers: list[str], rows: list[dict[str, str]]) -> list[str]:
+    return markdown_table_with_labels(headers, rows, {})
+
+
+def markdown_table_with_labels(
+    headers: list[str],
+    rows: list[dict[str, str]],
+    header_labels: dict[str, str],
+) -> list[str]:
     if not headers:
         return ["No columns found.", ""]
     lines = [
-        "| " + " | ".join(headers) + " |",
+        "| " + " | ".join(header_labels.get(header, header) for header in headers) + " |",
         "| " + " | ".join("---" for _ in headers) + " |",
     ]
     for row in rows:
@@ -110,6 +162,29 @@ def anchor(title: str) -> str:
 def sort_ranking_paths(paths: list[Path]) -> list[Path]:
     order = {name: index for index, name in enumerate(RANKING_ORDER)}
     return sorted(paths, key=lambda path: (order.get(path.name, len(order)), path.name))
+
+
+def header_labels_for(path: Path) -> dict[str, str]:
+    labels = dict(DEFAULT_HEADER_LABELS)
+    labels.update(RANKING_HEADER_LABELS.get(path.name, {}))
+    return labels
+
+
+def score_definition_lines() -> list[str]:
+    return [
+        "## Profile Score Definitions",
+        "",
+        "- Accuracy Profile Ranking uses the `impresso` test files.",
+        "- Generalization Profile Ranking uses the `surprise` test files.",
+        "- For a label `l`, `recall_l = true_positives_l / gold_instances_l`.",
+        "- `at_macro_recall = mean(recall_TRUE, recall_PROBABLE, recall_FALSE)` for the `at` labels.",
+        "- `isAt_macro_recall = mean(recall_TRUE, recall_FALSE)` for the `isAt` labels.",
+        "- `impresso_profile_score`: score for one `impresso` language file, computed as the mean of `at_macro_recall` and `isAt_macro_recall`.",
+        "- `mean_impresso_profile_score`: mean of `impresso_profile_score` over the submitted `impresso` language files.",
+        "- `surprise_profile_score`: score on a `surprise` file, computed as `at_macro_recall`; `isAt` is not evaluated for `surprise`.",
+        "- `mean_efficiency_profile_rank`: mean of `rank_impresso_profile_score`, `rank_hipe_parameter_count`, and `rank_hipe_model_size`; lower is better.",
+        "",
+    ]
 
 
 def main() -> int:
@@ -160,13 +235,14 @@ def main() -> int:
         for title in toc_titles:
             lines.append(f"- [{title}](#{anchor(title)})")
         lines.append("")
+        lines.extend(score_definition_lines())
 
         for path in ranking_paths:
             title = RANKING_TITLES.get(path.name, path.stem.replace("-", " ").title())
             headers, rows = read_tsv(path)
             headers, rows = with_diagnostic_links(headers, rows, args.diagnostics_dir)
             lines.extend([f"## {title}", ""])
-            lines.extend(markdown_table(headers, rows))
+            lines.extend(markdown_table_with_labels(headers, rows, header_labels_for(path)))
 
     args.output.write_text("\n".join(lines), encoding="utf-8")
     print(f"[OK] Wrote {args.output}")
