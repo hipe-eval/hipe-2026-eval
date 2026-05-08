@@ -34,6 +34,18 @@
   DS@GT_HIPE_submission/run3/HIPE-2026-v1.0-impresso-test-en.jsonl  ->  team2_HIPE-2026-v1.0-impresso-test-en_run3.jsonl
   DS@GT_HIPE_submission/run3/HIPE-2026-v1.0-impresso-test-fr.jsonl  ->  team2_HIPE-2026-v1.0-impresso-test-fr_run3.jsonl
   DS@GT_HIPE_submission/run3/HIPE-2026-v1.0-surprise-test-fr.jsonl  ->  team2_HIPE-2026-v1.0-surprise-test-fr_run3.jsonl
+  FI CODE/run1/HIPE-2026-v1.0-impresso-test-de.jsonl  ->  team15_HIPE-2026-v1.0-impresso-test-de_run1.jsonl
+  FI CODE/run1/HIPE-2026-v1.0-impresso-test-en.jsonl  ->  team15_HIPE-2026-v1.0-impresso-test-en_run1.jsonl
+  FI CODE/run1/HIPE-2026-v1.0-impresso-test-fr.jsonl  ->  team15_HIPE-2026-v1.0-impresso-test-fr_run1.jsonl
+  FI CODE/run1/HIPE-2026-v1.0-surprise-test-fr.jsonl  ->  team15_HIPE-2026-v1.0-surprise-test-fr_run1.jsonl
+  FI CODE/run2/HIPE-2026-v1.0-impresso-test-de.jsonl  ->  team15_HIPE-2026-v1.0-impresso-test-de_run2.jsonl
+  FI CODE/run2/HIPE-2026-v1.0-impresso-test-en.jsonl  ->  team15_HIPE-2026-v1.0-impresso-test-en_run2.jsonl
+  FI CODE/run2/HIPE-2026-v1.0-impresso-test-fr.jsonl  ->  team15_HIPE-2026-v1.0-impresso-test-fr_run2.jsonl
+  FI CODE/run2/HIPE-2026-v1.0-surprise-test-fr.jsonl  ->  team15_HIPE-2026-v1.0-surprise-test-fr_run2.jsonl
+  FI CODE/run3/HIPE-2026-v1.0-impresso-test-de.jsonl  ->  team15_HIPE-2026-v1.0-impresso-test-de_run3.jsonl
+  FI CODE/run3/HIPE-2026-v1.0-impresso-test-en.jsonl  ->  team15_HIPE-2026-v1.0-impresso-test-en_run3.jsonl
+  FI CODE/run3/HIPE-2026-v1.0-impresso-test-fr.jsonl  ->  team15_HIPE-2026-v1.0-impresso-test-fr_run3.jsonl
+  FI CODE/run3/HIPE-2026-v1.0-surprise-test-fr.jsonl  ->  team15_HIPE-2026-v1.0-surprise-test-fr_run3.jsonl
   FourBytes_Submission/run1/HIPE-2026-v1.0-impresso-test-de.jsonl  ->  team4_HIPE-2026-v1.0-impresso-test-de_run1.jsonl
   FourBytes_Submission/run1/HIPE-2026-v1.0-impresso-test-en.jsonl  ->  team4_HIPE-2026-v1.0-impresso-test-en_run1.jsonl
   FourBytes_Submission/run1/HIPE-2026-v1.0-impresso-test-fr.jsonl  ->  team4_HIPE-2026-v1.0-impresso-test-fr_run1.jsonl
@@ -50,6 +62,18 @@
   Hansel&Gretel/run3/HIPE-2026-v1.0-impresso-test-en.jsonl  ->  team9_HIPE-2026-v1.0-impresso-test-en_run3.jsonl
   Hansel&Gretel/run3/HIPE-2026-v1.0-impresso-test-fr.jsonl  ->  team9_HIPE-2026-v1.0-impresso-test-fr_run3.jsonl
   Hansel&Gretel/run3/HIPE-2026-v1.0-surprise-test-fr.jsonl  ->  team9_HIPE-2026-v1.0-surprise-test-fr_run3.jsonl
+  MILRIT/MILRIT_HIPE-2026-v1.0-test-de_en_fr_surprisefr_run1/HIPE-2026-v1.0-impresso-test-de.jsonl  ->  team14_HIPE-2026-v1.0-impresso-test-de_run1.jsonl
+  MILRIT/MILRIT_HIPE-2026-v1.0-test-de_en_fr_surprisefr_run1/HIPE-2026-v1.0-impresso-test-en.jsonl  ->  team14_HIPE-2026-v1.0-impresso-test-en_run1.jsonl
+  MILRIT/MILRIT_HIPE-2026-v1.0-test-de_en_fr_surprisefr_run1/HIPE-2026-v1.0-impresso-test-fr.jsonl  ->  team14_HIPE-2026-v1.0-impresso-test-fr_run1.jsonl
+  MILRIT/MILRIT_HIPE-2026-v1.0-test-de_en_fr_surprisefr_run1/HIPE-2026-v1.0-surprise-test-fr.jsonl  ->  team14_HIPE-2026-v1.0-surprise-test-fr_run1.jsonl
+  MILRIT/MILRIT_HIPE-2026-v1.0-test-de_en_fr_surprisefr_run2/HIPE-2026-v1.0-impresso-test-de.jsonl  ->  team14_HIPE-2026-v1.0-impresso-test-de_run2.jsonl
+  MILRIT/MILRIT_HIPE-2026-v1.0-test-de_en_fr_surprisefr_run2/HIPE-2026-v1.0-impresso-test-en.jsonl  ->  team14_HIPE-2026-v1.0-impresso-test-en_run2.jsonl
+  MILRIT/MILRIT_HIPE-2026-v1.0-test-de_en_fr_surprisefr_run2/HIPE-2026-v1.0-impresso-test-fr.jsonl  ->  team14_HIPE-2026-v1.0-impresso-test-fr_run2.jsonl
+  MILRIT/MILRIT_HIPE-2026-v1.0-test-de_en_fr_surprisefr_run2/HIPE-2026-v1.0-surprise-test-fr.jsonl  ->  team14_HIPE-2026-v1.0-surprise-test-fr_run2.jsonl
+  MILRIT/MILRIT_HIPE-2026-v1.0-test-de_en_fr_surprisefr_run3/HIPE-2026-v1.0-impresso-test-de.jsonl  ->  team14_HIPE-2026-v1.0-impresso-test-de_run3.jsonl
+  MILRIT/MILRIT_HIPE-2026-v1.0-test-de_en_fr_surprisefr_run3/HIPE-2026-v1.0-impresso-test-en.jsonl  ->  team14_HIPE-2026-v1.0-impresso-test-en_run3.jsonl
+  MILRIT/MILRIT_HIPE-2026-v1.0-test-de_en_fr_surprisefr_run3/HIPE-2026-v1.0-impresso-test-fr.jsonl  ->  team14_HIPE-2026-v1.0-impresso-test-fr_run3.jsonl
+  MILRIT/MILRIT_HIPE-2026-v1.0-test-de_en_fr_surprisefr_run3/HIPE-2026-v1.0-surprise-test-fr.jsonl  ->  team14_HIPE-2026-v1.0-surprise-test-fr_run3.jsonl
   MaxFo-Ajie/run1/HIPE-2026-v1.0-impresso-test-de.jsonl  ->  team8_HIPE-2026-v1.0-impresso-test-de_run1.jsonl
   MaxFo-Ajie/run1/HIPE-2026-v1.0-impresso-test-en.jsonl  ->  team8_HIPE-2026-v1.0-impresso-test-en_run1.jsonl
   MaxFo-Ajie/run1/HIPE-2026-v1.0-impresso-test-fr.jsonl  ->  team8_HIPE-2026-v1.0-impresso-test-fr_run1.jsonl
@@ -74,6 +98,7 @@
   Results-ROSTI-team/run_1_results/HIPE-2026-v1.0-impresso-test-en.jsonl  ->  team7_HIPE-2026-v1.0-impresso-test-en_run1.jsonl
   Results-ROSTI-team/run_1_results/HIPE-2026-v1.0-impresso-test-fr.jsonl  ->  team7_HIPE-2026-v1.0-impresso-test-fr_run1.jsonl
   Results-ROSTI-team/run_1_results/HIPE-2026-v1.0-surprise-test-fr.jsonl  ->  team7_HIPE-2026-v1.0-surprise-test-fr_run1.jsonl
+  Rittik_Souvik_HIPE-2026-v1.0-impresso-test-en_run1/run1/HIPE-2026-v1.0-impresso-test-en.jsonl  ->  team16_HIPE-2026-v1.0-impresso-test-en_run1.jsonl
   Spinfo_HIPE2026/run1/HIPE-2026-v1.0-impresso-test-de.jsonl  ->  team13_HIPE-2026-v1.0-impresso-test-de_run1.jsonl
   Spinfo_HIPE2026/run1/HIPE-2026-v1.0-impresso-test-en.jsonl  ->  team13_HIPE-2026-v1.0-impresso-test-en_run1.jsonl
   Spinfo_HIPE2026/run1/HIPE-2026-v1.0-impresso-test-fr.jsonl  ->  team13_HIPE-2026-v1.0-impresso-test-fr_run1.jsonl
@@ -139,4 +164,4 @@
   whereami/run2/HIPE-2026-v1.0-impresso-test-fr.jsonl  ->  team12_HIPE-2026-v1.0-impresso-test-fr_run2.jsonl
   whereami/run2/HIPE-2026-v1.0-surprise-test-fr.jsonl  ->  team12_HIPE-2026-v1.0-surprise-test-fr_run2.jsonl
 
-Done. 140 file(s) copied to /Users/siclemat/pj/2026/impresso/hipe-2026-data-preparation/data/team_submissions/anonymized_runs/  (0 team(s) skipped)
+Done. 165 file(s) copied to /Users/siclemat/pj/2026/impresso/hipe-2026-data-preparation/data/team_submissions/anonymized_runs/  (0 team(s) skipped)
