@@ -33,6 +33,7 @@ results.d/                # Generated evaluation output, not hand-edited
   per-run/                # Per-submission JSON scores and logs
   system-rankings/        # Ranking TSV files
   diagnostics/            # Per-submission diagnostics JSON files
+  gt-validation/          # Top-three majority-vote GT validation workbooks
 HIPE_2026_evaluation_results.md # Generated final results page
 ```
 
@@ -78,6 +79,7 @@ make validate-info
 make score
 make rankings
 make diagnostics
+make gt-validation
 make results-md
 make eval-full
 make eval-full-refresh
@@ -151,6 +153,28 @@ order, reports rows as gold labels and columns as predictions, and includes:
 - micro-aggregated accuracy;
 - per-label precision, recall, and F1;
 - per-label support, true positives, false positives, and false negatives.
+
+## GT Validation Workbooks
+
+The `gt-validation` target writes one Excel workbook per reference dataset under
+`results.d/gt-validation/` by default:
+
+```text
+results.d/gt-validation/<reference-stem>.gt_validation.xlsx
+```
+
+For each dataset, the target takes the top three submitted runs from the
+corresponding ranking TSV, computes a majority vote for each sampled pair, and
+lists cases where that majority vote does not match the reference label. A
+three-way split for `at` is reported as `NO_MAJORITY` and included for review.
+
+Each workbook contains:
+
+- `mismatches`: one row per flagged pair/target, including the chunk name,
+  entity IDs, mentions, gold label, vote label, vote status, and the three
+  system labels and explanations;
+- `top_runs`: the three system runs used for the vote;
+- `summary`: flagged row counts per evaluated target.
 
 ## Data Status
 
