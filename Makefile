@@ -7,11 +7,12 @@ RESULTS_DIR ?= results.d
 PER_RUN_DIR ?= $(RESULTS_DIR)/per-run
 RANKINGS_DIR ?= $(RESULTS_DIR)/system-rankings
 DIAGNOSTICS_DIR ?= $(RESULTS_DIR)/diagnostics
+GT_VALIDATION_DIR ?= $(RESULTS_DIR)/gt-validation
 RESULTS_MD ?= HIPE_2026_evaluation_results.md
 CONFIG ?= lib/competition_config.json
 TEAMS ?= lib/teams.json
 
-.PHONY: help install validate-reference validate-submissions validate-info score rankings diagnostics results-md eval-full eval-full-refresh clean
+.PHONY: help install validate-reference validate-submissions validate-info score rankings diagnostics gt-validation results-md eval-full eval-full-refresh clean
 
 help:
 	@printf '%s\n' \
@@ -23,6 +24,7 @@ help:
 		'  score                 Score all submissions' \
 		'  rankings              Build ranking TSV files' \
 		'  diagnostics           Build per-submission diagnostics JSON files' \
+		'  gt-validation         Build top-three majority-vote GT validation workbooks' \
 		'  results-md            Render final Markdown results page' \
 		'  eval-full             Run validation, scoring, rankings, diagnostics, and Markdown rendering' \
 		'  eval-full-refresh     Remove generated outputs before eval-full' \
@@ -48,6 +50,9 @@ rankings: score
 
 diagnostics: validate-submissions validate-info
 	$(PYTHON) lib/build_diagnostics.py --systems-dir $(SUBMISSIONS_DIR) --reference-dir $(REFERENCE_DIR) --output-dir $(DIAGNOSTICS_DIR)
+
+gt-validation: rankings
+	$(PYTHON) lib/build_gt_validation.py --systems-dir $(SUBMISSIONS_DIR) --reference-dir $(REFERENCE_DIR) --rankings-dir $(RANKINGS_DIR) --output-dir $(GT_VALIDATION_DIR)
 
 results-md: rankings diagnostics
 	$(PYTHON) lib/build_results_md.py --rankings-dir $(RANKINGS_DIR) --diagnostics-dir $(DIAGNOSTICS_DIR) --teams $(TEAMS) --output $(RESULTS_MD)
