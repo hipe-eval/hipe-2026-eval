@@ -1,0 +1,141 @@
+{
+  "submission": "team7_HIPE-2026-v1.0-impresso-test-fr_run3.jsonl",
+  "reference": "HIPE-2026-v1.0-impresso-test-fr.jsonl",
+  "team": "team7",
+  "dataset": "impresso",
+  "split": "test",
+  "language": "fr",
+  "run": "run3",
+  "at_label_mode": "TERNARY",
+  "confusion_matrices": {
+    "at": {
+      "labels": [
+        "TRUE",
+        "PROBABLE",
+        "FALSE"
+      ],
+      "matrix": [
+        [
+          10,
+          17,
+          58
+        ],
+        [
+          5,
+          1,
+          13
+        ],
+        [
+          12,
+          34,
+          88
+        ]
+      ],
+      "rows": "gold",
+      "columns": "prediction",
+      "total": 238,
+      "table": [
+        {
+          "gold": "TRUE",
+          "pred_TRUE": 10,
+          "pred_PROBABLE": 17,
+          "pred_FALSE": 58
+        },
+        {
+          "gold": "PROBABLE",
+          "pred_TRUE": 5,
+          "pred_PROBABLE": 1,
+          "pred_FALSE": 13
+        },
+        {
+          "gold": "FALSE",
+          "pred_TRUE": 12,
+          "pred_PROBABLE": 34,
+          "pred_FALSE": 88
+        }
+      ],
+      "accuracy": 0.416,
+      "per_label": {
+        "TRUE": {
+          "precision": 0.3704,
+          "recall": 0.1176,
+          "f1": 0.1785,
+          "support": 85,
+          "true_positive": 10,
+          "false_positive": 17,
+          "false_negative": 75
+        },
+        "PROBABLE": {
+          "precision": 0.0192,
+          "recall": 0.0526,
+          "f1": 0.0281,
+          "support": 19,
+          "true_positive": 1,
+          "false_positive": 51,
+          "false_negative": 18
+        },
+        "FALSE": {
+          "precision": 0.5535,
+          "recall": 0.6567,
+          "f1": 0.6007,
+          "support": 134,
+          "true_positive": 88,
+          "false_positive": 71,
+          "false_negative": 46
+        }
+      }
+    },
+    "isAt": {
+      "labels": [
+        "TRUE",
+        "FALSE"
+      ],
+      "matrix": [
+        [
+          28,
+          53
+        ],
+        [
+          51,
+          106
+        ]
+      ],
+      "rows": "gold",
+      "columns": "prediction",
+      "total": 238,
+      "table": [
+        {
+          "gold": "TRUE",
+          "pred_TRUE": 28,
+          "pred_FALSE": 53
+        },
+        {
+          "gold": "FALSE",
+          "pred_TRUE": 51,
+          "pred_FALSE": 106
+        }
+      ],
+      "accuracy": 0.563,
+      "per_label": {
+        "TRUE": {
+          "precision": 0.3544,
+          "recall": 0.3457,
+          "f1": 0.35,
+          "support": 81,
+          "true_positive": 28,
+          "false_positive": 51,
+          "false_negative": 53
+        },
+        "FALSE": {
+          "precision": 0.6667,
+          "recall": 0.6752,
+          "f1": 0.6709,
+          "support": 157,
+          "true_positive": 106,
+          "false_positive": 53,
+          "false_negative": 51
+        }
+      }
+    }
+  }
+}

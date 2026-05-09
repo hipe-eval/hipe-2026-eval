@@ -17,6 +17,11 @@ LABELS_BY_TARGET = {
     "isAt": ["TRUE", "FALSE"],
 }
 
+BINARY_LABELS_BY_TARGET = {
+    "at": ["TRUE", "FALSE"],
+    "isAt": ["TRUE", "FALSE"],
+}
+
 
 def load_jsonl(path: Path) -> list[dict[str, Any]]:
     documents: list[dict[str, Any]] = []
@@ -73,16 +78,35 @@ def normalize_label(value: Any) -> str:
     return value or "FALSE"
 
 
+def parse_at_label_mode(value: str) -> str:
+    mode = value.upper()
+    if mode not in {"TERNARY", "BINARY"}:
+        raise ValueError(f"Invalid AT label mode '{value}'. Expected TERNARY or BINARY.")
+    return mode
+
+
+def normalize_target_label(value: Any, target: str, at_label_mode: str) -> str:
+    label = normalize_label(value)
+    if target == "at" and at_label_mode == "BINARY" and label == "PROBABLE":
+        return "TRUE"
+    return label
+
+
 def targets_for_dataset(dataset: str) -> list[str]:
     if dataset == "surprise":
         return ["at"]
     return ["at", "isAt"]
 
 
-def empty_confusion_matrices(targets: list[str]) -> dict[str, dict[str, Any]]:
+def labels_for_target(target: str, at_label_mode: str) -> list[str]:
+    labels_by_target = BINARY_LABELS_BY_TARGET if at_label_mode == "BINARY" else LABELS_BY_TARGET
+    return labels_by_target[target]
+
+
+def empty_confusion_matrices(targets: list[str], at_label_mode: str) -> dict[str, dict[str, Any]]:
     matrices: dict[str, dict[str, Any]] = {}
     for target in targets:
-        labels = LABELS_BY_TARGET[target]
+        labels = labels_for_target(target, at_label_mode)
         matrices[target] = {
             "labels": labels,
             "matrix": [[0 for _ in labels] for _ in labels],
@@ -141,10 +165,11 @@ def add_confusion_observation(
     target: str,
     gold_value: Any,
     prediction_value: Any,
+    at_label_mode: str,
 ) -> None:
     labels = matrices[target]["labels"]
-    gold_label = normalize_label(gold_value)
-    prediction_label = normalize_label(prediction_value)
+    gold_label = normalize_target_label(gold_value, target, at_label_mode)
+    prediction_label = normalize_target_label(prediction_value, target, at_label_mode)
     if gold_label not in labels:
         raise ValueError(f"Unexpected gold label for {target}: {gold_label!r}")
     if prediction_label not in labels:
@@ -159,11 +184,12 @@ def build_merged_analysis(
     gold_jsonl: Path,
     predictions_jsonl: Path,
     targets: list[str],
+    at_label_mode: str,
 ) -> tuple[list[dict[str, Any]], dict[str, dict[str, Any]]]:
     gold_documents = documents_by_id(gold_jsonl)
     prediction_documents = documents_by_id(predictions_jsonl)
     merged_documents: list[dict[str, Any]] = []
-    confusion_matrices = empty_confusion_matrices(targets)
+    confusion_matrices = empty_confusion_matrices(targets, at_label_mode)
 
     for document_id, gold_document in gold_documents.items():
         prediction_document = prediction_documents.get(document_id)
@@ -185,8 +211,13 @@ def build_merged_analysis(
                     target,
                     gold_pair.get(target),
                     system_values[target],
+                    at_label_mode,
                 )
 
+            gold_at = normalize_target_label(gold_pair.get("at"), "at", at_label_mode)
+            system_at = normalize_target_label(sys_at, "at", at_label_mode)
+            gold_is_at = normalize_target_label(gold_pair.get("isAt"), "isAt", at_label_mode)
+            system_is_at = normalize_target_label(sys_is_at, "isAt", at_label_mode)
             merged_pairs.append(
                 {
                     "pers_entity_id": gold_pair.get("pers_entity_id"),
@@ -195,16 +226,15 @@ def build_merged_analysis(
                     "loc_entity_id": gold_pair.get("loc_entity_id"),
                     "loc_wikidata_QID": gold_pair.get("loc_wikidata_QID"),
                     "loc_mentions_list": list(gold_pair.get("loc_mentions_list") or []),
-                    "at": gold_pair.get("at"),
-                    "SYS_at": sys_at,
-                    "CORRECT_at": sys_at == gold_pair.get("at"),
+                    "at": gold_at,
+                    "SYS_at": system_at,
+                    "CORRECT_at": system_at == gold_at,
                     "SYS_at_explanation": sys_at_explanation,
-                    "isAt": gold_pair.get("isAt"),
-                    "SYS_isAt": sys_is_at,
-                    "CORRECT_isAt": sys_is_at == gold_pair.get("isAt"),
+                    "isAt": gold_is_at,
+                    "SYS_isAt": system_is_at,
+                    "CORRECT_isAt": system_is_at == gold_is_at,
                     "SYS_isAt_explanation": sys_is_at_explanation,
-                    "CORRECT": (sys_at == gold_pair.get("at"))
-                    and (sys_is_at == gold_pair.get("isAt")),
+                    "CORRECT": (system_at == gold_at) and (system_is_at == gold_is_at),
                 }
             )
 
@@ -238,7 +268,7 @@ def write_diagnostic_metrics_payload(payload: dict[str, Any], path: Path) -> Non
         handle.write("\n")
 
 
-def build_one_diagnostics(submission: Path, reference_dir: Path, output_dir: Path) -> tuple[Path, Path]:
+def build_one_diagnostics(submission: Path, reference_dir: Path, output_dir: Path, at_label_mode: str) -> tuple[Path, Path]:
     parsed = parse_submission_filename(submission)
     reference = reference_dir / parsed.reference_filename
     if not reference.is_file():
@@ -248,7 +278,7 @@ def build_one_diagnostics(submission: Path, reference_dir: Path, output_dir: Pat
     targets = targets_for_dataset(reference_cell.dataset)
     diagnostics_path = output_dir / f"{submission.stem}.diagnostics.json"
     diagnostic_metrics_path = output_dir / f"{submission.stem}.diagnostic_metrics.json"
-    merged, confusion_matrices = build_merged_analysis(reference, submission, targets)
+    merged, confusion_matrices = build_merged_analysis(reference, submission, targets, at_label_mode)
     write_merged_analysis(merged, diagnostics_path)
     write_diagnostic_metrics_payload(
         {
@@ -259,6 +289,7 @@ def build_one_diagnostics(submission: Path, reference_dir: Path, output_dir: Pat
             "split": reference_cell.split,
             "language": reference_cell.language,
             "run": parsed.run,
+            "at_label_mode": at_label_mode,
             "confusion_matrices": confusion_matrices,
         },
         diagnostic_metrics_path,
@@ -286,7 +317,14 @@ def main() -> int:
         default=Path("results.d/diagnostics"),
         help="Directory for generated diagnostics JSON files.",
     )
+    parser.add_argument(
+        "--at-label-mode",
+        default="TERNARY",
+        choices=["TERNARY", "BINARY"],
+        help="TERNARY keeps PROBABLE as a separate at label; BINARY maps PROBABLE to TRUE for at.",
+    )
     args = parser.parse_args()
+    at_label_mode = parse_at_label_mode(args.at_label_mode)
 
     submissions = sorted(args.systems_dir.glob("*.jsonl")) if args.systems_dir.exists() else []
     if not submissions:
@@ -297,7 +335,7 @@ def main() -> int:
     for submission in submissions:
         try:
             diagnostics_path, diagnostic_metrics_path = build_one_diagnostics(
-                submission, args.reference_dir, args.output_dir
+                submission, args.reference_dir, args.output_dir, at_label_mode
             )
         except Exception as exc:
             print(f"[ERROR] {submission.name}: {exc}", file=sys.stderr)

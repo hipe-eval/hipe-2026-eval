@@ -11,16 +11,17 @@ from common import load_json
 
 
 RANKING_TITLES = {
-    "ranking-overall-test-a.tsv": "Accuracy Ranking Overall",
-    "ranking-efficiency-test-a.tsv": "Efficiency Ranking Overall",
-    "ranking-efficiency-impresso-test-de.tsv": "Efficiency Ranking German",
-    "ranking-efficiency-impresso-test-en.tsv": "Efficiency Ranking English",
-    "ranking-efficiency-impresso-test-fr.tsv": "Efficiency Ranking French",
-    "ranking-generalization-test-b.tsv": "Generalization Ranking",
-    "ranking-impresso-test-de.tsv": "Accuracy Ranking German",
-    "ranking-impresso-test-en.tsv": "Accuracy Ranking English",
-    "ranking-impresso-test-fr.tsv": "Accuracy Ranking French",
-    "ranking-surprise-test-fr.tsv": "Surprise Test French",
+    "ranking-overall-test-a.tsv": "Accuracy Profile Ranking Overall",
+    "ranking-efficiency-test-a.tsv": "Efficiency Profile Ranking Overall",
+    "ranking-efficiency-balanced-test-a.tsv": "Balanced Efficiency Profile Ranking Overall",
+    "ranking-efficiency-impresso-test-de.tsv": "Efficiency Profile Ranking German",
+    "ranking-efficiency-impresso-test-en.tsv": "Efficiency Profile Ranking English",
+    "ranking-efficiency-impresso-test-fr.tsv": "Efficiency Profile Ranking French",
+    "ranking-generalization-test-b.tsv": "Generalization Profile Ranking",
+    "ranking-impresso-test-de.tsv": "Accuracy Profile Ranking German",
+    "ranking-impresso-test-en.tsv": "Accuracy Profile Ranking English",
+    "ranking-impresso-test-fr.tsv": "Accuracy Profile Ranking French",
+    "ranking-surprise-test-fr.tsv": "Generalization Profile Ranking French",
 }
 
 RANKING_ORDER = [
@@ -31,10 +32,59 @@ RANKING_ORDER = [
     "ranking-generalization-test-b.tsv",
     "ranking-surprise-test-fr.tsv",
     "ranking-efficiency-test-a.tsv",
+    "ranking-efficiency-balanced-test-a.tsv",
     "ranking-efficiency-impresso-test-de.tsv",
     "ranking-efficiency-impresso-test-en.tsv",
     "ranking-efficiency-impresso-test-fr.tsv",
 ]
+
+DEFAULT_HEADER_LABELS = {
+    "hipe_model_size": "hipe_model_size_mb",
+    "rank_accuracy": "rank_impresso_profile_score",
+    "rank_parameter_count": "rank_hipe_parameter_count",
+    "rank_model_size": "rank_hipe_model_size",
+}
+
+RANKING_HEADER_LABELS = {
+    "ranking-overall-test-a.tsv": {
+        "score": "mean_impresso_profile_score",
+    },
+    "ranking-impresso-test-de.tsv": {
+        "score": "impresso_profile_score",
+    },
+    "ranking-impresso-test-en.tsv": {
+        "score": "impresso_profile_score",
+    },
+    "ranking-impresso-test-fr.tsv": {
+        "score": "impresso_profile_score",
+    },
+    "ranking-generalization-test-b.tsv": {
+        "score": "surprise_profile_score",
+    },
+    "ranking-surprise-test-fr.tsv": {
+        "score": "surprise_profile_score",
+    },
+    "ranking-efficiency-test-a.tsv": {
+        "efficiency_score": "mean_efficiency_profile_rank",
+        "accuracy_score": "mean_impresso_profile_score",
+    },
+    "ranking-efficiency-balanced-test-a.tsv": {
+        "balanced_efficiency_score": "balanced_efficiency_profile_rank",
+        "accuracy_score": "mean_impresso_profile_score",
+    },
+    "ranking-efficiency-impresso-test-de.tsv": {
+        "efficiency_score": "mean_efficiency_profile_rank",
+        "accuracy_score": "impresso_profile_score",
+    },
+    "ranking-efficiency-impresso-test-en.tsv": {
+        "efficiency_score": "mean_efficiency_profile_rank",
+        "accuracy_score": "impresso_profile_score",
+    },
+    "ranking-efficiency-impresso-test-fr.tsv": {
+        "efficiency_score": "mean_efficiency_profile_rank",
+        "accuracy_score": "impresso_profile_score",
+    },
+}
 
 
 def format_cell(value: str) -> str:
@@ -80,11 +130,35 @@ def with_diagnostic_links(
     return linked_headers, linked_rows
 
 
+def omit_report_columns(
+    headers: list[str],
+    rows: list[dict[str, str]],
+    columns: set[str],
+) -> tuple[list[str], list[dict[str, str]]]:
+    filtered_headers = [header for header in headers if header not in columns]
+    filtered_rows = [{key: value for key, value in row.items() if key not in columns} for row in rows]
+    return filtered_headers, filtered_rows
+
+
+def report_columns_to_omit(path: Path) -> set[str]:
+    if path.name.startswith("ranking-surprise-"):
+        return {"isAt_macro_recall", "isAt_accuracy"}
+    return set()
+
+
 def markdown_table(headers: list[str], rows: list[dict[str, str]]) -> list[str]:
+    return markdown_table_with_labels(headers, rows, {})
+
+
+def markdown_table_with_labels(
+    headers: list[str],
+    rows: list[dict[str, str]],
+    header_labels: dict[str, str],
+) -> list[str]:
     if not headers:
         return ["No columns found.", ""]
     lines = [
-        "| " + " | ".join(headers) + " |",
+        "| " + " | ".join(display_header(header, header_labels) for header in headers) + " |",
         "| " + " | ".join("---" for _ in headers) + " |",
     ]
     for row in rows:
@@ -112,13 +186,78 @@ def sort_ranking_paths(paths: list[Path]) -> list[Path]:
     return sorted(paths, key=lambda path: (order.get(path.name, len(order)), path.name))
 
 
+def header_labels_for(path: Path) -> dict[str, str]:
+    labels = dict(DEFAULT_HEADER_LABELS)
+    labels.update(RANKING_HEADER_LABELS.get(path.name, {}))
+    return labels
+
+
+def display_header(header: str, header_labels: dict[str, str]) -> str:
+    return header_labels.get(header, header).replace("_", " ")
+
+
+def parse_at_label_mode(value: str) -> str:
+    mode = value.upper()
+    if mode not in {"TERNARY", "BINARY"}:
+        raise ValueError(f"Invalid AT label mode '{value}'. Expected TERNARY or BINARY.")
+    return mode
+
+
+def score_definition_lines(at_label_mode: str) -> list[str]:
+    lines = [
+        "## Profile Score Definitions",
+        "",
+        "- Accuracy Profile Ranking uses the `impresso` test files.",
+        "- Generalization Profile Ranking uses the `surprise` test files.",
+        "- For a label `l`, `recall_l = true_positives_l / gold_instances_l`.",
+    ]
+    if at_label_mode == "BINARY":
+        lines.extend(
+            [
+                "- This binary report maps `PROBABLE` to `TRUE` for `at` in both reference and system labels.",
+                "- `at_macro_recall = mean(recall_TRUE, recall_FALSE)` for the binarized `at` labels.",
+            ]
+        )
+    else:
+        lines.append("- `at_macro_recall = mean(recall_TRUE, recall_PROBABLE, recall_FALSE)` for the `at` labels.")
+    lines.extend(
+        [
+            "- `isAt_macro_recall = mean(recall_TRUE, recall_FALSE)` for the `isAt` labels.",
+            "- `impresso_profile_score`: score for one `impresso` language file, computed as the mean of `at_macro_recall` and `isAt_macro_recall`.",
+            "- `mean_impresso_profile_score`: mean of `impresso_profile_score` over the submitted `impresso` language files.",
+            "- `surprise_profile_score`: score on a `surprise` file, computed as `at_macro_recall`; `isAt` is not evaluated for `surprise`.",
+            "- Accuracy columns are included as contextual diagnostics; ranking is still determined by the macro-recall profile score.",
+            "- `mean_efficiency_profile_rank`: mean of `rank_impresso_profile_score`, `rank_hipe_parameter_count`, and `rank_hipe_model_size`; lower is better.",
+            "- `balanced_efficiency_profile_rank`: `0.5 * rank_impresso_profile_score + 0.25 * rank_hipe_parameter_count + 0.25 * rank_hipe_model_size`; lower is better.",
+            "",
+        ]
+    )
+    return lines
+
+
+def ranking_note_lines(path: Path) -> list[str]:
+    if path.name == "ranking-overall-test-a.tsv":
+        return [
+            "Only team runs that submitted all `impresso` language files are included in this overall ranking. Team runs with partial submissions are shown only in the dataset-specific ranking tables.",
+            "",
+        ]
+    if path.name == "ranking-efficiency-balanced-test-a.tsv":
+        return [
+            "This is an additional analysis ranking. It is not the guideline-defined Efficiency Profile Ranking; it gives equal total weight to accuracy and to the combined resource ranks.",
+            "",
+        ]
+    return []
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--rankings-dir", type=Path, default=Path("results.d/system-rankings"))
     parser.add_argument("--diagnostics-dir", type=Path, default=Path("results.d/diagnostics"))
     parser.add_argument("--teams", type=Path, default=Path("lib/teams.json"))
     parser.add_argument("--output", type=Path, default=Path("HIPE_2026_evaluation_results.md"))
+    parser.add_argument("--at-label-mode", default="TERNARY", choices=["TERNARY", "BINARY"])
     args = parser.parse_args()
+    at_label_mode = parse_at_label_mode(args.at_label_mode)
 
     teams = load_json(args.teams) if args.teams.is_file() else {}
     ranking_paths = (
@@ -128,7 +267,7 @@ def main() -> int:
     )
 
     lines = [
-        "# HIPE-2026 Evaluation Results",
+        "# HIPE-2026 Evaluation Results" + (" (Binary at)" if at_label_mode == "BINARY" else ""),
         "",
         f"This file is generated from `{args.rankings_dir}/*.tsv`.",
         "",
@@ -160,13 +299,16 @@ def main() -> int:
         for title in toc_titles:
             lines.append(f"- [{title}](#{anchor(title)})")
         lines.append("")
+        lines.extend(score_definition_lines(at_label_mode))
 
         for path in ranking_paths:
             title = RANKING_TITLES.get(path.name, path.stem.replace("-", " ").title())
             headers, rows = read_tsv(path)
+            headers, rows = omit_report_columns(headers, rows, report_columns_to_omit(path))
             headers, rows = with_diagnostic_links(headers, rows, args.diagnostics_dir)
             lines.extend([f"## {title}", ""])
-            lines.extend(markdown_table(headers, rows))
+            lines.extend(markdown_table_with_labels(headers, rows, header_labels_for(path)))
+            lines.extend(ranking_note_lines(path))
 
     args.output.write_text("\n".join(lines), encoding="utf-8")
     print(f"[OK] Wrote {args.output}")

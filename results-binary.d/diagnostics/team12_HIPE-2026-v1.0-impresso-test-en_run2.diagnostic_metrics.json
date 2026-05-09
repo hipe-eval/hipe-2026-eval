@@ -1,0 +1,116 @@
+{
+  "submission": "team12_HIPE-2026-v1.0-impresso-test-en_run2.jsonl",
+  "reference": "HIPE-2026-v1.0-impresso-test-en.jsonl",
+  "team": "team12",
+  "dataset": "impresso",
+  "split": "test",
+  "language": "en",
+  "run": "run2",
+  "at_label_mode": "BINARY",
+  "confusion_matrices": {
+    "at": {
+      "labels": [
+        "TRUE",
+        "FALSE"
+      ],
+      "matrix": [
+        [
+          85,
+          18
+        ],
+        [
+          11,
+          48
+        ]
+      ],
+      "rows": "gold",
+      "columns": "prediction",
+      "total": 162,
+      "table": [
+        {
+          "gold": "TRUE",
+          "pred_TRUE": 85,
+          "pred_FALSE": 18
+        },
+        {
+          "gold": "FALSE",
+          "pred_TRUE": 11,
+          "pred_FALSE": 48
+        }
+      ],
+      "accuracy": 0.821,
+      "per_label": {
+        "TRUE": {
+          "precision": 0.8854,
+          "recall": 0.8252,
+          "f1": 0.8542,
+          "support": 103,
+          "true_positive": 85,
+          "false_positive": 11,
+          "false_negative": 18
+        },
+        "FALSE": {
+          "precision": 0.7273,
+          "recall": 0.8136,
+          "f1": 0.768,
+          "support": 59,
+          "true_positive": 48,
+          "false_positive": 18,
+          "false_negative": 11
+        }
+      }
+    },
+    "isAt": {
+      "labels": [
+        "TRUE",
+        "FALSE"
+      ],
+      "matrix": [
+        [
+          42,
+          23
+        ],
+        [
+          6,
+          91
+        ]
+      ],
+      "rows": "gold",
+      "columns": "prediction",
+      "total": 162,
+      "table": [
+        {
+          "gold": "TRUE",
+          "pred_TRUE": 42,
+          "pred_FALSE": 23
+        },
+        {
+          "gold": "FALSE",
+          "pred_TRUE": 6,
+          "pred_FALSE": 91
+        }
+      ],
+      "accuracy": 0.821,
+      "per_label": {
+        "TRUE": {
+          "precision": 0.875,
+          "recall": 0.6462,
+          "f1": 0.7434,
+          "support": 65,
+          "true_positive": 42,
+          "false_positive": 6,
+          "false_negative": 23
+        },
+        "FALSE": {
+          "precision": 0.7982,
+          "recall": 0.9381,
+          "f1": 0.8625,
+          "support": 97,
+          "true_positive": 91,
+          "false_positive": 23,
+          "false_negative": 6
+        }
+      }
+    }
+  }
+}
