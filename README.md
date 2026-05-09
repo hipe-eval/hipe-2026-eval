@@ -168,6 +168,10 @@ Higher is better for profile scores. Lower is better for
 `mean_efficiency_profile_rank` and `balanced_efficiency_profile_rank`. Ties
 receive the same competition rank.
 
+Dataset-specific ranking tables also include `at_accuracy` and `isAt_accuracy`
+as contextual diagnostics. The official ranking order remains based on the
+macro-recall profile score, not on accuracy.
+
 ## Per-Run Metadata (`*-info.json`)
 
 Each submitted run JSONL file must be accompanied by a metadata file with the same stem and an `-info.json` suffix:

@@ -60,7 +60,9 @@ def build_cell_rankings(rows: list[dict[str, Any]], output_dir: Path) -> None:
                     "submission": row["submission"],
                     "score": score_value(row),
                     "at_macro_recall": row.get("scores", {}).get("at_macro_recall"),
+                    "at_accuracy": row.get("scores", {}).get("at_accuracy"),
                     "isAt_macro_recall": row.get("scores", {}).get("isAt_macro_recall"),
+                    "isAt_accuracy": row.get("scores", {}).get("isAt_accuracy"),
                     "info_missing": row.get("efficiency_metadata", {}).get("info_missing"),
                 }
             )
@@ -80,7 +82,9 @@ def build_cell_rankings(rows: list[dict[str, Any]], output_dir: Path) -> None:
                 "submission",
                 "score",
                 "at_macro_recall",
+                "at_accuracy",
                 "isAt_macro_recall",
+                "isAt_accuracy",
                 "info_missing",
             ],
             ranking_rows,

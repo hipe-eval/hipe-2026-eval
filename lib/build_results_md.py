@@ -130,6 +130,22 @@ def with_diagnostic_links(
     return linked_headers, linked_rows
 
 
+def omit_report_columns(
+    headers: list[str],
+    rows: list[dict[str, str]],
+    columns: set[str],
+) -> tuple[list[str], list[dict[str, str]]]:
+    filtered_headers = [header for header in headers if header not in columns]
+    filtered_rows = [{key: value for key, value in row.items() if key not in columns} for row in rows]
+    return filtered_headers, filtered_rows
+
+
+def report_columns_to_omit(path: Path) -> set[str]:
+    if path.name.startswith("ranking-surprise-"):
+        return {"isAt_macro_recall", "isAt_accuracy"}
+    return set()
+
+
 def markdown_table(headers: list[str], rows: list[dict[str, str]]) -> list[str]:
     return markdown_table_with_labels(headers, rows, {})
 
@@ -210,6 +226,7 @@ def score_definition_lines(at_label_mode: str) -> list[str]:
             "- `impresso_profile_score`: score for one `impresso` language file, computed as the mean of `at_macro_recall` and `isAt_macro_recall`.",
             "- `mean_impresso_profile_score`: mean of `impresso_profile_score` over the submitted `impresso` language files.",
             "- `surprise_profile_score`: score on a `surprise` file, computed as `at_macro_recall`; `isAt` is not evaluated for `surprise`.",
+            "- Accuracy columns are included as contextual diagnostics; ranking is still determined by the macro-recall profile score.",
             "- `mean_efficiency_profile_rank`: mean of `rank_impresso_profile_score`, `rank_hipe_parameter_count`, and `rank_hipe_model_size`; lower is better.",
             "- `balanced_efficiency_profile_rank`: `0.5 * rank_impresso_profile_score + 0.25 * rank_hipe_parameter_count + 0.25 * rank_hipe_model_size`; lower is better.",
             "",
@@ -287,6 +304,7 @@ def main() -> int:
         for path in ranking_paths:
             title = RANKING_TITLES.get(path.name, path.stem.replace("-", " ").title())
             headers, rows = read_tsv(path)
+            headers, rows = omit_report_columns(headers, rows, report_columns_to_omit(path))
             headers, rows = with_diagnostic_links(headers, rows, args.diagnostics_dir)
             lines.extend([f"## {title}", ""])
             lines.extend(markdown_table_with_labels(headers, rows, header_labels_for(path)))
