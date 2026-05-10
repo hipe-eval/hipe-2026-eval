@@ -138,7 +138,12 @@ def read_info_file(info_path: Path) -> tuple[dict[str, Any], list[str]]:
 
 
 def competition_ranks(rows: list[dict[str, Any]], key: str, *, higher_is_better: bool) -> dict[tuple[str, str], int]:
-    """Return (dense) "1223" ranks keyed by (team, run), with missing values ranked last."""
+    """Return dense ranks keyed by (team, run), with missing values ranked last.
+
+    Despite the historical helper name, this implements dense ranking
+    (for example, 1, 1, 2, 3 / "1223"), not standard competition ranking
+    (1, 1, 3, 4).
+    """
     total = len(rows)
     present = [row for row in rows if row.get(key) is not None]
     present.sort(key=lambda row: row[key], reverse=higher_is_better)
