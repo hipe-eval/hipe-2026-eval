@@ -138,7 +138,7 @@ def read_info_file(info_path: Path) -> tuple[dict[str, Any], list[str]]:
 
 
 def competition_ranks(rows: list[dict[str, Any]], key: str, *, higher_is_better: bool) -> dict[tuple[str, str], int]:
-    """Return competition ranks keyed by (team, run), with missing values ranked last."""
+    """Return (dense) "1223" ranks keyed by (team, run), with missing values ranked last."""
     total = len(rows)
     present = [row for row in rows if row.get(key) is not None]
     present.sort(key=lambda row: row[key], reverse=higher_is_better)
