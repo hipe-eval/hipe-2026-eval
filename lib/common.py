@@ -146,12 +146,14 @@ def competition_ranks(rows: list[dict[str, Any]], key: str, *, higher_is_better:
     ranks: dict[tuple[str, str], int] = {}
     previous_value = object()
     previous_rank = 0
+    shared_ranks = 0
     for index, row in enumerate(present, start=1):
         value = row[key]
         if value == previous_value:
             rank = previous_rank
+            shared_ranks += 1
         else:
-            rank = index
+            rank = index - shared_ranks
             previous_value = value
             previous_rank = rank
         ranks[(row["team"], row["run"])] = rank
