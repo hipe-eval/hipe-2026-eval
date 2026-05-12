@@ -133,15 +133,15 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states that Pope Jean VIII acted in his papal capacity in Rome (e.g., “Les légats de ce même siége de Rome…”) and he wrote to Photius, indicating his presence at the Roman seat.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "There is no indication that Jean VIII (or the patriarch Jean) is presently in Rome; the text only recounts historical events involving him, not a current presence.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk132.tsv-NIL_eugene",
@@ -772,15 +772,15 @@
         "loc_mentions_list": [
           "Asie Mineure"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Soliman soudan de Syrie is linked to battles at Nicée, which is in Asia Minor, suggesting he may have been present there.  \nPROBABLE Soliman is the same figure as Soliman soudan de Syrie, and the same implication applies regarding Asia Minor.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Derived from \"at\" prediction (False/Probable)",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_calife_d_egypte",
@@ -793,15 +793,15 @@
         "loc_mentions_list": [
           "Jérusalem"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The passage states that the Egyptian caliph was seized by his lieutenants at Jerusalem, indicating his presence there.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text only says the Egyptian caliph was seized by his lieutenants during the siege of Jerusalem; it does not indicate he was present in Jerusalem shortly before publication.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_calife_d_egypte",
@@ -1746,15 +1746,15 @@
         "loc_mentions_list": [
           "ville de Médine"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "No indication in the text that Omar was present in the city of Médine.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Derived from \"at\" prediction (False/Probable)",
-        "CORRECT": true
+        "CORRECT": false
       }
     ]
   },
@@ -1977,15 +1977,15 @@
         "loc_mentions_list": [
           "Spire"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text says Henri V (the son of Henri IV) arranged for his father’s body to be taken to a cellar in Spire, implying he was likely involved with that location, though it does not state explicitly that he was physically present there.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Derived from \"at\" prediction (False/Probable)",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_frederic",
@@ -2040,15 +2040,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Pepin is linked to the “donations de Pepin” concerning French territories, implying his involvement in France even though the text does not state his physical presence explicitly.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Derived from \"at\" prediction (False/Probable)",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv_Q3044_charlemagne",
@@ -2061,15 +2061,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Charlemagne is associated with the donations concerning France, implying he had ties to the region, suggesting he likely was present there.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Derived from \"at\" prediction (False/Probable)",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_henri",
@@ -6270,15 +6270,15 @@
         "loc_mentions_list": [
           "Europe"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "No indication in the text that Sélim was present in Europe; he is mentioned only in relation to Constantinople, Syria, and Egypt.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Derived from \"at\" prediction (False/Probable)",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk557.tsv-NIL_soliman",
@@ -6431,15 +6431,15 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "There is no indication in the text that Renaudie was present in Amboise; the passage only mentions violent events occurring in Amboise, not Renaudie's location.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Derived from \"at\" prediction (False/Probable)",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk820.tsv-NIL_henri",
@@ -8150,15 +8150,15 @@
         "loc_mentions_list": [
           "Bourgogne"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "There is no indication in the text that Hugues Capet was ever present in Bourgogne; only his descendant Henry is mentioned in relation to the region.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Derived from \"at\" prediction (False/Probable)",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1678_Esprit_Faussete_chunk235.tsv-NIL_robert",
@@ -10349,15 +10349,15 @@
         "loc_mentions_list": [
           "Seine"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Marguerite de France was born in Saint‑Germain‑en‑Laye, which the text says is situated “sur la Seine,” indicating she was present at the Seine.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "No indication that Marguerite de France was at the Seine within a month before the article’s publication; the text only notes her 1523 birth at Saint‑Germain‑en‑Laye near the Seine.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1797_Perouse_Voyage_chunk3594.tsv-NIL_marguerite_de_france",

@@ -133,7 +133,7 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.3517, score_at_PROBABLE=0.6073, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
@@ -772,15 +772,15 @@
         "loc_mentions_list": [
           "Asie Mineure"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.0033, score_at_PROBABLE=0.0221, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.0013, threshold_isAt_TRUE=0.1500.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_calife_d_egypte",
@@ -793,9 +793,9 @@
         "loc_mentions_list": [
           "Jérusalem"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.4077, score_at_PROBABLE=0.5738, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -1746,15 +1746,15 @@
         "loc_mentions_list": [
           "ville de Médine"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.2349, score_at_PROBABLE=0.4634, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.1089, threshold_isAt_TRUE=0.1500.",
-        "CORRECT": true
+        "CORRECT": false
       }
     ]
   },
@@ -1977,15 +1977,15 @@
         "loc_mentions_list": [
           "Spire"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.0283, score_at_PROBABLE=0.1178, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.0147, threshold_isAt_TRUE=0.1500.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_frederic",
@@ -2040,15 +2040,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "PROBABLE",
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.0192, score_at_PROBABLE=0.1550, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.0035, threshold_isAt_TRUE=0.1500.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv_Q3044_charlemagne",
@@ -2061,15 +2061,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "PROBABLE",
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.0139, score_at_PROBABLE=0.1195, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.0026, threshold_isAt_TRUE=0.1500.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_henri",
@@ -2207,7 +2207,7 @@
         "loc_mentions_list": [
           "Bretagne"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.0019, score_at_PROBABLE=0.0106, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
@@ -4881,9 +4881,9 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.4441, score_at_PROBABLE=0.6534, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -6270,7 +6270,7 @@
         "loc_mentions_list": [
           "Europe"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.3291, score_at_PROBABLE=0.5885, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
@@ -6410,7 +6410,7 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.1893, score_at_PROBABLE=0.4346, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
@@ -6431,7 +6431,7 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.3261, score_at_PROBABLE=0.5975, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
@@ -6537,7 +6537,7 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.2360, score_at_PROBABLE=0.4759, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
@@ -6812,9 +6812,9 @@
         "loc_mentions_list": [
           "Lithuanie"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.4424, score_at_PROBABLE=0.6659, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -6962,9 +6962,9 @@
         "loc_mentions_list": [
           "Russie"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.4886, score_at_PROBABLE=0.6244, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -7506,7 +7506,7 @@
         "loc_mentions_list": [
           "Autriche"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.1926, score_at_PROBABLE=0.4695, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
@@ -7528,9 +7528,9 @@
         "loc_mentions_list": [
           "Pays - Bas"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.2975, score_at_PROBABLE=0.5713, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -7549,7 +7549,7 @@
         "loc_mentions_list": [
           "Pays - Bas"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.1926, score_at_PROBABLE=0.4578, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
@@ -8150,7 +8150,7 @@
         "loc_mentions_list": [
           "Bourgogne"
         ],
-        "at": "PROBABLE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.4408, score_at_PROBABLE=0.6460, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
@@ -10349,15 +10349,15 @@
         "loc_mentions_list": [
           "Seine"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Predicted by fine-tuned GLiREL; score_at_TRUE=0.0086, score_at_PROBABLE=0.0313, threshold_at_TRUE=0.2500, threshold_at_PROBABLE=0.7000.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Predicted by fine-tuned GLiREL; score_isAt_TRUE=0.0041, threshold_isAt_TRUE=0.1500.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1797_Perouse_Voyage_chunk3594.tsv-NIL_marguerite_de_france",

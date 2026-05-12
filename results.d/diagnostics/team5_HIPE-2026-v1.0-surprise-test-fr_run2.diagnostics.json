@@ -133,15 +133,15 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Parsing failed",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Parsing failed",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk132.tsv-NIL_eugene",
@@ -772,15 +772,15 @@
         "loc_mentions_list": [
           "Asie Mineure"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text mentions 'Soliman soudan de Syrie' in the context of resisting Crusaders who ravaged 'Asie Mineure' and mentions Genoese ships cotoyant (coasting) 'Asie Mineure'. While Soliman is explicitly linked to the resistance against the invasion of Asia Minor, the text describes a historical event (the Crusades) rather than stating he was physically present there at the time of the article's publication or as a general fact of his location.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The article discusses historical events from the Crusades era (11th-12th century) involving Soliman and Asia Minor. The publication date is 1756. The text describes past historical narratives, not current or recent events. Therefore, Soliman was not at Asia Minor in the immediate temporal horizon of 1756.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_calife_d_egypte",
@@ -793,15 +793,15 @@
         "loc_mentions_list": [
           "Jérusalem"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text states that the calife d' égypte had seized Jerusalem by his lieutenants during the siege, implying his control or presence in the context of the event described.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The article describes a historical event from the Crusades (11th-12th century), while the publication date is 1756. The mention is historical and not current or recent relative to 1756.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_calife_d_egypte",
@@ -1746,15 +1746,15 @@
         "loc_mentions_list": [
           "ville de Médine"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text states that Omar was assassinated in 653, but it does not explicitly state that he was physically present in the city of Medina at that time or any other time. The mention of Medina is in the context of Ali transferring the caliphate seat from there, not regarding Omar's location.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The article discusses historical events from the 7th century (653), which is centuries before the publication date of 1756. There is no evidence of Omar being at Medina in the immediate temporal horizon of the article.",
-        "CORRECT": true
+        "CORRECT": false
       }
     ]
   },
@@ -1977,15 +1977,15 @@
         "loc_mentions_list": [
           "Spire"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states that the son of Henri IV had the body of his father exhumed from Liège and transported to a cellar in Spire. This confirms Henri IV was physically present in Spire at the time of his burial there.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The article describes a historical event from the past where Henri IV's body was moved to Spire. The publication date is 1756, and the text refers to this as a completed historical action ('mit le comble', 'consomma'), not a current or recent event relative to 1756.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_frederic",
@@ -2040,15 +2040,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "PROBABLE",
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text mentions Pepin only in the context of alleged donations by the Pope ('prétendues donations de Pepin et de Charlemagne'). It does not state that Pepin was physically present in France.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text discusses Pepin's historical donations and mentions France only as a location of French kings. There is no evidence of Pepin's presence in France, let alone recent presence relative to 1756.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv_Q3044_charlemagne",
@@ -2061,15 +2061,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "PROBABLE",
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text mentions Charlemagne only in the context of alleged donations by Pepin and Charlemagne that the papacy claimed. It does not state that Charlemagne was physically present in France.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text discusses historical claims regarding Charlemagne's donations centuries before the 1756 publication date. There is no evidence of his presence in France at the time of publication.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_henri",
@@ -2207,15 +2207,15 @@
         "loc_mentions_list": [
           "Bretagne"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text states that Rolon demanded Brittany and that it was ceded to him, becoming a fief of Neustria under his rule.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text describes a historical event where Brittany was ceded to Rolon in the past, not a current or recent event relative to the 1756 publication date.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk110.tsv-NIL_rolon",
@@ -4881,15 +4881,15 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text explicitly states that Pascal II was in Rome to have his bulls annulled ('faire annuller dans Rome ces mêmes bulles') and mentions a new imperial irruption to Rome where he was treated as a traitor in a council.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The article describes historical events from the Investiture Controversy involving Emperor Henry V and Pope Pascal II. Given the publication date of 1756, these events occurred centuries prior and are not within the immediate temporal horizon (one month) of the article.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk205.tsv-NIL_philippe",
@@ -6270,7 +6270,7 @@
         "loc_mentions_list": [
           "Europe"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text mentions 'C' est à Constantinople un Sélim qui met sous la domination ottomane la Syrie et l' égypte', explicitly linking Sélim to Constantinople and his actions in the region, which are part of Europe.",
@@ -6410,15 +6410,15 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "PROBABLE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states that François De Guise held the title of lieutenant-general of the kingdom and possessed power similar to the ancient mayors of the palace, implying his presence and authority within the realm where Amboise is located.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The article describes historical events and the establishment of François De Guise's power in the past, without indicating his presence at Amboise in the immediate temporal horizon relative to the 1756 publication date.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk820.tsv-NIL_renaudie",
@@ -6431,7 +6431,7 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text states 'La Renaudie fut tué en combattant' (Renaudie was killed while fighting) in the context of events occurring in Amboise, where 'échafauts sanglants' (bloody scaffolds) were visible. This implies his physical presence at the location during the conflict.",
@@ -6537,15 +6537,15 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "PROBABLE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text mentions 'le duc de Guise' and 'Les Guises' in the context of a conspiracy and military actions. It states 'Les Guises eurent à peine le tems de faire venir des troupes' and describes events taking place in Amboise ('on ne vit dans Amboise que des échafauts sanglants'). While the text does not explicitly state 'Guises were in Amboise', the narrative of the conspiracy, the gathering of troops, and the subsequent punishment of conspirators in Amboise strongly implies the presence of the Guise family in that location during the events described.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The article describes a historical conspiracy and its punishment in Amboise. The text uses past tense ('étaient', 'eurent', 'fut tué') and refers to events that have already concluded ('La conspiration découverte et punie'). Given the publication date of 1756 and the historical nature of the text describing past events, the presence of the Guises in Amboise is not current or very recent relative to the publication.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk820.tsv-NIL_andelot",
@@ -6812,9 +6812,9 @@
         "loc_mentions_list": [
           "Lithuanie"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Le texte mentionne l'apparition d'un jeune homme en Lithuanie qui prétendait être le prince Demetrius et qui a été reconnu par un palatin de Sandomir comme le véritable czar.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -6962,15 +6962,15 @@
         "loc_mentions_list": [
           "Russie"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text states that after the death of Ivan Basilides, the history of the 'faux Demetrius' agitated 'la Russie' for a long time. It mentions that Demetri was confined in a village named Uglis, but the specific agitation of the 'faux Demetrius' is explicitly linked to the country of Russia.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The article describes historical events occurring after the death of Ivan Basilides, involving the 'faux Demetrius' agitating Russia over a long period. This is a historical narrative about the past, not a report on current or very recent events relative to the 1756 publication date.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk1041.tsv-NIL_sandomir",
@@ -7506,7 +7506,7 @@
         "loc_mentions_list": [
           "Autriche"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text states that Philippe sent Don Juan D' Autriche to the Pays-Bas (Netherlands) after the death of Requesens to try to restore calm. While the text mentions his ambition to be king of Tunis and his victory at Lepanto, it does not explicitly state he was physically present in the Austrian Empire (Autriche) at the time of publication or previously in a way that confirms presence there.",
@@ -7528,15 +7528,15 @@
         "loc_mentions_list": [
           "Pays - Bas"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "PROBABLE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text mentions Philippe II in the context of his troops mutinying in Flanders and provinces in the Pays-Bas making a treaty without consulting him. It also states he could have restored calm in the Pays-Bas by his presence but instead sent Don Juan. This implies an association and potential presence or authority over the region, though not explicit physical presence at a specific moment.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text discusses historical events (1570s context implied by Requesens and Don Juan) and general governance issues. The mention of Philippe II sending Don Juan to the Pays-Bas is a past action. There is no evidence of his presence in the Pays-Bas at the time of publication (1756) or within the immediate recent horizon.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk783.tsv-NIL_requesens",
@@ -7549,15 +7549,15 @@
         "loc_mentions_list": [
           "Pays - Bas"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "PROBABLE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text mentions the 'grand commandeur de Requesens' in the context of his death, stating that after his death, Philip II sent Don Juan to the Pays-Bas. This implies Requesens was previously associated with the region, likely as a commander there, but does not explicitly state his physical presence at a specific location within the Pays-Bas at the time of the article's events, only his death and subsequent replacement.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The article discusses the death of the 'grand commandeur de Requesens' and the subsequent sending of Don Juan to the Pays-Bas. Since Requesens is mentioned as having died and been replaced, he is not present in the Pays-Bas in the immediate temporal horizon of the publication (1756).",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk783.tsv-NIL_philippe",
@@ -8150,15 +8150,15 @@
         "loc_mentions_list": [
           "Bourgogne"
         ],
-        "at": "PROBABLE",
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text mentions Hugues Capet only as an ancestor of King Henry, stating that Henry's grandson gave Burgundy to his brother Robert. It does not state Hugues Capet was physically present in Burgogne.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text discusses historical events centuries before the 1678 publication date. There is no evidence of Hugues Capet being in Burgogne at any time close to 1678.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1678_Esprit_Faussete_chunk235.tsv-NIL_robert",
@@ -10349,15 +10349,15 @@
         "loc_mentions_list": [
           "Seine"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "PROBABLE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states Marguerite de France was born at Saint-Germain-en-Laye, which is described as being on the Seine. This implies a geographical association with the river.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The article describes Marguerite de France's birth in 1523, which is centuries before the publication date of 1797. This is historical information, not current or recent presence.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1797_Perouse_Voyage_chunk3594.tsv-NIL_marguerite_de_france",

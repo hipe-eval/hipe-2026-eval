@@ -133,15 +133,15 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text mentions 'Les légats de ce même siége de Rome' in relation to the actions of Pope Jean VIII, and discusses the Roman church's views during his time, implying his role as Pope associated with the Roman see.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The article discusses historical events involving Jean VIII (such as the eighth ecumenical council) in a retrospective manner, not as current or ongoing events relative to the publication date.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk132.tsv-NIL_eugene",
@@ -772,15 +772,15 @@
         "loc_mentions_list": [
           "Asie Mineure"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text describes Soliman, sultan of Syria, being unable to resist the first torrent of the crusader princes, and mentions that the crusaders were selling provisions while 'cotoyant l'Asie Mineure' (skirting Asia Minor). While Soliman is identified as sultan of Syria, the text does not explicitly state he was physically present in Asia Minor.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text does not provide evidence that Soliman was in Asia Minor during the immediate temporal horizon of the narrative; it describes his inability to resist the crusaders.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_calife_d_egypte",
@@ -793,15 +793,15 @@
         "loc_mentions_list": [
           "Jérusalem"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text mentions that a siege was placed before Jerusalem, and that the calife d' égypte had seized it through his lieutenants.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text describes historical events regarding the siege of Jerusalem and the calife d' égypte's control over it via lieutenants, but does not place the calife there in the current temporal horizon of the article.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_calife_d_egypte",
@@ -1746,15 +1746,15 @@
         "loc_mentions_list": [
           "ville de Médine"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text mentions that Ali transferred the seat of the caliphs from the city of Médine, where Mahomet is buried, to the city of Couffa. While it discusses the history of the caliphate and mentions Omar was assassinated, it does not explicitly state that Omar was present in Médine.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text does not provide evidence that Omar is currently or recently in Médine; it discusses his assassination in 653.",
-        "CORRECT": true
+        "CORRECT": false
       }
     ]
   },
@@ -1977,15 +1977,15 @@
         "loc_mentions_list": [
           "Spire"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text mentions that Henri IV's son (Henri IV) had his father's body carried to a cave in Spire, but it does not state that Henri V was present in Spire.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text does not provide evidence that Henri V was in Spire during the temporal horizon of the article.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_frederic",
@@ -2040,15 +2040,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text mentions the 'donations de Pepin et de Charlemagne' in the context of the papacy's claims to certain lands, but it does not explicitly state that Pepin was present in France.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text does not provide evidence that Pepin is or was in France within the immediate temporal horizon of the article.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv_Q3044_charlemagne",
@@ -2061,15 +2061,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text mentions the 'donations réelles de la comtesse Matilde' in the context of the papacy's claims, but it does not explicitly state that Charlemagne was present in France.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text does not provide evidence that Charlemagne is or was in France within the immediate temporal horizon of the article.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_henri",
@@ -6270,15 +6270,15 @@
         "loc_mentions_list": [
           "Europe"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text mentions Sélim in the context of those who reigned in Europe during the sixteenth century ('Si on jette la vuë sur ceux qui régnaient pour lors en Europe... C'est à Constantinople un Sélim').",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text discusses Sélim in a historical context regarding the sixteenth century, not as a current or ongoing presence in Europe.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk557.tsv-NIL_soliman",
@@ -6431,15 +6431,15 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states that 'La Renaudie fut tué en combattant' and subsequently mentions that for a whole month, 'on ne vit dans Amboise que des échafauts sanglants' (one saw nothing in Amboise but bloody scaffolds) following the defeat of the conspirators. This context links the death of Renaudie to the events and aftermath occurring in Amboise.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The article describes historical events in the past tense ('fut tué', 'eurent', 'furent'), indicating that Renaudie's presence and death are part of a past historical narrative rather than the immediate temporal horizon of the publication.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk820.tsv-NIL_henri",
@@ -8150,15 +8150,15 @@
         "loc_mentions_list": [
           "Bourgogne"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text mentions Hugues Capet in the context of the history of the French monarchy and the division of provinces, specifically mentioning the Bourgogne being separated from the crown by the king Henry, who was the grandson of Hugues Capet. However, the text does not state that Hugues Capet himself was at Bourgogne.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text does not provide evidence that Hugues Capet is currently or was recently at Bourgogne; it only discusses his genealogical relationship to later kings mentioned in the context of territorial history.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1678_Esprit_Faussete_chunk235.tsv-NIL_robert",
@@ -10349,15 +10349,15 @@
         "loc_mentions_list": [
           "Seine"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text states that Marguerite de France was born in Saint-Germain-en-Laye, and notes that Saint-Germain-en-Laye is located on the Seine. However, the text does not explicitly state that she was at the Seine itself, only her place of birth.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text describes Marguerite de France's birth in 1523 and her historical qualities; it does not place her at the Seine in the current or immediate temporal horizon of the article.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1797_Perouse_Voyage_chunk3594.tsv-NIL_marguerite_de_france",

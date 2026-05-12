@@ -133,7 +133,7 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": null,
@@ -772,15 +772,15 @@
         "loc_mentions_list": [
           "Asie Mineure"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "PROBABLE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Il est probable que Soliman soudan de Syrie se soit trouvé en Asie Mineure, car son fils commandait des armées qui ont combattu à Nicée (en Asie Mineure), ce qui laisse entendre que Soliman était impliqué dans des opérations dans cette région.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Aucun indice indiquant que Soliman soudan de Syrie (ou Soliman) se trouvait en Asie Mineure.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_calife_d_egypte",
@@ -793,9 +793,9 @@
         "loc_mentions_list": [
           "Jérusalem"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Le texte indique que le calife d’Égypte a été saisi par ses lieutenants « devant Jérusalem », ce qui montre qu’il s’y trouvait.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -1746,15 +1746,15 @@
         "loc_mentions_list": [
           "ville de Médine"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Rien n'indique qu'Omar se soit trouvé à la ville de Médine.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Aucun passage n'indique qu'Omar se trouvait à Médine au moment de l'événement ou dans le mois précédant la rédaction.",
-        "CORRECT": true
+        "CORRECT": false
       }
     ]
   },
@@ -1977,15 +1977,15 @@
         "loc_mentions_list": [
           "Spire"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Henri V a été lié à Spire, le texte indique qu’il a fait porter le corps de son père dans une cave à Spire.  \nFALSE Henri IV n’est mentionné nulle part comme étant à Spire dans le texte.  \nTRUE empereur Henri V (même individu que Henri V) est associé à Spire de la même façon que ci‑dessus.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Aucun des personnages cités (Henri V, Henri IV ou l'empereur Henri V) n’est indiqué comme présent à Spire ; le texte ne mentionne que le fils d’Henri IV déterrant le corps de son père et le transportant dans une cave à Spire.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_frederic",
@@ -2040,15 +2040,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "PROBABLE",
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Aucun passage du texte n'indique que Pepin se trouvait en France.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Aucun indice que Pepin se trouvait en France dans le texte.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv_Q3044_charlemagne",
@@ -2061,15 +2061,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "PROBABLE",
+        "at": "FALSE",
         "SYS_at": "PROBABLE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Charlemagne est cité en lien avec les « donations » de Pepin et de Charlemagne concernant des terres qui font partie de la France, ce qui laisse supposer qu’il a pu s’y trouver, mais le texte ne le mentionne pas explicitement.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Aucun indice que Charlemagne se trouvait en France à ce moment‑ci.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_henri",
@@ -2207,15 +2207,15 @@
         "loc_mentions_list": [
           "Bretagne"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Rolon a demandé la Bretagne, et après des négociations elle a été cédée, indiquant qu’il s’est trouvé ou a exercé son autorité en Bretagne.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Le texte indique que Rolon a réclamé la Bretagne et que celle‑ci est devenue un fief sous son autorité, mais il ne mentionne aucune indication de sa présence physique en Bretagne au moment de la rédaction ou dans le mois précédant.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk110.tsv-NIL_rolon",
@@ -4881,7 +4881,7 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Rien n'indique que Pascal II se soit trouvé à Rome dans le texte.",
@@ -6270,15 +6270,15 @@
         "loc_mentions_list": [
           "Europe"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Aucun passage du texte n'indique que Sélim se soit trouvé en Europe.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Aucun passage du texte ne situe Sélim en Europe ; il est présenté à Constantinople, sans indication de présence en Europe.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk557.tsv-NIL_soliman",
@@ -6410,7 +6410,7 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Rien n'indique que François De Guise se soit trouvé à Amboise.",
@@ -6431,15 +6431,15 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Rien n'indique que Renaudie se soit trouvée à Amboise dans le texte.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Aucun passage ne lie Renaudie à Amboise ; il est seulement mentionné comme mort en combattant, sans indication de sa présence à Amboise.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk820.tsv-NIL_henri",
@@ -6537,15 +6537,15 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "PROBABLE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Il est probable que les Guises aient été impliqués à Amboise, car le texte décrit des combats sanglants dans cette ville pendant la répression de la conspiration, mais il ne mentionne pas explicitement leur présence.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Aucun passage n'indique que les Guises se trouvaient à Amboise ; le texte ne mentionne que des combats sur place, mais pas la présence des Guises.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk820.tsv-NIL_andelot",
@@ -6812,9 +6812,9 @@
         "loc_mentions_list": [
           "Lithuanie"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Il y a une indication que le prince Demetri (ou Demetrius) est apparu en Lithuanie.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -6962,15 +6962,15 @@
         "loc_mentions_list": [
           "Russie"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "PROBABLE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Pierre est probablement associé à la Russie, le texte le situe parmi les personnages (czars, Demetrius) et les intrigues qui se déroulent en Russie, même si aucune mention explicite ne le place directement sur le territoire.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Aucun passage du texte n'indique que Pierre se trouvait en Russie au moment décrit.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk1041.tsv-NIL_sandomir",
@@ -7506,15 +7506,15 @@
         "loc_mentions_list": [
           "Autriche"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "PROBABLE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Il est probable que Don Juan, désigné « d'Autriche », était lié à l'Autriche, ce qui suggère une origine ou une présence éventuelle dans ce pays.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Aucun passage n'indique que Don Juan se trouvait en Autriche ; le texte le nomme simplement « Don Juan d'Autriche » sans mentionner sa présence sur ce territoire.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk783.tsv-NIL_philippe",
@@ -7528,7 +7528,7 @@
         "loc_mentions_list": [
           "Pays - Bas"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Aucun passage ne montre que Philippe ou Philippe II se soient physiquement trouvés dans les Pays‑Bas ; on ne fait que parler de son gouvernement et des événements qui s’y déroulent.",
@@ -7549,7 +7549,7 @@
         "loc_mentions_list": [
           "Pays - Bas"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Aucun passage n'indique que le grand commandeur de Requesens se soit trouvé dans les Pays‑Bas.",
@@ -8150,15 +8150,15 @@
         "loc_mentions_list": [
           "Bourgogne"
         ],
-        "at": "PROBABLE",
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Rien n'indique que Hugues Capet se soit trouvé en Bourgogne.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Hugues Capet n'est mentionné que comme ancêtre et aucune indication ne montre qu'il se trouvait en Bourgogne à ce moment‑là.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1678_Esprit_Faussete_chunk235.tsv-NIL_robert",
@@ -10349,7 +10349,7 @@
         "loc_mentions_list": [
           "Seine"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Il y a indication que Marguerite de France, née à Saint‑Germain‑en‑Laye, était à un endroit « sur la Seine », le texte précisant que la ville se trouve sur ce fleuve.",

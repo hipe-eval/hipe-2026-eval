@@ -16,19 +16,19 @@
       ],
       "matrix": [
         [
-          79,
+          74,
           1,
-          59
+          55
         ],
         [
-          23,
+          29,
           0,
-          25
+          31
         ],
         [
-          49,
+          48,
           0,
-          244
+          242
         ]
       ],
       "rows": "gold",
@@ -37,51 +37,51 @@
       "table": [
         {
           "gold": "TRUE",
-          "pred_TRUE": 79,
+          "pred_TRUE": 74,
           "pred_PROBABLE": 1,
-          "pred_FALSE": 59
+          "pred_FALSE": 55
         },
         {
           "gold": "PROBABLE",
-          "pred_TRUE": 23,
+          "pred_TRUE": 29,
           "pred_PROBABLE": 0,
-          "pred_FALSE": 25
+          "pred_FALSE": 31
         },
         {
           "gold": "FALSE",
-          "pred_TRUE": 49,
+          "pred_TRUE": 48,
           "pred_PROBABLE": 0,
-          "pred_FALSE": 244
+          "pred_FALSE": 242
         }
       ],
-      "accuracy": 0.6729,
+      "accuracy": 0.6583,
       "per_label": {
         "TRUE": {
-          "precision": 0.5232,
-          "recall": 0.5683,
-          "f1": 0.5448,
-          "support": 139,
-          "true_positive": 79,
-          "false_positive": 72,
-          "false_negative": 60
+          "precision": 0.4901,
+          "recall": 0.5692,
+          "f1": 0.5267,
+          "support": 130,
+          "true_positive": 74,
+          "false_positive": 77,
+          "false_negative": 56
         },
         "PROBABLE": {
           "precision": 0.0,
           "recall": 0.0,
           "f1": 0.0,
-          "support": 48,
+          "support": 60,
           "true_positive": 0,
           "false_positive": 1,
-          "false_negative": 48
+          "false_negative": 60
         },
         "FALSE": {
-          "precision": 0.7439,
-          "recall": 0.8328,
-          "f1": 0.7858,
-          "support": 293,
-          "true_positive": 244,
-          "false_positive": 84,
-          "false_negative": 49
+          "precision": 0.7378,
+          "recall": 0.8345,
+          "f1": 0.7832,
+          "support": 290,
+          "true_positive": 242,
+          "false_positive": 86,
+          "false_negative": 48
         }
       }
     }

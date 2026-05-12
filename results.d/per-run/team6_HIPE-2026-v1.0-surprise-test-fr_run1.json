@@ -19,8 +19,8 @@
   "run": "run1",
   "scores": {
     "at_accuracy": 0.5375,
-    "at_macro_recall": 0.3250701486592296,
-    "global_score": 0.3250701486592296
+    "at_macro_recall": 0.33463012083701743,
+    "global_score": 0.33463012083701743
   },
   "split": "test",
   "submission": "team6_HIPE-2026-v1.0-surprise-test-fr_run1.jsonl",

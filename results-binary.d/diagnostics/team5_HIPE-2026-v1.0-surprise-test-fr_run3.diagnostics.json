@@ -133,9 +133,9 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states \"Le pape Jean VIII le reçut à sa communion, le reconnut, lui écrivit\". This indicates that Pope Jean VIII received and wrote to Patriarch Photius, implying a direct interaction and presence. ",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -772,9 +772,9 @@
         "loc_mentions_list": [
           "Asie Mineure"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text mentions \"Soliman soudan de Syrie\" in the context of a conflict in Asia Minor. It states that he was resisting the crusaders and was defeated. This implies his presence in the region.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -793,9 +793,9 @@
         "loc_mentions_list": [
           "Jérusalem"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text states that the calife d' égypte had seized Jerusalem through his lieutenants. This indicates his presence or control over the city.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -1746,15 +1746,15 @@
         "loc_mentions_list": [
           "ville de Médine"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states that Ali transferred the capital of the caliphs from the city of Medina to the city of Kufa.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text states that Ali transferred the capital of the caliphs from the city of Medina to the city of Kufa. The publication date is 1756, which is long after the event.",
-        "CORRECT": false
+        "CORRECT": true
       }
     ]
   },
@@ -1977,15 +1977,15 @@
         "loc_mentions_list": [
           "Spire"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states that the body of Henri IV was brought to a cellar in Spire by his son. This indicates Henri IV was physically present in Spire, even after his death.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text mentions that the body of Henri IV was brought to a cellar in Spire, which happened before the publication date. Therefore, Henri IV was at Spire in the past.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_frederic",
@@ -2040,15 +2040,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text mentions that Pepin deposited two legates in France and that Pepin died in Liége. This indicates Pepin was in France and Liége.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text states that Pepin died in Liége. Since the publication date is 1756, this event occurred long ago and is not in the immediate temporal horizon.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv_Q3044_charlemagne",
@@ -2061,9 +2061,9 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text mentions that Charlemagne died in Liége. This indicates his presence in Liége before his death.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -6270,9 +6270,9 @@
         "loc_mentions_list": [
           "Europe"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text mentions \"à Constantinople un Sélim\", indicating Selim was in Constantinople. The text also mentions Selim conquering Syria and Egypt, implying his presence there. The text states that Selim put Syria and Egypt under Ottoman domination.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -6431,9 +6431,9 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states \"La Renaudie fut tué en combattant; plusieurs moururent comme lui les armes à la main.\" This indicates Renaudie was present in Amboise where the fighting occurred.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -8150,15 +8150,15 @@
         "loc_mentions_list": [
           "Bourgogne"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text mentions that Bourgogne was taken from the crown by Henry, grandson of Hugues Capet, and later returned under Jean and then given to Philippe Le Hardy. Louis XI became the master of Burgundy after Charles the last Duke of Burgundy died. This indicates a historical connection to Bourgogne.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text describes historical events related to Hugues Capet and Bourgogne, indicating a historical presence or involvement. The events described occurred long before the publication date.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1678_Esprit_Faussete_chunk235.tsv-NIL_robert",
@@ -10349,15 +10349,15 @@
         "loc_mentions_list": [
           "Seine"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states that Marguerite de France was born in Saint-Germain-en-Laye.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text states that Marguerite de France was born in Saint-Germain-en-Laye, which is a location. The publication date is 1797, which is long after her birth. Therefore, the relation is not 'isAt'.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1797_Perouse_Voyage_chunk3594.tsv-NIL_marguerite_de_france",

@@ -133,9 +133,9 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": null,
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -772,9 +772,9 @@
         "loc_mentions_list": [
           "Asie Mineure"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": null,
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -793,9 +793,9 @@
         "loc_mentions_list": [
           "Jérusalem"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": null,
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -1746,9 +1746,9 @@
         "loc_mentions_list": [
           "ville de Médine"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": null,
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -1977,9 +1977,9 @@
         "loc_mentions_list": [
           "Spire"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": null,
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -2040,9 +2040,9 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": null,
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -2061,9 +2061,9 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": null,
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -6270,9 +6270,9 @@
         "loc_mentions_list": [
           "Europe"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": null,
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -6431,9 +6431,9 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": null,
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -8150,9 +8150,9 @@
         "loc_mentions_list": [
           "Bourgogne"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": null,
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -10349,9 +10349,9 @@
         "loc_mentions_list": [
           "Seine"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": null,
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",

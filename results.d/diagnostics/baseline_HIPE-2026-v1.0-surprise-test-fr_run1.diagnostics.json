@@ -133,7 +133,7 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Le texte mentionne explicitement que Jean VIII reçut la communion à Rome (explicitement lié à sa réception par le pape à Rome), qu’il fut reconnu et que des légats romains y participèrent (concile à Constantinople, mais aussi légats envoyés *de Rome* pour le concile). Bien que le contexte historique inclue des déplacements diplomatiques, la phrase « le pape envoya ses légats à un autre concile à Constantinople » (avec une référence implicite à leur origine romaine) suggère une présence romaine récente ou liée à Rome. La mention de sa réception et de ses actions *à partir de Rome* (légats envoyés...",
@@ -772,7 +772,7 @@
         "loc_mentions_list": [
           "Asie Mineure"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Le texte évoque que Soliman, en tant que vieux turc de Syrie sous les califes de Bagdad, est mentionné dans un contexte historique où ses forces résistent aux croisés en Asie Mineure (Nicée, Antioche). Bien que l'article ne précise pas explicitement une présence actuelle en Asie Mineure, il lie directement son action militaire à cette région via des batailles et des conquêtes en cours (prise de Nicée, affrontements contre son fils).",
@@ -793,15 +793,15 @@
         "loc_mentions_list": [
           "Jérusalem"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Le texte mentionne explicitement que le calife d'Égypte s'est 'saisi' de Jérusalem par ses lieutenants, indiquant une occupation ou une présence effective sur le territoire avant la publication (1756).",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Bien que le calife d'Égypte ait pris Jérusalem dans un contexte historique distant (mentionné comme 'actuel' dans le récit historique), le texte ne décrit pas sa présence comme une situation *actuelle* ou *en cours* à la date de publication. La phrase 'dont le calife d'Égypte s'est saisi' évoque un événement passé, pas une occupation contemporaine.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_calife_d_egypte",
@@ -1746,15 +1746,15 @@
         "loc_mentions_list": [
           "ville de Médine"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "PROBABLE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Le texte mentionne explicitement que 'Omar est assassiné' sans préciser où, mais il est ensuite dit qu'il 'transféra le siège des califes de la ville de Médine' après sa mort. Bien que l'assassinat ne soit pas explicitement lié à Médine, la phrase suivante ('où Mahomet est enseveli') suggère une connexion temporelle et spatiale indirecte avec la ville, renforçant une présence passée probable.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Aucune mention dans le texte ne place 'Omar' dans la ville de Médine dans un cadre temporel immédiat ou récent (1756). Le passage se concentre sur des événements historiques lointains (VIᵉ siècle), sans lien avec la période actuelle ou récente de la publication (1756).",
-        "CORRECT": false
+        "CORRECT": true
       }
     ]
   },
@@ -1977,15 +1977,15 @@
         "loc_mentions_list": [
           "Spire"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Le texte mentionne explicitement que Henri V fit exhumer et transporter le corps de son père (Henri IV) de la cathédrale de Liège à une cave de Spire, ce qui implique une présence active et temporaire du lieu pour les actions liées à ce transport. La phrase « déterrer le corps de son père inhumé dans la cathédrale de Liège, et de le faire porter dans une cave à Spire » confirme une relation claire entre Henri V et Spire pour cette action.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Bien que le texte ne mentionne pas directement une présence actuelle ou récente d'Henri V à Spire après le transport du corps, la phrase « consomma son hypocrisie dénaturée » (liée à l'action passée) et le contexte historique suggèrent une implication immédiate dans les événements décrits. Cependant, aucune indication temporelle immédiate (présence en cours) n'est donnée dans le texte.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_frederic",
@@ -2040,15 +2040,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "PROBABLE",
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Aucune mention explicite de Pepin en France dans ce passage. Le texte évoque des événements liés à Henri IV et ses descendants, mais ne mentionne pas Pepin (Pépin le Bref) ni son lien avec la France. Les références à la papauté et aux conflits entre rois de France et empereurs ne concernent pas directement Pepin.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Le texte ne soutient aucune présence actuelle ou récente de Pepin en France. Les événements décrits (conflits dynastiques, actions des successeurs de Henri IV) ne s’appliquent pas à Pepin, qui est mentionné dans un contexte historique lointain (VIIIᵉ siècle).",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv_Q3044_charlemagne",
@@ -2061,15 +2061,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "PROBABLE",
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Aucune mention explicite de Charlemagne en France dans ce passage. Le texte évoque des événements liés à la papauté et aux successeurs d'Henri IV, sans référence directe à Charlemagne en tant que personne physique en France. Les références à la France concernent plutôt des institutions ou des dynamiques politiques entre les royaumes et Rome.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Le texte ne soutient aucune présence actuelle ou récente de Charlemagne en France. Les événements décrits (exhumation d'Henri IV, conflits entre papes et rois) ne mentionnent pas Charlemagne en lien avec la France.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_henri",
@@ -2207,15 +2207,15 @@
         "loc_mentions_list": [
           "Bretagne"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Le texte mentionne que Rolon demanda la Bretagne après avoir obtenu la Normandie, et que cette demande fut finalement acceptée avec des clauses avantageuses pour lui. La phrase « il fallut la céder encor avec des clauses que le plus fort explique toujours à son avantage » suggère une occupation effective et une intégration politique de la région sous son contrôle, confirmant une présence durable.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Bien que Rolon ait obtenu la Bretagne comme récompense royale, le texte ne décrit pas de présence immédiate, actuelle ou récente de Rolon dans cette région au moment de la publication (1756). La mention de son acquisition historique et politique ne s’applique pas à un contexte contemporain.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk110.tsv-NIL_rolon",
@@ -4881,9 +4881,9 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Le texte mentionne explicitement que Pascal II a rendu les investitures à Rome en solennel serment sur l'Évangile, puis ces investitures ont été annulées par les cardinaux. Il est ensuite traité de lâche et contraint de reprendre ses biens à Rome, confirmant sa présence active dans la capitale pour ces événements politiques et religieux.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -6270,15 +6270,15 @@
         "loc_mentions_list": [
           "Europe"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Le texte mentionne explicitement que le sultan Sélim 'le premier des empereurs turcs **marche jusqu'à Vienne'** (et non en Europe), mais ne fait pas référence à une présence effective en Europe. Bien que des événements européens soient évoqués (guerres, couronnement de Soliman), aucun détail ne confirme que Sélim y soit physiquement présent. La mention de Vienne (Autriche) et de la Perse exclut une localisation en Europe continentale.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Aucune indication temporelle immédiate ne place Sélim en Europe lors de la publication (1756). Le texte se concentre sur des faits historiques antérieurs (guerres ottomanes, couronnement de Soliman) ou lointains (Suède, Moscovie), sans lien avec l'Europe actuelle. Pas de contexte d'arrivée récente ou d'action en cours en Europe.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk557.tsv-NIL_soliman",
@@ -6410,15 +6410,15 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Le texte mentionne explicitement que pendant un mois entier, Amboise fut le théâtre de la punition des conjurés (échafauts, potences, cadavres), impliquant directement François de Guise dans leur arrestation et exécution. La présence de ces scènes violentes confirme qu’il y était en lien avec les événements.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Bien que le contexte évoque des événements passés (la conspiration découverte et punie), aucun détail ne suggère une présence actuelle ou récente de François de Guise à Amboise lors de la publication (1756). Le texte se concentre sur des faits historiques antérieurs.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk820.tsv-NIL_renaudie",
@@ -6431,7 +6431,7 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Le texte mentionne explicitement que Renaudie fut tué en combattant à Amboise lors de la découverte de la conspiration, avec des échafauds et potences chargées de cadavres visibles pendant un mois. Cela confirme clairement sa présence active et mortelle dans la ville au moment de la répression.",
@@ -6537,15 +6537,15 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Le texte décrit explicitement que les Guises ont participé à la répression sanglante de la conspiration en Amboise, où des échafauds et des potences chargées de cadavres y furent visibles pendant un mois. Cela confirme leur présence active et directe sur place lors de l'événement punitif.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Bien que les actions des Guises en Amboise soient évoquées dans un contexte historique distant (la conspiration et sa punition), le texte ne mentionne pas de présence actuelle ou récente des Guises dans la ville à l'époque de publication (1756). Aucune indication d'une occupation ou d'une activité immédiate n'est donnée.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk820.tsv-NIL_andelot",
@@ -6812,9 +6812,9 @@
         "loc_mentions_list": [
           "Lithuanie"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Le texte mentionne explicitement un jeune homme en Lituanie qui se prétend être le prince Demetri, reconnu par des témoins (sa mère et un palatin de Sandomir) comme son fils légitime. La description physique (croix d'or) et les marques distinctives confirment sa présence actuelle dans la région.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -6962,15 +6962,15 @@
         "loc_mentions_list": [
           "Russie"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "PROBABLE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Le texte mentionne que Pierre, après avoir fait condamner son fils à mort, a empêché ce dernier de survivre à sa grâce, puis a confiné ce fils (Demetri) dans un village nommé Uglis en Russie. Bien que le contexte ne précise pas explicitement si Pierre était présent physiquement à ce moment-là, la mention de sa décision de confiner son fils dans la Russie (Uglis) et la suite des événements (assassinat organisé) suggèrent une implication directe et une présence implicite dans le cadre russe. La référence à la Russie comme lieu de confinement du fils de Pierre justifie une relation 'at'...",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Le texte ne mentionne pas Pierre en Russie dans un cadre temporel immédiat ou actuel (pas de description d'une présence actuelle, d'une action en cours ou d'une situation récente). La seule référence à la Russie concerne la confinment de son fils, sans indication de présence personnelle actuelle de Pierre dans ce lieu. Aucune preuve ne soutient une présence en temps réel.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk1041.tsv-NIL_sandomir",
@@ -7506,7 +7506,7 @@
         "loc_mentions_list": [
           "Autriche"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Le texte mentionne que Philippe II envoie **Don Juan d'Autriche** comme frère pour rétablir l'ordre en Flandre, mais ne précise pas explicitement qu'il était présent en Autriche à ce moment-là. Il est évoqué comme un envoyé envoyé depuis la cour royale (Philippe II), suggérant une mission en déplacement vers les Pays-Bas, sans preuve directe d'une présence actuelle en Autriche. La mention de sa victoire à Lépante et de ses ambitions (Tunis) relève davantage de son statut historique que d'une localisation temporelle immédiate.",
@@ -7528,15 +7528,15 @@
         "loc_mentions_list": [
           "Pays - Bas"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "PROBABLE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Le texte évoque des événements historiques antérieurs (1672) où Philippe II était présent en Flandre (Pays-Bas) lors des troubles, mais ne mentionne pas explicitement sa présence actuelle en 1756. Cependant, il est cité comme ayant envoyé Don Juan d'Autriche en 1756 pour rétablir l'ordre, suggérant une implication indirecte dans les affaires des Pays-Bas à cette époque. La mention de sa présence potentielle en 1756 est implicite via son rôle politique, mais pas directe.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Aucune mention dans le texte ne place Philippe II directement dans les Pays-Bas en 1756 dans un cadre actuel ou récent. Les événements décrits (mutineries, traités, démolitions) sont passés, et son action en 1756 (envoyer Don Juan) est future ou stratégique, sans preuve de présence physique immédiate.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk783.tsv-NIL_requesens",
@@ -7549,15 +7549,15 @@
         "loc_mentions_list": [
           "Pays - Bas"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "PROBABLE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Le texte mentionne que Philippe II, après la mort du commandeur de Requesens, envoie Don Juan d'Autriche en Flandre pour rétablir l'ordre. Bien que le passage ne précise pas explicitement si Requesens était présent dans les Pays-Bas, la mention de sa mort et de la décision de Philippe de remplacer son commandement par Don Juan suggère une implication indirecte dans les événements flamands (soutien militaire, stratégie politique). La phrase « Philippe qui pouvait encore essayer de remettre le calme dans les Pays-Bas par sa présence » implique une absence de preuve claire de sa présence physique, mais une implication stratégique...",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Aucune mention dans le texte ne place le commandeur de Requesens dans les Pays-Bas à un moment récent ou actuel (proche de 1756). Le contexte se concentre sur les actions de Philippe II et Don Juan d'Autriche, sans lien temporel direct avec Requesens. La mort du commandeur est antérieure à cette période, et son remplacement par Don Juan ne confirme pas sa présence immédiate.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk783.tsv-NIL_philippe",
@@ -8150,7 +8150,7 @@
         "loc_mentions_list": [
           "Bourgogne"
         ],
-        "at": "PROBABLE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "Le texte mentionne explicitement que Hugues Capet, petit-fils de Hugues Capet (le fondateur de la dynastie), a donné la Bourgogne à son frère Robert en faveur personnelle, ce qui implique une relation temporelle passée avec cette province. Aucune autre mention directe de présence actuelle n'est présente.",
@@ -10349,15 +10349,15 @@
         "loc_mentions_list": [
           "Seine"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text does not mention Marguerite de France being physically present at the Seine. The only references to her are her birthplace (Saint-Germain-en-Laye) and her later life in France, with no explicit mention of her association with the Seine river itself. The article focuses on her origins and reign, not her location.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "No evidence in the text supports Marguerite de France being at the Seine in the immediate temporal horizon of 1797. The article does not describe her current or recent activities near the river.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1797_Perouse_Voyage_chunk3594.tsv-NIL_marguerite_de_france",

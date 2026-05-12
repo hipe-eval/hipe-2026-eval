@@ -15,12 +15,12 @@
       ],
       "matrix": [
         [
-          61,
-          126
+          63,
+          127
         ],
         [
-          31,
-          262
+          29,
+          261
         ]
       ],
       "rows": "gold",
@@ -29,34 +29,34 @@
       "table": [
         {
           "gold": "TRUE",
-          "pred_TRUE": 61,
-          "pred_FALSE": 126
+          "pred_TRUE": 63,
+          "pred_FALSE": 127
         },
         {
           "gold": "FALSE",
-          "pred_TRUE": 31,
-          "pred_FALSE": 262
+          "pred_TRUE": 29,
+          "pred_FALSE": 261
         }
       ],
-      "accuracy": 0.6729,
+      "accuracy": 0.675,
       "per_label": {
         "TRUE": {
-          "precision": 0.663,
-          "recall": 0.3262,
-          "f1": 0.4373,
-          "support": 187,
-          "true_positive": 61,
-          "false_positive": 31,
-          "false_negative": 126
+          "precision": 0.6848,
+          "recall": 0.3316,
+          "f1": 0.4468,
+          "support": 190,
+          "true_positive": 63,
+          "false_positive": 29,
+          "false_negative": 127
         },
         "FALSE": {
-          "precision": 0.6753,
-          "recall": 0.8942,
-          "f1": 0.7695,
-          "support": 293,
-          "true_positive": 262,
-          "false_positive": 126,
-          "false_negative": 31
+          "precision": 0.6727,
+          "recall": 0.9,
+          "f1": 0.7699,
+          "support": 290,
+          "true_positive": 261,
+          "false_positive": 127,
+          "false_negative": 29
         }
       }
     }

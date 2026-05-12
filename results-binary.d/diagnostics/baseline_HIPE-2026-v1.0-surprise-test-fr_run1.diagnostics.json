@@ -133,15 +133,15 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Le texte mentionne explicitement que Jean VIII reçut la communion à Rome (explicitement lié à sa réception par le pape à Rome), qu’il fut reconnu et que des légats romains y participèrent (concile à Constantinople, mais aussi légats envoyés *de Rome* pour le concile). Bien que le contexte historique inclue des déplacements diplomatiques, la phrase « le pape envoya ses légats à un autre concile à Constantinople » (avec une référence implicite à leur origine romaine) suggère une présence romaine récente ou liée à Rome. La mention de sa réception et de ses actions *à partir de Rome* (légats envoyés...",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Le texte décrit des événements *immédiats* liés à Jean VIII dans le contexte du concile de Constantinople (1756), mais sans mention explicite d’une présence *actuelle* à Rome. Les légats romains y sont envoyés *après* la réception de Jean VIII à Rome (pas de phrase suggérant qu’il y soit présent *au moment du concile*). La seule référence à Rome est celle de sa réception et de ses actions passées (légats envoyés *de Rome*), sans indication d’une présence *en cours* ou très récente.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk132.tsv-NIL_eugene",
@@ -772,15 +772,15 @@
         "loc_mentions_list": [
           "Asie Mineure"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Le texte évoque que Soliman, en tant que vieux turc de Syrie sous les califes de Bagdad, est mentionné dans un contexte historique où ses forces résistent aux croisés en Asie Mineure (Nicée, Antioche). Bien que l'article ne précise pas explicitement une présence actuelle en Asie Mineure, il lie directement son action militaire à cette région via des batailles et des conquêtes en cours (prise de Nicée, affrontements contre son fils).",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "L'article décrit des événements militaires récents (1756) où Soliman et ses troupes sont en Asie Mineure (batailles de Nicée, résistance contre les croisés). Bien que le texte ne précise pas une présence *immédiate* ou *en cours*, il place son action dans un cadre temporel proche (années 1300–1400 pour les croisés, mais Soliman est décrit comme un acteur contemporain des conflits décrits, incluant des références à son fils et à des événements comme la prise de Nicée. La mention de ses forces en Asie Mineure dans un contexte de guerre active suggère une présence *recent* (bien que pas *en cours* au...",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_calife_d_egypte",
@@ -793,15 +793,15 @@
         "loc_mentions_list": [
           "Jérusalem"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Le texte mentionne explicitement que le calife d'Égypte s'est 'saisi' de Jérusalem par ses lieutenants, indiquant une occupation ou une présence effective sur le territoire avant la publication (1756).",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Bien que le calife d'Égypte ait pris Jérusalem dans un contexte historique distant (mentionné comme 'actuel' dans le récit historique), le texte ne décrit pas sa présence comme une situation *actuelle* ou *en cours* à la date de publication. La phrase 'dont le calife d'Égypte s'est saisi' évoque un événement passé, pas une occupation contemporaine.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_calife_d_egypte",
@@ -1746,15 +1746,15 @@
         "loc_mentions_list": [
           "ville de Médine"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Le texte mentionne explicitement que 'Omar est assassiné' sans préciser où, mais il est ensuite dit qu'il 'transféra le siège des califes de la ville de Médine' après sa mort. Bien que l'assassinat ne soit pas explicitement lié à Médine, la phrase suivante ('où Mahomet est enseveli') suggère une connexion temporelle et spatiale indirecte avec la ville, renforçant une présence passée probable.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Aucune mention dans le texte ne place 'Omar' dans la ville de Médine dans un cadre temporel immédiat ou récent (1756). Le passage se concentre sur des événements historiques lointains (VIᵉ siècle), sans lien avec la période actuelle ou récente de la publication (1756).",
-        "CORRECT": false
+        "CORRECT": true
       }
     ]
   },
@@ -1977,15 +1977,15 @@
         "loc_mentions_list": [
           "Spire"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Le texte mentionne explicitement que Henri V fit exhumer et transporter le corps de son père (Henri IV) de la cathédrale de Liège à une cave de Spire, ce qui implique une présence active et temporaire du lieu pour les actions liées à ce transport. La phrase « déterrer le corps de son père inhumé dans la cathédrale de Liège, et de le faire porter dans une cave à Spire » confirme une relation claire entre Henri V et Spire pour cette action.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Bien que le texte ne mentionne pas directement une présence actuelle ou récente d'Henri V à Spire après le transport du corps, la phrase « consomma son hypocrisie dénaturée » (liée à l'action passée) et le contexte historique suggèrent une implication immédiate dans les événements décrits. Cependant, aucune indication temporelle immédiate (présence en cours) n'est donnée dans le texte.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_frederic",
@@ -2040,15 +2040,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Aucune mention explicite de Pepin en France dans ce passage. Le texte évoque des événements liés à Henri IV et ses descendants, mais ne mentionne pas Pepin (Pépin le Bref) ni son lien avec la France. Les références à la papauté et aux conflits entre rois de France et empereurs ne concernent pas directement Pepin.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Le texte ne soutient aucune présence actuelle ou récente de Pepin en France. Les événements décrits (conflits dynastiques, actions des successeurs de Henri IV) ne s’appliquent pas à Pepin, qui est mentionné dans un contexte historique lointain (VIIIᵉ siècle).",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv_Q3044_charlemagne",
@@ -2061,15 +2061,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Aucune mention explicite de Charlemagne en France dans ce passage. Le texte évoque des événements liés à la papauté et aux successeurs d'Henri IV, sans référence directe à Charlemagne en tant que personne physique en France. Les références à la France concernent plutôt des institutions ou des dynamiques politiques entre les royaumes et Rome.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Le texte ne soutient aucune présence actuelle ou récente de Charlemagne en France. Les événements décrits (exhumation d'Henri IV, conflits entre papes et rois) ne mentionnent pas Charlemagne en lien avec la France.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_henri",
@@ -6270,15 +6270,15 @@
         "loc_mentions_list": [
           "Europe"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Le texte mentionne explicitement que le sultan Sélim 'le premier des empereurs turcs **marche jusqu'à Vienne'** (et non en Europe), mais ne fait pas référence à une présence effective en Europe. Bien que des événements européens soient évoqués (guerres, couronnement de Soliman), aucun détail ne confirme que Sélim y soit physiquement présent. La mention de Vienne (Autriche) et de la Perse exclut une localisation en Europe continentale.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Aucune indication temporelle immédiate ne place Sélim en Europe lors de la publication (1756). Le texte se concentre sur des faits historiques antérieurs (guerres ottomanes, couronnement de Soliman) ou lointains (Suède, Moscovie), sans lien avec l'Europe actuelle. Pas de contexte d'arrivée récente ou d'action en cours en Europe.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk557.tsv-NIL_soliman",
@@ -6431,15 +6431,15 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "Le texte mentionne explicitement que Renaudie fut tué en combattant à Amboise lors de la découverte de la conspiration, avec des échafauds et potences chargées de cadavres visibles pendant un mois. Cela confirme clairement sa présence active et mortelle dans la ville au moment de la répression.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Bien que le contexte évoque une répression violente et des exécutions, le passage ne décrit pas Renaudie comme présent à Amboise dans un cadre immédiat, actuel ou récent (pas de mention d'une action contemporaine ou d'une présence active post-conspiration).",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk820.tsv-NIL_henri",
@@ -8150,15 +8150,15 @@
         "loc_mentions_list": [
           "Bourgogne"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Le texte mentionne explicitement que Hugues Capet, petit-fils de Hugues Capet (le fondateur de la dynastie), a donné la Bourgogne à son frère Robert en faveur personnelle, ce qui implique une relation temporelle passée avec cette province. Aucune autre mention directe de présence actuelle n'est présente.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Aucune indication dans le texte ne place Hugues Capet en Bourgogne dans un cadre temporel immédiat (actuel, en cours ou très récent). Le contexte historique décrit des événements antérieurs (donation à Robert, retour sous Jean, etc.), sans lien avec la période contemporaine de 1678.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1678_Esprit_Faussete_chunk235.tsv-NIL_robert",
@@ -10349,15 +10349,15 @@
         "loc_mentions_list": [
           "Seine"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text does not mention Marguerite de France being physically present at the Seine. The only references to her are her birthplace (Saint-Germain-en-Laye) and her later life in France, with no explicit mention of her association with the Seine river itself. The article focuses on her origins and reign, not her location.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "No evidence in the text supports Marguerite de France being at the Seine in the immediate temporal horizon of 1797. The article does not describe her current or recent activities near the river.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1797_Perouse_Voyage_chunk3594.tsv-NIL_marguerite_de_france",

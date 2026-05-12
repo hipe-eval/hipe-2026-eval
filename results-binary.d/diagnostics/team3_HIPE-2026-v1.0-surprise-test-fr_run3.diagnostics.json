@@ -133,15 +133,15 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The passage states: “Le pape Jean VIII le reçut à sa communion, le reconnut, lui écrivit …” This indicates that the Pope himself was physically present in Rome to receive a person at his communion ceremony. The act of receiving someone at a communion is performed by the Pope while he is in Rome. Since this event occurs before the document’s publication date (1756), it provides direct evidence that Jean VIII was indeed in Rome prior to 1756.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage describes events involving Pope Jean VIII and mentions that “les légats de ce même siége de Rome” were present, but it does not provide any specific dates for those meetings or for the Pope’s presence in Rome. The only dated reference in the text is to 1274 (the year of an earlier ecumenical council), which lies far outside the 30‑day window preceding the publication date of 1756. Because there is no explicit statement that Jean VIII was physically present in Rome within the required timeframe, we cannot confirm his presence.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk132.tsv-NIL_eugene",
@@ -772,15 +772,15 @@
         "loc_mentions_list": [
           "Asie Mineure"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The passage describes Soliman soudan de Syrie as a Turc under the caliphate of Baghdad who resisted “the first torrent of all these princes crossed.” It does not mention any travel, presence, or activity in Asia Minor (Asie Mineure). The only reference to Asie Mineure is elsewhere in the text concerning other actors. Therefore there is no textual evidence that Soliman was physically present at Asie Mineure before 1756.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage mentions “Le vieux turc Soliman soudan de Syrie” but only in the context of his military situation and does not state that he was physically present at Asie Mineure. There is no mention of a specific time or date linking him to that location, nor any indication that he visited it within the 30‑day window preceding the document’s publication (1756). Because the text provides no explicit evidence of Soliman’s presence in Asie Mineure during that period, we cannot confirm his physical presence there. Therefore the correct classification is FALSE.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_calife_d_egypte",
@@ -793,15 +793,15 @@
         "loc_mentions_list": [
           "Jérusalem"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The passage states: “On mit le siége devant Jérusalem, dont le calife d' égypte s' était saisi par ses lieutenants.” The term *siége* refers to a siege that preceded the capture of Jerusalem. If the caliph was “saisi” (seized) by his lieutenants during this operation, it implies he was physically present in or near Jerusalem at that time, as only someone who could be captured would need to be there. The text does not provide any contradictory information indicating otherwise. Therefore we have direct evidence that the caliph of Egypt was present in Jerusalem before the document’s publication date (1756).",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage states that “le calife d’ égypte s’était saisi par ses lieutenants” during a siege in front of Jerusalem. This indicates that the caliph was physically present in Jerusalem at some point, but it provides no explicit date or temporal marker that ties this event to the 30‑day window preceding the document’s publication date (1756). Without a specific date or reference that places the presence within that narrow timeframe, we cannot confirm that the caliph was indeed present in Jerusalem during the required period. Therefore the evidence does not satisfy the strict criteria for a positive classification.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_calife_d_egypte",
@@ -1746,15 +1746,15 @@
         "loc_mentions_list": [
           "ville de Médine"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The passage discusses the life of Omar, noting that he was assassinated in 653, but it provides no indication that he ever visited or resided in the city of Medina. The only mention of Medina appears later concerning Ali’s caliphate and the relocation of the seat of power there. Since the text contains no evidence linking Omar to Medina before its publication date (1756), we cannot conclude that Omar was physically present at that location.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage discusses historical figures such as Omar, but it only notes that he was assassinated in 653 CE; there is no mention of him being physically present in the city of Medina or any event involving him near the year 1756. The location “ville de Médine” appears later in the text concerning the caliphate’s seat, but it does not link Omar to that place nor provide a date within the required 30‑day window before the document’s publication (i.e., between 1726 and 1756). Consequently, there is no explicit evidence in the text confirming Omar’s presence at the specified location during the relevant timeframe.",
-        "CORRECT": true
+        "CORRECT": false
       }
     ]
   },
@@ -1977,15 +1977,15 @@
         "loc_mentions_list": [
           "Spire"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The passage discusses Henri IV’s son who buried his father’s remains in a cave at Spire, but it does not state that the Holy Roman Emperor Henri V was present or even visited Spire. The only reference to Henri V is in a separate chapter about his relationship with Rome and papal bulls; there is no mention of him being at Spire before 1756. Therefore there is no textual evidence linking Henri V’s presence at the location.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage discusses Henri V’s actions regarding his father’s body but does not state that he was physically present at the cave in Spire within a month before 1756. The only mention of Spire is “une cave à Spire” where the body was placed after being taken from Liège, and there is no explicit statement that Henri V himself was there during that timeframe. Since the text lacks any date or direct evidence of his presence at Spire in the required window, we cannot confirm his physical presence.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_frederic",
@@ -2040,15 +2040,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The passage refers to “les prétendues donations de Pepin et de Charlemagne,” indicating that Pepin possessed lands and rights within the Frankish realm, which corresponds to modern France. As a Frankish king, Pepin’s authority was exercised in France centuries before 1756; his presence there is historically documented. The text does not explicitly state a physical visit, but it confirms his control over French territories, implying he had been physically present at the location (France) at some point prior to the document’s publication date.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage discusses medieval events and mentions “donations of Pepin” but does not state that Pepin himself was physically present in France at any specific date. There is no explicit reference to a time period or an event involving Pepin within the 30‑day window preceding the document’s publication (1756). Consequently, there is no evidence that Pepin was present in France during that interval.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv_Q3044_charlemagne",
@@ -2061,15 +2061,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The passage discusses the political and ecclesiastical relations between the French monarchy and the papacy, referencing Emperor Henri V and his father’s actions concerning Charlemagne’s alleged donations. It mentions “les donations de Pepin et de Charlemagne” as a source of rights, but it does not state that Charlemagne himself was physically present in France at any time before 1756. No sentence or clause indicates Charlemagne’s presence in the country; the text only references his legacy and legal claims. Therefore there is no direct evidence in the document that Charlemagne visited or resided in France prior to its publication date.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The document discusses contemporary events and figures (e.g., Henri V, the papacy) but contains no explicit statement that Charlemagne was in France or that he performed any action there within a month preceding the publication date of 1756. Moreover, Charlemagne lived from 768 to 814 AD—centuries before 1756—so his physical presence in France during the relevant time window is historically impossible. Therefore there is no evidence that he was present at the specified location within the required period.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_henri",
@@ -6270,15 +6270,15 @@
         "loc_mentions_list": [
           "Europe"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The passage describes a Sélim who is “à Constantinople” and mentions his actions concerning Syria and Egypt. It does not state that he ever traveled to or was present in Europe; the only European reference concerns his son Soliman’s march to Vienna, which is unrelated to Sélim himself. Since there is no textual evidence of Sélim being physically present in Europe before 1756, we conclude that the claim lacks support.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage discusses historical figures and events but does not provide any explicit statement that Sélim was physically present in Europe within a month before the document’s publication date of 1756. The only mention of Sélim is in reference to his rule over Constantinople, Syria, and Egypt (“C’ est à Constantinople un Sélim…”), which places him in Asia‑Anatolia, not Europe. No dates or events near 1756 are given in the text that would indicate a presence in Europe during the required time window (mid‑July to early August 1756). Therefore there is no evidence supporting the claim of Sélim’s presence in Europe within the specified period.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk557.tsv-NIL_soliman",
@@ -6431,15 +6431,15 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The passage reports that “La Renaudie fut tué en combattant” and later notes a month in which Amboise was filled with corps, but it does not explicitly state that Renaudie himself was present at Amboise. The text only indicates his death by combat without specifying the location of that battle, and the mention of bodies in Amboise appears to refer to the aftermath of an event there, not to Renaudie’s presence. Therefore there is no direct evidence from the document that Renaudie was physically in Amboise before 1756.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage reports that “La Renaudie fut tué en combattant” and later notes that during a month in Amboise only corps were present, but it does not explicitly state that Renaudie himself was physically present at Amboise. Moreover, the text contains no date or temporal marker linking this event to the 30‑day window preceding the document’s publication date (1756). Without an explicit mention of Renaudie being in Amboise within that timeframe, we cannot confirm his presence there.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk820.tsv-NIL_henri",
@@ -8150,15 +8150,15 @@
         "loc_mentions_list": [
           "Bourgogne"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The passage states that “la Bourgogne l’ avoit été par le roy Henry, petit fils de Hugues Capet.” This indicates that the Burgundian territory belonged to Hugues Capet’s son and was transferred by him. Since the Burgundy was part of the French realm under the Capetian dynasty, it is reasonable to infer that the father himself had been physically present in that region at some point before 1678 (e.g., during his reign). The text does not explicitly say he visited, but the fact that he owned and later gave away Burgundy implies he was there as part of his kingdom. Therefore we can conclude that Hugues Capet was indeed physically present in Bourgogne prior to the document’s publication date.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage mentions that “la Bourgogne l’ avoit été par le roy Henry, petit fils de Hugues Capet,” indicating that Burgundy was given by Henry (the son of Hugues Capet). It does not state that Hugues Capet himself was in Burgundy, nor does it provide any date or location linking him to the region within the 30‑day window preceding the document’s publication date (1678). Therefore there is no explicit evidence that Hugues Capet was physically present in Burgundy during that period.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1678_Esprit_Faussete_chunk235.tsv-NIL_robert",
@@ -10349,15 +10349,15 @@
         "loc_mentions_list": [
           "Seine"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The passage records that Marguerite de France was born in Saint‑Germain‑en‑Laye on 5 June 1523 and notes the proximity of that town to the Seine (“Elle est à quatre lieues de Paris sur la Seine”). However, it contains no statement indicating that she herself visited or was physically present at the Seine. The text only describes the location of her birthplace relative to the river; there is no evidence of Marguerite’s presence on the Seine before 1797. Therefore we conclude that the claim is unsupported.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The document records that Marguerite de France was born in Saint‑Germain‑en‑Laye on 5 June 1523, and notes the proximity of this town to the Seine River. However, there is no mention of her being at the Seine or any event involving her within the 30‑day window preceding the document’s publication date (i.e., between 28 August 1796 and 28 September 1797). The text only references historical events unrelated to Marguerite’s presence in that period. Therefore, there is no explicit evidence that she was physically present at the Seine within the required timeframe.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1797_Perouse_Voyage_chunk3594.tsv-NIL_marguerite_de_france",

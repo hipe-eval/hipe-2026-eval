@@ -133,7 +133,7 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text states \"Le pape Jean VIII le reçut à sa communion, le reconnut, lui écrivit\". This indicates that Pope Jean VIII received and wrote to Patriarch Photius, implying a direct interaction and presence. ",
@@ -772,7 +772,7 @@
         "loc_mentions_list": [
           "Asie Mineure"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text mentions \"Soliman soudan de Syrie\" in the context of a conflict in Asia Minor. It states that he was resisting the crusaders and was defeated. This implies his presence in the region.",
@@ -793,9 +793,9 @@
         "loc_mentions_list": [
           "Jérusalem"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text states that the calife d' égypte had seized Jerusalem through his lieutenants. This indicates his presence or control over the city.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -1746,7 +1746,7 @@
         "loc_mentions_list": [
           "ville de Médine"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text states that Ali transferred the capital of the caliphs from the city of Medina to the city of Kufa.",
@@ -1977,15 +1977,15 @@
         "loc_mentions_list": [
           "Spire"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states that the body of Henri IV was brought to a cellar in Spire by his son. This indicates Henri IV was physically present in Spire, even after his death.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text mentions that the body of Henri IV was brought to a cellar in Spire, which happened before the publication date. Therefore, Henri IV was at Spire in the past.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_frederic",
@@ -2040,7 +2040,7 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "PROBABLE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text mentions that Pepin deposited two legates in France and that Pepin died in Liége. This indicates Pepin was in France and Liége.",
@@ -2061,7 +2061,7 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "PROBABLE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text mentions that Charlemagne died in Liége. This indicates his presence in Liége before his death.",
@@ -2207,9 +2207,9 @@
         "loc_mentions_list": [
           "Bretagne"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text states \"Il aborda l' Angleterre, où ses compatriotes étaient déja établis ; mais après deux victoires inutiles, il tourna du côté de la France, que d' autres normands savaient ruiner, mais qu' ils ne savaient pas asservir.\" This indicates Rolon was in England and France.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -4881,9 +4881,9 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text states that Henri V launched a new invasion of Rome. The text also mentions a council held in Rome. Pascal II is mentioned in connection with events in Rome, including the annulment of papal bulls and being treated as a coward in a council held in Rome.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -6270,7 +6270,7 @@
         "loc_mentions_list": [
           "Europe"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text mentions \"à Constantinople un Sélim\", indicating Selim was in Constantinople. The text also mentions Selim conquering Syria and Egypt, implying his presence there. The text states that Selim put Syria and Egypt under Ottoman domination.",
@@ -6410,9 +6410,9 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text states that corpses were displayed on scaffolds and gallows in Amboise for a month following the discovery and punishment of the conspiracy. This indicates François De Guise was present in Amboise during that time.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -6431,7 +6431,7 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text states \"La Renaudie fut tué en combattant; plusieurs moururent comme lui les armes à la main.\" This indicates Renaudie was present in Amboise where the fighting occurred.",
@@ -6537,9 +6537,9 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text states that corpses were displayed on scaffolds and gallows in Amboise for a month following the discovery and punishment of the conspiracy. This indicates the presence of people, including those executed, in Amboise.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -6812,9 +6812,9 @@
         "loc_mentions_list": [
           "Lithuanie"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text states that a young man claiming to be Prince Demetri appeared in Lithuania and was recognized by several people who had seen him with his mother. The text also mentions he showed a cross attached to his neck at his baptism, which identified him as the prince.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -6962,15 +6962,15 @@
         "loc_mentions_list": [
           "Russie"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text mentions that Pierre had his son condemned to death and did not allow him to survive his condemnation and grace. This implies Pierre was present during the events leading to his son's death.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text states that Pierre condemned his son to death and prevented his survival after the condemnation, indicating his presence at the events. The events described are historical and occurred before the publication date.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk1041.tsv-NIL_sandomir",
@@ -7506,9 +7506,9 @@
         "loc_mentions_list": [
           "Autriche"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text states that after the death of the commander of Requesens, Philip sent Don Juan d'Autriche, his brother, to the Netherlands. This implies Don Juan was in the Netherlands at the time.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -7528,7 +7528,7 @@
         "loc_mentions_list": [
           "Pays - Bas"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text mentions Philippe II's troops mutinying in Flanders, looting Antwerp, and the provinces of the Pays-Bas making a peace treaty without consulting him. It also mentions that Philippe sent his brother Don Juan to the Pays-Bas to restore calm.",
@@ -7549,7 +7549,7 @@
         "loc_mentions_list": [
           "Pays - Bas"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text mentions the commandeur de Requesens and the Pays-Bas in the context of the siege and defense of Leyde. It also mentions that after his death, Don Juan D' Autriche was sent to the Pays-Bas. However, there is no explicit statement that the commandeur de Requesens was at Pays-Bas at the time of publication.",
@@ -8150,7 +8150,7 @@
         "loc_mentions_list": [
           "Bourgogne"
         ],
-        "at": "PROBABLE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text mentions that Bourgogne was taken from the crown by Henry, grandson of Hugues Capet, and later returned under Jean and then given to Philippe Le Hardy. Louis XI became the master of Burgundy after Charles the last Duke of Burgundy died. This indicates a historical connection to Bourgogne.",
@@ -10349,7 +10349,7 @@
         "loc_mentions_list": [
           "Seine"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text states that Marguerite de France was born in Saint-Germain-en-Laye.",

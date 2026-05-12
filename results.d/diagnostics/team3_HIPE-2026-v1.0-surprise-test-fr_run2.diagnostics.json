@@ -133,7 +133,7 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "[ENSEMBLE VOTE index=5] at=TRUE (votes: TRUE=2, FALSE=1, PROBABLE=0, total=3)",
@@ -772,7 +772,7 @@
         "loc_mentions_list": [
           "Asie Mineure"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "[ENSEMBLE VOTE index=2] at=TRUE (votes: TRUE=2, FALSE=1, PROBABLE=0, total=3)",
@@ -793,15 +793,15 @@
         "loc_mentions_list": [
           "Jérusalem"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "[ENSEMBLE VOTE index=3] at=FALSE (votes: TRUE=1, FALSE=2, PROBABLE=0, total=3)",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "[ENSEMBLE VOTE index=3] isAt=FALSE (votes: TRUE=0, FALSE=3, total=3)",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_calife_d_egypte",
@@ -1746,15 +1746,15 @@
         "loc_mentions_list": [
           "ville de Médine"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "[ENSEMBLE VOTE index=15] at=FALSE (votes: TRUE=1, FALSE=2, PROBABLE=0, total=3)",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "[ENSEMBLE VOTE index=15] isAt=FALSE (votes: TRUE=0, FALSE=3, total=3)",
-        "CORRECT": true
+        "CORRECT": false
       }
     ]
   },
@@ -1977,15 +1977,15 @@
         "loc_mentions_list": [
           "Spire"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "[ENSEMBLE VOTE index=9] at=FALSE (votes: TRUE=1, FALSE=2, PROBABLE=0, total=3)",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "[ENSEMBLE VOTE index=9] isAt=FALSE (votes: TRUE=0, FALSE=3, total=3)",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_frederic",
@@ -2040,7 +2040,7 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "PROBABLE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "[ENSEMBLE VOTE index=12] at=TRUE (votes: TRUE=2, FALSE=1, PROBABLE=0, total=3)",
@@ -2061,15 +2061,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "PROBABLE",
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "[ENSEMBLE VOTE index=13] at=FALSE (votes: TRUE=1, FALSE=2, PROBABLE=0, total=3)",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "[ENSEMBLE VOTE index=13] isAt=FALSE (votes: TRUE=0, FALSE=3, total=3)",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_henri",
@@ -2207,15 +2207,15 @@
         "loc_mentions_list": [
           "Bretagne"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "[ENSEMBLE VOTE index=3] at=TRUE (votes: TRUE=3, FALSE=0, PROBABLE=0, total=3)",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "[ENSEMBLE VOTE index=3] isAt=FALSE (votes: TRUE=0, FALSE=3, total=3)",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk110.tsv-NIL_rolon",
@@ -4881,15 +4881,15 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "[ENSEMBLE VOTE index=13] at=TRUE (votes: TRUE=2, FALSE=1, PROBABLE=0, total=3)",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "[ENSEMBLE VOTE index=13] isAt=FALSE (votes: TRUE=0, FALSE=3, total=3)",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk205.tsv-NIL_philippe",
@@ -6270,7 +6270,7 @@
         "loc_mentions_list": [
           "Europe"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "[ENSEMBLE VOTE index=12] at=TRUE (votes: TRUE=2, FALSE=1, PROBABLE=0, total=3)",
@@ -6410,7 +6410,7 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "[ENSEMBLE VOTE index=2] at=FALSE (votes: TRUE=1, FALSE=2, PROBABLE=0, total=3)",
@@ -6431,15 +6431,15 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "[ENSEMBLE VOTE index=3] at=FALSE (votes: TRUE=1, FALSE=2, PROBABLE=0, total=3)",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "[ENSEMBLE VOTE index=3] isAt=FALSE (votes: TRUE=0, FALSE=3, total=3)",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk820.tsv-NIL_henri",
@@ -6537,7 +6537,7 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "[ENSEMBLE VOTE index=8] at=FALSE (votes: TRUE=1, FALSE=2, PROBABLE=0, total=3)",
@@ -6812,15 +6812,15 @@
         "loc_mentions_list": [
           "Lithuanie"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "[ENSEMBLE VOTE index=4] at=TRUE (votes: TRUE=2, FALSE=1, PROBABLE=0, total=3)",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "[ENSEMBLE VOTE index=4] isAt=FALSE (votes: TRUE=0, FALSE=3, total=3)",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk1041.tsv-NIL_fedor",
@@ -6962,7 +6962,7 @@
         "loc_mentions_list": [
           "Russie"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "[ENSEMBLE VOTE index=11] at=FALSE (votes: TRUE=1, FALSE=2, PROBABLE=0, total=3)",
@@ -7506,7 +7506,7 @@
         "loc_mentions_list": [
           "Autriche"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "[ENSEMBLE VOTE index=3] at=FALSE (votes: TRUE=1, FALSE=2, PROBABLE=0, total=3)",
@@ -7528,7 +7528,7 @@
         "loc_mentions_list": [
           "Pays - Bas"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "[ENSEMBLE VOTE index=4] at=FALSE (votes: TRUE=1, FALSE=2, PROBABLE=0, total=3)",
@@ -7549,7 +7549,7 @@
         "loc_mentions_list": [
           "Pays - Bas"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "[ENSEMBLE VOTE index=5] at=FALSE (votes: TRUE=1, FALSE=2, PROBABLE=0, total=3)",
@@ -8150,7 +8150,7 @@
         "loc_mentions_list": [
           "Bourgogne"
         ],
-        "at": "PROBABLE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "[ENSEMBLE VOTE index=0] at=TRUE (votes: TRUE=3, FALSE=0, PROBABLE=0, total=3)",
@@ -10349,15 +10349,15 @@
         "loc_mentions_list": [
           "Seine"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "[ENSEMBLE VOTE index=4] at=FALSE (votes: TRUE=0, FALSE=3, PROBABLE=0, total=3)",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "[ENSEMBLE VOTE index=4] isAt=FALSE (votes: TRUE=0, FALSE=3, total=3)",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1797_Perouse_Voyage_chunk3594.tsv-NIL_marguerite_de_france",

@@ -133,7 +133,7 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text states that \"le pape Jean VIII reçut à sa communion\" and sent legates from \"ce même siége de Rome\". It also mentions a letter from the pope to Photius. These indicate Jean VIII was associated with Rome.",
@@ -772,15 +772,15 @@
         "loc_mentions_list": [
           "Asie Mineure"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "PROBABLE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states that Soliman soudan de Syrie 'was under the caliphs of Bagdat' and 'could not...resist the first torrent of all these princes' who were 'cotoyant l'Asie Mineure' (alongside Asia Minor). This indicates Soliman was operating in proximity to Asia Minor.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text does not state that Soliman was currently in Asia Minor at the time of writing. It describes past events where he resisted forces near Asia Minor, but does not indicate his present location.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_calife_d_egypte",
@@ -793,15 +793,15 @@
         "loc_mentions_list": [
           "Jérusalem"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text states that the calife d' égypte \"s' était saisi par ses lieutenants\" of Jérusalem. This indicates the calife had control of Jérusalem at some point before the article's writing.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text states the calife d' égypte had seized Jérusalem \"par ses lieutenants\", but does not indicate current control or presence in Jérusalem at the time of writing.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_calife_d_egypte",
@@ -1746,15 +1746,15 @@
         "loc_mentions_list": [
           "ville de Médine"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "PROBABLE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states that Ali transferred the seat of the caliphs from the ville de Médine after obtaining the caliphate. It also mentions Omar was assassinated in 653, but does not state he was in Médine at the time of his death.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text does not indicate that Omar is currently or recently in the ville de Médine. It describes a past event where the caliphate was moved *from* Médine.",
-        "CORRECT": false
+        "CORRECT": true
       }
     ]
   },
@@ -1977,15 +1977,15 @@
         "loc_mentions_list": [
           "Spire"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states that the body of Henri IV, Henri V's father, was carried to a cave in Spire after being exhumed from the cathedral in Liége. This indicates Henri V was involved in an action that took place in Spire.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text describes an event that happened in the past, specifically the transportation of a body to Spire. It does not indicate Henri V was currently in Spire at the time of writing.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_frederic",
@@ -2040,15 +2040,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "PROBABLE",
+        "at": "FALSE",
         "SYS_at": "PROBABLE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text mentions Pepin in relation to donations of land, stating 'le droit qu' il reclamait en vertu des prétendues donations de Pepin'. This indicates Pepin was associated with actions concerning France.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text does not indicate Pepin is currently in France, only that he made claims regarding donations related to France in the past.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv_Q3044_charlemagne",
@@ -2061,15 +2061,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "PROBABLE",
+        "at": "FALSE",
         "SYS_at": "PROBABLE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text mentions that the papacy claimed rights \"in vertu des prétendues donations de Pepin et de Charlemagne\". This indicates Charlemagne had some historical connection to lands relevant to France, though not necessarily direct presence there.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text does not indicate Charlemagne was currently in France or had recently been there at the time of writing.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_henri",
@@ -2207,15 +2207,15 @@
         "loc_mentions_list": [
           "Bretagne"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text states that Rolon asked for Bretagne and it was eventually ceded to him. This indicates he was present in or had control over Bretagne at some point.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text does not indicate Rolon is currently in Bretagne, only that he requested and received it as a concession in the past. There is no indication of current presence.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk110.tsv-NIL_rolon",
@@ -4881,15 +4881,15 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text states that Pascal II obtained permission to hold a council at Troye and that bulls against Henri V were annulled \"in Rome\". It also mentions the emperor making an \"irruption à Rome\" after Pascal II's actions, and a concile was held in Rome.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text describes events happening in Rome, such as the annulment of bulls and the emperor's irruption, but does not state Pascal II was currently in Rome at the time of writing or in the immediate past.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk205.tsv-NIL_philippe",
@@ -6270,7 +6270,7 @@
         "loc_mentions_list": [
           "Europe"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text states that Sélim reigned and put Syria and Egypt under Ottoman domination, and that his actions caused Europe to tremble. This indicates Sélim was present in relation to Europe through his actions and influence.",
@@ -6410,15 +6410,15 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text states that after the conspiracy was discovered and punished, \"on ne vit dans Amboise que des échafauts sanglants, et des potences chargées de cadavres.\" This indicates François De Guise was involved in events that took place in Amboise.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text describes events in Amboise as having occurred during a month following the punishment of the conspiracy. It does not state François De Guise was currently in Amboise at that time, only that his actions led to events there.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk820.tsv-NIL_renaudie",
@@ -6431,7 +6431,7 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text states that Renaudie was killed in combat and that after the conspiracy was discovered and punished, \"on ne vit dans Amboise que des échafauts sanglants, et des potences chargées de cadavres\". This implies Renaudie was present at Amboise as a casualty of the conspiracy.",
@@ -6537,15 +6537,15 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "PROBABLE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states that after the conspiracy was discovered and punished, \"on ne vit dans Amboise que des échafauts sanglants, et des potences chargées de cadavres.\" This implies the Guises were involved in events that took place in Amboise.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text describes events that happened in Amboise after the conspiracy was discovered and punished, but does not state the Guises were currently in Amboise at that time.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk820.tsv-NIL_andelot",
@@ -6812,9 +6812,9 @@
         "loc_mentions_list": [
           "Lithuanie"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text states that a young man claiming to be prince Demetrius appeared in Lithuanie after Boris allegedly had him assassinated. Several people who had seen him with his mother recognized him there.",
         "isAt": "FALSE",
         "SYS_isAt": "TRUE",
@@ -6962,15 +6962,15 @@
         "loc_mentions_list": [
           "Russie"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text states that Pierre had his son condemned to death and did not allow the prince to survive, after which events agitated \"la Russie\". This indicates Pierre was involved in events impacting Russia.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text does not indicate Pierre is currently in Russia, only that events related to his actions took place there. The text describes past events, not a current situation.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk1041.tsv-NIL_sandomir",
@@ -7506,15 +7506,15 @@
         "loc_mentions_list": [
           "Autriche"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text states that Don Juan D'Autriche was sent to the Netherlands by Philippe, and is described as a prince \"célèbre dans l' Europe\". It also mentions he was brother to Philippe and famous for the victory of Lepanto. This indicates Don Juan was from Autriche at some point.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text does not indicate Don Juan is currently in Autriche, but rather that he was sent from there to the Netherlands. There is no indication of his current location.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk783.tsv-NIL_philippe",
@@ -7528,15 +7528,15 @@
         "loc_mentions_list": [
           "Pays - Bas"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text states that Philippe II's troops were mutinying in Flanders, which is part of the Pays-Bas, and that the provinces of the Pays-Bas made a treaty without consulting him. This indicates Philippe was involved with the Pays-Bas at some point.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text describes past events involving Philippe and the Pays-Bas, but does not indicate his current presence there. It states he 'envoye Don Juan D' Autriche' to the Pays-Bas, implying he is not currently there.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk783.tsv-NIL_requesens",
@@ -7549,15 +7549,15 @@
         "loc_mentions_list": [
           "Pays - Bas"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text states that after the death of the grand commandeur de Requesens, Philippe sent Don Juan D'Autriche to the Pays-Bas. This indicates the commandeur de Requesens was previously present in the Pays-Bas.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text describes events that happened *after* the death of the commandeur de Requesens, and does not indicate his current presence in the Pays-Bas at the time of writing.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk783.tsv-NIL_philippe",
@@ -8150,15 +8150,15 @@
         "loc_mentions_list": [
           "Bourgogne"
         ],
-        "at": "PROBABLE",
+        "at": "FALSE",
         "SYS_at": "PROBABLE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text states that Henry, grandson of Hugues Capet, ceded Bourgogne to Robert his brother. This indicates Hugues Capet was connected to the region through family actions.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text does not indicate Hugues Capet was currently in Bourgogne at the time of writing or in the recent past. It only mentions a historical event involving his grandson and the region.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1678_Esprit_Faussete_chunk235.tsv-NIL_robert",
@@ -10349,7 +10349,7 @@
         "loc_mentions_list": [
           "Seine"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text states Marguerite de France was born at Saint-Germain-en-Laye, which is located on the Seine. This indicates she was at the Seine at some point in her life.",

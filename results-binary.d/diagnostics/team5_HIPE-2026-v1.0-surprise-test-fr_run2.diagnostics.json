@@ -133,15 +133,15 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "Parsing failed",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Parsing failed",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk132.tsv-NIL_eugene",
@@ -772,15 +772,15 @@
         "loc_mentions_list": [
           "Asie Mineure"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text mentions 'Soliman soudan de Syrie' in the context of resisting Crusaders who ravaged 'Asie Mineure' and mentions Genoese ships cotoyant (coasting) 'Asie Mineure'. While Soliman is explicitly linked to the resistance against the invasion of Asia Minor, the text describes a historical event (the Crusades) rather than stating he was physically present there at the time of the article's publication or as a general fact of his location.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The article discusses historical events from the Crusades era (11th-12th century) involving Soliman and Asia Minor. The publication date is 1756. The text describes past historical narratives, not current or recent events. Therefore, Soliman was not at Asia Minor in the immediate temporal horizon of 1756.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_calife_d_egypte",
@@ -793,15 +793,15 @@
         "loc_mentions_list": [
           "Jérusalem"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text states that the calife d' égypte had seized Jerusalem by his lieutenants during the siege, implying his control or presence in the context of the event described.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The article describes a historical event from the Crusades (11th-12th century), while the publication date is 1756. The mention is historical and not current or recent relative to 1756.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_calife_d_egypte",
@@ -1746,15 +1746,15 @@
         "loc_mentions_list": [
           "ville de Médine"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The text states that Omar was assassinated in 653, but it does not explicitly state that he was physically present in the city of Medina at that time or any other time. The mention of Medina is in the context of Ali transferring the caliphate seat from there, not regarding Omar's location.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The article discusses historical events from the 7th century (653), which is centuries before the publication date of 1756. There is no evidence of Omar being at Medina in the immediate temporal horizon of the article.",
-        "CORRECT": true
+        "CORRECT": false
       }
     ]
   },
@@ -1977,15 +1977,15 @@
         "loc_mentions_list": [
           "Spire"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states that the son of Henri IV had the body of his father exhumed from Liège and transported to a cellar in Spire. This confirms Henri IV was physically present in Spire at the time of his burial there.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The article describes a historical event from the past where Henri IV's body was moved to Spire. The publication date is 1756, and the text refers to this as a completed historical action ('mit le comble', 'consomma'), not a current or recent event relative to 1756.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_frederic",
@@ -2040,15 +2040,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text mentions Pepin only in the context of alleged donations by the Pope ('prétendues donations de Pepin et de Charlemagne'). It does not state that Pepin was physically present in France.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text discusses Pepin's historical donations and mentions France only as a location of French kings. There is no evidence of Pepin's presence in France, let alone recent presence relative to 1756.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv_Q3044_charlemagne",
@@ -2061,15 +2061,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text mentions Charlemagne only in the context of alleged donations by Pepin and Charlemagne that the papacy claimed. It does not state that Charlemagne was physically present in France.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text discusses historical claims regarding Charlemagne's donations centuries before the 1756 publication date. There is no evidence of his presence in France at the time of publication.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_henri",
@@ -6270,15 +6270,15 @@
         "loc_mentions_list": [
           "Europe"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text mentions 'C' est à Constantinople un Sélim qui met sous la domination ottomane la Syrie et l' égypte', explicitly linking Sélim to Constantinople and his actions in the region, which are part of Europe.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The article describes Sélim's actions in the 16th century ('seiziéme siècle'), which is approximately 150 years before the publication date of 1756. This is not within the immediate temporal horizon (up to one month) required for 'isAt'.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk557.tsv-NIL_soliman",
@@ -6431,15 +6431,15 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states 'La Renaudie fut tué en combattant' (Renaudie was killed while fighting) in the context of events occurring in Amboise, where 'échafauts sanglants' (bloody scaffolds) were visible. This implies his physical presence at the location during the conflict.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The article describes the death of Renaudie and the subsequent month of executions in Amboise as a completed historical event ('fut tué', 'périrent'). Given the publication date of 1756, which is centuries after the described events (the Amboise conspiracy of 1560), the presence is not current or recent.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk820.tsv-NIL_henri",
@@ -8150,15 +8150,15 @@
         "loc_mentions_list": [
           "Bourgogne"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text mentions Hugues Capet only as an ancestor of King Henry, stating that Henry's grandson gave Burgundy to his brother Robert. It does not state Hugues Capet was physically present in Burgogne.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The text discusses historical events centuries before the 1678 publication date. There is no evidence of Hugues Capet being in Burgogne at any time close to 1678.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1678_Esprit_Faussete_chunk235.tsv-NIL_robert",
@@ -10349,15 +10349,15 @@
         "loc_mentions_list": [
           "Seine"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "TRUE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The text states Marguerite de France was born at Saint-Germain-en-Laye, which is described as being on the Seine. This implies a geographical association with the river.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The article describes Marguerite de France's birth in 1523, which is centuries before the publication date of 1797. This is historical information, not current or recent presence.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1797_Perouse_Voyage_chunk3594.tsv-NIL_marguerite_de_france",

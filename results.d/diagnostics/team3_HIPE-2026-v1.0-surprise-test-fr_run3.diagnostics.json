@@ -133,7 +133,7 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The passage states: “Le pape Jean VIII le reçut à sa communion, le reconnut, lui écrivit …” This indicates that the Pope himself was physically present in Rome to receive a person at his communion ceremony. The act of receiving someone at a communion is performed by the Pope while he is in Rome. Since this event occurs before the document’s publication date (1756), it provides direct evidence that Jean VIII was indeed in Rome prior to 1756.",
@@ -772,15 +772,15 @@
         "loc_mentions_list": [
           "Asie Mineure"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The passage describes Soliman soudan de Syrie as a Turc under the caliphate of Baghdad who resisted “the first torrent of all these princes crossed.” It does not mention any travel, presence, or activity in Asia Minor (Asie Mineure). The only reference to Asie Mineure is elsewhere in the text concerning other actors. Therefore there is no textual evidence that Soliman was physically present at Asie Mineure before 1756.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage mentions “Le vieux turc Soliman soudan de Syrie” but only in the context of his military situation and does not state that he was physically present at Asie Mineure. There is no mention of a specific time or date linking him to that location, nor any indication that he visited it within the 30‑day window preceding the document’s publication (1756). Because the text provides no explicit evidence of Soliman’s presence in Asie Mineure during that period, we cannot confirm his physical presence there. Therefore the correct classification is FALSE.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_calife_d_egypte",
@@ -793,15 +793,15 @@
         "loc_mentions_list": [
           "Jérusalem"
         ],
-        "at": "TRUE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The passage states: “On mit le siége devant Jérusalem, dont le calife d' égypte s' était saisi par ses lieutenants.” The term *siége* refers to a siege that preceded the capture of Jerusalem. If the caliph was “saisi” (seized) by his lieutenants during this operation, it implies he was physically present in or near Jerusalem at that time, as only someone who could be captured would need to be there. The text does not provide any contradictory information indicating otherwise. Therefore we have direct evidence that the caliph of Egypt was present in Jerusalem before the document’s publication date (1756).",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage states that “le calife d’ égypte s’était saisi par ses lieutenants” during a siege in front of Jerusalem. This indicates that the caliph was physically present in Jerusalem at some point, but it provides no explicit date or temporal marker that ties this event to the 30‑day window preceding the document’s publication date (1756). Without a specific date or reference that places the presence within that narrow timeframe, we cannot confirm that the caliph was indeed present in Jerusalem during the required period. Therefore the evidence does not satisfy the strict criteria for a positive classification.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk253.tsv-NIL_calife_d_egypte",
@@ -1746,15 +1746,15 @@
         "loc_mentions_list": [
           "ville de Médine"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The passage discusses the life of Omar, noting that he was assassinated in 653, but it provides no indication that he ever visited or resided in the city of Medina. The only mention of Medina appears later concerning Ali’s caliphate and the relocation of the seat of power there. Since the text contains no evidence linking Omar to Medina before its publication date (1756), we cannot conclude that Omar was physically present at that location.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage discusses historical figures such as Omar, but it only notes that he was assassinated in 653 CE; there is no mention of him being physically present in the city of Medina or any event involving him near the year 1756. The location “ville de Médine” appears later in the text concerning the caliphate’s seat, but it does not link Omar to that place nor provide a date within the required 30‑day window before the document’s publication (i.e., between 1726 and 1756). Consequently, there is no explicit evidence in the text confirming Omar’s presence at the specified location during the relevant timeframe.",
-        "CORRECT": true
+        "CORRECT": false
       }
     ]
   },
@@ -1977,15 +1977,15 @@
         "loc_mentions_list": [
           "Spire"
         ],
-        "at": "FALSE",
+        "at": "TRUE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The passage discusses Henri IV’s son who buried his father’s remains in a cave at Spire, but it does not state that the Holy Roman Emperor Henri V was present or even visited Spire. The only reference to Henri V is in a separate chapter about his relationship with Rome and papal bulls; there is no mention of him being at Spire before 1756. Therefore there is no textual evidence linking Henri V’s presence at the location.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage discusses Henri V’s actions regarding his father’s body but does not state that he was physically present at the cave in Spire within a month before 1756. The only mention of Spire is “une cave à Spire” where the body was placed after being taken from Liège, and there is no explicit statement that Henri V himself was there during that timeframe. Since the text lacks any date or direct evidence of his presence at Spire in the required window, we cannot confirm his physical presence.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_frederic",
@@ -2040,7 +2040,7 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "PROBABLE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The passage refers to “les prétendues donations de Pepin et de Charlemagne,” indicating that Pepin possessed lands and rights within the Frankish realm, which corresponds to modern France. As a Frankish king, Pepin’s authority was exercised in France centuries before 1756; his presence there is historically documented. The text does not explicitly state a physical visit, but it confirms his control over French territories, implying he had been physically present at the location (France) at some point prior to the document’s publication date.",
@@ -2061,15 +2061,15 @@
         "loc_mentions_list": [
           "France"
         ],
-        "at": "PROBABLE",
+        "at": "FALSE",
         "SYS_at": "FALSE",
-        "CORRECT_at": false,
+        "CORRECT_at": true,
         "SYS_at_explanation": "The passage discusses the political and ecclesiastical relations between the French monarchy and the papacy, referencing Emperor Henri V and his father’s actions concerning Charlemagne’s alleged donations. It mentions “les donations de Pepin et de Charlemagne” as a source of rights, but it does not state that Charlemagne himself was physically present in France at any time before 1756. No sentence or clause indicates Charlemagne’s presence in the country; the text only references his legacy and legal claims. Therefore there is no direct evidence in the document that Charlemagne visited or resided in France prior to its publication date.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The document discusses contemporary events and figures (e.g., Henri V, the papacy) but contains no explicit statement that Charlemagne was in France or that he performed any action there within a month preceding the publication date of 1756. Moreover, Charlemagne lived from 768 to 814 AD—centuries before 1756—so his physical presence in France during the relevant time window is historically impossible. Therefore there is no evidence that he was present at the specified location within the required period.",
-        "CORRECT": false
+        "CORRECT": true
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk204.tsv-NIL_henri",
@@ -2207,15 +2207,15 @@
         "loc_mentions_list": [
           "Bretagne"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The passage states that “Il demanda ensuite la Bretagne ; on disputa ; mais il fallut la céder encor avec des clauses…”. The verb *demanda* (“he demanded”) indicates Rolon was physically present in Brittany to make the demand, as a claim cannot be made from elsewhere. This occurrence is explicitly before the document’s publication date (1756). Therefore there is direct evidence that Rolon was in Bretagne prior to 1756.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage describes Rolon’s actions concerning Brittany (“Il demanda ensuite la Bretagne ; on disputa …”) but it contains no explicit date or temporal marker indicating his physical presence in Brittany within the 30‑day window preceding the document’s publication (1756). The text is a historical narrative without specific dates, and there is no mention of Rolon being in Brittany at any time close to 1756. Therefore we cannot confirm that he was physically present in Brittany during that period.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk110.tsv-NIL_rolon",
@@ -4881,15 +4881,15 @@
         "loc_mentions_list": [
           "Rome"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The passage explicitly states that “Il fut donc décidé dans un concile tenu à Rome,” indicating that Pascal II attended a council held in Rome. The text also notes his presence elsewhere (“Il descend donc des Alpes avec une armée”) but the mention of the Roman concile confirms his physical presence there at some point before the document’s publication date (1756). Since the document itself is dated 1756, any event described as occurring in the past must have taken place prior to that year. Therefore Pascal II was indeed physically present in Rome before 1756.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "Prediction(\n    reasoning=None,\n    classification=None\n)",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk205.tsv-NIL_philippe",
@@ -6270,15 +6270,15 @@
         "loc_mentions_list": [
           "Europe"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The passage describes a Sélim who is “à Constantinople” and mentions his actions concerning Syria and Egypt. It does not state that he ever traveled to or was present in Europe; the only European reference concerns his son Soliman’s march to Vienna, which is unrelated to Sélim himself. Since there is no textual evidence of Sélim being physically present in Europe before 1756, we conclude that the claim lacks support.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage discusses historical figures and events but does not provide any explicit statement that Sélim was physically present in Europe within a month before the document’s publication date of 1756. The only mention of Sélim is in reference to his rule over Constantinople, Syria, and Egypt (“C’ est à Constantinople un Sélim…”), which places him in Asia‑Anatolia, not Europe. No dates or events near 1756 are given in the text that would indicate a presence in Europe during the required time window (mid‑July to early August 1756). Therefore there is no evidence supporting the claim of Sélim’s presence in Europe within the specified period.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk557.tsv-NIL_soliman",
@@ -6410,7 +6410,7 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The excerpt discusses the activities of the Guises and the situation in Amboise, noting that “Les Guises eurent à peine le temps de faire venir des troupes” and that “pendant un mois entier on ne vit dans Amboise que des échafaux sanglants.” However, it does not state that François De Guise himself was physically present at Amboise; it merely mentions his political power elsewhere. Since the text provides no explicit evidence of his presence in Amboise before 1756, we cannot confirm his physical presence there.",
@@ -6431,15 +6431,15 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The passage reports that “La Renaudie fut tué en combattant” and later notes a month in which Amboise was filled with corps, but it does not explicitly state that Renaudie himself was present at Amboise. The text only indicates his death by combat without specifying the location of that battle, and the mention of bodies in Amboise appears to refer to the aftermath of an event there, not to Renaudie’s presence. Therefore there is no direct evidence from the document that Renaudie was physically in Amboise before 1756.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage reports that “La Renaudie fut tué en combattant” and later notes that during a month in Amboise only corps were present, but it does not explicitly state that Renaudie himself was physically present at Amboise. Moreover, the text contains no date or temporal marker linking this event to the 30‑day window preceding the document’s publication date (1756). Without an explicit mention of Renaudie being in Amboise within that timeframe, we cannot confirm his presence there.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk820.tsv-NIL_henri",
@@ -6537,7 +6537,7 @@
         "loc_mentions_list": [
           "Amboise"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The passage discusses the actions and presence of the Guises in relation to military operations and the aftermath at Amboise. It notes that “Les Guises eurent à peine le temps de faire venir des troupes” and that “pendant un mois entier on ne vit dans Amboise que des échafaux sanglants, et des potences chargées de cadavres.” However, there is no explicit statement indicating that any member of the Guises family or organization was physically present in Amboise. The text merely describes the state of the location and the lack of troops, without linking the Guises to being there. Consequently, the document provides no direct evidence of the person “Guises” being at the specified location before 1756.",
@@ -6812,7 +6812,7 @@
         "loc_mentions_list": [
           "Lithuanie"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The text reports that “Fédor régna ; Demetri fut confiné dans un village nommé Uglis avec la czarine sa mére,” indicating that Prince Demetri was held in a separate location, not Lithuania. Later it describes “Il parut alors dans la Lithuanie un jeune homme qui prétendait être le prince Demetri échappé à l’ assassin.” This refers to a look‑alike who pretended to be the prince, not the prince himself. No passage states that the actual Prince Demetri was physically present in Lithuania before 1756. Therefore there is no evidence of his presence at the specified location.",
@@ -6962,7 +6962,7 @@
         "loc_mentions_list": [
           "Russie"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The passage discusses the actions of Jean Basilide and his son, as well as Pierre’s condemnation of his own son to death. It does not state or imply that Pierre himself was physically present in Russia at any time before 1756. The only reference to a location is “siége de Pleskou,” which refers to a siege involving Jean Basilide and his son, not to Pierre’s presence there. Consequently, the text provides no evidence of Pierre being in Russia prior to its publication date.",
@@ -7506,15 +7506,15 @@
         "loc_mentions_list": [
           "Autriche"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "TRUE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The passage states that Philippe “envoye Don Juan D' Autriche son frère,” indicating that Don Juan is a prince of Austria who was physically present there to send his brother. This implies that Don Juan had been in Autriche at some time prior to the document’s publication date (1756). The text provides no contradictory information, so we can conclude that the presence evidence exists.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The passage notes that Philippe sent “Don Juan D’ Autriche” his brother, indicating Don Juan’s origin or affiliation with Autriche, but it does not state that he was physically present in Autriche within the 30‑day window preceding the document’s publication date (1756). No explicit mention of a visit, stay, or event involving Don Juan in Autriche during that period is provided. Therefore there is no direct evidence satisfying the requirement for presence at the specified location and time.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1756_Voltaire_HistoireGenerale_chunk783.tsv-NIL_philippe",
@@ -7528,7 +7528,7 @@
         "loc_mentions_list": [
           "Pays - Bas"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The passage discusses a siege of Leyde and references the mutiny of Spanish troops in Flanders, but it does not state that Philippe II himself was physically present in the Netherlands at any time before 1756. The only mention of him is as a king concerned with his brother Don Juan; there are no explicit statements about his presence or visits to Pays‑Bas. Therefore there is no evidence supporting his physical presence in the specified location prior to the document’s publication date.",
@@ -7549,7 +7549,7 @@
         "loc_mentions_list": [
           "Pays - Bas"
         ],
-        "at": "TRUE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The passage notes that “Après la mort du grand commandeur de Requesens…” and then describes Philippe’s subsequent actions in the Netherlands. It does not state that the commander himself was present in the country; it merely reports his death and Philippe’s later presence. No mention of travel, residence, or any activity by the commander in the Pays‑Bas before 1756 is found. Therefore there is no textual evidence supporting the claim that he was physically present at the location prior to the document’s publication date.",
@@ -8150,7 +8150,7 @@
         "loc_mentions_list": [
           "Bourgogne"
         ],
-        "at": "PROBABLE",
+        "at": "FALSE",
         "SYS_at": "TRUE",
         "CORRECT_at": false,
         "SYS_at_explanation": "The passage states that “la Bourgogne l’ avoit été par le roy Henry, petit fils de Hugues Capet.” This indicates that the Burgundian territory belonged to Hugues Capet’s son and was transferred by him. Since the Burgundy was part of the French realm under the Capetian dynasty, it is reasonable to infer that the father himself had been physically present in that region at some point before 1678 (e.g., during his reign). The text does not explicitly say he visited, but the fact that he owned and later gave away Burgundy implies he was there as part of his kingdom. Therefore we can conclude that Hugues Capet was indeed physically present in Bourgogne prior to the document’s publication date.",
@@ -10349,15 +10349,15 @@
         "loc_mentions_list": [
           "Seine"
         ],
-        "at": "FALSE",
+        "at": "PROBABLE",
         "SYS_at": "FALSE",
-        "CORRECT_at": true,
+        "CORRECT_at": false,
         "SYS_at_explanation": "The passage records that Marguerite de France was born in Saint‑Germain‑en‑Laye on 5 June 1523 and notes the proximity of that town to the Seine (“Elle est à quatre lieues de Paris sur la Seine”). However, it contains no statement indicating that she herself visited or was physically present at the Seine. The text only describes the location of her birthplace relative to the river; there is no evidence of Marguerite’s presence on the Seine before 1797. Therefore we conclude that the claim is unsupported.",
         "isAt": "FALSE",
         "SYS_isAt": "FALSE",
         "CORRECT_isAt": true,
         "SYS_isAt_explanation": "The document records that Marguerite de France was born in Saint‑Germain‑en‑Laye on 5 June 1523, and notes the proximity of this town to the Seine River. However, there is no mention of her being at the Seine or any event involving her within the 30‑day window preceding the document’s publication date (i.e., between 28 August 1796 and 28 September 1797). The text only references historical events unrelated to Marguerite’s presence in that period. Therefore, there is no explicit evidence that she was physically present at the Seine within the required timeframe.",
-        "CORRECT": true
+        "CORRECT": false
       },
       {
         "pers_entity_id": "1797_Perouse_Voyage_chunk3594.tsv-NIL_marguerite_de_france",
