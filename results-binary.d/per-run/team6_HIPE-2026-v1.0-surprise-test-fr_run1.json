@@ -10,6 +10,7 @@
     "hipe_parameter_count": 355000000,
     "info_file": "team6_HIPE-2026-v1.0-surprise-test-fr_run1-info.json",
     "info_missing": false,
+    "team_efficiency_opt_out": false,
     "team_model_size": 1424,
     "team_parameter_count": 355000000
   },

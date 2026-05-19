@@ -11,6 +11,9 @@ from typing import Any
 from common import competition_ranks, load_json, tsv_escape
 
 
+MAXINT_RANK_VALUE = 9007199254740991
+
+
 def mean(values: list[float]) -> float | None:
     return sum(values) / len(values) if values else None
 
@@ -165,6 +168,10 @@ def build_efficiency_test_a(rows: list[dict[str, Any]], overall_rows: list[dict[
     efficiency_rows = []
     for (team, run), group in sorted(by_system.items()):
         missing_info = any(row.get("efficiency_metadata", {}).get("info_missing") for row in group)
+        opted_out = any(row.get("efficiency_metadata", {}).get("team_efficiency_opt_out", False) for row in group)
+        if opted_out:
+            continue
+
         parameter_values = [
             row.get("efficiency_metadata", {}).get("hipe_parameter_count")
             for row in group
@@ -176,20 +183,27 @@ def build_efficiency_test_a(rows: list[dict[str, Any]], overall_rows: list[dict[
             if row.get("efficiency_metadata", {}).get("hipe_model_size") is not None
         ]
 
+        hipe_parameter_count = None if missing_info else mean([float(value) for value in parameter_values])
+        hipe_model_size = None if missing_info else mean([float(value) for value in model_size_values])
         efficiency_rows.append(
             {
                 "team": team,
                 "run": run,
                 "accuracy_score": accuracy_by_system.get((team, run)),
-                "hipe_parameter_count": None if missing_info else mean([float(value) for value in parameter_values]),
-                "hipe_model_size": None if missing_info else mean([float(value) for value in model_size_values]),
+                "hipe_parameter_count": hipe_parameter_count,
+                "hipe_model_size": hipe_model_size,
+                # Keep nulls in output, but rank null organizer values as maxint.
+                "rank_hipe_parameter_count": MAXINT_RANK_VALUE
+                if hipe_parameter_count is None
+                else hipe_parameter_count,
+                "rank_hipe_model_size": MAXINT_RANK_VALUE if hipe_model_size is None else hipe_model_size,
                 "info_missing": missing_info,
             }
         )
 
     accuracy_ranks = competition_ranks(efficiency_rows, "accuracy_score", higher_is_better=True)
-    parameter_ranks = competition_ranks(efficiency_rows, "hipe_parameter_count", higher_is_better=False)
-    model_size_ranks = competition_ranks(efficiency_rows, "hipe_model_size", higher_is_better=False)
+    parameter_ranks = competition_ranks(efficiency_rows, "rank_hipe_parameter_count", higher_is_better=False)
+    model_size_ranks = competition_ranks(efficiency_rows, "rank_hipe_model_size", higher_is_better=False)
 
     for row in efficiency_rows:
         key = (row["team"], row["run"])
@@ -263,23 +277,31 @@ def build_efficiency_language_rankings(rows: list[dict[str, Any]], output_dir: P
         for row in group:
             metadata = row.get("efficiency_metadata", {})
             missing_info = metadata.get("info_missing")
+            if metadata.get("team_efficiency_opt_out", False):
+                continue
+
+            hipe_parameter_count = None if missing_info else metadata.get("hipe_parameter_count")
+            hipe_model_size = None if missing_info else metadata.get("hipe_model_size")
             efficiency_rows.append(
                 {
                     "team": row["team"],
                     "run": row["run"],
                     "submission": row["submission"],
                     "accuracy_score": score_value(row),
-                    "hipe_parameter_count": None
-                    if missing_info
-                    else metadata.get("hipe_parameter_count"),
-                    "hipe_model_size": None if missing_info else metadata.get("hipe_model_size"),
+                    "hipe_parameter_count": hipe_parameter_count,
+                    "hipe_model_size": hipe_model_size,
+                    # Keep nulls in output, but rank null organizer values as maxint.
+                    "rank_hipe_parameter_count": MAXINT_RANK_VALUE
+                    if hipe_parameter_count is None
+                    else hipe_parameter_count,
+                    "rank_hipe_model_size": MAXINT_RANK_VALUE if hipe_model_size is None else hipe_model_size,
                     "info_missing": missing_info,
                 }
             )
 
         accuracy_ranks = competition_ranks(efficiency_rows, "accuracy_score", higher_is_better=True)
-        parameter_ranks = competition_ranks(efficiency_rows, "hipe_parameter_count", higher_is_better=False)
-        model_size_ranks = competition_ranks(efficiency_rows, "hipe_model_size", higher_is_better=False)
+        parameter_ranks = competition_ranks(efficiency_rows, "rank_hipe_parameter_count", higher_is_better=False)
+        model_size_ranks = competition_ranks(efficiency_rows, "rank_hipe_model_size", higher_is_better=False)
 
         for row in efficiency_rows:
             key = (row["team"], row["run"])

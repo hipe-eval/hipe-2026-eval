@@ -76,19 +76,26 @@ team1_HIPE-2026-v1.0-impresso-test-de_run1.jsonl
 team1_HIPE-2026-v1.0-impresso-test-de_run1-info.json
 ```
 
-The info file must be a JSON object with these keys:
+The info file must be a JSON object with these required keys, plus one optional
+flag:
 
 ```json
 {
   "hipe_parameter_count": 0,
   "team_parameter_count": 0,
   "hipe_model_size": 0,
-  "team_model_size": 0
+  "team_model_size": 0,
+  "team_efficiency_opt_out": false
 }
 ```
 
-Use numeric values for `hipe_parameter_count` and `hipe_model_size`, because
-these organizer estimates are used for efficiency ranking. Model size is in MB.
+`team_efficiency_opt_out` is optional and defaults to `false` when omitted.
+Use `true` only for teams that requested exclusion from efficiency rankings.
+
+`hipe_parameter_count` and `hipe_model_size` may be numeric or `null`. Model
+size is in MB. For efficiency ranking computation only, `null` in organizer
+fields is internally treated as maxint and therefore ranks last on that
+component.
 
 `team_parameter_count` and `team_model_size` should reflect what the team
 reported. These values may be numbers, strings such as `"Claude"`, strings such
@@ -112,5 +119,7 @@ Before running evaluation, check:
 - Each prediction filename maps to an existing file in `data/reference/` after
   removing `teamN_` and `_runX`.
 - Each run has a matching `*-info.json` file whenever possible.
-- `hipe_parameter_count` and `hipe_model_size` are numeric in every available
-  info file.
+- `hipe_parameter_count` and `hipe_model_size` are numeric or `null` in every
+  available info file.
+- `team_efficiency_opt_out` is only set to `true` for teams that requested
+  efficiency-ranking opt-out.

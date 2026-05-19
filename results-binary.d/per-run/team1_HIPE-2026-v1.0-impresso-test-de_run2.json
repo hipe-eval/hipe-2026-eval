@@ -12,6 +12,7 @@
     "hipe_parameter_count": 560965127,
     "info_file": "team1_HIPE-2026-v1.0-impresso-test-de_run2-info.json",
     "info_missing": false,
+    "team_efficiency_opt_out": false,
     "team_model_size": 2140,
     "team_parameter_count": 560965127
   },
