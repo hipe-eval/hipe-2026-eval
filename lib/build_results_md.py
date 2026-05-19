@@ -229,6 +229,8 @@ def score_definition_lines(at_label_mode: str) -> list[str]:
             "- Accuracy columns are included as contextual diagnostics; ranking is still determined by the macro-recall profile score.",
             "- `mean_efficiency_profile_rank`: mean of `rank_impresso_profile_score`, `rank_hipe_parameter_count`, and `rank_hipe_model_size`; lower is better.",
             "- `balanced_efficiency_profile_rank`: `0.5 * rank_impresso_profile_score + 0.25 * rank_hipe_parameter_count + 0.25 * rank_hipe_model_size`; lower is better.",
+            "- If `team_efficiency_opt_out=true` in a run's `*-info.json`, that run is excluded from efficiency ranking tables.",
+            "- If organizer fields `hipe_parameter_count` or `hipe_model_size` are `null`, they are internally treated as maxint for efficiency rank computation (worst resource rank), while remaining empty in table outputs.",
             "",
         ]
     )

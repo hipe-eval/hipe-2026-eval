@@ -5,7 +5,7 @@
     "country": "CH"
   },
   "random": {
-    "name": "BASEv0.2.0",
+    "name": "Random Decision Baseline",
     "affiliation": "HIPE-2026 organizers",
     "country": "CH"
   },
@@ -14,84 +14,84 @@
     "affiliation": "National University of Science and Technology Politehnica Bucharest",
     "country": "RO"
   },
-  "team2":{
+  "team2": {
     "name": "DS@GT_HIPE",
     "affiliation": "Georgia Institute of Technology",
     "country": "US"
   },
-  "team3":{
+  "team3": {
     "name": "VerbaNexAI II",
     "affiliation": "Universidad Tecnológica de Bolívar",
     "country": "CO"
   },
-  "team4":{
+  "team4": {
     "name": "FourBytes",
     "affiliation": "Sri Sivasubramaniya Nadar College of Engineering",
     "country": "IN"
   },
-  "team5":{
+  "team5": {
     "name": "UMUTEAM",
     "affiliation": "Universidad de Murcia",
     "country": "ES"
   },
-  "team6":{
+  "team6": {
     "name": "VerbaNexAI I",
     "affiliation": "Universidad Tecnológica de Bolívar",
     "country": "CO"
   },
-  "team7":{
+  "team7": {
     "name": "ROSTI",
     "affiliation": "Université Lumière Lyon",
     "country": "FR"
   },
-  "team8":{
+  "team8": {
     "name": "MaxFo-Ajie",
     "affiliation": "Foshan University",
     "country": "CN"
   },
-  "team9":{
+  "team9": {
     "name": "Hansel&Gretel",
     "affiliation": "IIT Roorkee",
     "country": "IN"
   },
-  "team10":{
+  "team10": {
     "name": "BIU_NLP",
     "affiliation": "Bar-Ilan University",
     "country": "IL"
   },
-  "team11":{
+  "team11": {
     "name": "gipplab",
     "affiliation": "University of Göttingen",
     "country": "DE"
   },
-  "team12":{
+  "team12": {
     "name": "whereami",
     "affiliation": "Alexandria University",
     "country": "EG"
   },
-  "team13":{
+  "team13": {
     "name": "Spinfo",
     "affiliation": "Universität zu Köln",
     "country": "DE"
   },
-  "team14":{
+  "team14": {
     "name": "MILRIT",
     "affiliation": "University of Toulouse & La Rochelle University",
     "country": "FR"
   },
-  "team15":{
+  "team15": {
     "name": "FI Code",
     "affiliation": "University of the Bundeswehr",
     "country": "Munich"
   },
-  "team16":{
+  "team16": {
     "name": "Rittik&Souvik",
     "affiliation": "Jadavpur University, Kolkata",
     "country": "IN"
   },
-  "team17":{
+  "team17": {
     "name": "INSA Lyon",
     "affiliation": "INSA Lyon - University of Lyon",
     "country": "FR"
-  }                                
+  }
 }

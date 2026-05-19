@@ -102,6 +102,7 @@ def read_info_file(info_path: Path) -> tuple[dict[str, Any], list[str]]:
         "team_parameter_count": None,
         "hipe_model_size": None,
         "team_model_size": None,
+        "team_efficiency_opt_out": False,
         "info_missing": True,
     }
 
@@ -124,8 +125,13 @@ def read_info_file(info_path: Path) -> tuple[dict[str, Any], list[str]]:
             raise ValueError(f"{info_path.name} is missing required key '{key}'.")
 
     for key in ["hipe_parameter_count", "hipe_model_size"]:
-        if not isinstance(data[key], (int, float)) or isinstance(data[key], bool):
-            raise ValueError(f"{info_path.name} key '{key}' must be numeric.")
+        value = data[key]
+        if value is not None and (not isinstance(value, (int, float)) or isinstance(value, bool)):
+            raise ValueError(f"{info_path.name} key '{key}' must be numeric or null.")
+
+    opt_out = data.get("team_efficiency_opt_out", False)
+    if not isinstance(opt_out, bool):
+        raise ValueError(f"{info_path.name} key 'team_efficiency_opt_out' must be boolean when provided.")
 
     return {
         "info_file": info_path.name,
@@ -133,6 +139,7 @@ def read_info_file(info_path: Path) -> tuple[dict[str, Any], list[str]]:
         "team_parameter_count": data["team_parameter_count"],
         "hipe_model_size": data["hipe_model_size"],
         "team_model_size": data["team_model_size"],
+        "team_efficiency_opt_out": opt_out,
         "info_missing": False,
     }, warnings
 

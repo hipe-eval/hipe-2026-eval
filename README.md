@@ -99,14 +99,14 @@ artifact built from the current per-dataset rankings.
 
 Generated paths can be redirected through Make variables:
 
-| Variable            | Default                    | Purpose                                      |
-| ------------------- | -------------------------- | -------------------------------------------- |
-| `RESULTS_DIR`       | `results.d`                | Root directory for generated outputs         |
-| `PER_RUN_DIR`       | `$(RESULTS_DIR)/per-run`   | Per-submission score JSON files              |
-| `RANKINGS_DIR`      | `$(RESULTS_DIR)/system-rankings` | Ranking TSV files                       |
-| `DIAGNOSTICS_DIR`   | `$(RESULTS_DIR)/diagnostics` | Comparison and diagnostic metrics JSON files |
-| `GT_VALIDATION_DIR` | `$(RESULTS_DIR)/gt-validation` | GT validation Excel workbooks             |
-| `AT_LABEL_MODE`     | `TERNARY`                  | `TERNARY` keeps `PROBABLE`; `BINARY` maps `PROBABLE` to `TRUE` for `at` |
+| Variable            | Default                          | Purpose                                                                 |
+| ------------------- | -------------------------------- | ----------------------------------------------------------------------- |
+| `RESULTS_DIR`       | `results.d`                      | Root directory for generated outputs                                    |
+| `PER_RUN_DIR`       | `$(RESULTS_DIR)/per-run`         | Per-submission score JSON files                                         |
+| `RANKINGS_DIR`      | `$(RESULTS_DIR)/system-rankings` | Ranking TSV files                                                       |
+| `DIAGNOSTICS_DIR`   | `$(RESULTS_DIR)/diagnostics`     | Comparison and diagnostic metrics JSON files                            |
+| `GT_VALIDATION_DIR` | `$(RESULTS_DIR)/gt-validation`   | GT validation Excel workbooks                                           |
+| `AT_LABEL_MODE`     | `TERNARY`                        | `TERNARY` keeps `PROBABLE`; `BINARY` maps `PROBABLE` to `TRUE` for `at` |
 
 ## Profile Rankings and Scores
 
@@ -182,23 +182,27 @@ data/systems/<team>_<reference-stem>_<run>-info.json
 
 The file must be a JSON object with exactly the following keys:
 
-| Key                    | Type   | Description                                                                           |
-| ---------------------- | ------ | ------------------------------------------------------------------------------------- |
-| `hipe_parameter_count` | number | Organizer-decided parameter count used for ranking (derived from the team's report)   |
-| `team_parameter_count` | number | Parameter count as reported by the team                                               |
-| `hipe_model_size`      | number | Organizer-decided model size in MiB used for ranking (derived from the team's report) |
-| `team_model_size`      | number | Model size in MiB as reported by the team                                             |
+| Key                       | Type             | Description                                                                           |
+| ------------------------- | ---------------- | ------------------------------------------------------------------------------------- |
+| `hipe_parameter_count`    | number or `null` | Organizer-decided parameter count used for ranking (derived from the team's report)   |
+| `team_parameter_count`    | any              | Parameter count as reported by the team                                               |
+| `hipe_model_size`         | number or `null` | Organizer-decided model size in MiB used for ranking (derived from the team's report) |
+| `team_model_size`         | any              | Model size in MiB as reported by the team                                             |
+| `team_efficiency_opt_out` | boolean          | Optional. If `true`, excludes the run from Efficiency Profile Ranking tables.         |
 
 The `team_*` fields record the values as submitted by the team. The `hipe_*`
 fields are the organizer's authoritative values used in the Efficiency Profile
 Ranking; they may differ if the organizers adjusted or verified the team-reported
 numbers.
 
-`hipe_parameter_count` and `hipe_model_size` are required to be numeric. All four
-fields are required; `team_parameter_count` and `team_model_size` may be `null`
-if not applicable. A missing info file is allowed and generates a validation
-warning. The run remains in the Efficiency Profile Ranking, but its missing
-parameter-count and model-size values are ranked last.
+All four numeric fields are required keys. `team_efficiency_opt_out` is optional
+and defaults to `false` when omitted.
+
+`hipe_parameter_count` and `hipe_model_size` may be numeric or `null`. For
+ranking computation only, `null` organizer values are internally treated as a
+large sentinel (maxint), so these runs are effectively ranked last on the
+corresponding efficiency component while remaining visible as empty values in
+tables. A missing info file is allowed and generates a validation warning.
 
 Example:
 
@@ -207,7 +211,8 @@ Example:
   "hipe_parameter_count": 7000000000,
   "team_parameter_count": 7000000000,
   "hipe_model_size": 4096.5,
-  "team_model_size": 4096.5
+  "team_model_size": 4096.5,
+  "team_efficiency_opt_out": false
 }
 ```
 
