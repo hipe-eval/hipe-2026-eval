@@ -7,7 +7,7 @@ This file is generated from `results.d/system-rankings/*.tsv`.
 | team | name | affiliation |
 | --- | --- | --- |
 | baseline | Ministral-3-3B-Instruct GGUF baseline 0.2.2 random seed 42 | HIPE-2026 organizers |
-| random | BASEv0.2.0 | HIPE-2026 organizers |
+| random | Random Decision Baseline | HIPE-2026 organizers |
 | team1 | Awakened | National University of Science and Technology Politehnica Bucharest |
 | team10 | BIU_NLP | Bar-Ilan University |
 | team11 | gipplab | University of Göttingen |
@@ -107,6 +107,12 @@ This file is generated from `results.d/system-rankings/*.tsv`.
 | 45 | team4 | run1 | 0.4061 | de,en,fr | 3 |
 | 46 | random | run1 | 0.4049 | de,en,fr | 3 |
 
+Top 3 teams by best run:
+
+1. Spinfo (team13), run1, table rank 1, mean impresso profile score 0.7479
+2. MaxFo-Ajie (team8), run1, table rank 3, mean impresso profile score 0.7001
+3. whereami (team12), run1, table rank 5, mean impresso profile score 0.688
+
 Only team runs that submitted all `impresso` language files are included in this overall ranking. Team runs with partial submissions are shown only in the dataset-specific ranking tables.
 
 ## Accuracy Profile Ranking German
@@ -160,6 +166,12 @@ Only team runs that submitted all `impresso` language files are included in this
 | 45 | random | run1 | random_HIPE-2026-v1.0-impresso-test-de_run1.jsonl | 0.4058 | 0.3211 | 0.3403 | 0.4906 | 0.4832 | [Comparison](results.d/diagnostics/random_HIPE-2026-v1.0-impresso-test-de_run1.diagnostics.json) / [Metrics](results.d/diagnostics/random_HIPE-2026-v1.0-impresso-test-de_run1.diagnostic_metrics.json) |
 | 46 | team4 | run1 | team4_HIPE-2026-v1.0-impresso-test-de_run1.jsonl | 0.372 | 0.2446 | 0.2353 | 0.4995 | 0.6134 | [Comparison](results.d/diagnostics/team4_HIPE-2026-v1.0-impresso-test-de_run1.diagnostics.json) / [Metrics](results.d/diagnostics/team4_HIPE-2026-v1.0-impresso-test-de_run1.diagnostic_metrics.json) |
 
+Top 3 teams by best run:
+
+1. Spinfo (team13), run3, table rank 1, impresso profile score 0.771
+2. whereami (team12), run2, table rank 3, impresso profile score 0.7072
+3. Awakened (team1), run3, table rank 6, impresso profile score 0.6746
+
 ## Accuracy Profile Ranking English
 
 | rank | team | run | submission | impresso profile score | at macro recall | at accuracy | isAt macro recall | isAt accuracy | diagnostics |
@@ -212,6 +224,12 @@ Only team runs that submitted all `impresso` language files are included in this
 | 46 | team4 | run1 | team4_HIPE-2026-v1.0-impresso-test-en_run1.jsonl | 0.4187 | 0.3384 | 0.3457 | 0.4989 | 0.5123 | [Comparison](results.d/diagnostics/team4_HIPE-2026-v1.0-impresso-test-en_run1.diagnostics.json) / [Metrics](results.d/diagnostics/team4_HIPE-2026-v1.0-impresso-test-en_run1.diagnostic_metrics.json) |
 | 47 | random | run1 | random_HIPE-2026-v1.0-impresso-test-en_run1.jsonl | 0.3733 | 0.2532 | 0.3025 | 0.4935 | 0.4877 | [Comparison](results.d/diagnostics/random_HIPE-2026-v1.0-impresso-test-en_run1.diagnostics.json) / [Metrics](results.d/diagnostics/random_HIPE-2026-v1.0-impresso-test-en_run1.diagnostic_metrics.json) |
 
+Top 3 teams by best run:
+
+1. MaxFo-Ajie (team8), run1, table rank 1, impresso profile score 0.7493
+2. Spinfo (team13), run1, table rank 2, impresso profile score 0.7279
+3. whereami (team12), run1, table rank 4, impresso profile score 0.7023
+
 ## Accuracy Profile Ranking French
 
 | rank | team | run | submission | impresso profile score | at macro recall | at accuracy | isAt macro recall | isAt accuracy | diagnostics |
@@ -262,6 +280,12 @@ Only team runs that submitted all `impresso` language files are included in this
 | 44 | team7 | run3 | team7_HIPE-2026-v1.0-impresso-test-fr_run3.jsonl | 0.393 | 0.2757 | 0.416 | 0.5104 | 0.563 | [Comparison](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-fr_run3.diagnostics.json) / [Metrics](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-fr_run3.diagnostic_metrics.json) |
 | 45 | team7 | run2 | team7_HIPE-2026-v1.0-impresso-test-fr_run2.jsonl | 0.3896 | 0.2714 | 0.416 | 0.5078 | 0.5714 | [Comparison](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-fr_run2.diagnostics.json) / [Metrics](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-fr_run2.diagnostic_metrics.json) |
 | 46 | team7 | run1 | team7_HIPE-2026-v1.0-impresso-test-fr_run1.jsonl | 0.3849 | 0.2717 | 0.4118 | 0.4981 | 0.5546 | [Comparison](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-fr_run1.diagnostics.json) / [Metrics](results.d/diagnostics/team7_HIPE-2026-v1.0-impresso-test-fr_run1.diagnostic_metrics.json) |
+
+Top 3 teams by best run:
+
+1. Spinfo (team13), run1, table rank 1, impresso profile score 0.7551
+2. Awakened (team1), run1, table rank 4, impresso profile score 0.7163
+3. MaxFo-Ajie (team8), run1, table rank 6, impresso profile score 0.679
 
 ## Generalization Profile Ranking
 
@@ -314,6 +338,12 @@ Only team runs that submitted all `impresso` language files are included in this
 | 45 | team6 | run1 | team6_HIPE-2026-v1.0-surprise-test-fr_run1.jsonl | 0.3346 | [Comparison](results.d/diagnostics/team6_HIPE-2026-v1.0-surprise-test-fr_run1.diagnostics.json) / [Metrics](results.d/diagnostics/team6_HIPE-2026-v1.0-surprise-test-fr_run1.diagnostic_metrics.json) |
 | 46 | team5 | run1 | team5_HIPE-2026-v1.0-surprise-test-fr_run1.jsonl | 0.3333 | [Comparison](results.d/diagnostics/team5_HIPE-2026-v1.0-surprise-test-fr_run1.diagnostics.json) / [Metrics](results.d/diagnostics/team5_HIPE-2026-v1.0-surprise-test-fr_run1.diagnostic_metrics.json) |
 
+Top 3 teams by best run:
+
+1. MaxFo-Ajie (team8), run3, table rank 1, surprise profile score 0.8163
+2. Spinfo (team13), run3, table rank 4, surprise profile score 0.6984
+3. BIU_NLP (team10), run1, table rank 6, surprise profile score 0.6837
+
 ## Generalization Profile Ranking French
 
 | rank | team | run | submission | surprise profile score | at macro recall | at accuracy | diagnostics |
@@ -365,6 +395,12 @@ Only team runs that submitted all `impresso` language files are included in this
 | 45 | team6 | run1 | team6_HIPE-2026-v1.0-surprise-test-fr_run1.jsonl | 0.3346 | 0.3346 | 0.5375 | [Comparison](results.d/diagnostics/team6_HIPE-2026-v1.0-surprise-test-fr_run1.diagnostics.json) / [Metrics](results.d/diagnostics/team6_HIPE-2026-v1.0-surprise-test-fr_run1.diagnostic_metrics.json) |
 | 46 | team5 | run1 | team5_HIPE-2026-v1.0-surprise-test-fr_run1.jsonl | 0.3333 | 0.3333 | 0.6042 | [Comparison](results.d/diagnostics/team5_HIPE-2026-v1.0-surprise-test-fr_run1.diagnostics.json) / [Metrics](results.d/diagnostics/team5_HIPE-2026-v1.0-surprise-test-fr_run1.diagnostic_metrics.json) |
 
+Top 3 teams by best run:
+
+1. MaxFo-Ajie (team8), run3, table rank 1, surprise profile score 0.8163
+2. Spinfo (team13), run3, table rank 4, surprise profile score 0.6984
+3. BIU_NLP (team10), run1, table rank 6, surprise profile score 0.6837
+
 ## Efficiency Profile Ranking Overall
 
 | rank | team | run | mean efficiency profile rank | rank impresso profile score | rank hipe parameter count | rank hipe model size | mean impresso profile score | hipe parameter count | hipe model size mb |
@@ -413,6 +449,12 @@ Only team runs that submitted all `impresso` language files are included in this
 | 31 | team5 | run3 | 26 | 36 | 20 | 22 | 0.4495 | 4000000000 | 7600 |
 | 32 | team10 | run1 | 31 | 38 | 27 | 28 | 0.4429 | 26000000000 | 52000 |
 
+Top 3 teams by best run:
+
+1. MILRIT (team14), run3, table rank 1, mean efficiency profile rank 9.6667
+2. FI Code (team15), run2, table rank 2, mean efficiency profile rank 10.3333
+3. DS@GT_HIPE (team2), run1, table rank 3, mean efficiency profile rank 10.6667
+
 ## Balanced Efficiency Profile Ranking Overall
 
 | rank | team | run | balanced efficiency profile rank | rank impresso profile score | rank hipe parameter count | rank hipe model size | mean impresso profile score | hipe parameter count | hipe model size mb |
@@ -460,6 +502,12 @@ Only team runs that submitted all `impresso` language files are included in this
 | 29 | team14 | run2 | 26.75 | 41 | 13 | 12 | 0.4264 | 466585989 | 1866 |
 | 30 | team5 | run3 | 28.5 | 36 | 20 | 22 | 0.4495 | 4000000000 | 7600 |
 | 31 | team10 | run1 | 32.75 | 38 | 27 | 28 | 0.4429 | 26000000000 | 52000 |
+
+Top 3 teams by best run:
+
+1. MILRIT (team14), run3, table rank 1, balanced efficiency profile rank 10.25
+2. whereami (team12), run1, table rank 2, balanced efficiency profile rank 13.5
+3. DS@GT_HIPE (team2), run1, table rank 3, balanced efficiency profile rank 13.75
 
 This is an additional analysis ranking. It is not the guideline-defined Efficiency Profile Ranking; it gives equal total weight to accuracy and to the combined resource ranks.
 
@@ -511,6 +559,12 @@ This is an additional analysis ranking. It is not the guideline-defined Efficien
 | 31 | team10 | run2 | team10_HIPE-2026-v1.0-impresso-test-de_run2.jsonl | 28.3333 | 28 | 28 | 29 | 0.505 | 27000000000 | 54000 | [Comparison](results.d/diagnostics/team10_HIPE-2026-v1.0-impresso-test-de_run2.diagnostics.json) / [Metrics](results.d/diagnostics/team10_HIPE-2026-v1.0-impresso-test-de_run2.diagnostic_metrics.json) |
 | 32 | team10 | run1 | team10_HIPE-2026-v1.0-impresso-test-de_run1.jsonl | 29.6667 | 34 | 27 | 28 | 0.4495 | 26000000000 | 52000 | [Comparison](results.d/diagnostics/team10_HIPE-2026-v1.0-impresso-test-de_run1.diagnostics.json) / [Metrics](results.d/diagnostics/team10_HIPE-2026-v1.0-impresso-test-de_run1.diagnostic_metrics.json) |
 
+Top 3 teams by best run:
+
+1. ROSTI (team7), run1, table rank 1, mean efficiency profile rank 8.6667
+2. MILRIT (team14), run3, table rank 4, mean efficiency profile rank 10
+3. FI Code (team15), run2, table rank 5, mean efficiency profile rank 11.3333
+
 ## Efficiency Profile Ranking English
 
 | rank | team | run | submission | mean efficiency profile rank | rank impresso profile score | rank hipe parameter count | rank hipe model size | impresso profile score | hipe parameter count | hipe model size mb | diagnostics |
@@ -560,6 +614,12 @@ This is an additional analysis ranking. It is not the guideline-defined Efficien
 | 30 | team5 | run3 | team5_HIPE-2026-v1.0-impresso-test-en_run3.jsonl | 28.3333 | 41 | 21 | 23 | 0.4312 | 4000000000 | 7600 | [Comparison](results.d/diagnostics/team5_HIPE-2026-v1.0-impresso-test-en_run3.diagnostics.json) / [Metrics](results.d/diagnostics/team5_HIPE-2026-v1.0-impresso-test-en_run3.diagnostic_metrics.json) |
 | 31 | team10 | run1 | team10_HIPE-2026-v1.0-impresso-test-en_run1.jsonl | 30 | 33 | 28 | 29 | 0.4583 | 26000000000 | 52000 | [Comparison](results.d/diagnostics/team10_HIPE-2026-v1.0-impresso-test-en_run1.diagnostics.json) / [Metrics](results.d/diagnostics/team10_HIPE-2026-v1.0-impresso-test-en_run1.diagnostic_metrics.json) |
 
+Top 3 teams by best run:
+
+1. MILRIT (team14), run3, table rank 1, mean efficiency profile rank 10.3333
+2. FI Code (team15), run2, table rank 2, mean efficiency profile rank 11.3333
+3. DS@GT_HIPE (team2), run1, table rank 2, mean efficiency profile rank 11.3333
+
 ## Efficiency Profile Ranking French
 
 | rank | team | run | submission | mean efficiency profile rank | rank impresso profile score | rank hipe parameter count | rank hipe model size | impresso profile score | hipe parameter count | hipe model size mb | diagnostics |
@@ -607,3 +667,9 @@ This is an additional analysis ranking. It is not the guideline-defined Efficien
 | 25 | team10 | run3 | team10_HIPE-2026-v1.0-impresso-test-fr_run3.jsonl | 24.3333 | 20 | 26 | 27 | 0.5617 | 24000000000 | 48000 | [Comparison](results.d/diagnostics/team10_HIPE-2026-v1.0-impresso-test-fr_run3.diagnostics.json) / [Metrics](results.d/diagnostics/team10_HIPE-2026-v1.0-impresso-test-fr_run3.diagnostic_metrics.json) |
 | 26 | team9 | run3 | team9_HIPE-2026-v1.0-impresso-test-fr_run3.jsonl | 25.3333 | 13 | 31 | 32 | 0.6303 | 120000000000 | 240000 | [Comparison](results.d/diagnostics/team9_HIPE-2026-v1.0-impresso-test-fr_run3.diagnostics.json) / [Metrics](results.d/diagnostics/team9_HIPE-2026-v1.0-impresso-test-fr_run3.diagnostic_metrics.json) |
 | 27 | team10 | run1 | team10_HIPE-2026-v1.0-impresso-test-fr_run1.jsonl | 31.3333 | 39 | 27 | 28 | 0.4208 | 26000000000 | 52000 | [Comparison](results.d/diagnostics/team10_HIPE-2026-v1.0-impresso-test-fr_run1.diagnostics.json) / [Metrics](results.d/diagnostics/team10_HIPE-2026-v1.0-impresso-test-fr_run1.diagnostic_metrics.json) |
+
+Top 3 teams by best run:
+
+1. FI Code (team15), run2, table rank 1, mean efficiency profile rank 9
+2. DS@GT_HIPE (team2), run2, table rank 2, mean efficiency profile rank 10.3333
+3. MILRIT (team14), run3, table rank 4, mean efficiency profile rank 11

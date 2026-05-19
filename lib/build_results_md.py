@@ -196,6 +196,63 @@ def display_header(header: str, header_labels: dict[str, str]) -> str:
     return header_labels.get(header, header).replace("_", " ")
 
 
+def ranking_metric_field(path: Path) -> str | None:
+    if path.name == "ranking-efficiency-balanced-test-a.tsv":
+        return "balanced_efficiency_score"
+    if path.name.startswith("ranking-efficiency-"):
+        return "efficiency_score"
+    if path.name in {"ranking-overall-test-a.tsv", "ranking-generalization-test-b.tsv"}:
+        return "score"
+    if path.name.startswith("ranking-impresso-") or path.name.startswith("ranking-surprise-"):
+        return "score"
+    return None
+
+
+def top_team_summary_lines(path: Path, rows: list[dict[str, str]], teams: dict[str, object]) -> list[str]:
+    top_rows: list[dict[str, str]] = []
+    seen_teams: set[str] = set()
+    for row in rows:
+        team = row.get("team", "")
+        if not team or team in seen_teams:
+            continue
+        seen_teams.add(team)
+        top_rows.append(row)
+        if len(top_rows) == 3:
+            break
+
+    if not top_rows:
+        return []
+
+    metric_field = ranking_metric_field(path)
+    metric_label = display_header(metric_field, header_labels_for(path)) if metric_field else None
+
+    lines = ["Top 3 teams by best run:", ""]
+    for index, row in enumerate(top_rows, start=1):
+        team = row.get("team", "")
+        metadata = teams.get(team, {}) if isinstance(teams, dict) else {}
+        name = metadata.get("name") if isinstance(metadata, dict) else None
+        team_label = f"{name} ({team})" if name else team
+
+        parts = [team_label]
+        run = row.get("run", "")
+        if run:
+            parts.append(run)
+
+        rank = row.get("rank", "")
+        if rank:
+            parts.append(f"table rank {rank}")
+
+        if metric_field:
+            metric_value = row.get(metric_field, "")
+            if metric_value != "":
+                parts.append(f"{metric_label} {format_cell(metric_value)}")
+
+        lines.append(f"{index}. " + ", ".join(parts))
+
+    lines.append("")
+    return lines
+
+
 def parse_at_label_mode(value: str) -> str:
     mode = value.upper()
     if mode not in {"TERNARY", "BINARY"}:
@@ -310,6 +367,7 @@ def main() -> int:
             headers, rows = with_diagnostic_links(headers, rows, args.diagnostics_dir)
             lines.extend([f"## {title}", ""])
             lines.extend(markdown_table_with_labels(headers, rows, header_labels_for(path)))
+            lines.extend(top_team_summary_lines(path, rows, teams))
             lines.extend(ranking_note_lines(path))
 
     args.output.write_text("\n".join(lines), encoding="utf-8")
