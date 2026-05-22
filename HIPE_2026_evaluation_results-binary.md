@@ -14,7 +14,7 @@ This file is generated from `results-binary.d/system-rankings/*.tsv`.
 | team12 | whereami | Alexandria University |
 | team13 | Spinfo | Universität zu Köln |
 | team14 | MILRIT | University of Toulouse & La Rochelle University |
-| team15 | FI Code | University of the Bundeswehr |
+| team15 | FI-CODE | University of the Bundeswehr Munich |
 | team16 | Rittik&Souvik | Jadavpur University, Kolkata |
 | team17 | INSA Lyon | INSA Lyon - University of Lyon |
 | team2 | DS@GT_HIPE | Georgia Institute of Technology |
@@ -452,7 +452,7 @@ Top 3 teams by best run:
 
 Top 3 teams by best run:
 
-1. FI Code (team15), run2, table rank 1, mean efficiency profile rank 10.3333
+1. FI-CODE (team15), run2, table rank 1, mean efficiency profile rank 10.3333
 2. MILRIT (team14), run3, table rank 2, mean efficiency profile rank 10.6667
 3. DS@GT_HIPE (team2), run1, table rank 3, mean efficiency profile rank 11
 
@@ -617,7 +617,7 @@ Top 3 teams by best run:
 
 Top 3 teams by best run:
 
-1. FI Code (team15), run2, table rank 1, mean efficiency profile rank 10.3333
+1. FI-CODE (team15), run2, table rank 1, mean efficiency profile rank 10.3333
 2. DS@GT_HIPE (team2), run1, table rank 2, mean efficiency profile rank 11.3333
 3. MILRIT (team14), run3, table rank 3, mean efficiency profile rank 12.6667
 
@@ -671,6 +671,6 @@ Top 3 teams by best run:
 
 Top 3 teams by best run:
 
-1. FI Code (team15), run2, table rank 1, mean efficiency profile rank 9.6667
+1. FI-CODE (team15), run2, table rank 1, mean efficiency profile rank 9.6667
 2. DS@GT_HIPE (team2), run2, table rank 2, mean efficiency profile rank 10.3333
 3. MILRIT (team14), run3, table rank 3, mean efficiency profile rank 11.6667
