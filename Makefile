@@ -12,8 +12,10 @@ RESULTS_MD ?= HIPE_2026_evaluation_results.md
 CONFIG ?= lib/competition_config.json
 TEAMS ?= lib/teams.json
 AT_LABEL_MODE ?= TERNARY
+ENSEMBLE_DIR ?= $(RESULTS_DIR)/ensemble
+ENSEMBLE_SUMMARY ?= $(ENSEMBLE_DIR)/ensemble_summary.tsv
 
-.PHONY: help install validate-reference validate-submissions validate-info score rankings diagnostics gt-validation results-md eval-full eval-full-refresh eval-binary clean
+.PHONY: help install validate-reference validate-submissions validate-info score rankings diagnostics gt-validation results-md ensemble eval-full eval-full-refresh eval-binary clean
 
 help:
 	@printf '%s\n' \
@@ -27,7 +29,8 @@ help:
 		'  diagnostics           Build per-submission diagnostics JSON files' \
 		'  gt-validation         Build top-three majority-vote GT validation workbooks' \
 		'  results-md            Render final Markdown results page' \
-		'  eval-full             Run validation, scoring, rankings, diagnostics, and Markdown rendering' \
+		'  ensemble              Build ensemble-aggregation analysis (label distributions + accuracy)' \
+		'  eval-full             Run validation, scoring, rankings, diagnostics, ensemble, and Markdown rendering' \
 		'  eval-full-refresh     Remove generated outputs before eval-full' \
 		'  eval-binary           Run eval-full with PROBABLE mapped to TRUE for at labels' \
 		'  clean                 Remove generated outputs'
@@ -59,7 +62,13 @@ gt-validation: rankings
 results-md: rankings diagnostics
 	$(PYTHON) lib/build_results_md.py --rankings-dir $(RANKINGS_DIR) --diagnostics-dir $(DIAGNOSTICS_DIR) --teams $(TEAMS) --output $(RESULTS_MD) --at-label-mode $(AT_LABEL_MODE)
 
-eval-full: results-md
+ensemble: diagnostics rankings
+	$(PYTHON) lib/build_ensemble_analysis.py \
+		--diagnostics-dir $(DIAGNOSTICS_DIR) \
+		--rankings-dir    $(RANKINGS_DIR) \
+		--output-dir      $(ENSEMBLE_DIR)
+
+eval-full: results-md ensemble
 
 eval-full-refresh: clean eval-full
 

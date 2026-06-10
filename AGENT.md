@@ -32,6 +32,8 @@ data/systems/
 lib/
 results.d/per-run/
 results.d/system-rankings/
+results.d/diagnostics/
+results.d/ensemble/
 HIPE_2026_evaluation_results.md
 ```
 
@@ -47,6 +49,8 @@ Important targets should include:
 - `validate-submissions`
 - `score`
 - `rankings`
+- `diagnostics`
+- `ensemble`
 - `results-md`
 - `eval-full`
 - `eval-full-refresh`
