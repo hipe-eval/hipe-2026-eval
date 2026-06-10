@@ -1,0 +1,22 @@
+ensemble	track	task	macro_recall	accuracy	pct_TRUE	pct_PROBABLE	pct_FALSE	num_runs	num_pairs
+full	impresso-test-de	at	0.554238	0.747899	0.2161	0.174274	0.609626	44	238
+full	impresso-test-de	isAt	0.529851	0.735294	0.191463		0.808537	44	238
+above_baseline	impresso-test-de	at	0.660142	0.806723	0.209034	0.194853	0.596113	16	238
+above_baseline	impresso-test-de	isAt	0.768657	0.869748	0.193277		0.806723	16	238
+top5	impresso-test-de	at	0.677027	0.806723	0.197479	0.165546	0.636975	5	238
+top5	impresso-test-de	isAt	0.815048	0.890756	0.194958		0.805042	5	238
+full	impresso-test-en	at	0.632486	0.722222	0.412071	0.184774	0.403155	45	162
+full	impresso-test-en	isAt	0.702538	0.759259	0.308779		0.691221	45	162
+above_baseline	impresso-test-en	at	0.705502	0.740741	0.384645	0.251543	0.363812	16	162
+above_baseline	impresso-test-en	isAt	0.72046	0.771605	0.265818		0.734182	16	162
+top5	impresso-test-en	at	0.683879	0.716049	0.346914	0.240741	0.412346	5	162
+top5	impresso-test-en	isAt	0.779381	0.814815	0.266667		0.733333	5	162
+full	impresso-test-fr	at	0.584694	0.827731	0.338426	0.107525	0.554049	44	238
+full	impresso-test-fr	isAt	0.641975	0.756303	0.248568		0.751432	44	238
+above_baseline	impresso-test-fr	at	0.667438	0.840336	0.291229	0.131303	0.577468	16	238
+above_baseline	impresso-test-fr	isAt	0.749902	0.827731	0.232668		0.767332	16	238
+top5	impresso-test-fr	at	0.618272	0.781513	0.305882	0.12437	0.569748	5	238
+top5	impresso-test-fr	isAt	0.808249	0.861345	0.243697		0.756303	5	238
+full	surprise-test-fr	at	0.633967	0.827083	0.307008	0.134138	0.558854	44	480
+above_baseline	surprise-test-fr	at	0.726776	0.845833	0.268837	0.18316	0.548003	24	480
+top5	surprise-test-fr	at	0.800221	0.864583	0.23875	0.164167	0.597083	5	480
