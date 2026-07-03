@@ -14,8 +14,10 @@ TEAMS ?= lib/teams.json
 AT_LABEL_MODE ?= TERNARY
 ENSEMBLE_DIR ?= $(RESULTS_DIR)/ensemble
 ENSEMBLE_SUMMARY ?= $(ENSEMBLE_DIR)/ensemble_summary.tsv
+ANALYSIS_DIR ?= analysis.d
+ANALYSIS_FEATURES ?= $(ANALYSIS_DIR)/tables/pair_level_features.parquet
 
-.PHONY: help install validate-reference validate-submissions validate-info score rankings diagnostics gt-validation results-md ensemble eval-full eval-full-refresh eval-binary clean
+.PHONY: help install validate-reference validate-submissions validate-info score rankings diagnostics gt-validation results-md ensemble eval-full eval-full-refresh eval-binary analysis clean
 
 help:
 	@printf '%s\n' \
@@ -33,6 +35,7 @@ help:
 		'  eval-full             Run validation, scoring, rankings, diagnostics, ensemble, and Markdown rendering' \
 		'  eval-full-refresh     Remove generated outputs before eval-full' \
 		'  eval-binary           Run eval-full with PROBABLE mapped to TRUE for at labels' \
+		'  analysis              Build overview-paper error-analysis tables/figures (RQ1/RQ2/RQ3/RQ4; not part of eval-full)' \
 		'  clean                 Remove generated outputs'
 
 install:
@@ -74,6 +77,15 @@ eval-full-refresh: clean eval-full
 
 eval-binary:
 	$(MAKE) eval-full RESULTS_DIR=results-binary.d RESULTS_MD=HIPE_2026_evaluation_results-binary.md AT_LABEL_MODE=BINARY
+
+analysis: $(ANALYSIS_FEATURES)
+	$(PYTHON) analysis/rq1_ocr_quality.py --features $(ANALYSIS_FEATURES) --output-dir $(ANALYSIS_DIR)
+	$(PYTHON) analysis/rq2_time.py --features $(ANALYSIS_FEATURES) --output-dir $(ANALYSIS_DIR)
+	$(PYTHON) analysis/rq3_proximity.py --features $(ANALYSIS_FEATURES) --output-dir $(ANALYSIS_DIR)
+	$(PYTHON) analysis/rq4_qid_bias.py --features $(ANALYSIS_FEATURES) --reference-dir $(REFERENCE_DIR) --diagnostics-dir $(DIAGNOSTICS_DIR) --rankings-dir $(RANKINGS_DIR) --output-dir $(ANALYSIS_DIR)
+
+$(ANALYSIS_FEATURES): $(wildcard $(REFERENCE_DIR)/*.jsonl) $(wildcard $(ENSEMBLE_DIR)/*.ensemble.json)
+	$(PYTHON) analysis/build_pair_features.py --reference-dir $(REFERENCE_DIR) --ensemble-dir $(ENSEMBLE_DIR) --output $(ANALYSIS_FEATURES)
 
 clean:
 	rm -rf $(RESULTS_DIR) $(RESULTS_MD)

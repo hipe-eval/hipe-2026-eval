@@ -1,0 +1,142 @@
+#!/usr/bin/env python3
+"""RQ3: does person-place proximity affect top5-ensemble accuracy? Pooled across
+Domain A + Domain B as the primary view (per ANALYSIS_PLAN.md §10), with a per-domain
+robustness split using the same pooled quartile bucket edges.
+
+Reads analysis.d/tables/pair_level_features.parquet (read-only). Writes:
+  analysis.d/tables/rq3_distance_quartiles.tsv             (pooled, primary)
+  analysis.d/tables/rq3_distance_quartiles_by_domain.tsv   (same buckets, faceted by dataset)
+  analysis.d/tables/rq3_distance_by_gold_label.tsv         (quartile x gold `at` label cross-tab)
+  analysis.d/figures/rq3_proximity.pdf
+"""
+
+from __future__ import annotations
+
+import argparse
+from pathlib import Path
+
+import pandas as pd
+
+from plotting_common import bucket_tick_label, grouped_bar, new_figure, save_figure, style_axis
+
+
+def macro_recall(df: pd.DataFrame, gold_col: str, correct_col: str) -> tuple[float | None, int]:
+    sub = df.dropna(subset=[correct_col])
+    if sub.empty:
+        return None, 0
+    recalls = [group[correct_col].mean() for _, group in sub.groupby(gold_col, observed=True)]
+    return (sum(recalls) / len(recalls) if recalls else None), len(sub)
+
+
+def build_quartile_table(df: pd.DataFrame, group_cols: list[str]) -> pd.DataFrame:
+    rows = []
+    for keys, group in df.groupby(group_cols, observed=True):
+        if not isinstance(keys, tuple):
+            keys = (keys,)
+        at_recall, at_n = macro_recall(group, "gold_at", "top5_correct_at")
+        isat_recall, isat_n = macro_recall(group, "gold_isAt", "top5_correct_isAt")
+        row = dict(zip(group_cols, keys))
+        row.update(
+            {
+                "n_pairs": len(group),
+                "at_macro_recall": at_recall,
+                "at_n": at_n,
+                "isAt_macro_recall": isat_recall,
+                "isAt_n": isat_n,
+            }
+        )
+        rows.append(row)
+    return pd.DataFrame(rows)
+
+
+def assign_quartiles(matched: pd.DataFrame) -> tuple[pd.DataFrame, list[str]]:
+    bins = pd.qcut(matched["min_char_distance"], 4, duplicates="drop")
+    categories = bins.cat.categories
+    label_map = {category: f"Q{index + 1}" for index, category in enumerate(categories)}
+    matched = matched.copy()
+    matched["distance_quartile"] = bins.map(label_map).astype(str)
+    order = list(label_map.values())
+    matched["distance_quartile"] = pd.Categorical(matched["distance_quartile"], categories=order, ordered=True)
+    return matched, order
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--features", type=Path, default=Path("analysis.d/tables/pair_level_features.parquet"))
+    parser.add_argument("--output-dir", type=Path, default=Path("analysis.d"))
+    args = parser.parse_args()
+
+    df = pd.read_parquet(args.features)
+    total = len(df)
+    matched_mask = df["distance_match_status"] == "matched"
+    matched = df[matched_mask].copy()
+
+    unmatched_rate_by_track = df.groupby("track", observed=True)["distance_match_status"].apply(
+        lambda s: (s == "unmatched").mean()
+    )
+    unmatched_count_by_track = df.groupby("track", observed=True)["distance_match_status"].apply(
+        lambda s: (s == "unmatched").sum()
+    )
+
+    tables_dir = args.output_dir / "tables"
+    figures_dir = args.output_dir / "figures"
+    tables_dir.mkdir(parents=True, exist_ok=True)
+    figures_dir.mkdir(parents=True, exist_ok=True)
+
+    matched, quartile_order = assign_quartiles(matched)
+
+    pooled_table = build_quartile_table(matched, ["distance_quartile"]).sort_values("distance_quartile").reset_index(drop=True)
+    pooled_table.to_csv(tables_dir / "rq3_distance_quartiles.tsv", sep="\t", index=False)
+
+    by_domain_table = (
+        build_quartile_table(matched, ["dataset", "distance_quartile"])
+        .sort_values(["dataset", "distance_quartile"])
+        .reset_index(drop=True)
+    )
+    by_domain_table.to_csv(tables_dir / "rq3_distance_quartiles_by_domain.tsv", sep="\t", index=False)
+
+    crosstab = pd.crosstab(matched["distance_quartile"], matched["gold_at"])
+    crosstab_pct = crosstab.div(crosstab.sum(axis=1), axis=0).round(4)
+    crosstab_out = crosstab.add_suffix("_n").join(crosstab_pct.add_suffix("_pct"))
+    crosstab_out.to_csv(tables_dir / "rq3_distance_by_gold_label.tsv", sep="\t")
+
+    fig, ax = new_figure()
+    ticks = [bucket_tick_label(q, n) for q, n in zip(pooled_table["distance_quartile"], pooled_table["n_pairs"])]
+    grouped_bar(
+        ax,
+        ticks,
+        {
+            "at": list(pooled_table["at_macro_recall"]),
+            "isAt": list(pooled_table["isAt_macro_recall"]),
+        },
+    )
+    style_axis(ax)
+    ax.set_title("RQ3: person-place distance quartile vs. top5-ensemble macro recall", fontsize=7)
+    save_figure(fig, figures_dir / "rq3_proximity.pdf")
+
+    print(
+        f"[RQ3] total pairs: {total} | offset-matched: {len(matched)} "
+        f"({len(matched) / total:.1%}) | unmatched: {total - len(matched)} ({1 - len(matched) / total:.1%})"
+    )
+    print("[RQ3] unmatched-mention rate by track (rate, count):")
+    for track in unmatched_rate_by_track.index:
+        print(f"  {track}: {unmatched_rate_by_track[track]:.1%} ({unmatched_count_by_track[track]} pairs)")
+    print(pooled_table.to_string(index=False))
+
+    if "PROBABLE" in crosstab_pct.columns and len(crosstab_pct) >= 2:
+        first_q, last_q = quartile_order[0], quartile_order[-1]
+        if first_q in crosstab_pct.index and last_q in crosstab_pct.index:
+            probable_first = crosstab_pct.loc[first_q, "PROBABLE"]
+            probable_last = crosstab_pct.loc[last_q, "PROBABLE"]
+            if probable_first > 0 and probable_last >= 1.5 * probable_first:
+                print(
+                    f"[RQ3][CAVEAT] PROBABLE share is {probable_last:.1%} in {last_q} vs. "
+                    f"{probable_first:.1%} in {first_q} — the largest-distance quartile is enriched for "
+                    "PROBABLE (and possibly cross-sentential TRUE) cases; report macro-recall differences "
+                    "across quartiles with this composition effect in mind, not as a pure distance effect."
+                )
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

@@ -210,6 +210,7 @@ __marimo__/
 
 GUIDELINES.md
 results.d/
+analysis.d/
 hipe_2026-llm-baseline
 eval-template-repo
 hipe-2026-llm-baseline
