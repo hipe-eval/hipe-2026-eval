@@ -7,6 +7,7 @@ Reads analysis.d/tables/pair_level_features.parquet (read-only). Writes:
   analysis.d/tables/rq3_distance_quartiles.tsv             (pooled, primary)
   analysis.d/tables/rq3_distance_quartiles_by_domain.tsv   (same buckets, faceted by dataset)
   analysis.d/tables/rq3_distance_by_gold_label.tsv         (quartile x gold `at` label cross-tab)
+  analysis.d/tables/rq3_distance_by_isat_label.tsv         (quartile x gold `isAt` label cross-tab)
   analysis.d/figures/rq3_proximity.pdf (+ .png)
 """
 
@@ -110,6 +111,14 @@ def main() -> int:
     crosstab_out = crosstab.add_suffix("_n").join(crosstab_pct.add_suffix("_pct"))
     crosstab_out.to_csv(tables_dir / "rq3_distance_by_gold_label.tsv", sep="\t")
 
+    # isAt isn't evaluated for `surprise` (top5_correct_isAt is null there) — restrict
+    # to the same rows isAt_macro_recall/isAt_n above are computed over.
+    isat_matched = matched.dropna(subset=["top5_correct_isAt"])
+    isat_crosstab = pd.crosstab(isat_matched["distance_quartile"], isat_matched["gold_isAt"])
+    isat_crosstab_pct = isat_crosstab.div(isat_crosstab.sum(axis=1), axis=0).round(4)
+    isat_crosstab_out = isat_crosstab.add_suffix("_n").join(isat_crosstab_pct.add_suffix("_pct"))
+    isat_crosstab_out.to_csv(tables_dir / "rq3_distance_by_isat_label.tsv", sep="\t")
+
     fig, ax = new_figure()
     ticks = []
     for q, n in zip(pooled_table["distance_quartile"], pooled_table["n_pairs"]):
@@ -150,6 +159,25 @@ def main() -> int:
                     "PROBABLE (and possibly cross-sentential TRUE) cases; report macro-recall differences "
                     "across quartiles with this composition effect in mind, not as a pure distance effect."
                 )
+
+    print("[RQ3] isAt=TRUE share per distance quartile:")
+    if "TRUE" in isat_crosstab_pct.columns:
+        for q in quartile_order:
+            if q in isat_crosstab_pct.index:
+                print(f"  {q}: {isat_crosstab_pct.loc[q, 'TRUE']:.1%} TRUE (n={int(isat_crosstab.loc[q].sum())})")
+        if len(isat_crosstab_pct) >= 2:
+            first_q, last_q = quartile_order[0], quartile_order[-1]
+            if first_q in isat_crosstab_pct.index and last_q in isat_crosstab_pct.index:
+                true_first = isat_crosstab_pct.loc[first_q, "TRUE"]
+                true_last = isat_crosstab_pct.loc[last_q, "TRUE"]
+                if true_first > 0 and true_last <= 0.67 * true_first:
+                    print(
+                        f"[RQ3][CAVEAT] isAt=TRUE share drops from {true_first:.1%} in {first_q} to "
+                        f"{true_last:.1%} in {last_q} — a system leaning toward predicting FALSE at long "
+                        "range would look artificially strong on isAt macro recall there (FALSE-class "
+                        "recall is easy when FALSE dominates support); check this before reading the "
+                        "highest-distance-quartile isAt recall as a genuine strength."
+                    )
     return 0
 
 

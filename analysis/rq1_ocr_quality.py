@@ -7,6 +7,11 @@ Reads analysis.d/tables/pair_level_features.parquet (read-only). Writes:
   analysis.d/tables/rq1_ocr_tertiles_by_language.tsv
   analysis.d/tables/rq1_ocr_correlation.tsv   (Spearman sanity check, not a regression)
   analysis.d/figures/rq1_ocr_quality.pdf (+ .png)
+  analysis.d/figures/rq1_ocr_quality_by_language.pdf (+ .png)   diagnostic, not a paper figure
+
+The by-language table/figure is reindexed onto the full (language x tertile) grid so
+a language with zero pairs in a tertile (e.g. no German documents in the highest-OCR
+tertile) gets an explicit n_pairs=0 row instead of a silently missing one.
 """
 
 from __future__ import annotations
@@ -96,11 +101,19 @@ def main() -> int:
     tertile_table = build_tertile_table(df_a, ["ocr_tertile"]).sort_values("ocr_tertile").reset_index(drop=True)
     tertile_table.to_csv(tables_dir / "rq1_ocr_tertiles.tsv", sep="\t", index=False)
 
-    by_language = (
-        build_tertile_table(df_a, ["language", "ocr_tertile"])
-        .sort_values(["language", "ocr_tertile"])
-        .reset_index(drop=True)
-    )
+    tertile_order = list(tertile_bounds.keys())
+    languages = sorted(df_a["language"].unique())
+
+    by_language = build_tertile_table(df_a, ["language", "ocr_tertile"])
+    # Reindex onto the full (language x tertile) grid: a (language, tertile) combo
+    # with zero pairs must appear as an explicit n_pairs=0 row, not be silently
+    # absent (e.g. no German documents fall in the highest-OCR tertile at all).
+    full_index = pd.MultiIndex.from_product([languages, tertile_order], names=["language", "ocr_tertile"])
+    by_language = by_language.set_index(["language", "ocr_tertile"]).reindex(full_index).reset_index()
+    for count_col in ["n_pairs", "at_n", "isAt_n"]:
+        by_language[count_col] = by_language[count_col].fillna(0).astype(int)
+    by_language["ocr_tertile"] = pd.Categorical(by_language["ocr_tertile"], categories=tertile_order, ordered=True)
+    by_language = by_language.sort_values(["language", "ocr_tertile"]).reset_index(drop=True)
     by_language.to_csv(tables_dir / "rq1_ocr_tertiles_by_language.tsv", sep="\t", index=False)
 
     doc_level = df_a.groupby("document_id", observed=True).agg(
@@ -137,9 +150,41 @@ def main() -> int:
     set_title(ax, "Top-5 ensemble macro-recall per OCR-quality tertile")
     save_figure(fig, figures_dir / "rq1_ocr_quality.pdf")
 
+    # Diagnostic (not a paper figure): same tertile x macro-recall view, faceted
+    # per language, to check whether the pooled tertile pattern holds within each
+    # language or is driven by one language's document mix.
+    fig_lang, axes_lang = new_figure(ncols=len(languages))
+    for ax_lang, language in zip(axes_lang, languages):
+        lang_table = by_language[by_language["language"] == language].sort_values("ocr_tertile").reset_index(drop=True)
+        ticks = []
+        for label, n in zip(lang_table["ocr_tertile"], lang_table["n_pairs"]):
+            low, high = tertile_bounds[str(label)]
+            ticks.append(f"{label}\n{low:.2f}–{high:.2f}\n(n={n})")
+        grouped_bar(
+            ax_lang,
+            ticks,
+            {
+                "at": list(lang_table["at_macro_recall"]),
+                "isAt": list(lang_table["isAt_macro_recall"]),
+            },
+        )
+        style_axis(ax_lang)
+        set_title(ax_lang, f"{language}: macro-recall per OCR-quality tertile")
+    save_figure(fig_lang, figures_dir / "rq1_ocr_quality_by_language.pdf")
+
+    doc_lang_tertile = (
+        df_a.drop_duplicates("document_id")[["document_id", "language", "ocr_tertile"]]
+        .groupby(["language", "ocr_tertile"], observed=True)
+        .size()
+    )
+
     print(f"[RQ1] impresso pairs considered: {len(df_a)} across {len(doc_scores)} documents with an OCR score")
     print(tertile_table.to_string(index=False))
     print(pd.DataFrame(corr_rows).to_string(index=False))
+    print("[RQ1] per-language document counts per tertile:")
+    print(doc_lang_tertile.to_string())
+    print("[RQ1] per-language pair counts / macro recall per tertile:")
+    print(by_language.to_string(index=False))
     return 0
 
 
