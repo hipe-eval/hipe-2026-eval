@@ -7,7 +7,7 @@ Reads analysis.d/tables/pair_level_features.parquet (read-only). Writes:
   analysis.d/tables/rq3_distance_quartiles.tsv             (pooled, primary)
   analysis.d/tables/rq3_distance_quartiles_by_domain.tsv   (same buckets, faceted by dataset)
   analysis.d/tables/rq3_distance_by_gold_label.tsv         (quartile x gold `at` label cross-tab)
-  analysis.d/figures/rq3_proximity.pdf
+  analysis.d/figures/rq3_proximity.pdf (+ .png)
 """
 
 from __future__ import annotations
@@ -17,7 +17,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from plotting_common import bucket_tick_label, grouped_bar, new_figure, save_figure, style_axis
+from plotting_common import grouped_bar, new_figure, save_figure, set_title, style_axis
 
 
 def macro_recall(df: pd.DataFrame, gold_col: str, correct_col: str) -> tuple[float | None, int]:
@@ -49,15 +49,25 @@ def build_quartile_table(df: pd.DataFrame, group_cols: list[str]) -> pd.DataFram
     return pd.DataFrame(rows)
 
 
-def assign_quartiles(matched: pd.DataFrame) -> tuple[pd.DataFrame, list[str]]:
+def assign_quartiles(matched: pd.DataFrame) -> tuple[pd.DataFrame, list[str], dict[str, tuple[int, int]]]:
+    """Also returns label -> (low, high) char-distance bounds per quartile, for the
+    bin labels. The lowest quartile's lower bound is reported as the observed
+    minimum rather than qcut's internal epsilon-shifted interval edge."""
     bins = pd.qcut(matched["min_char_distance"], 4, duplicates="drop")
     categories = bins.cat.categories
-    label_map = {category: f"Q{index + 1}" for index, category in enumerate(categories)}
+    observed_min = matched["min_char_distance"].min()
+    label_map: dict = {}
+    bounds: dict[str, tuple[int, int]] = {}
+    for index, category in enumerate(categories):
+        label = f"Q{index + 1}"
+        label_map[category] = label
+        low = observed_min if index == 0 else category.left
+        bounds[label] = (int(round(low)), int(round(category.right)))
     matched = matched.copy()
     matched["distance_quartile"] = bins.map(label_map).astype(str)
     order = list(label_map.values())
     matched["distance_quartile"] = pd.Categorical(matched["distance_quartile"], categories=order, ordered=True)
-    return matched, order
+    return matched, order, bounds
 
 
 def main() -> int:
@@ -83,7 +93,7 @@ def main() -> int:
     tables_dir.mkdir(parents=True, exist_ok=True)
     figures_dir.mkdir(parents=True, exist_ok=True)
 
-    matched, quartile_order = assign_quartiles(matched)
+    matched, quartile_order, quartile_bounds = assign_quartiles(matched)
 
     pooled_table = build_quartile_table(matched, ["distance_quartile"]).sort_values("distance_quartile").reset_index(drop=True)
     pooled_table.to_csv(tables_dir / "rq3_distance_quartiles.tsv", sep="\t", index=False)
@@ -101,7 +111,12 @@ def main() -> int:
     crosstab_out.to_csv(tables_dir / "rq3_distance_by_gold_label.tsv", sep="\t")
 
     fig, ax = new_figure()
-    ticks = [bucket_tick_label(q, n) for q, n in zip(pooled_table["distance_quartile"], pooled_table["n_pairs"])]
+    ticks = []
+    for q, n in zip(pooled_table["distance_quartile"], pooled_table["n_pairs"]):
+        low, high = quartile_bounds[str(q)]
+        # 3 short lines rather than cramming the range onto the bucket-name line —
+        # 4 narrow bar slots at single-column width overlap otherwise.
+        ticks.append(f"{q}\n{low}–{high} chars\n(n={n})")
     grouped_bar(
         ax,
         ticks,
@@ -111,7 +126,7 @@ def main() -> int:
         },
     )
     style_axis(ax)
-    ax.set_title("RQ3: person-place distance quartile vs. top5-ensemble macro recall", fontsize=7)
+    set_title(ax, "Top-5 ensemble macro-recall per person-place distance quartile")
     save_figure(fig, figures_dir / "rq3_proximity.pdf")
 
     print(
