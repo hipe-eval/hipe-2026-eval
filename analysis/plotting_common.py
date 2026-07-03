@@ -9,18 +9,22 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-COLOR_AT = "#1f77b4"
-COLOR_ISAT = "#ff7f0e"
+# Pastel-but-print-safe pair: validated with the dataviz skill's
+# validate_palette.js (light mode, white surface) — lightness band, chroma
+# floor, CVD separation (worst adjacent pair ΔE ~75-90 across protan/deutan/
+# tritan), and >=3:1 contrast vs. white all PASS with no WARNs. The two hues
+# were also chosen to differ in raw luminance (0.290 vs 0.146, ~1.7:1), not
+# just hue, since a same-lightness pastel pair collapses to one gray in true
+# greyscale/print despite passing CVD checks (which model color blindness,
+# not desaturation).
+COLOR_AT = "#4f97dd"
+COLOR_ISAT = "#a8522e"
 TASK_COLORS = {"at": COLOR_AT, "isAt": COLOR_ISAT}
 
 Y_LIM = (0.0, 1.0)
 # CEUR/LNCS single-column width (~8.5cm).
 FIG_WIDTH_IN = 3.35
 FIG_HEIGHT_IN = 2.6
-
-
-def bucket_tick_label(name: str, n: int) -> str:
-    return f"{name}\n(n={n})"
 
 
 def new_figure(width: float = FIG_WIDTH_IN, height: float = FIG_HEIGHT_IN, ncols: int = 1):
@@ -36,6 +40,13 @@ def style_axis(ax, ylabel: str = "macro recall") -> None:
     ax.set_ylabel(ylabel, fontsize=7)
     ax.tick_params(labelsize=6)
     ax.grid(axis="y", linewidth=0.4, alpha=0.5)
+
+
+def set_title(ax, text: str, fontsize: float = 7.0) -> None:
+    """Plain-description title (no 'RQn:' prefix). `wrap=True` measures the
+    actual rendered text against the axes width and wraps to a second line
+    instead of clipping, rather than a hand-tuned character-count guess."""
+    ax.set_title(text, fontsize=fontsize, wrap=True)
 
 
 def annotate_bars(ax, bars, values, ns=None) -> None:
@@ -75,7 +86,9 @@ def grouped_bar(ax, bucket_labels, series: dict, colors: dict | None = None, ns:
 
 
 def save_figure(fig, path: Path) -> None:
+    """Save the vector figure at `path` (e.g. .pdf) plus a .png at the same stem."""
     path.parent.mkdir(parents=True, exist_ok=True)
     fig.tight_layout()
     fig.savefig(path)
+    fig.savefig(path.with_suffix(".png"), dpi=200)
     plt.close(fig)

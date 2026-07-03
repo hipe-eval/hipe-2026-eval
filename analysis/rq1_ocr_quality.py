@@ -6,7 +6,7 @@ Reads analysis.d/tables/pair_level_features.parquet (read-only). Writes:
   analysis.d/tables/rq1_ocr_tertiles.tsv
   analysis.d/tables/rq1_ocr_tertiles_by_language.tsv
   analysis.d/tables/rq1_ocr_correlation.tsv   (Spearman sanity check, not a regression)
-  analysis.d/figures/rq1_ocr_quality.pdf
+  analysis.d/figures/rq1_ocr_quality.pdf (+ .png)
 """
 
 from __future__ import annotations
@@ -17,7 +17,7 @@ from pathlib import Path
 import pandas as pd
 from scipy.stats import spearmanr
 
-from plotting_common import bucket_tick_label, grouped_bar, new_figure, save_figure, style_axis
+from plotting_common import grouped_bar, new_figure, save_figure, set_title, style_axis
 
 
 def macro_recall(df: pd.DataFrame, gold_col: str, correct_col: str) -> tuple[float | None, int]:
@@ -49,17 +49,29 @@ def build_tertile_table(df: pd.DataFrame, group_cols: list[str]) -> pd.DataFrame
     return pd.DataFrame(rows)
 
 
-def assign_tertiles(doc_scores: pd.DataFrame) -> pd.DataFrame:
+def assign_tertiles(doc_scores: pd.DataFrame) -> tuple[pd.DataFrame, dict[str, tuple[float, float]]]:
     """qcut with duplicates='drop': falls back to fewer buckets if OCR scores repeat
-    (e.g. many documents scoring a clean 1.0), rather than raising."""
+    (e.g. many documents scoring a clean 1.0), rather than raising.
+
+    Also returns label -> (low, high) OCR-score bounds per tertile, for the bin
+    labels. The lowest tertile's lower bound is reported as the observed minimum
+    rather than qcut's internal epsilon-shifted interval edge (e.g. 0.579 instead
+    of the actual 0.58 minimum)."""
     bins = pd.qcut(doc_scores["ocr_score"], 3, duplicates="drop")
     categories = bins.cat.categories
-    label_map = {category: f"T{index + 1}" for index, category in enumerate(categories)}
+    observed_min = doc_scores["ocr_score"].min()
+    label_map: dict = {}
+    bounds: dict[str, tuple[float, float]] = {}
+    for index, category in enumerate(categories):
+        label = f"T{index + 1}"
+        label_map[category] = label
+        low = observed_min if index == 0 else category.left
+        bounds[label] = (low, category.right)
     doc_scores = doc_scores.copy()
     doc_scores["ocr_tertile"] = bins.map(label_map).astype(str)
     order = list(label_map.values())
     doc_scores["ocr_tertile"] = pd.Categorical(doc_scores["ocr_tertile"], categories=order, ordered=True)
-    return doc_scores
+    return doc_scores, bounds
 
 
 def main() -> int:
@@ -72,7 +84,7 @@ def main() -> int:
     df_a = df[df["dataset"] == "impresso"].copy()
 
     doc_scores = df_a.drop_duplicates("document_id")[["document_id", "ocr_score"]].dropna()
-    doc_scores = assign_tertiles(doc_scores)
+    doc_scores, tertile_bounds = assign_tertiles(doc_scores)
     df_a = df_a.merge(doc_scores[["document_id", "ocr_tertile"]], on="document_id", how="left")
     df_a = df_a.dropna(subset=["ocr_tertile"])
 
@@ -107,7 +119,12 @@ def main() -> int:
     pd.DataFrame(corr_rows).to_csv(tables_dir / "rq1_ocr_correlation.tsv", sep="\t", index=False)
 
     fig, ax = new_figure()
-    ticks = [bucket_tick_label(str(label), n) for label, n in zip(tertile_table["ocr_tertile"], tertile_table["n_pairs"])]
+    ticks = []
+    for label, n in zip(tertile_table["ocr_tertile"], tertile_table["n_pairs"]):
+        low, high = tertile_bounds[str(label)]
+        # 3 short lines rather than cramming the range onto the bucket-name line,
+        # for the same reason as RQ3's quartile labels.
+        ticks.append(f"{label}\n{low:.2f}–{high:.2f}\n(n={n})")
     grouped_bar(
         ax,
         ticks,
@@ -117,7 +134,7 @@ def main() -> int:
         },
     )
     style_axis(ax)
-    ax.set_title("RQ1: OCR-quality tertile vs. top5-ensemble macro recall", fontsize=7)
+    set_title(ax, "Top-5 ensemble macro-recall per OCR-quality tertile")
     save_figure(fig, figures_dir / "rq1_ocr_quality.pdf")
 
     print(f"[RQ1] impresso pairs considered: {len(df_a)} across {len(doc_scores)} documents with an OCR score")

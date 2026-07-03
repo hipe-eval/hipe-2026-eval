@@ -251,6 +251,12 @@ Different period and genre per domain — outputs are never pooled across A/B.
   (`isAt` isn't evaluated for `surprise`).
 - Spearman sanity check per domain: year (continuous) vs. document-level accuracy.
 
+**Empty bins (confirmed, printed by the script and kept as explicit zero-count
+rows rather than dropped):**
+- Domain A (10-year bins, 1800-2000): 3/20 empty — `1860-1870`, `1880-1890`,
+  `1970-1980`.
+- Domain B (50-year bins, 1500-1800): 1/6 empty — `1700-1750`.
+
 ---
 
 ## 6. RQ3 — Proximity (pooled across domains)
@@ -290,6 +296,13 @@ separately, by `loc_qid_linked` (QID-linked vs NIL location) — two independent
 splits, not a 4-way cross of both simultaneously (matches "each split by QID-linked vs
 NIL person entity, and separately by location entity" in the brief).
 
+**Open question — `isAt` scoping in the figure**: `rq4_qid_bias.tsv` computes both
+`at` and `isAt` for every system/entity_type/qid_status cell, but the figure only
+plots `at` (2 panels: person, location). This was a scope decision made without
+explicit sign-off — flagged here rather than silently left as-is. If `isAt` should
+also be shown, the natural extension is 4 panels (person/at, person/isAt,
+location/at, location/isAt) or a second figure.
+
 **Output**: `analysis.d/tables/rq4_qid_bias.tsv` — columns `system | entity_type
 (person/location) | qid_status (linked/NIL) | task (at/isAt) | macro_recall | accuracy |
 n`.
@@ -317,19 +330,40 @@ plan can't verify it further from what's in this repository.
 One figure per RQ, shared style module `analysis/plotting_common.py`:
 
 - Fixed y-axis `[0, 1]` on every figure.
-- One consistent color pair for `at` vs. `isAt` reused across all figures (defined once
-  in `plotting_common.py`, not re-picked per script).
-- Vector output (PDF or SVG), sized for CEUR/LNCS single-column width (~8.5cm / 3.35in
-  wide; height chosen per chart type, likely ~2.5in).
+- One consistent color pair for `at` vs. `isAt` (and, in RQ4, repurposed for
+  linked/NIL) reused across all figures, defined once in `plotting_common.py`:
+  `#4f97dd` (dusty blue) / `#a8522e` (terracotta). Chosen with the dataviz skill's
+  `validate_palette.js` — passes lightness band, chroma floor, CVD separation
+  (worst adjacent ΔE ~75-90 across protan/deutan/tritan), and ≥3:1 contrast vs.
+  white with no WARNs — and additionally checked for raw-luminance separation
+  (0.290 vs 0.146, ~1.7:1) so the pair stays distinguishable converted to true
+  greyscale/print, not just under CVD simulation (a same-lightness pastel pair
+  would pass CVD checks yet collapse to one gray on a photocopier).
+- Vector output (PDF), sized for CEUR/LNCS single-column width (~8.5cm / 3.35in
+  wide; height chosen per chart type, likely ~2.5in) — plus a `.png` at the same
+  filename stem (200 dpi) alongside every vector file.
 - Bars/points annotated with the metric value; bucket tick labels include `n` (e.g.
-  `"Q1\n(n=214)"`).
+  `"Q1\n(n=214)"`), and RQ1/RQ3 additionally fold the bucket's own value interval
+  into the label (e.g. `"T1\n0.58–0.87\n(n=237)"`, `"Q1\n0–44 chars\n(n=271)"`) —
+  split across 3 short lines rather than one long line, which overlapped at
+  single-column width with only 3-4 bar slots to share.
+- Titles are plain descriptions, no `"RQn:"` prefix (e.g. "Top-5 ensemble
+  macro-recall per OCR-quality tertile") — set via `plotting_common.set_title()`,
+  which passes `wrap=True` so a title wraps to a second line against the actual
+  rendered axes width instead of clipping (this is what was silently clipping
+  RQ3's title before the prefix was even dropped).
+- RQ2's Domain A panel (20 ten-year bins) thins its x-tick labels to every 5th
+  bin (~50 years) to stay legible; Domain B (6 bins) labels every bin. Empty bins
+  are kept as real rows with a null macro-recall (not dropped), so the plotted
+  line breaks visibly at a gap instead of interpolating across missing years —
+  see §5 finding below for which bins are actually empty in each domain.
 
 | RQ | Chart | File |
 | --- | --- | --- |
-| RQ1 | grouped bar: OCR tertile × macro recall (at/isAt) | `analysis.d/figures/rq1_ocr_quality.pdf` |
-| RQ2 | line chart, two panels (Domain A / Domain B): year bin × macro recall | `analysis.d/figures/rq2_time.pdf` |
-| RQ3 | grouped bar: distance quartile × macro recall (at/isAt) | `analysis.d/figures/rq3_proximity.pdf` |
-| RQ4 | system-grouped bar: QID-linked vs NIL, faceted person/location, grouped by system | `analysis.d/figures/rq4_qid_bias.pdf` |
+| RQ1 | grouped bar: OCR tertile × macro recall (at/isAt) | `analysis.d/figures/rq1_ocr_quality.pdf` (+ .png) |
+| RQ2 | line chart, two panels (Domain A / Domain B): year bin × macro recall, gaps at empty bins | `analysis.d/figures/rq2_time.pdf` (+ .png) |
+| RQ3 | grouped bar: distance quartile × macro recall (at/isAt) | `analysis.d/figures/rq3_proximity.pdf` (+ .png) |
+| RQ4 | system-grouped bar (`at` task only): QID-linked vs NIL, faceted person/location, x-axis shows display names (Ministral baseline / Awakened (best run) / Top-5 ensemble) | `analysis.d/figures/rq4_qid_bias.pdf` (+ .png) |
 
 ---
 

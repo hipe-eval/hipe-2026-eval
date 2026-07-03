@@ -16,7 +16,7 @@ the HIPE-Ministral-Baseline submissions.
 Reads analysis.d/tables/pair_level_features.parquet, results.d/system-rankings/*.tsv,
 and results.d/diagnostics/{baseline,team1}_*.diagnostics.json (all read-only). Writes:
   analysis.d/tables/rq4_qid_bias.tsv
-  analysis.d/figures/rq4_qid_bias.pdf
+  analysis.d/figures/rq4_qid_bias.pdf (+ .png)
 """
 
 from __future__ import annotations
@@ -33,11 +33,18 @@ import pandas as pd
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "lib"))
 from common import parse_reference_filename  # noqa: E402
 
-from plotting_common import COLOR_AT, COLOR_ISAT, grouped_bar, new_figure, save_figure, style_axis
+from plotting_common import COLOR_AT, COLOR_ISAT, grouped_bar, new_figure, save_figure, set_title, style_axis
 
 BASELINE_TEAM = "baseline"
 COMPARISON_TEAM = "team1"
 SYSTEM_ORDER = ["baseline", "team1_best", "top5_ensemble"]
+# Internal run IDs aren't meaningful to a reader of the figure — only the TSV
+# keeps the raw `system` values (baseline/team1_best/top5_ensemble).
+SYSTEM_DISPLAY_NAMES = {
+    "baseline": "Ministral baseline",
+    "team1_best": "Awakened (best run)",
+    "top5_ensemble": "Top-5 ensemble",
+}
 
 TRACK_TEST_GROUP = {
     "impresso-test-de": "test_a",
@@ -199,13 +206,13 @@ def main() -> int:
         pivot_n = panel.pivot(index="system", columns="qid_status", values="n").reindex(SYSTEM_ORDER)
         grouped_bar(
             ax,
-            SYSTEM_ORDER,
+            [SYSTEM_DISPLAY_NAMES[s] for s in SYSTEM_ORDER],
             {"linked": list(pivot_recall["linked"]), "NIL": list(pivot_recall["NIL"])},
             colors={"linked": COLOR_AT, "NIL": COLOR_ISAT},
             ns={"linked": list(pivot_n["linked"]), "NIL": list(pivot_n["NIL"])},
         )
         style_axis(ax)
-        ax.set_title(f"{entity_type.title()} entity (at)", fontsize=7)
+        set_title(ax, f"{entity_type.title()} entity, at-task macro-recall by system")
     save_figure(fig, figures_dir / "rq4_qid_bias.pdf")
 
     print(f"[RQ4] baseline pairs matched: {len(baseline_correctness)} | {COMPARISON_TEAM} pairs matched: {len(team1_correctness)}")
