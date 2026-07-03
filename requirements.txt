@@ -1,2 +1,7 @@
 jsonschema
 scikit-learn
+pandas
+pyarrow
+scipy
+matplotlib
+impresso_pipelines[ocrqa]
