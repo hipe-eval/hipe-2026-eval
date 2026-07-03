@@ -1,18 +1,20 @@
 # HIPE-2026 Evaluation Campaign
 
-This repository orchestrates the official evaluation campaign for CLEF HIPE-2026, the shared task on person-place relation extraction from multilingual historical documents.
+Toolkit for the evaluation orchestration and reporting of submissions to [HIPE-2026](https://hipe-eval.github.io/HIPE-2026/), a CLEF shared task from the [HIPE-eval](https://hipe-eval.github.io/) series on **person-place relation extraction from multilingual historical documents**.
 
-It is intentionally structured like the evaluation template repository used for HIPE-OCRepair, but adapted to this task:
+This repository orchestrates the official evaluation campaign: reference/test data and participant submissions are evaluated through a single real pipeline (no dummy or parallel baseline pipeline), and all evaluation actions are run through Makefile targets.
 
-- no dummy or parallel baseline evaluation pipeline;
-- reference/test data and participant submissions are evaluated through one real pipeline;
-- scoring reuses the `HIPE-2026-data` submodule code instead of duplicating schema loading, JSONL parsing, missing-prediction imputation, and metric utilities;
-- all evaluation actions are orchestrated through Makefile targets.
+Scoring reuses the schema and evaluation utilities from the [`HIPE-2026-data`](https://github.com/hipe-eval/HIPE-2026-data) submodule instead of duplicating that logic:
+
+- [`HIPE-2026-data/scripts/check_jsonlschema.py`](https://github.com/hipe-eval/HIPE-2026-data/blob/main/scripts/check_jsonlschema.py): JSON Schema validation of reference and submission files;
+- [`HIPE-2026-data/scripts/evaluation_utils.py`](https://github.com/hipe-eval/HIPE-2026-data/blob/main/scripts/evaluation_utils.py): JSONL loading/reshaping and missing-prediction imputation.
+
+Per-run metric computation (macro recall, accuracy) is implemented locally in [`lib/score_one.py`](https://github.com/hipe-eval/hipe-2026-eval/blob/main/lib/score_one.py).
 
 ## Related Repositories
 
-- HIPE-2026 website: <https://hipe-eval.github.io/HIPE-2026/>
-- Data submodule: `HIPE-2026-data/`
+- [HIPE-2026-data](https://github.com/hipe-eval/HIPE-2026-data): Data and scoring-utilities (checked out here at `HIPE-2026-data/`).
+- [HIPE-2026 baseline](https://github.com/hipe-eval/HIPE-2026-llm-baseline)
 - Submission loading instructions: `SUBMISSIONS.md`
 - Template reference: `eval-template-repo/`
 
